@@ -21,9 +21,9 @@ format:
 
 1.  Calculate probabilities for a pair of discrete random variables
 
-2.  Calculate and graph a *joint, marginal, and conditional* probability mass function (pmf)
+2.  Calculate a *joint, marginal, and conditional* probability mass function (pmf)
 
-3.  Calculate and graph a *joint, marginal, and conditional* cumulative distribution function (CDF)
+3.  Calculate a *joint, marginal, and conditional* cumulative distribution function (CDF)
 
 ## What is a joint pmf?
 

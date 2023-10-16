@@ -63,6 +63,8 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -293,7 +295,11 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#on-the-horizon" id="toc-on-the-horizon" class="nav-link" data-scroll-target="#on-the-horizon">On the Horizon</a></li>
   <li><a href="#class-exit-tickets" id="toc-class-exit-tickets" class="nav-link" data-scroll-target="#class-exit-tickets">Class Exit Tickets</a></li>
   <li><a href="#statistician-of-the-week-joy-buolamwini" id="toc-statistician-of-the-week-joy-buolamwini" class="nav-link" data-scroll-target="#statistician-of-the-week-joy-buolamwini">Statistician of the Week: Joy Buolamwini</a></li>
-  <li><a href="#muddiest-points" id="toc-muddiest-points" class="nav-link" data-scroll-target="#muddiest-points">Muddiest Points</a></li>
+  <li><a href="#muddiest-points" id="toc-muddiest-points" class="nav-link" data-scroll-target="#muddiest-points">Muddiest Points</a>
+  <ul class="collapse">
+  <li><a href="#how-does-this-link-to-more-real-life-applications-isnt-this-the-same-as-the-previous-chapters-but-with-new-notation" id="toc-how-does-this-link-to-more-real-life-applications-isnt-this-the-same-as-the-previous-chapters-but-with-new-notation" class="nav-link" data-scroll-target="#how-does-this-link-to-more-real-life-applications-isnt-this-the-same-as-the-previous-chapters-but-with-new-notation">2. How does this link to more real life applications? Isn’t this the same as the previous chapters, but with new notation?</a></li>
+  <li><a href="#notation-is-hard-to-get-down" id="toc-notation-is-hard-to-get-down" class="nav-link" data-scroll-target="#notation-is-hard-to-get-down">3. Notation is hard to get down!</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -457,9 +463,93 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="muddiest-points" class="level2">
 <h2 class="anchored" data-anchor-id="muddiest-points">Muddiest Points</h2>
-<p>This will be filled in with your Exit Ticket responses.</p>
+<section id="how-does-this-link-to-more-real-life-applications-isnt-this-the-same-as-the-previous-chapters-but-with-new-notation" class="level3">
+<h3 class="anchored" data-anchor-id="how-does-this-link-to-more-real-life-applications-isnt-this-the-same-as-the-previous-chapters-but-with-new-notation">2. How does this link to more real life applications? Isn’t this the same as the previous chapters, but with new notation?</h3>
+<p>We’ll see a better application in homework 4 (but don’t worry, it won’t be overly complicated).</p>
+<p>So far, yes, the joint distribution we have done with discrete random variables have been very similar to the examples with events A and B. This is mostly meant to guide us through some of the new and difficult notation. You can think of our work so far with pmf’s and CDFs as a way to rewrite and reframe the previous problems we have looked at. This reframing is going to help us when we start looking at continuous random variables.</p>
+</section>
+<section id="notation-is-hard-to-get-down" class="level3">
+<h3 class="anchored" data-anchor-id="notation-is-hard-to-get-down">3. Notation is hard to get down!</h3>
+<section id="what-is-f-is-it-a-function" class="level4">
+<h4 class="anchored" data-anchor-id="what-is-f-is-it-a-function">What is F? Is it a function?</h4>
+<p>Yes, it is! It is the function: <span class="math display">\[F_X(x) = \mathbb{P}(X \leq x)\]</span></p>
+<p>The CDF stands for cumulative distribution function, which we write in math terms as <span class="math inline">\(F_X(x)\)</span>. The CDF is the probability that <span class="math inline">\(X\)</span> will take a value less than or equal to <span class="math inline">\(x\)</span>. Just like the pmf, the sample space is defined by <span class="math inline">\(X\)</span>, but the range of values that <span class="math inline">\(F\)</span> maps to is 0 to 1, and is increasing as <span class="math inline">\(x\)</span> increases.</p>
+</section>
+<section id="whats-an-rv-and-whats-the-value-that-an-rv-takes-on" class="level4">
+<h4 class="anchored" data-anchor-id="whats-an-rv-and-whats-the-value-that-an-rv-takes-on">What’s an RV and what’s the value that an RV takes on?</h4>
+<p>Here’s what I wrote in Week 3 Muddy Points:</p>
+<ul>
+<li><p>What’s the difference between <span class="math inline">\(X(\omega)\)</span> (random variable) and <span class="math inline">\(x\)</span> (the value of the random varaible)?</p>
+<ul>
+<li><p>In class we defined <span class="math inline">\(X(\omega) = x\)</span>. We call <span class="math inline">\(X(\omega)\)</span> or <span class="math inline">\(X\)</span> the random variable and <span class="math inline">\(x\)</span> the realized value of that random variable.</p></li>
+<li><p>For example: If I roll 20 dice, what is the number of dice that come up with 6?</p>
+<ul>
+<li><p><span class="math inline">\(X\)</span> (or <span class="math inline">\(X(\omega)\)</span>) is the number of 6’s that come up</p></li>
+<li><p><span class="math inline">\(x\)</span> is the realized value (like 4 dice have 6’s) that can be observed</p></li>
+<li><p>The number of 6’s (<span class="math inline">\(X\)</span> or <span class="math inline">\(X(\omega)\)</span>) is not yet a realized value, but it can be any of the realized values, <span class="math inline">\(x\)</span>! Thus, we write <span class="math inline">\(X = x\)</span>.</p></li>
+</ul></li>
+<li><p>I thought <a href="https://www.reddit.com/r/learnmath/comments/4ti8nm/what_is_the_difference_between_x_and_x_in_regards/">this Reddit thread</a> is pretty helpful!</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="pmf-vs.-cdf-takes-practice-to-remember-the-difference" class="level4">
+<h4 class="anchored" data-anchor-id="pmf-vs.-cdf-takes-practice-to-remember-the-difference">pmf vs.&nbsp;CDF: takes practice to remember the difference</h4>
+<p>For this, I’d say practice helps the most to distinguish between them.</p>
+<table class="table">
+<colgroup>
+<col style="width: 17%">
+<col style="width: 34%">
+<col style="width: 47%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>pmf</th>
+<th>CDF</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Math representation</td>
+<td><span class="math inline">\(p_X(x)\)</span></td>
+<td><span class="math inline">\(F_X(x)\)</span></td>
+</tr>
+<tr class="even">
+<td>Definition</td>
+<td><span class="math inline">\(p_X(x) = \mathbb{P}(X=x) = \\ \mathbb{P}(\mathrm{all }\ \omega\in S:X(\omega) = x)\)</span></td>
+<td><span class="math inline">\(F_X(x) = \mathbb{P}(X \leq x) = \sum \limits_{\{all\ y:\ y\leq x\}}p_X(y)\)</span></td>
+</tr>
+<tr class="odd">
+<td>Spoken meaning of math rep</td>
+<td>The probability that X equals ___.</td>
+<td>The probability that X is less than or equal to ____.</td>
+</tr>
+<tr class="even">
+<td>Properties</td>
+<td><ul>
+<li><p>Range from 0 to 1</p></li>
+<li><p>Sum of pmf across all <span class="math inline">\(x\)</span> values is 1</p></li>
+</ul></td>
+<td><ul>
+<li><p>CDF is increasing or the same</p></li>
+<li><p>Range from 0 to 1</p></li>
+<li><p>The max value of the CDF is 1</p></li>
+<li><p>The minimum value of the CDF is 0</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<p>I really suggest that you do this kind of table for all the different probabilities that we’ve identified so far:</p>
+<ul>
+<li><p><span class="math inline">\(p_{X,Y}(x,y)\)</span></p></li>
+<li><p><span class="math inline">\(F_{X,Y}(x,y)\)</span></p></li>
+<li><p><span class="math inline">\(p_{X|Y}(x|y)\)</span></p></li>
+<li><p><span class="math inline">\(F_{X|Y}(x|y)\)</span></p></li>
+</ul>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->

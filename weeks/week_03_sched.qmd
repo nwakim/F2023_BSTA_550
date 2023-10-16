@@ -33,7 +33,7 @@ editor_options:
 Below is a table with links to resources. Icons in [orange]{style="color:#E25D3B;"} mean there is an available file link.
 
 | Chapter | Topic                                               |                                                   Slides                                                   |                                                          Annotated Slides                                                          |                                                                                                                                                                                                                                                                                        Recording                                                                                                                                                                                                                                                                                        |
-|---------|---------|:-------:|:-------:|:----------------------------------:|
+|-----------|-----------|:---------:|:---------:|:--------------------------:|
 | 5       | Bayes' Theorem                                      |    [[{{< iconify ri slideshow-fill size=30px >}}](/slides/5_Bayes_Theorem.qmd)]{style="color:#f8f5f0;"}    |    [[{{< iconify pepicons-pop pen-circle-filled size=29px >}}](/slides_annotated/05_Bayes_Theorem.pdf)]{style="color:#f8f5f0;"}    | [[{{< iconify mdi video size=34px >}}](https://ohsuitg-my.sharepoint.com/personal/wakim_ohsu_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fwakim%5Fohsu%5Fedu%2FDocuments%2FTeaching%2FClasses%2FF2023%5FBSTA%5F550%2FRecordings%2F05%5FBayes%5FTheorem%5F01%2Emp4)]{style="color:#f8f5f0;"} [[{{< iconify mdi video size=34px >}}](https://ohsuitg-my.sharepoint.com/personal/wakim_ohsu_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fwakim%5Fohsu%5Fedu%2FDocuments%2FTeaching%2FClasses%2FF2023%5FBSTA%5F550%2FRecordings%2F05%5FBayes%5FTheorem%5F02%2Emp4)]{style="color:#f8f5f0;"} |
 | 7       | Random Variables                                    |  [[{{< iconify ri slideshow-fill size=30px >}}](/slides/7_Random_Variables.qmd)]{style="color:#49A3D1;"}   |  [[{{< iconify pepicons-pop pen-circle-filled size=29px >}}](/slides_annotated/07_Random_variables.pdf)]{style="color:#f8f5f0;"}   |                                                                                                                                                [[{{< iconify mdi video size=34px >}}](https://ohsuitg-my.sharepoint.com/personal/wakim_ohsu_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fwakim%5Fohsu%5Fedu%2FDocuments%2FTeaching%2FClasses%2FF2023%5FBSTA%5F550%2FRecordings%2F07%5FRandom%5FVariables%2Emp4)]{style="color:#f8f5f0;"}                                                                                                                                                |
 | 8       | pmf's and CDFs                                      |    [[{{< iconify ri slideshow-fill size=30px >}}](/slides/8_pmfs_and_cdfs.qmd)]{style="color:#f8f5f0;"}    |       [[{{< iconify pepicons-pop pen-circle-filled size=29px >}}](/slides_annotated/08_pmf_cdf.pdf)]{style="color:#f8f5f0;"}       |                                                                                                                                                   [[{{< iconify mdi video size=34px >}}](https://ohsuitg-my.sharepoint.com/personal/wakim_ohsu_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fwakim%5Fohsu%5Fedu%2FDocuments%2FTeaching%2FClasses%2FF2023%5FBSTA%5F550%2FRecordings%2F08%5Fpmfs%5FCDFs%2Emp4)]{style="color:#f8f5f0;"}                                                                                                                                                    |
@@ -114,6 +114,8 @@ Blackwell contributed to game theory, probability theory, information science, a
 
 ### 1. Breast Cancer Example with Bayes Theorem
 
+My apologies for not getting to this one. I encourage you to come to office hours if you would like to ask me directly. I think this youtube video might also help! <https://www.youtube.com/watch?v=_c3xZvHto3k&ab_channel=OCLPhase2>
+
 ### 2. Random Variables??
 
 How are they functions? Why are they random? Why do we need them?
@@ -147,7 +149,7 @@ Random variable part: $$X(\omega)= \left\{
 
 -   Why can't we say $\omega \geq 5$? If values $5, 6, 7, …$ are the only values greater than $5$ that are defined in the sample space, doesn't $\omega \geq 5$ mean the same thing as $\omega = 5, 6, 7, ...$?
 
-    -   Since a number like 5.5 is not possible within our sample space,
+    -   Basically, we are using $\omega$ to define the sample space. We don't really have another way to communicate the sample space, so even though in our heads we know that $\omega=5, 6, 7, …$ we need to make sure anyone we try to communicate will also understand this. $\omega \geq 5$ does not convey that sample space to anyone looking at our math work.
 
 Here is the pmf for our household example: $$p_X(x)= \left\{
         \begin{array}{ll}
@@ -231,6 +233,6 @@ For example, in the household problem the CDF for 5 or more individuals is 1 ($F
 
         -   $x$ is the realized value (like 4 dice have 6's) that can be observed
 
-        -   The number of 6's ($X$ or $X(\omega)$) is not yet a realized value, but it can be any of the realized values, $x$!
+        -   The number of 6's ($X$ or $X(\omega)$) is not yet a realized value, but it can be any of the realized values, $x$! Thus, we write $X = x$.
 
     -   I thought [this Reddit thread](https://www.reddit.com/r/learnmath/comments/4ti8nm/what_is_the_difference_between_x_and_x_in_regards/) is pretty helpful!
