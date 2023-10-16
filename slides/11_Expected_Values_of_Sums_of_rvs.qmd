@@ -2,7 +2,7 @@
 title: "Chapter 11: Expected Values of Sums of Discrete RVs"
 author: "Meike Niederhausen and Nicky Wakim"
 date: "10/18/2023"
-categories: ["Week 5"]
+categories: ["Week 4"]
 title-slide-attributes:
     data-background-color: "#006a4e"
 format: 

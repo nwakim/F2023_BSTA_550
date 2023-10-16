@@ -25,10 +25,22 @@ The more work you include that shows your thought process, the more I can give y
 ::: center
 | Chapter |        Turn In        |            Extra Problems            |
 |:-------:|:---------------------:|:------------------------------------:|
-|    9    |      NTB \# 1, 2      |       \# 1, 2, 4, 8\*\*, 9, 10       |
+|    9    |      NTB \# 1, 2      |     \# 1, 2, 4, $8^{\#}$, 9, 10      |
 |  10\*   | TB \# 6, 8, NTB \# 3  |         \# 1, 10, 11, 14, 17         |
 | 11\*\*  | TB \# 20, NTB \# 4, 5 | \# 1, 2, 9\*\*\*, 17\*\*\*, 18\*\*\* |
 :::
+
+$^\#$ Break up your solution to Chapter 9 #8 into the following 5 parts:
+
+1.  Make a table of the joint probabilities for $X$ and $Y$.
+
+2.  Using the table in the previous part, write down the piecewise-defined equation for $p_{X,Y}(x,y)$. There should be only 3 pieces (cases) for $p_{X,Y}(x,y)$.
+
+3.  Express $p_Y(y)$ as a formula (i.e. a function in terms of $y$).
+
+4.  Find the conditional pmf $p_{X|Y}(x|y)$ and express your answer as a piecewise-defined equation. There should be only 3 pieces (cases) for $p_{X|Y}(x|y)$.
+
+5.  Make a table of the joint cdf $F_{X,Y}(x,y)$ values.
 
 \* Use Chapter 10 techniques when computing expected values for Chapter 10 problems, i.e. computing the expected value directly using the definition of $\mathbb{E}[X]$.
 

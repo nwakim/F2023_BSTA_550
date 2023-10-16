@@ -1,57 +1,103 @@
-# Chapter 12: Variance of Discrete r.v.'s - or, Expected Values of Functions of r.v.'s {#chapter-12-variance-of-discrete-r.v.s---or-expected-values-of-functions-of-r.v.s .unnumbered}
+---
+title: "Chapter 12: Variance of Discrete RVs"
+author: "Meike Niederhausen and Nicky Wakim"
+date: "10/18/2023"
+categories: ["Week 5"]
+title-slide-attributes:
+    data-background-color: "#006a4e"
+format: 
+  revealjs:
+    theme: [default, simple_NW.scss]
+    toc: true
+    chalkboard: true
+    slide-number: true
+    show-slide-number: all
+    width: 1955
+    height: 1100
+    footer: Chapter 12 Slides
+---
 
 ## Expected Values of Functions of r.v.'s
-
- 
 
 **Question:** What is $\mathbb{E}[g(X)]$ for a function $g$ and discrete
 r.v. $X$?
 
-------------------------------------------------------------------------
+## Example
 
+::: columns
+::: {.column width="40%"}
 ::: example
-**Example 1**. *Let $g(x) = ax+b$, for real-valued constants $a$ and
-$b$. What is $\mathbb{E}[g(X)]$?*
+::: ex-title 
+Example 1
+:::
+::: ex-cont
+Let $g(x) = ax+b$, for real-valued constants $a$ and
+$b$. What is $\mathbb{E}[g(X)]$?
+:::
 :::
 
-**Solution:**
+:::
+:::
 
-------------------------------------------------------------------------
 
-::: {#EfcnX .definition}
-**Definition 2** (Expected value of a function of a r.v.). *  For any
-function $g$ and discrete r.v. $X$, the expected value of $g(X)$ is
+## What is the variance?
+
+::: definition
+::: def-title
+Definition: Expected value of function of RV
+:::
+::: def-cont
+For any function $g$ and discrete r.v. $X$, the expected value of $g(X)$ is
 $$\mathbb{E}[g(X)] = \sum_{\{all\ x\}}\ g(x) p_X(x).$$*
 :::
+:::
 
-::: {#Draw2Cards_gX .example}
-**Example 3**. *Suppose you draw 2 cards from a standard deck of cards
-*with* replacement. Let $X$ be the number of hearts you draw.*
+## Example
 
-1.  *Find $\mathbb{E}[X^2]$.*
+::: columns
+::: {.column width="40%"}
+::: example
+::: ex-title
+Example 2
+:::
+::: ex-cont
+Suppose you draw 2 cards from a standard deck of cards
+*with* replacement. Let $X$ be the number of hearts you draw.
 
-    ***Solution:***
+1.  Find $\mathbb{E}[X^2]$.
 
-2.  *Find $\mathbb{E}\big[\big(X-\frac{1}{2}\big)^2\big]$.*
+2.  Find $\mathbb{E}\big[\big(X-\frac{1}{2}\big)^2\big]$.
+:::
+:::
 
-    ***Solution:***
+:::
 :::
 
 ## Variance of a r.v.
 
-::: {#DefVar .definition}
-**Definition 4** (Variance of a r.v.). *  The variance of a r.v. $X$,
+::: definition
+::: def-title
+Definition: Variance of RV
+:::
+::: def-cont
+The variance of a r.v. $X$,
 with (finite) expected value $\mu_X=\mathbb{E}[X]$ is
-$$\sigma_X^2=Var(X)=\mathbb{E}[(X-\mu_X)^2] = \mathbb{E}[(X-\mathbb{E}[X])^2].$$*
+$$\sigma_X^2=Var(X)=\mathbb{E}[(X-\mu_X)^2] = \mathbb{E}[(X-\mathbb{E}[X])^2].$$
+:::
 :::
 
-::: {#DefSD .definition}
-**Definition 5** (Standard deviation of a r.v.). *  The standard
+::: definition
+::: def-title
+Definition: Standard deviation of RV
+:::
+::: def-cont
+The standard
 deviation of a r.v. $X$ is
-$$\sigma_X = SD(X) = \sqrt{\sigma_X^2}=\sqrt{Var(X)}.$$*
+$$\sigma_X = SD(X) = \sqrt{\sigma_X^2}=\sqrt{Var(X)}.$$
+:::
 :::
 
-------------------------------------------------------------------------
+## Questions
 
 **Questions:** Why do we square the difference in the variance
 definition? $(X-\mu_X)^2$
@@ -82,18 +128,26 @@ $$Var(aX+b) = a^2Var(X).$$*
 *Proof.* See homework. ◻
 :::
 
-------------------------------------------------------------------------
+## Important Results for Independent r.v.'s
 
-### Important Results for Independent r.v.'s
-
-::: {#E_indep_gXhY .theorem}
-**Theorem 8**. *  For independent r.v.'s $X$ and $Y$, and functions $g$
-and $h$, $$\mathbb{E}[g(X)h(Y)] = \mathbb{E}[g(X)]\mathbb{E}[h(Y)].$$*
+::: theorem
+::: thm-title
+Theorem 8
+:::
+::: thm-cont
+For independent r.v.'s $X$ and $Y$, and functions $g$
+and $h$, $$\mathbb{E}[g(X)h(Y)] = \mathbb{E}[g(X)]\mathbb{E}[h(Y)].$$
+:::
 :::
 
-::: corollary
-**Corollary 1**. *  For independent r.v.'s $X$ and $Y$,
-$$\mathbb{E}[XY] = \mathbb{E}[X]\mathbb{E}[Y].$$*
+::: proposition
+::: prop-title
+Corollary 1
+:::
+::: prop-cont
+For independent r.v.'s $X$ and $Y$,
+$$\mathbb{E}[XY] = \mathbb{E}[X]\mathbb{E}[Y].$$
+:::
 :::
 
 ::: proof
@@ -101,22 +155,42 @@ $$\mathbb{E}[XY] = \mathbb{E}[X]\mathbb{E}[Y].$$*
 reference="E_indep_gXhY"}.* ◻
 :::
 
-::: {#ThmVarSum .theorem}
-**Theorem 9** (Variance of sum of independent discrete r.v.'s). *  For
+## Theorem
+
+::: theorem
+::: thm-title
+Theorem 9
+:::
+::: thm-cont
+(Variance of sum of independent discrete r.v.'s). For
 independent discrete r.v.'s $X_i$ and constants $a_i$, $i=1,2,\dots, n$,
-$$Var\Big(\sum_{i=1}^n a_iX_i\Big) = \sum_{i=1}^n a_i^2Var(X_i).$$*
+$$Var\Bigg(\sum_{i=1}^n a_iX_i\Bigg) = \sum_{i=1}^n a_i^2Var(X_i).$$
+:::
 :::
 
-::: corollary
-**Corollary 2**. *  For independent discrete r.v.'s $X_i$,
+## Corollaries
+
+::: proposition
+::: prop-title
+Corollary 2
+:::
+::: prop-cont
+For independent discrete r.v.'s $X_i$,
 $i=1,2,\dots, n$,
-$$Var\Big(\sum_{i=1}^n X_i\Big) = \sum_{i=1}^n Var(X_i).$$*
+$$Var\Bigg(\sum_{i=1}^n X_i\Bigg) = \sum_{i=1}^n Var(X_i).$$
+:::
 :::
 
-::: corollary
-**Corollary 3**. *  For independent identically (i.i.d.) discrete r.v.'s
+::: proposition
+::: prop-title
+Corollary 3
+:::
+
+::: prop-cont
+For independent identically (i.i.d.) discrete r.v.'s
 $X_i$, $i=1,2,\dots, n$,
-$$Var\Big(\sum_{i=1}^n X_i\Big) = n Var(X_1).$$*
+$$Var\Bigg(\sum_{i=1}^n X_i\Bigg) = n Var(X_1).$$
+:::
 :::
 
 ::: proof
@@ -124,12 +198,22 @@ $$Var\Big(\sum_{i=1}^n X_i\Big) = n Var(X_1).$$*
 reference="ThmVarSum"}.* ◻
 :::
 
-::: {#LandportHotels .example}
-**Example 10**. *A tour group is planning a visit to the city of
+## Example
+
+::: columns
+::: {.column width="40%"}
+::: example
+::: ex-title
+Example 10
+:::
+::: ex-cont
+A tour group is planning a visit to the city of
 Landport and needs to book 30 hotel rooms. The average price of a room
 is \$200 **with standard deviation \$10**. In addition, there is a 10%
 tourism tax for each room. What is the **standard deviation** of the
 cost for the 30 hotel rooms?*
 :::
+:::
 
-**Solution:**
+:::
+:::

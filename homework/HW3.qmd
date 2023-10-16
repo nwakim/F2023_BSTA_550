@@ -32,18 +32,6 @@ The more work you include that shows your thought process, the more I can give y
 
 \* In addition to the graphs, include piecewise defined functions for the pmf and cdf.
 
-\*\* Break up your solution to Chapter 9 #8 into the following 5 parts:
-
-1.  Make a table of the joint probabilities for $X$ and $Y$.
-
-2.  Using the table in the previous part, write down the piecewise-defined equation for $p_{X,Y}(x,y)$. There should be only 3 pieces (cases) for $p_{X,Y}(x,y)$.
-
-3.  Express $p_Y(y)$ as a formula (i.e. a function in terms of $y$).
-
-4.  Find the conditional pmf $p_{X|Y}(x|y)$ and express your answer as a piecewise-defined equation. There should be only 3 pieces (cases) for $p_{X|Y}(x|y)$.
-
-5.  Make a table of the joint cdf $F_{X,Y}(x,y)$ values.
-
 ## Non-textbook problems (NTB)
 
 1.  A new drug is packaged to contain 30 pills in a bottle. Suppose that 98% of all bottles contain no defective pills, 1.5% contain one defective pill, and 0.5% contain two defective pills. Two pills from a bottle are randomly selected and tested. What is the probability that there are 2 defective pills in the bottle given that one of the two tested pills is defective?
