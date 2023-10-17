@@ -324,9 +324,9 @@
   {
     "objectID": "slides/9_joint_distributions.html",
     "href": "slides/9_joint_distributions.html",
-    "title": "Chapter 9: Independence and Conditioning - or, Joint Distributions",
+    "title": "Chapter 9: Independence and Conditioning (Joint Distributions)",
     "section": "",
-    "text": "Definition 1. The joint pmf of a pair of discrete r.v.’s \\(X\\) and \\(Y\\) is \\[p_{X,Y}(x,y) = \\mathbb{P}(X=x\\ and\\ Y=y) = \\mathbb{P}(X=x, Y=y)\\]\n\n\nExample 2. Let \\(X\\) and \\(Y\\) be two random draws from a box containing balls labelled 1, 2, and 3 without replacement.\n\nFind \\(p_{X,Y}(x,y)\\).\nFind \\(\\mathbb{P}(X+Y=3).\\)\nFind \\(\\mathbb{P}(Y = 1).\\)\nFind \\(\\mathbb{P}(Y \\leq 2).\\)\n\n\nSolution:\nRemarks: Some properties of joint pmf’s:\n\nA joint pmf \\(p_{X,Y}(x,y)\\) must satisfy the following properties:\n\n\\(p_{X,Y}(x,y)\\geq 0\\) for all \\(x, y\\).\n\\(\\sum \\limits_{\\{all\\ x\\}} \\sum \\limits_{\\{all\\ y\\}} p_{X,Y}(x,y)=1\\).\n\nMarginal pmf’s:\n\n\\(p_X(x) = \\sum \\limits_{\\{all\\ y\\}} p_{X,Y}(x,y)\\)\n\\(p_Y(y) = \\sum \\limits_{\\{all\\ x\\}} p_{X,Y}(x,y)\\)\n\n\n\nDefinition 3. The joint cdf of a pair of discrete r.v.’s \\(X\\) and \\(Y\\) is \\[F_{X,Y}(x,y) = \\mathbb{P}(X \\leq x\\ and\\ Y \\leq y) = \\mathbb{P}(X \\leq x, Y \\leq y)\\]\n\n\n\nExample 4. Find the joint cdf \\(F_{X,Y}(x,y)\\) for the joint pmf \\(p_{X,Y}(x,y)\\) in Example 2.\n\nSolution:\n\nExample 5. Find the marginal cdfs \\(F_{X}(x)\\) and \\(F_{Y}(y)\\) for Example 4.\n\nSolution:\n\nRemark: Some properties of joint cdf’s:\nIndependence and Conditioning\nRecall that for events \\(A\\) and \\(B\\),\n\n\\(\\mathbb{P}(A|B) = \\frac{\\mathbb{P}(A \\cap B)}{\\mathbb{P}(B)}\\)\n\\(A\\) and \\(B\\) are independent if and only if\n\n\\(\\mathbb{P}(A|B) = \\mathbb{P}(A)\\)\n\\(\\mathbb{P}(A \\cap B) = \\mathbb{P}(A)\\cdot\\mathbb{P}(B)\\)\n\n\nIndependence and conditioning are defined similarly for r.v.’s, since \\[p_X(x) = \\mathbb{P}(X=x)\\ \\mathrm{and}\\ \\ p_{X,Y}(x,y) = \\mathbb{P}(X = x ,Y = y).\\]\n\nDefinition 6. The conditional pmf of a pair of discrete r.v.’s \\(X\\) and \\(Y\\) is defined as \\[p_{X|Y}(x|y) = \\mathbb{P}(X = x |Y = y) = \\frac{\\mathbb{P}(X = x\\ and\\ Y = y)}{\\mathbb{P}(Y = y)}\n=\\frac{p_{X,Y}(x,y) }{p_{Y}(y) }\\] if \\(p_{Y}(y) &gt; 0\\).\n\nRemark: The following properties follow from the conditional pmf definition:\n\nExample 7. Using \\(X\\) and \\(Y\\) from Example 2:\n\nFind \\(p_{X|Y}(x|y)\\).\nAre \\(X\\) and \\(Y\\) independent? Why or why not?\n\n\nSolution:\n\nRemark:\n\nTo show that \\(X\\) and \\(Y\\) are not independent, we just need to find one counterexample.\nHowever, to show that they are independent, we need to verify this for all possible pairs of \\(x\\) and \\(y\\).\n\n\nExample 8. Hypothetical 4-sided die\n\nSuppose you have a 4-sided die, and you roll the 4-sided die until the first 4 appears.\nLet \\(X\\) be the number of rolls required until (and including) the first 4.\nAfter the first 4, you keep rolling it again until you roll a 3.\nLet \\(Y\\) be the number of rolls, after the first 4, required until (and including) the 3.\n\n\nFind \\(p_{X,Y}(x,y)\\).\nUsing \\(p_{X,Y}(x,y)\\), find \\(p_{Y}(y)\\).\nFind \\(p_{X}(x)\\).\nAre \\(X\\) and \\(Y\\) are independent? Why or why not?\nFind \\(F_{X,Y}(x,y)\\).\n\n\nSolution:\nExample 8 cont’d."
+    "text": "Calculate probabilities for a pair of discrete random variables\nCalculate a joint, marginal, and conditional probability mass function (pmf)\nCalculate a joint, marginal, and conditional cumulative distribution function (CDF)"
   },
   {
     "objectID": "slides/25_Joint_densities.html",
@@ -1334,7 +1334,7 @@
     "href": "slides/8_pmfs_and_cdfs.html",
     "title": "Chapter 8: Probability Mass Functions (pmf’s) and Cumulative Distribution Functions (cdf’s)",
     "section": "",
-    "text": "Example 1. Suppose we toss 3 coins with probability of heads \\(p\\). If \\(X\\) is the random variable counting the number of heads, what are the probabilities of each value of \\(X\\)?\n\nSolution:\n\nDefinition 2. The probability distribution or probability mass function (pmf) of a discrete r.v. \\(X\\) is defined for every number \\(x\\) by \\[p_X(x) = \\mathbb{P}(X=x) = \\mathbb{P}(\\mathrm{all }\\ \\omega\\in S:X(\\omega) = x)\\]"
+    "text": "Calculate probabilities for discrete random variables\nCalculate and graph a probability mass function (pmf)\nCalculate and graph a cumulative distribution function (CDF)"
   },
   {
     "objectID": "slides/8_pmfs_and_cdfs.html#slide-1",
@@ -1530,7 +1530,7 @@
     "href": "homework/HW3.html#some-select-answers",
     "title": "Homework 3",
     "section": "Some select answers",
-    "text": "Some select answers\nSelected answers (or hints) not provided at the end the book:\n\nChapter 5\n\nNTB #1: 0.392\n\nChapter 7\n\n# 2: \\(X\\in(0,\\infty)\\), continuous; \\(Y\\in\\{0,1,2,\\ldots\\}\\), discrete\n# 10: \\(X_j\\in[0,\\infty),j=1,\\ldots,100\\); \\(Y\\in[0,\\infty)\\); both continuous\n# 16: \\(Y\\) could be 0\n# 18: Yes, a r.v. can be both. Give an example!\n\nChapter 8\n\n# 2: (a) \\(p(x)=\\binom{7}{x}(.5)^7\\) for \\(x=0,1,2,\\ldots,7\\)\n# 9: (a) \\(c = \\frac{1}{8}\\)\n# 10:\n\n\n\n\n\\(x\\)\n2\n4\n6\n8\n\n\n\n\n\\(p(x)\\)\n3/10\n1/2\n3/20\n1/20"
+    "text": "Some select answers\nSelected answers (or hints) not provided at the end the book:\n\nChapter 5\nChapter 7\n\n# 2: \\(X\\in(0,\\infty)\\), continuous; \\(Y\\in\\{0,1,2,\\ldots\\}\\), discrete\n# 10: \\(X_j\\in[0,\\infty),j=1,\\ldots,100\\); \\(Y\\in[0,\\infty)\\); both continuous\n# 16: \\(Y\\) could be 0\n# 18: Yes, a r.v. can be both. Give an example!\n\nChapter 8\n\n# 2: (a) \\(p(x)=\\binom{7}{x}(.5)^7\\) for \\(x=0,1,2,\\ldots,7\\)\n# 9: (a) \\(c = \\frac{1}{8}\\)\n# 10:\n\n\n\n\n\\(x\\)\n2\n4\n6\n8\n\n\n\n\n\\(p(x)\\)\n3/10\n1/2\n3/20\n1/20"
   },
   {
     "objectID": "homework/HW4.html#non-textbook-problems-ntb",
@@ -3755,8 +3755,8 @@
     "objectID": "slides/8_pmfs_and_cdfs.html#learning-objectives",
     "href": "slides/8_pmfs_and_cdfs.html#learning-objectives",
     "title": "Chapter 8: Probability Mass Functions (pmf’s) and Cumulative Distribution Functions (cdf’s)",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\n\nCalculate probabilities for discrete random variables\nCalculate and graph a probability mass function (pmf)\nCalculate and graph a cumulative distribution function (CDF)"
+    "section": "",
+    "text": "Calculate probabilities for discrete random variables\nCalculate and graph a probability mass function (pmf)\nCalculate and graph a cumulative distribution function (CDF)"
   },
   {
     "objectID": "slides/8_pmfs_and_cdfs.html#what-is-a-random-variable",
@@ -3826,7 +3826,7 @@
     "href": "slides/8_pmfs_and_cdfs.html#properties-of-discrete-cdfs",
     "title": "Chapter 8: Probability Mass Functions (pmf’s) and Cumulative Distribution Functions (cdf’s)",
     "section": "Properties of discrete CDFs",
-    "text": "Properties of discrete CDFs\n\n\\(F(x)\\) is increasing or flat (never decreasing)\n\\(\\min\\limits_x F(x) = 0\\)\n\\(\\max\\limits_xF(x)=1\\)\nCDF is a step function\n\n\n\nChapter 8 Slides"
+    "text": "Properties of discrete CDFs\n\n\\(F(x)\\) is increasing or flat (never decreasing)\n\\(\\min\\limits_x F(x) = 0\\)\n\\(\\max\\limits_xF(x)=1\\)\nCDF is a step function"
   },
   {
     "objectID": "slides/8_pmfs_and_cdfs.html#household-size-14",
@@ -3860,8 +3860,8 @@
     "objectID": "slides/9_joint_distributions.html#learning-objectives",
     "href": "slides/9_joint_distributions.html#learning-objectives",
     "title": "Chapter 9: Independence and Conditioning (Joint Distributions)",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\n\nCalculate probabilities for a pair of discrete random variables\nCalculate and graph a joint, marginal, and conditional probability mass function (pmf)\nCalculate and graph a joint, marginal, and conditional cumulative distribution function (CDF)"
+    "section": "",
+    "text": "Calculate probabilities for a pair of discrete random variables\nCalculate a joint, marginal, and conditional probability mass function (pmf)\nCalculate a joint, marginal, and conditional cumulative distribution function (CDF)"
   },
   {
     "objectID": "slides/9_joint_distributions.html#what-is-a-joint-pmf",
@@ -3945,7 +3945,7 @@
     "href": "slides/9_joint_distributions.html#hypothetical-4-sided-die",
     "title": "Chapter 9: Independence and Conditioning (Joint Distributions)",
     "section": "Hypothetical 4-sided die",
-    "text": "Hypothetical 4-sided die\n\n\nExample 3\n\n\n\nSuppose you have a 4-sided die, and you roll the 4-sided die until the first 4 appears.\nLet \\(X\\) be the number of rolls required until (and including) the first 4.\nAfter the first 4, you keep rolling it again until you roll a 3.\nLet \\(Y\\) be the number of rolls, after the first 4, required until (and including) the 3.\n\n\nFind \\(p_{X,Y}(x,y)\\).\nUsing \\(p_{X,Y}(x,y)\\), find \\(p_{Y}(y)\\).\nFind \\(p_{X}(x)\\).\nAre \\(X\\) and \\(Y\\) are independent? Why or why not?\nFind \\(F_{X,Y}(x,y)\\).\n\n\n\n\n\nChapter 9 Slides"
+    "text": "Hypothetical 4-sided die\n\n\nExample 3\n\n\n\nSuppose you have a 4-sided die, and you roll the 4-sided die until the first 4 appears.\nLet \\(X\\) be the number of rolls required until (and including) the first 4.\nAfter the first 4, you keep rolling it again until you roll a 3.\nLet \\(Y\\) be the number of rolls, after the first 4, required until (and including) the 3.\n\n\nFind \\(p_{X,Y}(x,y)\\).\nUsing \\(p_{X,Y}(x,y)\\), find \\(p_{Y}(y)\\).\nFind \\(p_{X}(x)\\).\nAre \\(X\\) and \\(Y\\) are independent? Why or why not?\nFind \\(F_{X,Y}(x,y)\\)."
   },
   {
     "objectID": "slides/9_joint_distributions.html#remarks-on-the-joint-and-marginal-cdf",

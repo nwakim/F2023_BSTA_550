@@ -42,8 +42,6 @@ Selected answers (or hints) not provided at the end the book:
 
 -   Chapter 5
 
-    -   NTB #1: 0.392
-
 -   Chapter 7
 
     -   \# 2: $X\in(0,\infty)$, continuous; $Y\in\{0,1,2,\ldots\}$, discrete
