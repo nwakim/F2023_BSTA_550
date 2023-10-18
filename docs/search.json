@@ -4345,5 +4345,12 @@
     "title": "Chapter 12: Variance of Discrete RVs",
     "section": "Corollaries",
     "text": "Corollaries\n\n\nCorollary 2\n\n\nFor independent discrete r.v.’s \\(X_i\\), \\(i=1,2,\\dots, n\\), \\[Var\\Bigg(\\sum_{i=1}^n X_i\\Bigg) = \\sum_{i=1}^n Var(X_i).\\]\n\n\n\n\nCorollary 3\n\n\nFor independent identically (i.i.d.) discrete r.v.’s \\(X_i\\), \\(i=1,2,\\dots, n\\), \\[Var\\Bigg(\\sum_{i=1}^n X_i\\Bigg) = n Var(X_1).\\]\n\n\n\nProof. Proof to Theorem 9. ◻"
+  },
+  {
+    "objectID": "weeks/week_04_sched.html#announcements",
+    "href": "weeks/week_04_sched.html#announcements",
+    "title": "Week 4",
+    "section": "Announcements",
+    "text": "Announcements\n\nAnnouncements on 10/18\n\nHW 2 feedback is posted\nI am converting my Friday office hours to a “coffee hour”\n\nThis means you can come with any questions, frustrations, ideas, etc. on the program\nI will no longer be answering course content questions"
   }
 ]
