@@ -115,7 +115,7 @@ Corollary 11.1.2
 :::
 
 ::: prop-cont
-If $X_i$, $i=1,2,\dots, n$, are i.i.d. r.v.'s, then $$\mathbb{E}\bigg[\sum_{i=1}^n X_i\bigg] = n\mathbb{E}[X_1] .$$
+If $X_i$, $i=1,2,\dots, n$, are identically distributed r.v.'s, then $$\mathbb{E}\bigg[\sum_{i=1}^n X_i\bigg] = n\mathbb{E}[X_1] .$$
 :::
 :::
 :::
@@ -131,7 +131,7 @@ Example 3
 :::
 
 ::: ex-cont
-The ghost is trick-or-treating at a different house now. In this case it is known that the bag of candy has 10 chocolates, 20 lollipops, and 30 laffy taffies. The ghost takes five pieces of candy without replacement. How many pieces of chocolate do we expect the ghost to take?
+The ghost is trick-or-treating at a different house now. In this case it is known that the bag of candy has 10 chocolates, 20 lollipops, and 30 laffy taffies. The ghost grabs a handful of five pieces of candy. How many pieces of chocolate do we expect the ghost to take?
 :::
 :::
 :::

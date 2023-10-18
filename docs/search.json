@@ -4246,7 +4246,7 @@
     "href": "slides/11_Expected_Values_of_Sums_of_rvs.html#revisiting-our-ghost",
     "title": "Chapter 11: Expected Values of Sums of Discrete RVs",
     "section": "Revisiting our ghost! 👻",
-    "text": "Revisiting our ghost! 👻\n\n\n\n\nExample 3\n\n\nThe ghost is trick-or-treating at a different house now. In this case it is known that the bag of candy has 10 chocolates, 20 lollipops, and 30 laffy taffies. The ghost takes five pieces of candy without replacement. How many pieces of chocolate do we expect the ghost to take?"
+    "text": "Revisiting our ghost! 👻\n\n\n\n\nExample 3\n\n\nThe ghost is trick-or-treating at a different house now. In this case it is known that the bag of candy has 10 chocolates, 20 lollipops, and 30 laffy taffies. The ghost grabs a handful of five pieces of candy. How many pieces of chocolate do we expect the ghost to take?"
   },
   {
     "objectID": "slides/11_Expected_Values_of_Sums_of_rvs.html#hotels",
@@ -4267,7 +4267,7 @@
     "href": "slides/11_Expected_Values_of_Sums_of_rvs.html#corollaries-from-thm-11.1",
     "title": "Chapter 11: Expected Values of Sums of Discrete RVs",
     "section": "Corollaries from Thm 11.1",
-    "text": "Corollaries from Thm 11.1\n\n\n\n\nCorollary 11.1.1\n\n\nFor a discrete r.v. \\(X\\), and constants \\(a\\) and \\(b\\), \\[\\mathbb{E}[aX+b] = a\\mathbb{E}[X] + b.\\]\n\n\n\n\n\nCorollary 11.1.2\n\n\nIf \\(X_i\\), \\(i=1,2,\\dots, n\\), are i.i.d. r.v.’s, then \\[\\mathbb{E}\\bigg[\\sum_{i=1}^n X_i\\bigg] = n\\mathbb{E}[X_1] .\\]"
+    "text": "Corollaries from Thm 11.1\n\n\n\n\nCorollary 11.1.1\n\n\nFor a discrete r.v. \\(X\\), and constants \\(a\\) and \\(b\\), \\[\\mathbb{E}[aX+b] = a\\mathbb{E}[X] + b.\\]\n\n\n\n\n\nCorollary 11.1.2\n\n\nIf \\(X_i\\), \\(i=1,2,\\dots, n\\), are identically distributed r.v.’s, then \\[\\mathbb{E}\\bigg[\\sum_{i=1}^n X_i\\bigg] = n\\mathbb{E}[X_1] .\\]"
   },
   {
     "objectID": "slides/10_Expected_Values.html#bullseye-.visibilityhidden",
