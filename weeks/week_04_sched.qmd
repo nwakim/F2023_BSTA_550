@@ -189,7 +189,9 @@ I really suggest that you do this kind of table for all the different probabilit
 
 -   $F_{X|Y}(x|y)$
 
-### For the drawing 200 cards example: I'm confused why x = 0, 1, 2, \..., 200 but i = 1, 2, 3, \...,200 instead of 201. Doesn't that mean we're summing over a shorter interval?
+### 4. For the drawing 200 cards example: I'm confused why x = 0, 1, 2, \..., 200 but i = 1, 2, 3, \...,200 instead of 201. Doesn't that mean we're summing over a shorter interval?
+
+Yes! The interval that we sum over will be 1 to 200, but this will still cover all the x values from 0 to 200. When we sum over $i=1, 2, 3, …, 200$ draws, if all 200 the draws come up with cards that are not hearts, then the sum is 0.
 
 ### I got a little tripped up on what a-i means in theorem 11.1: sum of discrete RVs. Wouldn't it just be an a? Or is it a-i because it's a different constant (the probability?) for each X?
 
