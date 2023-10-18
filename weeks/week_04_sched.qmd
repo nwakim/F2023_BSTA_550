@@ -189,12 +189,18 @@ I really suggest that you do this kind of table for all the different probabilit
 
 -   $F_{X|Y}(x|y)$
 
-### 4. For the drawing 200 cards example: I'm confused why x = 0, 1, 2, \..., 200 but i = 1, 2, 3, \...,200 instead of 201. Doesn't that mean we're summing over a shorter interval?
+### 4. For the drawing $200$ cards example: why $x = 0, 1, 2, ..., 200$ but $i = 1, 2, 3, ...,200$ instead of $201$? Doesn't that mean we're summing over a shorter interval?
 
-Yes! The interval that we sum over will be 1 to 200, but this will still cover all the x values from 0 to 200. When we sum over $i=1, 2, 3, …, 200$ draws, if all 200 the draws come up with cards that are not hearts, then the sum is 0.
+Yes! The interval that we sum over will be 1 to 200, but this will still cover all the x values from 0 to 200. When we sum over $i=1, 2, 3, …, 200$ draws, if all 200 the draws (all $Y_i$'s) come up with cards that are not hearts, then the sum is 0 ($\sum_{i=1}^{200} Y_i = 0$). Thus, $x$ can still take on a 0 value.
 
-### I got a little tripped up on what a-i means in theorem 11.1: sum of discrete RVs. Wouldn't it just be an a? Or is it a-i because it's a different constant (the probability?) for each X?
+### 5. I got a little tripped up on what $a_i$ means in theorem 11.1: sum of discrete RVs. Wouldn't it just be an $a$? Or is it $a_i$ because it's a different constant (the probability?) for each $X_i$?
 
-### Expected value for our examples with and without replacement (and then also with finite and infinite draws)
+It would not be $a$ (without the $i$). It *is* because $a_i$ represents a different constant for each $X_i$! So you are right! However, $a_i$ is not a probability. This is where the expected value gets a little confusing with all the sums. The expected value of a single random variable is defined by $E[X_1] = \sum_{j=1}^{m} x_j p_{X_1}(x_j)$, where $m$ is the total number of values $X_1$ can take and $j$ is the $jth$ value of $X_1$. Then if we want to look at the expected value of the sum of $X_1$ and $X_2$, We look at $E\bigg[\sum_{i=1}^{2} X_i\bigg] =E[X_1 + X_2] =E[X_1] + E[X_2]=\sum_{j=1}^{m} x_j p_{X_1}(x_j) + \sum_{k=1}^{h} x_k p_{X_2}(x_k)$. If we then wanted to look at the expected value of the sum of $3\times X_1$ and $2 \times X_2$, we could write: $E\bigg[\sum_{i=1}^{2} a_i X_i\bigg] =E[3X_1 + 2X_2] =E[3X_1] + E[2X_2]=3E[X_1] + 2E[X_2]= 3\sum_{j=1}^{m} x_j p_{X_1}(x_j) + 2\sum_{k=1}^{h} x_k p_{X_2}(x_k)$
 
-### For corollary 11.1.2, when it says the random variables are identically distributed, does that also mean the random variables must be independent as well?
+### 6. Expected value for our examples with and without replacement (and then also with finite and infinite draws)
+
+Working on a better explanation for this one!
+
+### 7. For corollary 11.1.2, when it says the random variables are identically distributed, does that also mean the random variables must be independent as well?
+
+No! So this is a special property of expected values called the *linearity of expected values*. It means that no matter if the random variables are dependent, the expected value of the sum (of RVs) is the sum of the expected values of RVs. So when the random variables are identically distributed, the expected value of each is the same. Hence, the corollary. The fact that they are dependent does not change the corollary!
