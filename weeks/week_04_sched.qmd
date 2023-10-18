@@ -67,6 +67,14 @@ For the slides, once they are opened, if you would like to print or save them as
 
     -   I will no longer be answering course content questions
 
+-   HW 3
+
+    -   For some reason I took down the answer for NTB #1
+
+        -   It's back up!
+
+        -   Sorry for the confusion!
+
 ## Class Exit Tickets
 
 [[{{< iconify healthicons health-worker-form-negative size=30px >}}](https://forms.office.com/Pages/ResponsePage.aspx?id=V3lz4rj6fk2U9pvWr59xWFMopmPUjRtDiHLswhgacNhUMEJVQVc5Rjk2NkhGR0pQOVJQSzAzNlI2Ry4u)]{style="color:#f8f5f0;"} Monday (10/16) *Question about course set up*
