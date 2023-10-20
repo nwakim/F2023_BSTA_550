@@ -2,7 +2,7 @@
 title: "Week 5"
 description: "Discrete random variables: variance and common families"
 date: "10/23/2023"
-date-modified: "9/15/2023"
+date-modified: "10/18/2023"
 categories: [""]
 format: 
   html:
@@ -51,11 +51,17 @@ For the slides, once they are opened, if you would like to print or save them as
 
 ## Class Exit Tickets
 
-[{{< iconify healthicons health-worker-form-negative size=30px >}}]{style="color:#f8f5f0;"} Monday (10/23)
+[[{{< iconify healthicons health-worker-form-negative size=30px >}}](https://forms.office.com/Pages/ResponsePage.aspx?id=V3lz4rj6fk2U9pvWr59xWFMopmPUjRtDiHLswhgacNhUNkRSRlRYSllaNk9aWjIwNlc1WUtDN0ZVNi4u)]{style="color:#f8f5f0;"} Monday (10/23)
 
-[{{< iconify healthicons health-worker-form-negative size=30px >}}]{style="color:#f8f5f0;"} Wednesday (10/25)
+[[{{< iconify healthicons health-worker-form-negative size=30px >}}](https://forms.office.com/Pages/ResponsePage.aspx?id=V3lz4rj6fk2U9pvWr59xWFMopmPUjRtDiHLswhgacNhUQ0xIWjU3Q09XSENUOFBEWUhZVkVIUkxXVC4u)]{style="color:#f8f5f0;"} Wednesday (10/25)
 
 ## Additional Information
+
+### Announcements 10/23
+
+-   Flipped classroom question
+
+    -   
 
 ## Statistician of the Week: Liz Hare
 
@@ -96,9 +102,5 @@ Her computational language of choice is `R`, and much of her work has focused on
 -   [fosstodon](https://fosstodon.org/@lizhare)
 
 ## Muddiest Points
-
-This will be filled in with your Exit Ticket responses.
-
-## Clearest Points
 
 This will be filled in with your Exit Ticket responses.

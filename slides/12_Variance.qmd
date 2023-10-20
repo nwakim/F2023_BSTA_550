@@ -17,12 +17,9 @@ format:
     footer: Chapter 12 Slides
 ---
 
-## Expected Values of Functions of r.v.'s
+## Learning Objectives
 
-**Question:** What is $\mathbb{E}[g(X)]$ for a function $g$ and discrete
-r.v. $X$?
-
-## Example
+## Let's start building the variance through expected values of functions
 
 ::: columns
 ::: {.column width="40%"}
@@ -31,7 +28,7 @@ r.v. $X$?
 Example 1
 :::
 ::: ex-cont
-Let $g(x) = ax+b$, for real-valued constants $a$ and
+Let $g$ be a function and let $g(x) = ax+b$, for real-valued constants $a$ and
 $b$. What is $\mathbb{E}[g(X)]$?
 :::
 :::
@@ -40,7 +37,7 @@ $b$. What is $\mathbb{E}[g(X)]$?
 :::
 
 
-## What is the variance?
+## What is the expected value of a function?
 
 ::: definition
 ::: def-title
@@ -48,11 +45,11 @@ Definition: Expected value of function of RV
 :::
 ::: def-cont
 For any function $g$ and discrete r.v. $X$, the expected value of $g(X)$ is
-$$\mathbb{E}[g(X)] = \sum_{\{all\ x\}}\ g(x) p_X(x).$$*
+$$\mathbb{E}[g(X)] = \sum_{\{all\ x\}}\ g(x) p_X(x).$$
 :::
 :::
 
-## Example
+## Let's revisit the card example (1/2)
 
 ::: columns
 ::: {.column width="40%"}
@@ -66,6 +63,24 @@ Suppose you draw 2 cards from a standard deck of cards
 
 1.  Find $\mathbb{E}[X^2]$.
 
+:::
+:::
+
+:::
+:::
+
+## Let's revisit the card example (2/2)
+
+::: columns
+::: {.column width="40%"}
+::: example
+::: ex-title
+Example 2
+:::
+::: ex-cont
+Suppose you draw 2 cards from a standard deck of cards
+*with* replacement. Let $X$ be the number of hearts you draw.
+
 2.  Find $\mathbb{E}\big[\big(X-\frac{1}{2}\big)^2\big]$.
 :::
 :::
@@ -73,7 +88,7 @@ Suppose you draw 2 cards from a standard deck of cards
 :::
 :::
 
-## Variance of a r.v.
+## Variance of a RV
 
 ::: definition
 ::: def-title
@@ -97,7 +112,7 @@ $$\sigma_X = SD(X) = \sqrt{\sigma_X^2}=\sqrt{Var(X)}.$$
 :::
 :::
 
-## Questions
+## Questions {visibility="hidden"}
 
 **Questions:** Why do we square the difference in the variance
 definition? $(X-\mu_X)^2$
@@ -107,28 +122,45 @@ definition? $(X-\mu_X)^2$
 
 -   Why not use $\mathbb{E}[|X-\mu_X|]$?
 
-::: {#DefVar_Comp .lemma}
-**Lemma 6** (\"Computation formula\" for Variance). *  The variance of a
+
+## Let's calculate the variance and prove it!
+
+::: columns
+::: {.column width="30%"}
+::: proof1
+::: proof-title
+Lemma 6: \"Computation formula\" for Variance
+:::
+::: proof-cont
+The variance of a
 r.v. $X$, can be computed as
-$$\sigma_X^2=Var(X)=\mathbb{E}[X^2]-\mu_X^2 = \mathbb{E}[X^2] - (\mathbb{E}[X])^2.$$*
+$$\begin{align}
+\sigma_X^2 & =Var(X) \\ & = \mathbb{E}[X^2]-\mu_X^2 \\ & = \mathbb{E}[X^2] - (\mathbb{E}[X])^2
+\end{align}$$
+:::
+:::
 :::
 
-::: proof
-*Proof.* ◻
 :::
 
-## Some Important Variance and Expected Values Results
+# Some Important Variance and Expected Values Results
 
-::: lemma
-**Lemma 7**. *  For a r.v. $X$ and constants $a$ and $b$,
-$$Var(aX+b) = a^2Var(X).$$*
+## Variance of a function with a single RV
+
+::: proof1
+::: proof-title
+Lemma 7
+:::
+::: proof-cont
+For a r.v. $X$ and constants $a$ and $b$,
+$$Var(aX+b) = a^2Var(X).$$
+::: 
 :::
 
-::: proof
-*Proof.* See homework. ◻
-:::
+Proof will be exercise in homework. It's fun! In a mathy kinda way.
 
-## Important Results for Independent r.v.'s
+
+## Important Results for Independent RVs
 
 ::: theorem
 ::: thm-title
@@ -159,11 +191,10 @@ reference="E_indep_gXhY"}.* ◻
 
 ::: theorem
 ::: thm-title
-Theorem 9
+Theorem 9: Variance of sum of independent discrete r.v.'s
 :::
 ::: thm-cont
-(Variance of sum of independent discrete r.v.'s). For
-independent discrete r.v.'s $X_i$ and constants $a_i$, $i=1,2,\dots, n$,
+For independent discrete r.v.'s $X_i$ and constants $a_i$, $i=1,2,\dots, n$,
 $$Var\Bigg(\sum_{i=1}^n a_iX_i\Bigg) = \sum_{i=1}^n a_i^2Var(X_i).$$
 :::
 :::
@@ -193,12 +224,7 @@ $$Var\Bigg(\sum_{i=1}^n X_i\Bigg) = n Var(X_1).$$
 :::
 :::
 
-::: proof
-*Proof to Theorem [9](#ThmVarSum){reference-type="ref"
-reference="ThmVarSum"}.* ◻
-:::
-
-## Example
+## Back to our hotel example from Chapter 11
 
 ::: columns
 ::: {.column width="40%"}
@@ -208,10 +234,10 @@ Example 10
 :::
 ::: ex-cont
 A tour group is planning a visit to the city of
-Landport and needs to book 30 hotel rooms. The average price of a room
+Minneapolis and needs to book 30 hotel rooms. The average price of a room
 is \$200 **with standard deviation \$10**. In addition, there is a 10%
 tourism tax for each room. What is the **standard deviation** of the
-cost for the 30 hotel rooms?*
+cost for the 30 hotel rooms?
 :::
 :::
 

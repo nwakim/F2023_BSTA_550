@@ -2,7 +2,7 @@
 title: "Homework 4"
 subtitle: "BSTA 550"
 description: "Due: Thursday October 26, 2023 at 11pm"
-date-modified: "08/22/2023"
+date-modified: "10/18/2023"
 date: "10/26/2023"
 categories: [""]
 format: 
@@ -23,11 +23,11 @@ editor_options:
 The more work you include that shows your thought process, the more I can give you feedback.
 
 ::: center
-| Chapter |        Turn In        |            Extra Problems            |
-|:-------:|:---------------------:|:------------------------------------:|
-|    9    |      NTB \# 1, 2      |     \# 1, 2, 4, $8^{\#}$, 9, 10      |
-|  10\*   | TB \# 6, 8, NTB \# 3  |         \# 1, 10, 11, 14, 17         |
-| 11\*\*  | TB \# 20, NTB \# 4, 5 | \# 1, 2, 9\*\*\*, 17\*\*\*, 18\*\*\* |
+| Chapter |   Turn In   |              Extra Problems              |
+|:-------:|:-----------:|:----------------------------------------:|
+|    9    | NTB \# 1, 2 |       \# 1, 2, 4, $8^{\#}$, 9, 10        |
+|  10\*   |   TB \# 6   |         \# 1, 8, 10, 11, 14, 17          |
+| 11\*\*  | NTB \# 3, 4 | \# 1, 2, 9\*\*\*, 17\*\*\*, 18\*\*\*, 20 |
 :::
 
 $^\#$ Break up your solution to Chapter 9 #8 into the following 5 parts:
@@ -72,21 +72,17 @@ $^\#$ Break up your solution to Chapter 9 #8 into the following 5 parts:
 
     h.  Make a table for the conditional pmf $p_{Y|X}(y|x)$ and briefly describe in words what the values are the probability of.
 
-2.  **Forgetful mornings revisited**. Using the joint pmf you found in Chapter 9 #2, complete the following questions:
+2.  Each day, Maude has a 1% chance of losing her cell phone (her behavior on different days is independent). Each day, Maude has a 3% chance of forgetting to eat breakfast (again, her behavior on different days is independent). Her breakfast and cell phone habits are independent. Let X be the number of days until she first loses her cell phone. Let Y be the number of days until she first forgets to eat breakfast. (Here, X and Y are independent.) Find the joint mass of X and Y.
 
-    a.  Find the joint cdf of $X$ and $Y$ and briefly explain what $F_{X,Y}(x,y)$ represents in the context of the problem.
+    a.  Find the joint probability mass function of X and Y.
 
-    b.  Find the conditional pmf $p_{Y|X}(y|x)$.
+    b.  Find the joint cdf of $X$ and $Y$ and briefly explain what $F_{X,Y}(x,y)$ represents in the context of the problem.
 
-3.  **Forgetful mornings revisited again**. Recall from Chapter 9 #2, that $X$ is the number of days until Maude loses her cell phone and each day she has a 1% chance of losing her phone (her behavior on different days being independent). For this problem, ignore the r.v. $Y$, and consider the r.v. $X$ on its own.
+    c.  Find the conditional pmf $p_{Y|X}(y|x)$.
 
-    a.  What is the pmf of $X$?
+3.  Approximately 10% of U.S. Veterans are women. Suppose an investigator plans a study with 4500 participants that are Veterans. How many women can they expect to be included? *Your answer must be calculated by defining a random variable and showing how to calculate the expected value.*
 
-    b.  Use the pmf of $X$ to find $\mathbb{E}[X]$.
-
-4.  Approximately 10% of U.S. Veterans are women. Suppose an investigator plans a study with 4500 participants that are Veterans. How many women can they expect to be included? *Your answer must be calculated by defining a random variable and showing how to calculate the expected value.*
-
-5.  **Cashews revisited**. Recall from Chapter 10 #8, that a bowl contains 30 cashews, 20 pecans, 25 almonds, and 25 walnuts, and 3 nuts are randomly selected to eat (without replacement). Again, find the expected value of the number of cashews, but this time by defining the number of cashews as a sum of random variables.
+4.  There is a bowl containing 30 cashews, 20 pecans, 25 almonds, and 25 walnuts. I am going to randomly pick and eat 3 nuts (without replacement). Again, find the expected value of the number of cashews, but this time by defining the number of cashews as a sum of random variables.
 
 ## Some select answers
 

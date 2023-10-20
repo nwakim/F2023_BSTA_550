@@ -2,7 +2,7 @@
 title: "Week 6"
 description: "Common families of discrete distributions cont."
 date: "10/30/2023"
-date-modified: "9/15/2023"
+date-modified: "10/18/2023"
 categories: [""]
 format: 
   html:
@@ -31,7 +31,7 @@ editor_options:
 ## Resources
 
 | Chapter | Topic                |                                Slides                                 |                                  Annotated Slides                                  |                           Recording                           |
-|---------|----------------------|:---------------------------------------------------------------------:|:----------------------------------------------------------------------------------:|:-------------------------------------------------------------:|
+|-------------|-------------|:-------------:|:-----------------:|:-----------:|
 | 17      | Negative Binomial RV | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
 | 18      | Poisson RV           | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
 
@@ -46,7 +46,7 @@ For the slides, once they are opened, if you would like to print or save them as
 
 ## Class Exit Tickets
 
-[{{< iconify healthicons health-worker-form-negative size=30px >}}]{style="color:#f8f5f0;"} Monday (10/30)
+[[{{< iconify healthicons health-worker-form-negative size=30px >}}](https://forms.office.com/Pages/ResponsePage.aspx?id=V3lz4rj6fk2U9pvWr59xWFMopmPUjRtDiHLswhgacNhUQTlMT0RUUUJDUTVTRVBUQjlYNlMzS0FVRC4u)]{style="color:#f8f5f0;"} Monday (10/30)
 
 ## Additional Information
 

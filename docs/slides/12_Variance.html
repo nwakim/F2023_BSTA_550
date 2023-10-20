@@ -343,26 +343,30 @@ Meike Niederhausen and Nicky Wakim
 <nav role="doc-toc"> 
 <h2 id="toc-title">Table of contents</h2>
 <ul>
-<li><a href="#/expected-values-of-functions-of-r.v.s" id="/toc-expected-values-of-functions-of-r.v.s">Expected Values of Functions of r.v.’s</a></li>
-<li><a href="#/example" id="/toc-example">Example</a></li>
-<li><a href="#/what-is-the-variance" id="/toc-what-is-the-variance">What is the variance?</a></li>
-<li><a href="#/example-1" id="/toc-example-1">Example</a></li>
-<li><a href="#/variance-of-a-r.v." id="/toc-variance-of-a-r.v.">Variance of a r.v.</a></li>
-<li><a href="#/questions" id="/toc-questions">Questions</a></li>
-<li><a href="#/some-important-variance-and-expected-values-results" id="/toc-some-important-variance-and-expected-values-results">Some Important Variance and Expected Values Results</a></li>
-<li><a href="#/important-results-for-independent-r.v.s" id="/toc-important-results-for-independent-r.v.s">Important Results for Independent r.v.’s</a></li>
+<li><a href="#/learning-objectives" id="/toc-learning-objectives">Learning Objectives</a></li>
+<li><a href="#/lets-start-building-the-variance-through-expected-values-of-functions" id="/toc-lets-start-building-the-variance-through-expected-values-of-functions">Let’s start building the variance through expected values of functions</a></li>
+<li><a href="#/what-is-the-expected-value-of-a-function" id="/toc-what-is-the-expected-value-of-a-function">What is the expected value of a function?</a></li>
+<li><a href="#/lets-revisit-the-card-example-12" id="/toc-lets-revisit-the-card-example-12">Let’s revisit the card example (1/2)</a></li>
+<li><a href="#/lets-revisit-the-card-example-22" id="/toc-lets-revisit-the-card-example-22">Let’s revisit the card example (2/2)</a></li>
+<li><a href="#/variance-of-a-rv" id="/toc-variance-of-a-rv">Variance of a RV</a></li>
+
+<li><a href="#/lets-calculate-the-variance-and-prove-it" id="/toc-lets-calculate-the-variance-and-prove-it">Let’s calculate the variance and prove it!</a></li>
+<li><a href="#/some-important-variance-and-expected-values-results" id="/toc-some-important-variance-and-expected-values-results">Some Important Variance and Expected Values Results</a>
+<ul>
+<li><a href="#/variance-of-a-function-with-a-single-rv" id="/toc-variance-of-a-function-with-a-single-rv">Variance of a function with a single RV</a></li>
+<li><a href="#/important-results-for-independent-rvs" id="/toc-important-results-for-independent-rvs">Important Results for Independent RVs</a></li>
 <li><a href="#/theorem" id="/toc-theorem">Theorem</a></li>
 <li><a href="#/corollaries" id="/toc-corollaries">Corollaries</a></li>
-<li><a href="#/example-2" id="/toc-example-2">Example</a></li>
+<li><a href="#/back-to-our-hotel-example-from-chapter-11" id="/toc-back-to-our-hotel-example-from-chapter-11">Back to our hotel example from Chapter 11</a></li>
+</ul></li>
 </ul>
 </nav>
 </section>
-<section id="expected-values-of-functions-of-r.v.s" class="slide level2">
-<h2>Expected Values of Functions of r.v.’s</h2>
-<p><strong>Question:</strong> What is <span class="math inline">\(\mathbb{E}[g(X)]\)</span> for a function <span class="math inline">\(g\)</span> and discrete r.v. <span class="math inline">\(X\)</span>?</p>
+<section id="learning-objectives" class="slide level2">
+<h2>Learning Objectives</h2>
 </section>
-<section id="example" class="slide level2">
-<h2>Example</h2>
+<section id="lets-start-building-the-variance-through-expected-values-of-functions" class="slide level2">
+<h2>Let’s start building the variance through expected values of functions</h2>
 <div class="columns">
 <div class="column" style="width:40%;">
 <div class="example">
@@ -370,25 +374,25 @@ Meike Niederhausen and Nicky Wakim
 <p>Example 1</p>
 </div>
 <div class="ex-cont">
-<p>Let <span class="math inline">\(g(x) = ax+b\)</span>, for real-valued constants <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>. What is <span class="math inline">\(\mathbb{E}[g(X)]\)</span>?</p>
+<p>Let <span class="math inline">\(g\)</span> be a function and let <span class="math inline">\(g(x) = ax+b\)</span>, for real-valued constants <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>. What is <span class="math inline">\(\mathbb{E}[g(X)]\)</span>?</p>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section id="what-is-the-variance" class="slide level2">
-<h2>What is the variance?</h2>
+<section id="what-is-the-expected-value-of-a-function" class="slide level2">
+<h2>What is the expected value of a function?</h2>
 <div class="definition">
 <div class="def-title">
 <p>Definition: Expected value of function of RV</p>
 </div>
 <div class="def-cont">
-<p>For any function <span class="math inline">\(g\)</span> and discrete r.v. <span class="math inline">\(X\)</span>, the expected value of <span class="math inline">\(g(X)\)</span> is <span class="math display">\[\mathbb{E}[g(X)] = \sum_{\{all\ x\}}\ g(x) p_X(x).\]</span>*</p>
+<p>For any function <span class="math inline">\(g\)</span> and discrete r.v. <span class="math inline">\(X\)</span>, the expected value of <span class="math inline">\(g(X)\)</span> is <span class="math display">\[\mathbb{E}[g(X)] = \sum_{\{all\ x\}}\ g(x) p_X(x).\]</span></p>
 </div>
 </div>
 </section>
-<section id="example-1" class="slide level2">
-<h2>Example</h2>
+<section id="lets-revisit-the-card-example-12" class="slide level2">
+<h2>Let’s revisit the card example (1/2)</h2>
 <div class="columns">
 <div class="column" style="width:40%;">
 <div class="example">
@@ -398,16 +402,33 @@ Meike Niederhausen and Nicky Wakim
 <div class="ex-cont">
 <p>Suppose you draw 2 cards from a standard deck of cards <em>with</em> replacement. Let <span class="math inline">\(X\)</span> be the number of hearts you draw.</p>
 <ol type="1">
-<li><p>Find <span class="math inline">\(\mathbb{E}[X^2]\)</span>.</p></li>
-<li><p>Find <span class="math inline">\(\mathbb{E}\big[\big(X-\frac{1}{2}\big)^2\big]\)</span>.</p></li>
+<li>Find <span class="math inline">\(\mathbb{E}[X^2]\)</span>.</li>
 </ol>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section id="variance-of-a-r.v." class="slide level2">
-<h2>Variance of a r.v.</h2>
+<section id="lets-revisit-the-card-example-22" class="slide level2">
+<h2>Let’s revisit the card example (2/2)</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="example">
+<div class="ex-title">
+<p>Example 2</p>
+</div>
+<div class="ex-cont">
+<p>Suppose you draw 2 cards from a standard deck of cards <em>with</em> replacement. Let <span class="math inline">\(X\)</span> be the number of hearts you draw.</p>
+<ol start="2" type="1">
+<li>Find <span class="math inline">\(\mathbb{E}\big[\big(X-\frac{1}{2}\big)^2\big]\)</span>.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="variance-of-a-rv" class="slide level2">
+<h2>Variance of a RV</h2>
 <div class="definition">
 <div class="def-title">
 <p>Definition: Variance of RV</p>
@@ -425,31 +446,43 @@ Meike Niederhausen and Nicky Wakim
 </div>
 </div>
 </section>
-<section id="questions" class="slide level2">
-<h2>Questions</h2>
-<p><strong>Questions:</strong> Why do we square the difference in the variance definition? <span class="math inline">\((X-\mu_X)^2\)</span></p>
-<ul>
-<li><p>Why not define the measure of spread as <span class="math inline">\(\mathbb{E}[X-\mu_X] = \mathbb{E}[X-\mathbb{E}[X]]\)</span>?</p></li>
-<li><p>Why not use <span class="math inline">\(\mathbb{E}[|X-\mu_X|]\)</span>?</p></li>
-</ul>
-<div id="DefVar_Comp" class="lemma">
-<p><strong>Lemma 6</strong> ("Computation formula" for Variance). <em>&nbsp; The variance of a r.v. <span class="math inline">\(X\)</span>, can be computed as <span class="math display">\[\sigma_X^2=Var(X)=\mathbb{E}[X^2]-\mu_X^2 = \mathbb{E}[X^2] - (\mathbb{E}[X])^2.\]</span></em></p>
+
+<section id="lets-calculate-the-variance-and-prove-it" class="slide level2">
+<h2>Let’s calculate the variance and prove it!</h2>
+<div class="columns">
+<div class="column" style="width:30%;">
+<div class="proof1">
+<div class="proof-title">
+<p>Lemma 6: "Computation formula" for Variance</p>
 </div>
-<div class="proof">
-<p><span class="proof-title"><em>Proof</em>. </span><em>Proof.</em>&nbsp;◻</p>
+<div class="proof-cont">
+<p>The variance of a r.v. <span class="math inline">\(X\)</span>, can be computed as <span class="math display">\[\begin{align}
+\sigma_X^2 &amp; =Var(X) \\ &amp; = \mathbb{E}[X^2]-\mu_X^2 \\ &amp; = \mathbb{E}[X^2] - (\mathbb{E}[X])^2
+\end{align}\]</span></p>
 </div>
-</section>
-<section id="some-important-variance-and-expected-values-results" class="slide level2">
-<h2>Some Important Variance and Expected Values Results</h2>
-<div class="lemma">
-<p><strong>Lemma 7</strong>. <em>&nbsp; For a r.v. <span class="math inline">\(X\)</span> and constants <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>, <span class="math display">\[Var(aX+b) = a^2Var(X).\]</span></em></p>
 </div>
-<div class="proof">
-<p><span class="proof-title"><em>Proof</em>. </span><em>Proof.</em> See homework.&nbsp;◻</p>
+</div>
 </div>
 </section>
-<section id="important-results-for-independent-r.v.s" class="slide level2">
-<h2>Important Results for Independent r.v.’s</h2>
+<section>
+<section id="some-important-variance-and-expected-values-results" class="title-slide slide level1 center">
+<h1>Some Important Variance and Expected Values Results</h1>
+
+</section>
+<section id="variance-of-a-function-with-a-single-rv" class="slide level2">
+<h2>Variance of a function with a single RV</h2>
+<div class="proof1">
+<div class="proof-title">
+<p>Lemma 7</p>
+</div>
+<div class="proof-cont">
+<p>For a r.v. <span class="math inline">\(X\)</span> and constants <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>, <span class="math display">\[Var(aX+b) = a^2Var(X).\]</span></p>
+</div>
+</div>
+<p>Proof will be exercise in homework. It’s fun! In a mathy kinda way.</p>
+</section>
+<section id="important-results-for-independent-rvs" class="slide level2">
+<h2>Important Results for Independent RVs</h2>
 <div class="theorem">
 <div class="thm-title">
 <p>Theorem 8</p>
@@ -474,10 +507,10 @@ Meike Niederhausen and Nicky Wakim
 <h2>Theorem</h2>
 <div class="theorem">
 <div class="thm-title">
-<p>Theorem 9</p>
+<p>Theorem 9: Variance of sum of independent discrete r.v.’s</p>
 </div>
 <div class="thm-cont">
-<p>(Variance of sum of independent discrete r.v.’s). For independent discrete r.v.’s <span class="math inline">\(X_i\)</span> and constants <span class="math inline">\(a_i\)</span>, <span class="math inline">\(i=1,2,\dots, n\)</span>, <span class="math display">\[Var\Bigg(\sum_{i=1}^n a_iX_i\Bigg) = \sum_{i=1}^n a_i^2Var(X_i).\]</span></p>
+<p>For independent discrete r.v.’s <span class="math inline">\(X_i\)</span> and constants <span class="math inline">\(a_i\)</span>, <span class="math inline">\(i=1,2,\dots, n\)</span>, <span class="math display">\[Var\Bigg(\sum_{i=1}^n a_iX_i\Bigg) = \sum_{i=1}^n a_i^2Var(X_i).\]</span></p>
 </div>
 </div>
 </section>
@@ -499,12 +532,9 @@ Meike Niederhausen and Nicky Wakim
 <p>For independent identically (i.i.d.) discrete r.v.’s <span class="math inline">\(X_i\)</span>, <span class="math inline">\(i=1,2,\dots, n\)</span>, <span class="math display">\[Var\Bigg(\sum_{i=1}^n X_i\Bigg) = n Var(X_1).\]</span></p>
 </div>
 </div>
-<div class="proof">
-<p><span class="proof-title"><em>Proof</em>. </span><em>Proof to Theorem <a href="#/ThmVarSum" data-reference-type="ref" data-reference="ThmVarSum">9</a>.</em>&nbsp;◻</p>
-</div>
 </section>
-<section id="example-2" class="slide level2">
-<h2>Example</h2>
+<section id="back-to-our-hotel-example-from-chapter-11" class="slide level2">
+<h2>Back to our hotel example from Chapter 11</h2>
 <div class="columns">
 <div class="column" style="width:40%;">
 <div class="example">
@@ -512,7 +542,7 @@ Meike Niederhausen and Nicky Wakim
 <p>Example 10</p>
 </div>
 <div class="ex-cont">
-<p>A tour group is planning a visit to the city of Landport and needs to book 30 hotel rooms. The average price of a room is $200 <strong>with standard deviation $10</strong>. In addition, there is a 10% tourism tax for each room. What is the <strong>standard deviation</strong> of the cost for the 30 hotel rooms?*</p>
+<p>A tour group is planning a visit to the city of Minneapolis and needs to book 30 hotel rooms. The average price of a room is $200 <strong>with standard deviation $10</strong>. In addition, there is a 10% tourism tax for each room. What is the <strong>standard deviation</strong> of the cost for the 30 hotel rooms?</p>
 </div>
 </div>
 </div>
@@ -521,7 +551,7 @@ Meike Niederhausen and Nicky Wakim
 <div class="footer footer-default">
 <p>Chapter 12 Slides</p>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 

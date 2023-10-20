@@ -125,13 +125,13 @@ Her work was featured in a recent documentary <a href = "https://www.codedbias.c
 
 ## Muddiest Points
 
-### 2. How does this link to more real life applications? Isn't this the same as the previous chapters, but with new notation?
+### 1. How does this link to more real life applications? Isn't this the same as the previous chapters, but with new notation?
 
 We'll see a better application in homework 4 (but don't worry, it won't be overly complicated).
 
 So far, yes, the joint distribution we have done with discrete random variables have been very similar to the examples with events A and B. This is mostly meant to guide us through some of the new and difficult notation. You can think of our work so far with pmf's and CDFs as a way to rewrite and reframe the previous problems we have looked at. This reframing is going to help us when we start looking at continuous random variables.
 
-### 3. Notation is hard to get down!
+### 2. Notation is hard to get down!
 
 #### What is F? Is it a function?
 
@@ -189,18 +189,58 @@ I really suggest that you do this kind of table for all the different probabilit
 
 -   $F_{X|Y}(x|y)$
 
-### 4. For the drawing $200$ cards example: why $x = 0, 1, 2, ..., 200$ but $i = 1, 2, 3, ...,200$ instead of $201$? Doesn't that mean we're summing over a shorter interval?
+### 3. For the drawing $200$ cards example: why $x = 0, 1, 2, ..., 200$ but $i = 1, 2, 3, ...,200$ instead of $201$? Doesn't that mean we're summing over a shorter interval?
 
 Yes! The interval that we sum over will be 1 to 200, but this will still cover all the x values from 0 to 200. When we sum over $i=1, 2, 3, …, 200$ draws, if all 200 the draws (all $Y_i$'s) come up with cards that are not hearts, then the sum is 0 ($\sum_{i=1}^{200} Y_i = 0$). Thus, $x$ can still take on a 0 value.
 
-### 5. I got a little tripped up on what $a_i$ means in theorem 11.1: sum of discrete RVs. Wouldn't it just be an $a$? Or is it $a_i$ because it's a different constant (the probability?) for each $X_i$?
+### 4. I got a little tripped up on what $a_i$ means in theorem 11.1: sum of discrete RVs. Wouldn't it just be an $a$? Or is it $a_i$ because it's a different constant (the probability?) for each $X_i$?
 
 It would not be $a$ (without the $i$). It *is* because $a_i$ represents a different constant for each $X_i$! So you are right! However, $a_i$ is not a probability. This is where the expected value gets a little confusing with all the sums. The expected value of a single random variable is defined by $E[X_1] = \sum_{j=1}^{m} x_j p_{X_1}(x_j)$, where $m$ is the total number of values $X_1$ can take and $j$ is the $jth$ value of $X_1$. Then if we want to look at the expected value of the sum of $X_1$ and $X_2$, We look at $E\bigg[\sum_{i=1}^{2} X_i\bigg] =E[X_1 + X_2] =E[X_1] + E[X_2]=\sum_{j=1}^{m} x_j p_{X_1}(x_j) + \sum_{k=1}^{h} x_k p_{X_2}(x_k)$. If we then wanted to look at the expected value of the sum of $3\times X_1$ and $2 \times X_2$, we could write: $E\bigg[\sum_{i=1}^{2} a_i X_i\bigg] =E[3X_1 + 2X_2] =E[3X_1] + E[2X_2]=3E[X_1] + 2E[X_2]= 3\sum_{j=1}^{m} x_j p_{X_1}(x_j) + 2\sum_{k=1}^{h} x_k p_{X_2}(x_k)$
 
-### 6. Expected value for our examples with and without replacement (and then also with finite and infinite draws)
+### 5. Expected value for our examples with and without replacement (and then also with finite and infinite draws)
 
 Working on a better explanation for this one!
 
-### 7. For corollary 11.1.2, when it says the random variables are identically distributed, does that also mean the random variables must be independent as well?
+There are a few distinctions here:
+
+1.  with replacement vs. without replacement
+
+2.  draw finite number vs. draw until we get some \# of "successes" (infinite)
+
+Let's start with our ghost example from Chapter 11 notes:
+
+> The ghost is trick-or-treating at a different house now. In this case it is known that the bag of candy has 10 chocolates, 20 lollipops, and 30 laffy taffies. The ghost grabs a *handful of five pieces of candy.* How many pieces of chocolate do we expect the ghost to take?
+
+In the above problem, I tried to intentionally word it so that we are simultaneously sampling all five candies instead of drawing one candy then another then another... However, this is still confusing. So let's just say with and without replacement. We have two options for our problem:
+
+1.  The ghost takes five pieces of candy *with replacement*
+
+2.  The ghost takes five pieces of candy *without replacement*
+
++-----------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+
+| With replacement                                                                              | Without replacement                                                                                       |
++===============================================================================================+===========================================================================================================+
+| Because the probability is the same between draws, the Bernoulli distributions are identical: | I struggled with showing this without using counting, so here it is solved using the Chapter 10 approach: |
+|                                                                                               |                                                                                                           |
+| ![](week_04/ghost_w_replacement.jpeg)                                                         | ![](week_04/without_rep_01.jpeg)                                                                          |
+|                                                                                               |                                                                                                           |
+| ![](week_04/ghost_w_replacement_02.jpeg)                                                      | $p_X(x)$ above is only for $x=0, 1, 2, 3, 4, 5$                                                           |
+|                                                                                               |                                                                                                           |
+|                                                                                               | ![](week_04/without_rep_02.jpg)                                                                           |
++-----------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+
+
+The final expected values for BOTH are the same!! Why are they the same???
+
+If you go back to the "with replacement" and try to use counting to solve the expected value, we can start with $$p_X(x) = \dfrac{{10+x-1 \choose x}{50 + (5-x) -1 \choose 5-x}}{{60 + 5 -1 \choose 5}}$$
+
+which comes from the last of the [Chapter 22 slides](/slides/22_Counting_Intro.qmd). For order does not matter and with replacement we count possibilities using ${n+r-1 \choose r}$.
+
+Then the expected value of $X$ using this probability is $$E\Bigg[\sum_{x=0}^5 x p_X(x)\Bigg]$$ which also equals $5/6$!!
+
+$$ \begin{align} E\Bigg[\sum_{x=0}^5 x p_X(x)\Bigg] & =  0p_X(0)+1p_X(0)+2p_X(0)+3p_X(0)+4p_X(0)+5p_X(5) \\ & = 1\dfrac{{10 \choose 1}{50 + 4 -1 \choose 4}}{{60 + 5 -1 \choose 5}} + 2\dfrac{{10+1 \choose 2}{50 + 3 -1 \choose 5-2}}{{60 + 5 -1 \choose 5}}+3\dfrac{{10+2 \choose 3}{50 + 2 -1 \choose 2}}{{60 + 5 -1 \choose 5}}+ \\ & \text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }4\dfrac{{10+4-1 \choose 4}{50 + (5-4) -1 \choose 5-4}}{{60 + 5 -1 \choose 5}}+5\dfrac{{10+5-1 \choose 5}{50 + (5-5) -1 \choose 5-5}}{{60 + 5 -1 \choose 5}} \\ & = \dfrac{5}{6}\end{align}$$
+
+This still does not quite answer why they are the same. I'm going to continue to work on this one!
+
+### 6. For corollary 11.1.2, when it says the random variables are identically distributed, does that also mean the random variables must be independent as well?
 
 No! So this is a special property of expected values called the *linearity of expected values*. It means that no matter if the random variables are dependent, the expected value of the sum (of RVs) is the sum of the expected values of RVs. So when the random variables are identically distributed, the expected value of each is the same. Hence, the corollary. The fact that they are dependent does not change the corollary!
