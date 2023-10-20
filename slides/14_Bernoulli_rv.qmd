@@ -1,10 +1,33 @@
-# Chapter 14: Bernoulli r.v.'s {#chapter-14-bernoulli-r.v.s .unnumbered}
+---
+title: "Chapter 14 - 18"
+author: "Meike Niederhausen and Nicky Wakim"
+date: "10/25/2023"
+categories: ["Week 5"]
+title-slide-attributes:
+    data-background-color: "#006a4e"
+format: 
+  revealjs:
+    theme: [default, simple_NW.scss]
+    toc: true
+    chalkboard: true
+    slide-number: true
+    show-slide-number: all
+    width: 1955
+    height: 1100
+    footer: Chapter 14-18 Slides
+---
+
+## Learning Objectives
+
+# Chapter 14: Bernoulli RVs
+
+## Bernoulli RV
 
 **Scenario:** One trial, with outcome success or failure.
 
-------------------------------------------------------------------------
-
 **Properties of Bernoulli r.v.'s**
+
+## Example 1
 
 ::: example
 **Example 1**. * *
@@ -20,7 +43,7 @@
 
 **Solution:**
 
-------------------------------------------------------------------------
+## Example 2
 
 ::: example
 **Example 2**. * *
@@ -35,3 +58,14 @@
 :::
 
 **Solution:**
+
+# Chapter 15: Binomial RVs {#chapter-15-binomial-r.v.s .unnumbered}
+
+## meh
+
+**Scenario:** There are $n$ independent trials, each resulting in a
+success or failure, with constant probability in each trial. We are
+counting the number of successes (or failures).
+
+
+## Properties of Binomial RVs

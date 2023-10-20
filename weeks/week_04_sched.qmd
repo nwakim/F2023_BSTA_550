@@ -199,13 +199,7 @@ It would not be $a$ (without the $i$). It *is* because $a_i$ represents a differ
 
 ### 5. Expected value for our examples with and without replacement (and then also with finite and infinite draws)
 
-Working on a better explanation for this one!
-
-There are a few distinctions here:
-
-1.  with replacement vs. without replacement
-
-2.  draw finite number vs. draw until we get some \# of "successes" (infinite)
+First, I would like to welcome you to my stream of thought on this... I had a big brain fart, so you'll see me go down one path only to realize something else. I decided to keep it all up because I show some good work that might be helpful. It also shows that sometimes you completely forget an essential part of your learning then have a big light bulb!
 
 Let's start with our ghost example from Chapter 11 notes:
 
@@ -239,7 +233,57 @@ Then the expected value of $X$ using this probability is $$E\Bigg[\sum_{x=0}^5 x
 
 $$ \begin{align} E\Bigg[\sum_{x=0}^5 x p_X(x)\Bigg] & =  0p_X(0)+1p_X(0)+2p_X(0)+3p_X(0)+4p_X(0)+5p_X(5) \\ & = 1\dfrac{{10 \choose 1}{50 + 4 -1 \choose 4}}{{60 + 5 -1 \choose 5}} + 2\dfrac{{10+1 \choose 2}{50 + 3 -1 \choose 5-2}}{{60 + 5 -1 \choose 5}}+3\dfrac{{10+2 \choose 3}{50 + 2 -1 \choose 2}}{{60 + 5 -1 \choose 5}}+ \\ & \text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }4\dfrac{{10+4-1 \choose 4}{50 + (5-4) -1 \choose 5-4}}{{60 + 5 -1 \choose 5}}+5\dfrac{{10+5-1 \choose 5}{50 + (5-5) -1 \choose 5-5}}{{60 + 5 -1 \choose 5}} \\ & = \dfrac{5}{6}\end{align}$$
 
-This still does not quite answer why they are the same. I'm going to continue to work on this one!
+This still does not quite answer why they are the same.
+
+![source: https://www.youtube.com/watch?v=Ifr8NifRGWk&ab_channel=JoannaGee](week_04/maxresdefault.jpg){width="490"}
+
+Eureka! I figured out why both of these cases have the same expected value but are inherently different! It helped me to see the known distributions again. For some reason, I kept thinking: "Why are the expected values the same?? The pmf's are different and this is making me think that with and without replacement leads me to a binomial no matter what..." That's absolutely not true, and a big brain fart on my end! One is a binomial distribution and one is a hypergeometric distribution!
+
+-   With replacement = binomial
+
+-   Without replacement = hypergeometric
+
+And like I showed in my work above, the pmf's of each are different:
+
+-   With replacement = binomial
+
+    $$
+    \begin{align}
+    p_X(x) & = \dfrac{{K+x-1 \choose x}{(N-K) + (n-x) -1 \choose n-x}}{{N + n -1 \choose n}} \\
+    &= {n \choose k}\bigg(\dfrac{K}{N}\bigg)^k\bigg(1-\dfrac{K}{N}\bigg)^{n-k} \\
+    &= {n \choose k}p^k(1-p)^{n-k}
+    \end{align}
+    $$
+
+    -   with $N=60$ total "successes" and "failures"
+
+    -   $K=10$ "successes" to choose from
+
+    -   $n=5$ trials to pick from,
+
+    -   and $x$ "successes" out of the $n=5$ trials
+
+    -   and, In the above pmf's, $p=\dfrac{K}{N}$
+
+-   Without replacement = hypergeometric
+
+    $$
+    \begin{align}
+    p_X(x) & = \dfrac{{K \choose x}{N-K \choose n-x}}{{N \choose n}} \\
+    \end{align}
+    $$
+
+    -   with $N=60$ total "successes" and "failures"
+
+    -   $K=10$ "successes" to choose from
+
+    -   $n=5$ trials to pick from,
+
+    -   and $x$ "successes" out of the $n=5$ trials
+
+For both the above cases, this is when the total number of draws is finite. What happens when the number is infinite? Then we have something called a *geometric distribution*. We will discuss all of this more in [Week 5](/weeks/week_05_sched.qmd).
+
+We will also see that the variance of the two ghost cases are different!
 
 ### 6. For corollary 11.1.2, when it says the random variables are identically distributed, does that also mean the random variables must be independent as well?
 

@@ -1,0 +1,245 @@
+---
+title: "Chapter 14, 15, 16, 19, 20: Some Important Discrete RVs"
+author: "Meike Niederhausen and Nicky Wakim"
+date: "10/25/2023"
+categories: ["Week 5"]
+title-slide-attributes:
+    data-background-color: "#006a4e"
+format: 
+  revealjs:
+    theme: [default, simple_NW.scss]
+    toc: true
+    chalkboard: true
+    slide-number: true
+    show-slide-number: all
+    width: 1955
+    height: 1100
+    footer: Chapter 14-20 Slides
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+## Learning Objectives
+
+# Chapter 14: Bernoulli RVs
+
+## Bernoulli RV
+
+**Scenario:** One trial, with outcome success or failure.
+
+## Properties of Bernoulli RVs
+
+## Example 1
+
+::: columns
+::: {.column width="35%"}
+::: example
+::: ex-title
+Example 1
+:::
+
+::: ex-cont
+-   We roll a fair 6-sided die.
+
+-   We get \$1 if we roll a 5, and nothing otherwise.
+
+-   Let $X$ be how much money we get.
+
+-   Find the mean and variance of $X$.
+:::
+:::
+:::
+:::
+
+## Example 2
+
+::: columns
+::: {.column width="35%"}
+::: example
+::: ex-title
+Example 2
+:::
+
+::: ex-cont
+-   Suppose we roll a fair 6-sided die 50 times.
+
+-   We get \$1 every time we roll a 5, and nothing otherwise.
+
+-   Let $X$ be how much money we get on the 50 rolls.
+
+-   Find the mean and variance of $X$.
+:::
+:::
+:::
+:::
+
+# Chapter 15: Binomial RVs {#chapter-15-binomial-r.v.s .unnumbered}
+
+## meh
+
+**Scenario:** There are $n$ independent trials, each resulting in a
+success or failure, with constant probability in each trial. We are
+counting the number of successes (or failures).
+
+## Properties of Binomial RVs
+
+# Chapter 16: Geometric r.v.'s {#chapter-16-geometric-r.v.s .unnumbered}
+
+## Geometric RVs
+
+**Scenario:** There are repeated independent trials, each resulting in a
+success or failure, with constant probability of success for each trial.
+We are counting the number of trials until the first success.
+
+## Example
+
+::: columns
+::: {.column width="35%"}
+::: example
+::: ex-title
+Example 3
+:::
+
+::: ex-cont
+We throw darts at a dartboard until we hit the bullseye. Assume throws
+are independent and the probability of hitting the bullseye is 0.01 for
+each throw.
+
+1.  What is the pmf for the number of throws until we hit the bullseye?
+
+2.  What are the mean and variance for the number of throws until we hit
+    the bullseye?
+:::
+:::
+:::
+:::
+
+::: columns
+::: {.column width="35%"}
+::: example
+::: ex-title
+Example 3
+:::
+
+::: ex-cont
+We throw darts at a dartboard until we hit the bullseye. Assume throws
+are independent and the probability of hitting the bullseye is 0.01 for
+each throw.
+
+3.  *Find the probability that our first bullseye:*
+
+    3.  is on the fourth try\*
+
+    4.  *is on one of the first four tries*
+
+    5.  *is after the fifth try*
+
+    6.  *is on one of the first fifty tries*
+
+    7.  *is after the* $50^{th}$ try, given that it did not happen on
+        the first 20 tries
+:::
+:::
+:::
+:::
+
+3.  *Find the probability that our first bullseye:*
+
+    1.  *is on the fourth try*
+
+        ***Solution:***
+
+    2.  *is on one of the first four tries*
+
+        ***Solution:***
+
+    3.  *is after the fifth try*
+
+        ***Solution:***
+
+    4.  *is on one of the first fifty tries*
+
+        ***Solution:***
+
+    5.  *is after the* $50^{th}$ try, given that it did not happen on
+        the first 20 tries.
+
+        ***Solution:***
+
+4.  *Find the expected number of misses until we hit the bullseye.*
+
+# Chapter 19: Hypergeometric r.v.'s {#chapter-19-hypergeometric-r.v.s .unnumbered}
+
+## Hypergeometric RVs
+
+**Scenario:** There are a fixed number of successes and failures (which
+are known in advance), from which we make $n$ draws without replacement.
+We are counting the number of successes from the $n$ trials.
+
+## Example
+
+::: example
+**Example 1**. *A wildlife biologist is using mark-recapture to research
+a wolf population. Suppose a specific study region is known to have 24
+wolves, of which 11 have already been tagged. If 5 wolves are randomly
+captured, what is the probability that 3 of them have already been
+tagged?*
+
+***Solution:***
+:::
+
+## Properties of Hypergeometric RVs
+
+-   There is a finite population of $N$ items.
+
+-   Each item in the population is either a success or a failure, and
+    there are $M$ successes total.
+
+-   We randomly select (sample) $n$ items from the population.
+
+## Hypergeometric vs. Binomial RVs
+
+Suppose a hypergeometric r.v. $X$ has the following properties:
+
+-   the population size $N$ is really big,
+
+-   the number of successes $M$ in the population is relatively large,
+
+    -   $\frac{M}{N}$ shouldn't be close to 0 or 1
+
+-   and the number of items $n$ selected is small.
+
+Then, in this case, making $n$ draws from the population doesn't change
+the probability of success much, and the hypergeometric r.v. can be
+approximated by a binomial r.v.
+
+## Example
+
+::: example
+**Example 2**. *Suppose a specific study region is known to have 2400
+wolves, of which 1100 have already been tagged.*
+
+1.  *If 50 wolves are randomly captured, what is the probability that 20
+    of them have already been tagged?*
+
+2.  *Approximate the probability in part (1) using the binomial
+    distribution.*
+
+***Solution:***
+:::
+
+# Chapter 20: Discrete Uniform r.v.'s {#chapter-20-discrete-uniform-r.v.s .unnumbered}
+
+## Discrete Uniform RVs
+
+**Scenario:** There are $N$ possible outcomes, which are all equally
+likely.
+
+## Example
+
+::: example
+**Example 1**. *Examples of discrete uniform r.v.'s.*
+:::
+
+## Properties of discrete uniform RVs
