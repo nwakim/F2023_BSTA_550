@@ -4365,7 +4365,7 @@
     "href": "slides/12_Variance.html#back-to-our-hotel-example-from-chapter-11",
     "title": "Chapter 12: Variance of Discrete RVs",
     "section": "Back to our hotel example from Chapter 11",
-    "text": "Back to our hotel example from Chapter 11\n\n\n\n\nExample 10\n\n\nA tour group is planning a visit to the city of Minneapolis and needs to book 30 hotel rooms. The average price of a room is $200 with standard deviation $10. In addition, there is a 10% tourism tax for each room. What is the standard deviation of the cost for the 30 hotel rooms?"
+    "text": "Back to our hotel example from Chapter 11\n\n\n\n\nExample 10\n\n\nA tour group is planning a visit to the city of Minneapolis and needs to book 30 hotel rooms. The average price of a room is $200 with standard deviation $10. In addition, there is a 10% tourism tax for each room. What is the standard deviation of the cost for the 30 hotel rooms?\n\n\n\n\n\n\nChapter 12 Slides"
   },
   {
     "objectID": "slides/12_Variance.html#learning-objectives",
@@ -4484,7 +4484,7 @@
     "href": "slides/14_18_Discrete_RVs.html#example",
     "title": "Chapter 14, 15, 16, 19, 20: Some Important Discrete RVs",
     "section": "Example",
-    "text": "Example\n\nExample 1.   We throw darts at a dartboard until we hit the bullseye. Assume throws are independent and the probability of hitting the bullseye is 0.01 for each throw.\n\nWhat is the pmf for the number of throws until we hit the bullseye?\nSolution:\nWhat are the mean and variance for the number of throws until we hit the bullseye?\nSolution:\nFind the probability that our first bullseye:\n\nis on the fourth try\nSolution:\nis on one of the first four tries\nSolution:\nis after the fifth try\nSolution:\nis on one of the first fifty tries\nSolution:\nis after the \\(50^{th}\\) try, given that it did not happen on the first 20 tries.\nSolution:\n\nFind the expected number of misses until we hit the bullseye.\nSolution:"
+    "text": "Example\n\n\n\n\nExample 3\n\n\nWe throw darts at a dartboard until we hit the bullseye. Assume throws are independent and the probability of hitting the bullseye is 0.01 for each throw.\n\nWhat is the pmf for the number of throws until we hit the bullseye?\nWhat are the mean and variance for the number of throws until we hit the bullseye?\n\n\n\n\n\n\n\n\n\nExample 3\n\n\nWe throw darts at a dartboard until we hit the bullseye. Assume throws are independent and the probability of hitting the bullseye is 0.01 for each throw.\n\nFind the probability that our first bullseye:\n\nis on the fourth try*\nis on one of the first four tries\nis after the fifth try\nis on one of the first fifty tries\nis after the \\(50^{th}\\) try, given that it did not happen on the first 20 tries\n\n\n\n\n\n\n\nFind the probability that our first bullseye:\n\nis on the fourth try\nSolution:\nis on one of the first four tries\nSolution:\nis after the fifth try\nSolution:\nis on one of the first fifty tries\nSolution:\nis after the \\(50^{th}\\) try, given that it did not happen on the first 20 tries.\nSolution:\n\nFind the expected number of misses until we hit the bullseye."
   },
   {
     "objectID": "slides/14_18_Discrete_RVs.html#hypergeometric-rvs",
@@ -4498,7 +4498,7 @@
     "href": "slides/14_18_Discrete_RVs.html#example-3",
     "title": "Chapter 14, 15, 16, 19, 20: Some Important Discrete RVs",
     "section": "Example",
-    "text": "Example\n\nExample 1.   A wildlife biologist is using mark-recapture to research a wolf population. Suppose a specific study region is known to have 24 wolves, of which 11 have already been tagged. If 5 wolves are randomly captured, what is the probability that 3 of them have already been tagged?\nSolution:"
+    "text": "Example\n\nExample 1. A wildlife biologist is using mark-recapture to research a wolf population. Suppose a specific study region is known to have 24 wolves, of which 11 have already been tagged. If 5 wolves are randomly captured, what is the probability that 3 of them have already been tagged?\nSolution:"
   },
   {
     "objectID": "slides/14_18_Discrete_RVs.html#properties-of-hypergeometric-rvs",
@@ -4519,7 +4519,7 @@
     "href": "slides/14_18_Discrete_RVs.html#example-4",
     "title": "Chapter 14, 15, 16, 19, 20: Some Important Discrete RVs",
     "section": "Example",
-    "text": "Example\n\nExample 2.   Suppose a specific study region is known to have 2400 wolves, of which 1100 have already been tagged.\n\nIf 50 wolves are randomly captured, what is the probability that 20 of them have already been tagged?\nApproximate the probability in part (1) using the binomial distribution.\n\nSolution:"
+    "text": "Example\n\nExample 2. Suppose a specific study region is known to have 2400 wolves, of which 1100 have already been tagged.\n\nIf 50 wolves are randomly captured, what is the probability that 20 of them have already been tagged?\nApproximate the probability in part (1) using the binomial distribution.\n\nSolution:"
   },
   {
     "objectID": "slides/14_18_Discrete_RVs.html#discrete-uniform-rvs",
@@ -4583,5 +4583,12 @@
     "title": "Chapter 14 - 18",
     "section": "Properties of Binomial RVs",
     "text": "Properties of Binomial RVs"
+  },
+  {
+    "objectID": "weeks/week_05_sched.html#sec-wk5-resources",
+    "href": "weeks/week_05_sched.html#sec-wk5-resources",
+    "title": "Week 5",
+    "section": "Resources",
+    "text": "Resources\n\n\n\n\n\n\n\n\n\n\nChapter\nTopic\nSlides\nAnnotated Slides\nRecording\n\n\n\n\n12\nVariance of discrete RVs\n\n\n\n\n\n13\n\n\n\n\n\n\n14\nBernoulli RV\n\n\n\n\n\n15\nBinomial RV\n\n\n\n\n\n16\nGeometric RV\n\n\n\n\n\n19\nHypergeometric RV\n\n\n\n\n\n20\nDiscrete Uniform RV\n\n\n\n\n\n\nFor the slides, once they are opened, if you would like to print or save them as a PDF, the best way to do this is:\n\nClick on the icon with three horizontal bars on the bottom left of the browser.\nClick on “Tools” with the gear icon at the top of the sidebar.\nClick on “PDF Export Mode.”\nFrom there, you can print or save the PDF as you would normally from your internet browser."
   }
 ]
