@@ -15,27 +15,34 @@ format:
     width: 1955
     height: 1100
     footer: Chapter 12 Slides
+editor: 
+  markdown: 
+    wrap: 72
 ---
 
 ## Learning Objectives
+
+1.  Calculate the variance and standard deviation of discrete random
+    variables
+2.  Calculate the variance of sums of discrete random variables
+3.  Calculate the variance of functions of discrete random variables
 
 ## Let's start building the variance through expected values of functions
 
 ::: columns
 ::: {.column width="40%"}
 ::: example
-::: ex-title 
+::: ex-title
 Example 1
 :::
+
 ::: ex-cont
-Let $g$ be a function and let $g(x) = ax+b$, for real-valued constants $a$ and
-$b$. What is $\mathbb{E}[g(X)]$?
+Let $g$ be a function and let $g(x) = ax+b$, for real-valued constants
+$a$ and $b$. What is $\mathbb{E}[g(X)]$?
 :::
 :::
-
 :::
 :::
-
 
 ## What is the expected value of a function?
 
@@ -43,9 +50,10 @@ $b$. What is $\mathbb{E}[g(X)]$?
 ::: def-title
 Definition: Expected value of function of RV
 :::
+
 ::: def-cont
-For any function $g$ and discrete r.v. $X$, the expected value of $g(X)$ is
-$$\mathbb{E}[g(X)] = \sum_{\{all\ x\}}\ g(x) p_X(x).$$
+For any function $g$ and discrete r.v. $X$, the expected value of $g(X)$
+is $$\mathbb{E}[g(X)] = \sum_{\{all\ x\}}\ g(x) p_X(x).$$
 :::
 :::
 
@@ -57,15 +65,14 @@ $$\mathbb{E}[g(X)] = \sum_{\{all\ x\}}\ g(x) p_X(x).$$
 ::: ex-title
 Example 2
 :::
+
 ::: ex-cont
-Suppose you draw 2 cards from a standard deck of cards
-*with* replacement. Let $X$ be the number of hearts you draw.
+Suppose you draw 2 cards from a standard deck of cards *with*
+replacement. Let $X$ be the number of hearts you draw.
 
 1.  Find $\mathbb{E}[X^2]$.
-
 :::
 :::
-
 :::
 :::
 
@@ -77,14 +84,14 @@ Suppose you draw 2 cards from a standard deck of cards
 ::: ex-title
 Example 2
 :::
+
 ::: ex-cont
-Suppose you draw 2 cards from a standard deck of cards
-*with* replacement. Let $X$ be the number of hearts you draw.
+Suppose you draw 2 cards from a standard deck of cards *with*
+replacement. Let $X$ be the number of hearts you draw.
 
 2.  Find $\mathbb{E}\big[\big(X-\frac{1}{2}\big)^2\big]$.
 :::
 :::
-
 :::
 :::
 
@@ -94,9 +101,10 @@ Suppose you draw 2 cards from a standard deck of cards
 ::: def-title
 Definition: Variance of RV
 :::
+
 ::: def-cont
-The variance of a r.v. $X$,
-with (finite) expected value $\mu_X=\mathbb{E}[X]$ is
+The variance of a r.v. $X$, with (finite) expected value
+$\mu_X=\mathbb{E}[X]$ is
 $$\sigma_X^2=Var(X)=\mathbb{E}[(X-\mu_X)^2] = \mathbb{E}[(X-\mathbb{E}[X])^2].$$
 :::
 :::
@@ -105,9 +113,9 @@ $$\sigma_X^2=Var(X)=\mathbb{E}[(X-\mu_X)^2] = \mathbb{E}[(X-\mathbb{E}[X])^2].$$
 ::: def-title
 Definition: Standard deviation of RV
 :::
+
 ::: def-cont
-The standard
-deviation of a r.v. $X$ is
+The standard deviation of a r.v. $X$ is
 $$\sigma_X = SD(X) = \sqrt{\sigma_X^2}=\sqrt{Var(X)}.$$
 :::
 :::
@@ -122,25 +130,22 @@ definition? $(X-\mu_X)^2$
 
 -   Why not use $\mathbb{E}[|X-\mu_X|]$?
 
-
 ## Let's calculate the variance and prove it!
 
 ::: columns
 ::: {.column width="30%"}
 ::: proof1
 ::: proof-title
-Lemma 6: \"Computation formula\" for Variance
+Lemma 6: "Computation formula" for Variance
 :::
+
 ::: proof-cont
-The variance of a
-r.v. $X$, can be computed as
-$$\begin{align}
+The variance of a r.v. $X$, can be computed as $$\begin{align}
 \sigma_X^2 & =Var(X) \\ & = \mathbb{E}[X^2]-\mu_X^2 \\ & = \mathbb{E}[X^2] - (\mathbb{E}[X])^2
 \end{align}$$
 :::
 :::
 :::
-
 :::
 
 # (break) Some Important Variance and Expected Values Results
@@ -151,24 +156,24 @@ $$\begin{align}
 ::: proof-title
 Lemma 7
 :::
+
 ::: proof-cont
-For a r.v. $X$ and constants $a$ and $b$,
-$$Var(aX+b) = a^2Var(X).$$
-::: 
+For a r.v. $X$ and constants $a$ and $b$, $$Var(aX+b) = a^2Var(X).$$
+:::
 :::
 
 Proof will be exercise in homework. It's fun! In a mathy kinda way.
 
-
-## Important Results for Independent RVs
+## Important results for ***independent*** RVs
 
 ::: theorem
 ::: thm-title
 Theorem 8
 :::
+
 ::: thm-cont
-For independent r.v.'s $X$ and $Y$, and functions $g$
-and $h$, $$\mathbb{E}[g(X)h(Y)] = \mathbb{E}[g(X)]\mathbb{E}[h(Y)].$$
+For independent r.v.'s $X$ and $Y$, and functions $g$ and $h$,
+$$\mathbb{E}[g(X)h(Y)] = \mathbb{E}[g(X)]\mathbb{E}[h(Y)].$$
 :::
 :::
 
@@ -176,25 +181,23 @@ and $h$, $$\mathbb{E}[g(X)h(Y)] = \mathbb{E}[g(X)]\mathbb{E}[h(Y)].$$
 ::: prop-title
 Corollary 1
 :::
+
 ::: prop-cont
 For independent r.v.'s $X$ and $Y$,
 $$\mathbb{E}[XY] = \mathbb{E}[X]\mathbb{E}[Y].$$
 :::
 :::
 
-::: proof
-*Proof of Theorem [8](#E_indep_gXhY){reference-type="ref"
-reference="E_indep_gXhY"}.* ◻
-:::
-
-## Theorem
+## Variance of sum of independent discrete RVs
 
 ::: theorem
 ::: thm-title
 Theorem 9: Variance of sum of independent discrete r.v.'s
 :::
+
 ::: thm-cont
-For independent discrete r.v.'s $X_i$ and constants $a_i$, $i=1,2,\dots, n$,
+For independent discrete r.v.'s $X_i$ and constants $a_i$,
+$i=1,2,\dots, n$,
 $$Var\Bigg(\sum_{i=1}^n a_iX_i\Bigg) = \sum_{i=1}^n a_i^2Var(X_i).$$
 :::
 :::
@@ -205,9 +208,9 @@ $$Var\Bigg(\sum_{i=1}^n a_iX_i\Bigg) = \sum_{i=1}^n a_i^2Var(X_i).$$
 ::: prop-title
 Corollary 2
 :::
+
 ::: prop-cont
-For independent discrete r.v.'s $X_i$,
-$i=1,2,\dots, n$,
+For independent discrete r.v.'s $X_i$, $i=1,2,\dots, n$,
 $$Var\Bigg(\sum_{i=1}^n X_i\Bigg) = \sum_{i=1}^n Var(X_i).$$
 :::
 :::
@@ -218,9 +221,28 @@ Corollary 3
 :::
 
 ::: prop-cont
-For independent identically (i.i.d.) discrete r.v.'s
-$X_i$, $i=1,2,\dots, n$,
-$$Var\Bigg(\sum_{i=1}^n X_i\Bigg) = n Var(X_1).$$
+For independent identically (i.i.d.) discrete r.v.'s $X_i$,
+$i=1,2,\dots, n$, $$Var\Bigg(\sum_{i=1}^n X_i\Bigg) = n Var(X_1).$$
+:::
+:::
+
+## Let's think about our ghost problems again
+
+::: columns
+::: {.column width="40%"}
+::: example
+::: ex-title
+Example 3
+:::
+
+::: ex-cont
+The ghost is trick-or-treating at a different house now. In this case it
+is known that the bag of candy has 10 chocolates, 20 lollipops, and 30
+laffy taffies. The ghost grabs a handful of five pieces of candy. What
+is the variance for the number of chocolates the ghost takes? Let's
+solve this for the cases *with* and *without* replacement.
+:::
+:::
 :::
 :::
 
@@ -230,16 +252,18 @@ $$Var\Bigg(\sum_{i=1}^n X_i\Bigg) = n Var(X_1).$$
 ::: {.column width="40%"}
 ::: example
 ::: ex-title
-Example 10
+Example 4
 :::
+
 ::: ex-cont
-A tour group is planning a visit to the city of
-Minneapolis and needs to book 30 hotel rooms. The average price of a room
-is \$200 **with standard deviation \$10**. In addition, there is a 10%
-tourism tax for each room. What is the **standard deviation** of the
-cost for the 30 hotel rooms?
+A tour group is planning a visit to the city of Minneapolis and needs to
+book 30 hotel rooms. The average price of a room is \$200 **with
+standard deviation \$10**. In addition, there is a 10% tourism tax for
+each room. What is the **standard deviation** of the cost for the 30
+hotel rooms?
 :::
 :::
 
+Problem to do at home if we don't have enough time.
 :::
 :::

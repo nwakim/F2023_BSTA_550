@@ -2,7 +2,7 @@
 title: "Week 5"
 description: "Discrete random variables: variance and common families"
 date: "10/23/2023"
-date-modified: "10/18/2023"
+date-modified: "10/22/2023"
 categories: [""]
 format: 
   html:
@@ -30,15 +30,23 @@ editor_options:
 
 ## Resources {#sec-wk5-resources}
 
-| Chapter | Topic                    |                                Slides                                 |                                  Annotated Slides                                  |                           Recording                           |
-|-------------|-------------|:-------------:|:-----------------:|:-----------:|
-| 12      | Variance of discrete RVs | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
-| 13      |                          | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
-| 14      | Bernoulli RV             | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
-| 15      | Binomial RV              | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
-| 16      | Geometric RV             | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
-| 19      | Hypergeometric RV        | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
-| 20      | Discrete Uniform RV      | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
++-------------+--------------------------+---------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+---------------------------------------------------------------+
+| Chapter     | Topic                    | Slides                                                                                                  | Annotated Slides                                                                   | Recording                                                     |
++=============+==========================+:=======================================================================================================:+:==================================================================================:+:=============================================================:+
+| 12          | Variance of discrete RVs | [[{{< iconify ri slideshow-fill size=30px >}}](/slides/12_Variance.qmd)]{style="color:#f8f5f0;"}        | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
++-------------+--------------------------+---------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+---------------------------------------------------------------+
+| 13          |                          | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"}                                   | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
++-------------+--------------------------+---------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+---------------------------------------------------------------+
+| 14          | Bernoulli RV             | [[{{< iconify ri slideshow-fill size=30px >}}](/slides/14_18_Discrete_RVs.qmd)]{style="color:#f8f5f0;"} | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
+|             |                          |                                                                                                         |                                                                                    |                                                               |
+| 15          | Binomial RV              |                                                                                                         |                                                                                    |                                                               |
+|             |                          |                                                                                                         |                                                                                    |                                                               |
+| 16          | Geometric RV             |                                                                                                         |                                                                                    |                                                               |
+|             |                          |                                                                                                         |                                                                                    |                                                               |
+| 19          | Hypergeometric RV        |                                                                                                         |                                                                                    |                                                               |
+|             |                          |                                                                                                         |                                                                                    |                                                               |
+| 20          | Discrete Uniform RV      |                                                                                                         |                                                                                    |                                                               |
++-------------+--------------------------+---------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+---------------------------------------------------------------+
 
 For the slides, once they are opened, if you would like to print or save them as a PDF, the best way to do this is:
 
@@ -61,7 +69,21 @@ For the slides, once they are opened, if you would like to print or save them as
 
 -   Flipped classroom question
 
-    -   
+-   Office hours for this whole week are cancelled
+
+    -   Between my conference and a weekend trip, I won't be able to hold office hours this week
+
+-   On the Monday and Tuesday before the exam, I will hold virtual office hours
+
+    -   Monday, 10/30, 4-5pm
+
+    -   Tuesday, 10/31, 1:30-2:30pm
+
+    -   If you cannot make those hours and want to ask me questions, we can set up a short meeting for Monday or Tuesday
+
+-   I will also not be able to grade HW 4 until Monday (10/30)
+
+    -   I will post the solutions and videos for HW 4 on Friday (10/27)
 
 ## Statistician of the Week: Liz Hare
 

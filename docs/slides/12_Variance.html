@@ -354,9 +354,10 @@ Meike Niederhausen and Nicky Wakim
 <li><a href="#/break-some-important-variance-and-expected-values-results" id="/toc-break-some-important-variance-and-expected-values-results">(break) Some Important Variance and Expected Values Results</a>
 <ul>
 <li><a href="#/variance-of-a-function-with-a-single-rv" id="/toc-variance-of-a-function-with-a-single-rv">Variance of a function with a single RV</a></li>
-<li><a href="#/important-results-for-independent-rvs" id="/toc-important-results-for-independent-rvs">Important Results for Independent RVs</a></li>
-<li><a href="#/theorem" id="/toc-theorem">Theorem</a></li>
+<li><a href="#/important-results-for-independent-rvs" id="/toc-important-results-for-independent-rvs">Important results for <strong><em>independent</em></strong> RVs</a></li>
+<li><a href="#/variance-of-sum-of-independent-discrete-rvs" id="/toc-variance-of-sum-of-independent-discrete-rvs">Variance of sum of independent discrete RVs</a></li>
 <li><a href="#/corollaries" id="/toc-corollaries">Corollaries</a></li>
+<li><a href="#/lets-think-about-our-ghost-problems-again" id="/toc-lets-think-about-our-ghost-problems-again">Let’s think about our ghost problems again</a></li>
 <li><a href="#/back-to-our-hotel-example-from-chapter-11" id="/toc-back-to-our-hotel-example-from-chapter-11">Back to our hotel example from Chapter 11</a></li>
 </ul></li>
 </ul>
@@ -364,6 +365,11 @@ Meike Niederhausen and Nicky Wakim
 </section>
 <section id="learning-objectives" class="slide level2">
 <h2>Learning Objectives</h2>
+<ol type="1">
+<li>Calculate the variance and standard deviation of discrete random variables</li>
+<li>Calculate the variance of sums of discrete random variables</li>
+<li>Calculate the variance of functions of discrete random variables</li>
+</ol>
 </section>
 <section id="lets-start-building-the-variance-through-expected-values-of-functions" class="slide level2">
 <h2>Let’s start building the variance through expected values of functions</h2>
@@ -453,7 +459,7 @@ Meike Niederhausen and Nicky Wakim
 <div class="column" style="width:30%;">
 <div class="proof1">
 <div class="proof-title">
-<p>Lemma 6: "Computation formula" for Variance</p>
+<p>Lemma 6: “Computation formula” for Variance</p>
 </div>
 <div class="proof-cont">
 <p>The variance of a r.v. <span class="math inline">\(X\)</span>, can be computed as <span class="math display">\[\begin{align}
@@ -482,7 +488,7 @@ Meike Niederhausen and Nicky Wakim
 <p>Proof will be exercise in homework. It’s fun! In a mathy kinda way.</p>
 </section>
 <section id="important-results-for-independent-rvs" class="slide level2">
-<h2>Important Results for Independent RVs</h2>
+<h2>Important results for <strong><em>independent</em></strong> RVs</h2>
 <div class="theorem">
 <div class="thm-title">
 <p>Theorem 8</p>
@@ -499,12 +505,9 @@ Meike Niederhausen and Nicky Wakim
 <p>For independent r.v.’s <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>, <span class="math display">\[\mathbb{E}[XY] = \mathbb{E}[X]\mathbb{E}[Y].\]</span></p>
 </div>
 </div>
-<div class="proof">
-<p><span class="proof-title"><em>Proof</em>. </span><em>Proof of Theorem <a href="#/E_indep_gXhY" data-reference-type="ref" data-reference="E_indep_gXhY">8</a>.</em>&nbsp;◻</p>
-</div>
 </section>
-<section id="theorem" class="slide level2">
-<h2>Theorem</h2>
+<section id="variance-of-sum-of-independent-discrete-rvs" class="slide level2">
+<h2>Variance of sum of independent discrete RVs</h2>
 <div class="theorem">
 <div class="thm-title">
 <p>Theorem 9: Variance of sum of independent discrete r.v.’s</p>
@@ -533,18 +536,34 @@ Meike Niederhausen and Nicky Wakim
 </div>
 </div>
 </section>
+<section id="lets-think-about-our-ghost-problems-again" class="slide level2">
+<h2>Let’s think about our ghost problems again</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="example">
+<div class="ex-title">
+<p>Example 3</p>
+</div>
+<div class="ex-cont">
+<p>The ghost is trick-or-treating at a different house now. In this case it is known that the bag of candy has 10 chocolates, 20 lollipops, and 30 laffy taffies. The ghost grabs a handful of five pieces of candy. What is the variance for the number of chocolates the ghost takes? Let’s solve this for the cases <em>with</em> and <em>without</em> replacement.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
 <section id="back-to-our-hotel-example-from-chapter-11" class="slide level2">
 <h2>Back to our hotel example from Chapter 11</h2>
 <div class="columns">
 <div class="column" style="width:40%;">
 <div class="example">
 <div class="ex-title">
-<p>Example 10</p>
+<p>Example 4</p>
 </div>
 <div class="ex-cont">
 <p>A tour group is planning a visit to the city of Minneapolis and needs to book 30 hotel rooms. The average price of a room is $200 <strong>with standard deviation $10</strong>. In addition, there is a 10% tourism tax for each room. What is the <strong>standard deviation</strong> of the cost for the 30 hotel rooms?</p>
 </div>
 </div>
+<p>Problem to do at home if we don’t have enough time.</p>
 </div>
 </div>
 

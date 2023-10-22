@@ -346,55 +346,85 @@ Meike Niederhausen and Nicky Wakim
 <li><a href="#/learning-objectives" id="/toc-learning-objectives">Learning Objectives</a></li>
 <li><a href="#/chapter-14-bernoulli-rvs" id="/toc-chapter-14-bernoulli-rvs">Chapter 14: Bernoulli RVs</a>
 <ul>
-<li><a href="#/bernoulli-rv" id="/toc-bernoulli-rv">Bernoulli RV</a></li>
 <li><a href="#/properties-of-bernoulli-rvs" id="/toc-properties-of-bernoulli-rvs">Properties of Bernoulli RVs</a></li>
-<li><a href="#/example-1" id="/toc-example-1">Example 1</a></li>
-<li><a href="#/example-2" id="/toc-example-2">Example 2</a></li>
+<li><a href="#/bernoulli-example-1" id="/toc-bernoulli-example-1">Bernoulli Example 1</a></li>
 </ul></li>
 <li><a href="#/chapter-15-binomial-r.v.s" id="/toc-chapter-15-binomial-r.v.s">Chapter 15: Binomial RVs</a>
 <ul>
-<li><a href="#/meh" id="/toc-meh">meh</a></li>
 <li><a href="#/properties-of-binomial-rvs" id="/toc-properties-of-binomial-rvs">Properties of Binomial RVs</a></li>
+<li><a href="#/bernoulli-to-binomial" id="/toc-bernoulli-to-binomial">Bernoulli to Binomial</a></li>
 </ul></li>
-<li><a href="#/chapter-16-geometric-r.v.s" id="/toc-chapter-16-geometric-r.v.s">Chapter 16: Geometric r.v.’s</a>
+<li><a href="#/chapter-16-geometric-r.v.s" id="/toc-chapter-16-geometric-r.v.s">Chapter 16: Geometric RVs</a>
 <ul>
 <li><a href="#/geometric-rvs" id="/toc-geometric-rvs">Geometric RVs</a></li>
-<li><a href="#/example" id="/toc-example">Example</a></li>
+<li><a href="#/memoryless-property-for-geometric-rvs" id="/toc-memoryless-property-for-geometric-rvs">Memoryless property for Geometric RVs</a></li>
+<li><a href="#/bullseye-16" id="/toc-bullseye-16">Bullseye (1/6)</a></li>
+<li><a href="#/bullseye-26" id="/toc-bullseye-26">Bullseye (2/6)</a></li>
+<li><a href="#/bullseye-36" id="/toc-bullseye-36">Bullseye (3/6)</a></li>
+<li><a href="#/bullseye-46" id="/toc-bullseye-46">Bullseye (4/6)</a></li>
+<li><a href="#/bullseye-56" id="/toc-bullseye-56">Bullseye (5/6)</a></li>
+<li><a href="#/bullseye-66" id="/toc-bullseye-66">Bullseye (6/6)</a></li>
 </ul></li>
-<li><a href="#/chapter-19-hypergeometric-r.v.s" id="/toc-chapter-19-hypergeometric-r.v.s">Chapter 19: Hypergeometric r.v.’s</a>
+<li><a href="#/chapter-19-hypergeometric-r.v.s" id="/toc-chapter-19-hypergeometric-r.v.s">Chapter 19: Hypergeometric RVs</a>
 <ul>
 <li><a href="#/hypergeometric-rvs" id="/toc-hypergeometric-rvs">Hypergeometric RVs</a></li>
-<li><a href="#/example-3" id="/toc-example-3">Example</a></li>
-<li><a href="#/properties-of-hypergeometric-rvs" id="/toc-properties-of-hypergeometric-rvs">Properties of Hypergeometric RVs</a></li>
+<li><a href="#/wolf-population" id="/toc-wolf-population">Wolf population</a></li>
 <li><a href="#/hypergeometric-vs.-binomial-rvs" id="/toc-hypergeometric-vs.-binomial-rvs">Hypergeometric vs.&nbsp;Binomial RVs</a></li>
-<li><a href="#/example-4" id="/toc-example-4">Example</a></li>
+<li><a href="#/wolf-population-revisited" id="/toc-wolf-population-revisited">Wolf population revisited</a></li>
 </ul></li>
-<li><a href="#/chapter-20-discrete-uniform-r.v.s" id="/toc-chapter-20-discrete-uniform-r.v.s">Chapter 20: Discrete Uniform r.v.’s</a>
+<li><a href="#/chapter-20-discrete-uniform-r.v.s" id="/toc-chapter-20-discrete-uniform-r.v.s">Chapter 20: Discrete Uniform RVs</a>
 <ul>
 <li><a href="#/discrete-uniform-rvs" id="/toc-discrete-uniform-rvs">Discrete Uniform RVs</a></li>
-<li><a href="#/example-5" id="/toc-example-5">Example</a></li>
-<li><a href="#/properties-of-discrete-uniform-rvs" id="/toc-properties-of-discrete-uniform-rvs">Properties of discrete uniform RVs</a></li>
+<li><a href="#/what-discrete-uniform-rvs-have-we-seen-already" id="/toc-what-discrete-uniform-rvs-have-we-seen-already">What discrete uniform RVs have we seen already?</a></li>
 </ul></li>
 </ul>
 </nav>
 </section>
 <section id="learning-objectives" class="slide level2">
 <h2>Learning Objectives</h2>
+<ol type="1">
+<li>Distinguish between Bernoulli, Binomial, Geometric, Hypergeometric, and Discrete Uniform distributions when reading a story.</li>
+<li>Identify the variable and the parameters in a story, and state what the variable and parameters mean.</li>
+<li>Use the formulas for the pmf/CDF, expected value, and variance to answer questions and find probabilities.</li>
+</ol>
 </section>
 <section>
 <section id="chapter-14-bernoulli-rvs" class="title-slide slide level1 center">
 <h1>Chapter 14: Bernoulli RVs</h1>
 
 </section>
-<section id="bernoulli-rv" class="slide level2">
-<h2>Bernoulli RV</h2>
-<p><strong>Scenario:</strong> One trial, with outcome success or failure.</p>
-</section>
 <section id="properties-of-bernoulli-rvs" class="slide level2">
 <h2>Properties of Bernoulli RVs</h2>
+<ul>
+<li><strong>Scenario:</strong> One trial, with outcome success or failure</li>
+<li>Shorthand: <span class="math inline">\(X \sim \text{Bernoulli}(p)\)</span></li>
+</ul>
+<p><span class="math display">\[
+X = \left\{
+        \begin{array}{ll}
+            1 &amp; \quad \mathrm{with\ probability}\ p \quad \\
+            0 &amp; \quad \mathrm{with\ probability}\ 1-p \quad
+        \end{array}
+    \right.
+\]</span></p>
+<p><span class="math display">\[
+p_X(x) = P(X=x) = p^x(1-p)^{1-x} \text{ for } x=0,1
+\]</span></p>
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;"><span class="math inline">\(\text{E}(X)\)</span></td>
+<td><span class="math inline">\(p\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span class="math inline">\(\text{Var}(X)\)</span></td>
+<td><span class="math inline">\(pq = p(1-p)\)</span></td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="example-1" class="slide level2">
-<h2>Example 1</h2>
+<section id="bernoulli-example-1" class="slide level2">
+<h2>Bernoulli Example 1</h2>
 <div class="columns">
 <div class="column" style="width:35%;">
 <div class="example">
@@ -412,9 +442,39 @@ Meike Niederhausen and Nicky Wakim
 </div>
 </div>
 </div>
+</section></section>
+<section>
+<section id="chapter-15-binomial-r.v.s" class="title-slide slide level1 unnumbered center">
+<h1>Chapter 15: Binomial RVs</h1>
+
 </section>
-<section id="example-2" class="slide level2">
-<h2>Example 2</h2>
+<section id="properties-of-binomial-rvs" class="slide level2">
+<h2>Properties of Binomial RVs</h2>
+<ul>
+<li><p><strong>Scenario:</strong> There are <span class="math inline">\(n\)</span> independent trials, each resulting in a success or failure, with constant probability, <span class="math inline">\(p\)</span>, in each trial. We are counting the number of successes (or failures).</p></li>
+<li><p>Shorthand: <span class="math inline">\(X \sim \text{Binomial}(n, p)\)</span></p></li>
+</ul>
+<p><span class="math display">\[
+X = \text{Number of successes of } n \text{ independent trials}
+\]</span></p>
+<p><span class="math display">\[
+p_X(x) = P(X=x) = {n \choose x}p^x(1-p)^{n-x} \text{ for } x=0,1,2,  ..., n
+\]</span></p>
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;"><span class="math inline">\(\text{E}(X)\)</span></td>
+<td><span class="math inline">\(np\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span class="math inline">\(\text{Var}(X)\)</span></td>
+<td><span class="math inline">\(pq = np(1-p)\)</span></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="bernoulli-to-binomial" class="slide level2">
+<h2>Bernoulli to Binomial</h2>
 <div class="columns">
 <div class="column" style="width:35%;">
 <div class="example">
@@ -434,28 +494,84 @@ Meike Niederhausen and Nicky Wakim
 </div>
 </section></section>
 <section>
-<section id="chapter-15-binomial-r.v.s" class="title-slide slide level1 unnumbered center">
-<h1>Chapter 15: Binomial RVs</h1>
-
-</section>
-<section id="meh" class="slide level2">
-<h2>meh</h2>
-<p><strong>Scenario:</strong> There are <span class="math inline">\(n\)</span> independent trials, each resulting in a success or failure, with constant probability in each trial. We are counting the number of successes (or failures).</p>
-</section>
-<section id="properties-of-binomial-rvs" class="slide level2">
-<h2>Properties of Binomial RVs</h2>
-</section></section>
-<section>
 <section id="chapter-16-geometric-r.v.s" class="title-slide slide level1 unnumbered center">
-<h1>Chapter 16: Geometric r.v.’s</h1>
+<h1>Chapter 16: Geometric RVs</h1>
 
 </section>
 <section id="geometric-rvs" class="slide level2">
 <h2>Geometric RVs</h2>
-<p><strong>Scenario:</strong> There are repeated independent trials, each resulting in a success or failure, with constant probability of success for each trial. We are counting the number of trials until the first success.</p>
+<ul>
+<li><p><strong>Scenario:</strong> There are repeated independent trials, each resulting in a success or failure, with constant probability of success for each trial. We are counting the number of trials until the first success.</p></li>
+<li><p>Shorthand: <span class="math inline">\(X \sim \text{Geo}(p)\)</span> or <span class="math inline">\(X \sim \text{Geometric}(p)\)</span> or <span class="math inline">\(X \sim \text{G}(p)\)</span></p></li>
+</ul>
+<table style="width:81%;">
+<colgroup>
+<col style="width: 38%">
+<col style="width: 41%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><span class="math inline">\(X =\)</span> Number of trials needed for first success (count <span class="math inline">\(x\)</span> <em>includes</em> the success)</th>
+<th style="text-align: center;"><span class="math inline">\(X =\)</span> Number of failures before first success (count <span class="math inline">\(x\)</span> <em>does not include</em> the success)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><p><span class="math inline">\(p_X ( x )  = P(X=x) = (1-p)^{x-1}p\)</span></p>
+<p>for <span class="math inline">\(x=1,2, 3,...\)</span></p>
+<p><span class="math inline">\(E(X)=\dfrac{1}{p}\)</span></p>
+<p><span class="math display">\[
+{
+V
+a
+r
+}(X) = \dfrac{1-p}{p^2}\]</span></p></td>
+<td style="text-align: center;"><p><span class="math inline">\(p_X ( x) = P(X=x) = (1-p)^{x}p\)</span></p>
+<p>for <span class="math inline">\(x=0, 1,2,...\)</span></p>
+<p><span class="math inline">\(E(X)=\dfrac{1-p}{p}\)</span></p>
+<p><span class="math display">\[
+{
+V
+a
+r}(X) = \dfrac{1-p}{p^2}\]</span></p></td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="example" class="slide level2">
-<h2>Example</h2>
+<section id="memoryless-property-for-geometric-rvs" class="slide level2">
+<h2>Memoryless property for Geometric RVs</h2>
+<p><span class="math inline">\(P(X &gt; k+j |X &gt; j) = P(X &gt; k)\)</span> <span class="math display">\[ P(X &gt; k+j |X &gt; j) = \dfrac{P(X&gt;k+j \text{ and } X&gt;j)}{P(X&gt;j)} = \dfrac{P(X&gt;k+j)}{P(X&gt;j)} = \dfrac{(1-p)^{k+j}}{(1-p)^{j}} = (1-p)^{k} \]</span></p>
+</section>
+<section id="bullseye-16" class="slide level2">
+<h2>Bullseye (1/6)</h2>
+<div class="columns">
+<div class="column" style="width:100%;">
+<div class="example">
+<div class="ex-title">
+<p>Example 3</p>
+</div>
+<div class="ex-cont">
+<p>We throw darts at a dartboard until we hit the bullseye. Assume throws are independent and the probability of hitting the bullseye is 0.01 for each throw.</p>
+<ol type="1">
+<li><p>What is the pmf for the number of throws needed to hit the bullseye?</p></li>
+<li><p>What are the mean and variance for the number of throws needed to hit the bullseye?</p></li>
+<li><p>Find the probability that our first bullseye:</p>
+<ul>
+<li><p>is on the fourth try</p></li>
+<li><p>is on one of the first four tries</p></li>
+<li><p>is after the fifth try</p></li>
+<li><p>is on one of the first fifty tries</p></li>
+<li><p>is after the <span class="math inline">\(50^{th}\)</span> try, given that it did not happen on the first 20 tries</p></li>
+</ul></li>
+<li><p>Find the expected number of misses until we hit the bullseye.</p></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="bullseye-26" class="slide level2">
+<h2>Bullseye (2/6)</h2>
 <div class="columns">
 <div class="column" style="width:35%;">
 <div class="example">
@@ -465,13 +581,33 @@ Meike Niederhausen and Nicky Wakim
 <div class="ex-cont">
 <p>We throw darts at a dartboard until we hit the bullseye. Assume throws are independent and the probability of hitting the bullseye is 0.01 for each throw.</p>
 <ol type="1">
-<li><p>What is the pmf for the number of throws until we hit the bullseye?</p></li>
-<li><p>What are the mean and variance for the number of throws until we hit the bullseye?</p></li>
+<li>What is the pmf for the number of throws needed to hit the bullseye?</li>
 </ol>
 </div>
 </div>
 </div>
 </div>
+</section>
+<section id="bullseye-36" class="slide level2">
+<h2>Bullseye (3/6)</h2>
+<div class="columns">
+<div class="column" style="width:35%;">
+<div class="example">
+<div class="ex-title">
+<p>Example 3</p>
+</div>
+<div class="ex-cont">
+<p>We throw darts at a dartboard until we hit the bullseye. Assume throws are independent and the probability of hitting the bullseye is 0.01 for each throw.</p>
+<ol start="2" type="1">
+<li>What are the mean and variance for the number of throws needed to hit the bullseye?</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="bullseye-46" class="slide level2">
+<h2>Bullseye (4/6)</h2>
 <div class="columns">
 <div class="column" style="width:35%;">
 <div class="example">
@@ -481,63 +617,101 @@ Meike Niederhausen and Nicky Wakim
 <div class="ex-cont">
 <p>We throw darts at a dartboard until we hit the bullseye. Assume throws are independent and the probability of hitting the bullseye is 0.01 for each throw.</p>
 <ol start="3" type="1">
-<li><p><em>Find the probability that our first bullseye:</em></p>
-<ol start="3" type="1">
-<li><p>is on the fourth try*</p></li>
-<li><p><em>is on one of the first four tries</em></p></li>
-<li><p><em>is after the fifth try</em></p></li>
-<li><p><em>is on one of the first fifty tries</em></p></li>
-<li><p><em>is after the</em> <span class="math inline">\(50^{th}\)</span> try, given that it did not happen on the first 20 tries</p></li>
-</ol></li>
+<li><p>Find the probability that our first bullseye:</p>
+<ul>
+<li><p>is on the fourth try</p></li>
+<li><p>is on one of the first four tries</p></li>
+<li><p>is after the fifth try</p></li>
+</ul></li>
 </ol>
 </div>
 </div>
 </div>
 </div>
+</section>
+<section id="bullseye-56" class="slide level2">
+<h2>Bullseye (5/6)</h2>
+<div class="columns">
+<div class="column" style="width:35%;">
+<div class="example">
+<div class="ex-title">
+<p>Example 3</p>
+</div>
+<div class="ex-cont">
+<p>We throw darts at a dartboard until we hit the bullseye. Assume throws are independent and the probability of hitting the bullseye is 0.01 for each throw.</p>
 <ol start="3" type="1">
-<li><p><em>Find the probability that our first bullseye:</em></p>
-<ol type="1">
-<li><p><em>is on the fourth try</em></p>
-<p><strong><em>Solution:</em></strong></p></li>
-<li><p><em>is on one of the first four tries</em></p>
-<p><strong><em>Solution:</em></strong></p></li>
-<li><p><em>is after the fifth try</em></p>
-<p><strong><em>Solution:</em></strong></p></li>
-<li><p><em>is on one of the first fifty tries</em></p>
-<p><strong><em>Solution:</em></strong></p></li>
-<li><p><em>is after the</em> <span class="math inline">\(50^{th}\)</span> try, given that it did not happen on the first 20 tries.</p>
-<p><strong><em>Solution:</em></strong></p></li>
-</ol></li>
-<li><p><em>Find the expected number of misses until we hit the bullseye.</em></p></li>
+<li><p>Find the probability that our first bullseye:</p>
+<ul>
+<li><p>is on one of the first fifty tries</p></li>
+<li><p>is after the <span class="math inline">\(50^{th}\)</span> try, given that it did not happen on the first 20 tries</p></li>
+</ul></li>
 </ol>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="bullseye-66" class="slide level2">
+<h2>Bullseye (6/6)</h2>
+<div class="columns">
+<div class="column" style="width:35%;">
+<div class="example">
+<div class="ex-title">
+<p>Example 3</p>
+</div>
+<div class="ex-cont">
+<p>We throw darts at a dartboard until we hit the bullseye. Assume throws are independent and the probability of hitting the bullseye is 0.01 for each throw.</p>
+<ol start="4" type="1">
+<li>Find the expected number of misses until we hit the bullseye.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
 </section></section>
 <section>
 <section id="chapter-19-hypergeometric-r.v.s" class="title-slide slide level1 unnumbered center">
-<h1>Chapter 19: Hypergeometric r.v.’s</h1>
+<h1>Chapter 19: Hypergeometric RVs</h1>
 
 </section>
 <section id="hypergeometric-rvs" class="slide level2">
 <h2>Hypergeometric RVs</h2>
-<p><strong>Scenario:</strong> There are a fixed number of successes and failures (which are known in advance), from which we make <span class="math inline">\(n\)</span> draws without replacement. We are counting the number of successes from the <span class="math inline">\(n\)</span> trials.</p>
-</section>
-<section id="example-3" class="slide level2">
-<h2>Example</h2>
-<div class="example">
-<p><strong>Example 1</strong>. <em>A wildlife biologist is using mark-recapture to research a wolf population. Suppose a specific study region is known to have 24 wolves, of which 11 have already been tagged. If 5 wolves are randomly captured, what is the probability that 3 of them have already been tagged?</em></p>
-<p><strong><em>Solution:</em></strong></p>
-</div>
-</section>
-<section id="properties-of-hypergeometric-rvs" class="slide level2">
-<h2>Properties of Hypergeometric RVs</h2>
 <ul>
-<li><p>There is a finite population of <span class="math inline">\(N\)</span> items.</p></li>
-<li><p>Each item in the population is either a success or a failure, and there are <span class="math inline">\(M\)</span> successes total.</p></li>
-<li><p>We randomly select (sample) <span class="math inline">\(n\)</span> items from the population.</p></li>
+<li><strong>Scenario:</strong> There are a fixed number of successes and failures (which are known in advance), from which we make <span class="math inline">\(n\)</span> draws without replacement. We are counting the number of successes from the <span class="math inline">\(n\)</span> trials.
+<ul>
+<li>There is a finite population of <span class="math inline">\(N\)</span> items</li>
+<li>Each item in the population is either a success or a failure, and there are <span class="math inline">\(M\)</span> successes total.</li>
+<li>We randomly select (sample) <span class="math inline">\(n\)</span> items from the population.</li>
+</ul></li>
+<li>Shorthand: <span class="math inline">\(X \sim \text{Hypergeo}(M, N, n)\)</span></li>
 </ul>
+<p><span class="math display">\[
+X = \text{Number of successes in } n \text{ draws}
+\]</span></p>
+<p><span class="math display">\[
+p_X(x) = P(X=x) = \dfrac{{M \choose x}{N-M \choose n-x}}{{N \choose n}} \text{ for } x \text{ integer-valued } \max(0, n-(N-M)) \leq x \leq \min(n, M)
+\]</span></p>
+<p><span class="math display">\[\text{E}(X) =\dfrac{nM}{N}\]</span></p>
+<p><span class="math display">\[\text{Var}(X) = n \dfrac{M}{N} \bigg(1- \dfrac{M}{N} \bigg)\bigg(\dfrac{N-n}{N-1} \bigg)\]</span></p>
+</section>
+<section id="wolf-population" class="slide level2">
+<h2>Wolf population</h2>
+<div class="columns">
+<div class="column" style="width:35%;">
+<div class="example">
+<div class="ex-title">
+<p>Example 4</p>
+</div>
+<div class="ex-cont">
+<p>A wildlife biologist is using mark-recapture to research a wolf population. Suppose a specific study region is known to have 24 wolves, of which 11 have already been tagged. If 5 wolves are randomly captured, what is the probability that 3 of them have already been tagged?</p>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="hypergeometric-vs.-binomial-rvs" class="slide level2">
 <h2>Hypergeometric vs.&nbsp;Binomial RVs</h2>
-<p>Suppose a hypergeometric r.v. <span class="math inline">\(X\)</span> has the following properties:</p>
+<p>Suppose a hypergeometric RV <span class="math inline">\(X\)</span> has the following properties:</p>
 <ul>
 <li><p>the population size <span class="math inline">\(N\)</span> is really big,</p></li>
 <li><p>the number of successes <span class="math inline">\(M\)</span> in the population is relatively large,</p>
@@ -548,37 +722,62 @@ Meike Niederhausen and Nicky Wakim
 </ul>
 <p>Then, in this case, making <span class="math inline">\(n\)</span> draws from the population doesn’t change the probability of success much, and the hypergeometric r.v. can be approximated by a binomial r.v.</p>
 </section>
-<section id="example-4" class="slide level2">
-<h2>Example</h2>
+<section id="wolf-population-revisited" class="slide level2">
+<h2>Wolf population revisited</h2>
+<div class="columns">
+<div class="column" style="width:28%;">
 <div class="example">
-<p><strong>Example 2</strong>. <em>Suppose a specific study region is known to have 2400 wolves, of which 1100 have already been tagged.</em></p>
+<div class="ex-title">
+<p>Example 5</p>
+</div>
+<div class="ex-cont">
+<p>Suppose a specific study region is known to have 2400 wolves, of which 1100 have already been tagged.</p>
 <ol type="1">
-<li><p><em>If 50 wolves are randomly captured, what is the probability that 20 of them have already been tagged?</em></p></li>
-<li><p><em>Approximate the probability in part (1) using the binomial distribution.</em></p></li>
+<li><p>If 50 wolves are randomly captured, what is the probability that 20 of them have already been tagged?</p></li>
+<li><p>Approximate the probability in part (1) using the binomial distribution.</p></li>
 </ol>
-<p><strong><em>Solution:</em></strong></p>
+</div>
+</div>
+</div>
 </div>
 </section></section>
 <section>
 <section id="chapter-20-discrete-uniform-r.v.s" class="title-slide slide level1 unnumbered center">
-<h1>Chapter 20: Discrete Uniform r.v.’s</h1>
+<h1>Chapter 20: Discrete Uniform RVs</h1>
 
 </section>
 <section id="discrete-uniform-rvs" class="slide level2">
 <h2>Discrete Uniform RVs</h2>
-<p><strong>Scenario:</strong> There are <span class="math inline">\(N\)</span> possible outcomes, which are all equally likely.</p>
+<ul>
+<li><strong>Scenario:</strong> There are <span class="math inline">\(N\)</span> possible outcomes, which are all equally likely.</li>
+<li>Shorthand: <span class="math inline">\(X \sim \text{Uniform}(N)\)</span></li>
+</ul>
+<p><span class="math display">\[
+X = \text{Outcome of interest, with } x=1, 2, ..., N
+\]</span></p>
+<p><span class="math display">\[
+p_X(x) = P(X=x) = \dfrac{1}{N} \text{ for } x=1, 2, 3, ..., N
+\]</span></p>
+<p><span class="math display">\[\text{E}(X) =\dfrac{N+1}{2}\]</span></p>
+<p><span class="math display">\[\text{Var}(X) = \dfrac{N^2 -1}{12}\]</span></p>
 </section>
-<section id="example-5" class="slide level2">
-<h2>Example</h2>
+<section id="what-discrete-uniform-rvs-have-we-seen-already" class="slide level2">
+<h2>What discrete uniform RVs have we seen already?</h2>
+<div class="columns">
+<div class="column" style="width:35%;">
 <div class="example">
-<p><strong>Example 1</strong>. <em>Examples of discrete uniform r.v.’s.</em></p>
+<div class="ex-title">
+<p>Example 6</p>
 </div>
-</section>
-<section id="properties-of-discrete-uniform-rvs" class="slide level2">
-<h2>Properties of discrete uniform RVs</h2>
+<div class="ex-cont">
+<p>Examples of discrete uniform RVs</p>
+</div>
+</div>
+</div>
+</div>
 
 <div class="footer footer-default">
-<p>Chapter 14-20 Slides</p>
+<p>Chapter 14-16, 19-20 Slides</p>
 </div>
 </section></section>
     </div>

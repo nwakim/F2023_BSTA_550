@@ -14,7 +14,7 @@ format:
     show-slide-number: all
     width: 1955
     height: 1100
-    footer: Chapter 14-20 Slides
+    footer: Chapter 14-16, 19-20 Slides
 editor: 
   markdown: 
     wrap: 72
@@ -22,15 +22,39 @@ editor:
 
 ## Learning Objectives
 
+1.  Distinguish between Bernoulli, Binomial, Geometric, Hypergeometric,
+    and Discrete Uniform distributions when reading a story.
+2.  Identify the variable and the parameters in a story, and state what
+    the variable and parameters mean.
+3.  Use the formulas for the pmf/CDF, expected value, and variance to
+    answer questions and find probabilities.
+
 # Chapter 14: Bernoulli RVs
-
-## Bernoulli RV
-
-**Scenario:** One trial, with outcome success or failure.
 
 ## Properties of Bernoulli RVs
 
-## Example 1
+-   **Scenario:** One trial, with outcome success or failure
+-   Shorthand: $X \sim \text{Bernoulli}(p)$
+
+$$
+X = \left\{
+        \begin{array}{ll}
+            1 & \quad \mathrm{with\ probability}\ p \quad \\
+            0 & \quad \mathrm{with\ probability}\ 1-p \quad
+        \end{array}
+    \right.
+$$
+
+$$
+p_X(x) = P(X=x) = p^x(1-p)^{1-x} \text{ for } x=0,1
+$$
+
+|                 |               |
+|----------------:|---------------|
+|   $\text{E}(X)$ | $p$           |
+| $\text{Var}(X)$ | $pq = p(1-p)$ |
+
+## Bernoulli Example 1
 
 ::: columns
 ::: {.column width="35%"}
@@ -52,7 +76,30 @@ Example 1
 :::
 :::
 
-## Example 2
+# Chapter 15: Binomial RVs {#chapter-15-binomial-r.v.s .unnumbered}
+
+## Properties of Binomial RVs
+
+-   **Scenario:** There are $n$ independent trials, each resulting in a
+    success or failure, with constant probability, $p$, in each trial.
+    We are counting the number of successes (or failures).
+
+-   Shorthand: $X \sim \text{Binomial}(n, p)$
+
+$$
+X = \text{Number of successes of } n \text{ independent trials}
+$$
+
+$$
+p_X(x) = P(X=x) = {n \choose x}p^x(1-p)^{n-x} \text{ for } x=0,1,2,  ..., n
+$$
+
+|                 |                |
+|----------------:|----------------|
+|   $\text{E}(X)$ | $np$           |
+| $\text{Var}(X)$ | $pq = np(1-p)$ |
+
+## Bernoulli to Binomial
 
 ::: columns
 ::: {.column width="35%"}
@@ -74,25 +121,83 @@ Example 2
 :::
 :::
 
-# Chapter 15: Binomial RVs {#chapter-15-binomial-r.v.s .unnumbered}
-
-## meh
-
-**Scenario:** There are $n$ independent trials, each resulting in a
-success or failure, with constant probability in each trial. We are
-counting the number of successes (or failures).
-
-## Properties of Binomial RVs
-
-# Chapter 16: Geometric r.v.'s {#chapter-16-geometric-r.v.s .unnumbered}
+# Chapter 16: Geometric RVs {#chapter-16-geometric-r.v.s .unnumbered}
 
 ## Geometric RVs
 
-**Scenario:** There are repeated independent trials, each resulting in a
-success or failure, with constant probability of success for each trial.
-We are counting the number of trials until the first success.
+-   **Scenario:** There are repeated independent trials, each resulting
+    in a success or failure, with constant probability of success for
+    each trial. We are counting the number of trials until the first
+    success.
 
-## Example
+-   Shorthand: $X \sim \text{Geo}(p)$ or $X \sim \text{Geometric}(p)$ or
+    $X \sim \text{G}(p)$
+
++---------------------------+-----------------------------+
+| $X =$ Number of trials    | $X =$ Number of failures    |
+| needed for first success  | before first success (count |
+| (count $x$ *includes* the | $x$ *does not include* the  |
+| success)                  | success)                    |
++:=========================:+:===========================:+
+| $p_X ( x )                | $p_X                        |
+|  = P(X=x) = (1-p)^{x-1}p$ | ( x) = P(X=x) = (1-p)^{x}p$ |
+|                           |                             |
+| for $x=1,2, 3,...$        | for $x=0, 1,2,...$          |
+|                           |                             |
+| $E(X)=\dfrac{1}{p}$       | $E(X)=\dfrac{1-p}{p}$       |
+|                           |                             |
+| $$                        | $$                          |
+| {                         | {                           |
+| V                         | V                           |
+| a                         | a                           |
+| r                         | r}(X) = \dfrac{1-p}{p^2}$$  |
+| }(X) = \dfrac{1-p}{p^2}$$ |                             |
++---------------------------+-----------------------------+
+
+## Memoryless property for Geometric RVs
+
+$P(X > k+j |X > j) = P(X > k)$
+$$ P(X > k+j |X > j) = \dfrac{P(X>k+j \text{ and } X>j)}{P(X>j)} = \dfrac{P(X>k+j)}{P(X>j)} = \dfrac{(1-p)^{k+j}}{(1-p)^{j}} = (1-p)^{k} $$
+
+## Bullseye (1/6)
+
+::: columns
+::: {.column width="100%"}
+::: example
+::: ex-title
+Example 3
+:::
+
+::: ex-cont
+We throw darts at a dartboard until we hit the bullseye. Assume throws
+are independent and the probability of hitting the bullseye is 0.01 for
+each throw.
+
+1.  What is the pmf for the number of throws needed to hit the bullseye?
+
+2.  What are the mean and variance for the number of throws needed to
+    hit the bullseye?
+
+3.  Find the probability that our first bullseye:
+
+    -   is on the fourth try
+
+    -   is on one of the first four tries
+
+    -   is after the fifth try
+
+    -   is on one of the first fifty tries
+
+    -   is after the $50^{th}$ try, given that it did not happen on the
+        first 20 tries
+
+4.  Find the expected number of misses until we hit the bullseye.
+:::
+:::
+:::
+:::
+
+## Bullseye (2/6)
 
 ::: columns
 ::: {.column width="35%"}
@@ -106,14 +211,13 @@ We throw darts at a dartboard until we hit the bullseye. Assume throws
 are independent and the probability of hitting the bullseye is 0.01 for
 each throw.
 
-1.  What is the pmf for the number of throws until we hit the bullseye?
+1.  What is the pmf for the number of throws needed to hit the bullseye?
+:::
+:::
+:::
+:::
 
-2.  What are the mean and variance for the number of throws until we hit
-    the bullseye?
-:::
-:::
-:::
-:::
+## Bullseye (3/6)
 
 ::: columns
 ::: {.column width="35%"}
@@ -127,80 +231,133 @@ We throw darts at a dartboard until we hit the bullseye. Assume throws
 are independent and the probability of hitting the bullseye is 0.01 for
 each throw.
 
-3.  *Find the probability that our first bullseye:*
-
-    3.  is on the fourth try\*
-
-    4.  *is on one of the first four tries*
-
-    5.  *is after the fifth try*
-
-    6.  *is on one of the first fifty tries*
-
-    7.  *is after the* $50^{th}$ try, given that it did not happen on
-        the first 20 tries
+2.  What are the mean and variance for the number of throws needed to
+    hit the bullseye?
 :::
 :::
 :::
 :::
 
-3.  *Find the probability that our first bullseye:*
+## Bullseye (4/6)
 
-    1.  *is on the fourth try*
+::: columns
+::: {.column width="35%"}
+::: example
+::: ex-title
+Example 3
+:::
 
-        ***Solution:***
+::: ex-cont
+We throw darts at a dartboard until we hit the bullseye. Assume throws
+are independent and the probability of hitting the bullseye is 0.01 for
+each throw.
 
-    2.  *is on one of the first four tries*
+3.  Find the probability that our first bullseye:
 
-        ***Solution:***
+    -   is on the fourth try
 
-    3.  *is after the fifth try*
+    -   is on one of the first four tries
 
-        ***Solution:***
+    -   is after the fifth try
+:::
+:::
+:::
+:::
 
-    4.  *is on one of the first fifty tries*
+## Bullseye (5/6)
 
-        ***Solution:***
+::: columns
+::: {.column width="35%"}
+::: example
+::: ex-title
+Example 3
+:::
 
-    5.  *is after the* $50^{th}$ try, given that it did not happen on
-        the first 20 tries.
+::: ex-cont
+We throw darts at a dartboard until we hit the bullseye. Assume throws
+are independent and the probability of hitting the bullseye is 0.01 for
+each throw.
 
-        ***Solution:***
+3.  Find the probability that our first bullseye:
 
-4.  *Find the expected number of misses until we hit the bullseye.*
+    -   is on one of the first fifty tries
 
-# Chapter 19: Hypergeometric r.v.'s {#chapter-19-hypergeometric-r.v.s .unnumbered}
+    -   is after the $50^{th}$ try, given that it did not happen on the
+        first 20 tries
+:::
+:::
+:::
+:::
+
+## Bullseye (6/6)
+
+::: columns
+::: {.column width="35%"}
+::: example
+::: ex-title
+Example 3
+:::
+
+::: ex-cont
+We throw darts at a dartboard until we hit the bullseye. Assume throws
+are independent and the probability of hitting the bullseye is 0.01 for
+each throw.
+
+4.  Find the expected number of misses until we hit the bullseye.
+:::
+:::
+:::
+:::
+
+# Chapter 19: Hypergeometric RVs {#chapter-19-hypergeometric-r.v.s .unnumbered}
 
 ## Hypergeometric RVs
 
-**Scenario:** There are a fixed number of successes and failures (which
-are known in advance), from which we make $n$ draws without replacement.
-We are counting the number of successes from the $n$ trials.
+-   **Scenario:** There are a fixed number of successes and failures
+    (which are known in advance), from which we make $n$ draws without
+    replacement. We are counting the number of successes from the $n$
+    trials.
+    -   There is a finite population of $N$ items
+    -   Each item in the population is either a success or a failure,
+        and there are $M$ successes total.
+    -   We randomly select (sample) $n$ items from the population.
+-   Shorthand: $X \sim \text{Hypergeo}(M, N, n)$
 
-## Example
+$$
+X = \text{Number of successes in } n \text{ draws}
+$$
 
+$$
+p_X(x) = P(X=x) = \dfrac{{M \choose x}{N-M \choose n-x}}{{N \choose n}} \text{ for } x \text{ integer-valued } \max(0, n-(N-M)) \leq x \leq \min(n, M)
+$$
+
+$$\text{E}(X) =\dfrac{nM}{N}$$
+
+$$\text{Var}(X) = n \dfrac{M}{N} \bigg(1- \dfrac{M}{N} \bigg)\bigg(\dfrac{N-n}{N-1} \bigg)$$
+
+## Wolf population
+
+::: columns
+::: {.column width="35%"}
 ::: example
-**Example 1**. *A wildlife biologist is using mark-recapture to research
+::: ex-title
+Example 4
+:::
+
+::: ex-cont
+A wildlife biologist is using mark-recapture to research
 a wolf population. Suppose a specific study region is known to have 24
 wolves, of which 11 have already been tagged. If 5 wolves are randomly
 captured, what is the probability that 3 of them have already been
-tagged?*
-
-***Solution:***
+tagged?
 :::
-
-## Properties of Hypergeometric RVs
-
--   There is a finite population of $N$ items.
-
--   Each item in the population is either a success or a failure, and
-    there are $M$ successes total.
-
--   We randomly select (sample) $n$ items from the population.
+:::
+:::
+:::
 
 ## Hypergeometric vs. Binomial RVs
 
-Suppose a hypergeometric r.v. $X$ has the following properties:
+Suppose a hypergeometric RV $X$ has the following properties:
 
 -   the population size $N$ is really big,
 
@@ -214,32 +371,64 @@ Then, in this case, making $n$ draws from the population doesn't change
 the probability of success much, and the hypergeometric r.v. can be
 approximated by a binomial r.v.
 
-## Example
+## Wolf population revisited
 
+::: columns
+::: {.column width="28%"}
 ::: example
-**Example 2**. *Suppose a specific study region is known to have 2400
-wolves, of which 1100 have already been tagged.*
-
-1.  *If 50 wolves are randomly captured, what is the probability that 20
-    of them have already been tagged?*
-
-2.  *Approximate the probability in part (1) using the binomial
-    distribution.*
-
-***Solution:***
+::: ex-title
+Example 5
 :::
 
-# Chapter 20: Discrete Uniform r.v.'s {#chapter-20-discrete-uniform-r.v.s .unnumbered}
+::: ex-cont
+Suppose a specific study region is known to have 2400
+wolves, of which 1100 have already been tagged.
+
+1.  If 50 wolves are randomly captured, what is the probability that 20
+    of them have already been tagged?
+
+2.  Approximate the probability in part (1) using the binomial
+    distribution.
+:::
+:::
+:::
+:::
+
+
+# Chapter 20: Discrete Uniform RVs {#chapter-20-discrete-uniform-r.v.s .unnumbered}
 
 ## Discrete Uniform RVs
 
-**Scenario:** There are $N$ possible outcomes, which are all equally
+-   **Scenario:** There are $N$ possible outcomes, which are all equally
 likely.
+-   Shorthand: $X \sim \text{Uniform}(N)$
 
-## Example
+$$
+X = \text{Outcome of interest, with } x=1, 2, ..., N
+$$
 
+$$
+p_X(x) = P(X=x) = \dfrac{1}{N} \text{ for } x=1, 2, 3, ..., N
+$$
+
+$$\text{E}(X) =\dfrac{N+1}{2}$$
+
+$$\text{Var}(X) = \dfrac{N^2 -1}{12}$$
+
+
+## What discrete uniform RVs have we seen already?
+
+::: columns
+::: {.column width="35%"}
 ::: example
-**Example 1**. *Examples of discrete uniform r.v.'s.*
+::: ex-title
+Example 6
 :::
 
-## Properties of discrete uniform RVs
+::: ex-cont
+Examples of discrete uniform RVs
+:::
+:::
+:::
+:::
+
