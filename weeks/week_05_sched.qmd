@@ -85,6 +85,36 @@ For the slides, once they are opened, if you would like to print or save them as
 
     -   I will post the solutions and videos for HW 4 on Friday (10/27)
 
+-   Exam info!!
+
+### Exam info
+
+Below are my current instructions for the exam. Are there any questions?
+
+> #### Instructions
+>
+> 1.  I have written a "45 minute" exam. However, you have the full class period from 10:35am - 12pm.
+>
+> 2.  The exam is open book and open notes. You may use books other than the class textbook, you may anything on our course webpage, and you may use reference websites (like Wikipedia, Googling expected value of specific distribution, etc.).
+>
+> 3.  No cheating will be tolerated. This includes:
+>
+>     -   Using ChatGPT
+>
+>     -   Using question and answer threads typically seen on sites like StackExchange, WikiHow, Quora, Reddit, StackOverflow, Chegg, etc.
+>
+>     -   Asking other students in the room or looking at other students' exam work.
+>
+> 4.  You must show work to receive full credit. If you have a correct answer, but no work, you may not receive full credit. "Work" can include:
+>
+>     -   Writing your internal narrative for why you made a certain calculation
+>
+>     -   Writing where you got a number from
+>
+>     -   Writing the formula for something you calculate
+>
+>     -   Writing the property that you used to get from one step to another
+
 ## Statistician of the Week: Liz Hare
 
 ::: grid
