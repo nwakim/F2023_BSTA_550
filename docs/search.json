@@ -3385,7 +3385,7 @@
     "href": "weeks/week_05_sched.html#additional-information",
     "title": "Week 5",
     "section": "Additional Information",
-    "text": "Additional Information\n\nAnnouncements 10/23\n\nFlipped classroom question\nOffice hours for this whole week are cancelled\n\nBetween my conference and a weekend trip, I won’t be able to hold office hours this week\n\nOn the Monday and Tuesday before the exam, I will hold virtual office hours\n\nMonday, 10/30, 4-5pm\nTuesday, 10/31, 1:30-2:30pm\nIf you cannot make those hours and want to ask me questions, we can set up a short meeting for Monday or Tuesday\n\nI will also not be able to grade HW 4 until Monday (10/30)\n\nI will post the solutions and videos for HW 4 on Friday (10/27)\n\n\n\n\nExam info\nBelow are my current instructions for the exam. Are there any questions?\n\nInstructions\n\nI have written a “45 minute” exam. However, you have the full class period from 10:35am - 12pm.\nThe exam is open book and open notes. You may use books other than the class textbook, you may anything on our course webpage, and you may use reference websites (like Wikipedia, Googling expected value of specific distribution, etc.).\nNo cheating will be tolerated. This includes:\n\nUsing ChatGPT\nUsing question and answer threads typically seen on sites like StackExchange, WikiHow, Quora, Reddit, StackOverflow, Chegg, etc.\nAsking other students in the room or looking at other students’ exam work.\n\nYou must show work to receive full credit. If you have a correct answer, but no work, you may not receive full credit. “Work” can include:\n\nWriting your internal narrative for why you made a certain calculation\nWriting where you got a number from\nWriting the formula for something you calculate\nWriting the property that you used to get from one step to another"
+    "text": "Additional Information\n\nAnnouncements 10/23\n\nFlipped classroom question\nOffice hours for this whole week are cancelled\n\nBetween my conference and a weekend trip, I won’t be able to hold office hours this week\n\nOn the Monday and Tuesday before the exam, I will hold virtual office hours\n\nMonday, 10/30, 4-5pm\nTuesday, 10/31, 1:30-2:30pm\nIf you cannot make those hours and want to ask me questions, we can set up a short meeting for Monday or Tuesday\n\nI will also not be able to grade HW 4 until Monday (10/30)\n\nI will post the solutions and videos for HW 4 on Friday (10/27)\n\nExam info!!\n\n\n\nExam info\nBelow are my current instructions for the exam. Are there any questions?\n\nInstructions\n\nI have written a “45 minute” exam. However, you have the full class period from 10:35am - 12pm.\nThe exam is open book and open notes. You may use books other than the class textbook, you may anything on our course webpage, and you may use reference websites (like Wikipedia, Googling expected value of specific distribution, etc.).\nNo cheating will be tolerated. This includes:\n\nUsing ChatGPT\nUsing question and answer threads typically seen on sites like StackExchange, WikiHow, Quora, Reddit, StackOverflow, Chegg, etc.\nAsking other students in the room or looking at other students’ exam work.\n\nYou must show work to receive full credit. If you have a correct answer, but no work, you may not receive full credit. “Work” can include:\n\nWriting your internal narrative for why you made a certain calculation\nWriting where you got a number from\nWriting the formula for something you calculate\nWriting the property that you used to get from one step to another"
   },
   {
     "objectID": "weeks/week_05_sched.html#statistician-of-the-week-liz-hare",
@@ -4344,7 +4344,7 @@
     "href": "slides/12_Variance.html#corollaries",
     "title": "Chapter 12: Variance of Discrete RVs",
     "section": "Corollaries",
-    "text": "Corollaries\n\n\nCorollary 2\n\n\nFor independent discrete r.v.’s \\(X_i\\), \\(i=1,2,\\dots, n\\), \\[Var\\Bigg(\\sum_{i=1}^n X_i\\Bigg) = \\sum_{i=1}^n Var(X_i).\\]\n\n\n\n\nCorollary 3\n\n\nFor independent identically (i.i.d.) discrete r.v.’s \\(X_i\\), \\(i=1,2,\\dots, n\\), \\[Var\\Bigg(\\sum_{i=1}^n X_i\\Bigg) = n Var(X_1).\\]"
+    "text": "Corollaries\n\n\nCorollary 2\n\n\nFor independent discrete r.v.’s \\(X_i\\), \\(i=1,2,\\dots, n\\), \\[Var\\Bigg(\\sum_{i=1}^n X_i\\Bigg) = \\sum_{i=1}^n Var(X_i).\\]\n\n\n\n\nCorollary 3\n\n\nFor independent identically distributed (i.i.d.) discrete r.v.’s \\(X_i\\), \\(i=1,2,\\dots, n\\), \\[Var\\Bigg(\\sum_{i=1}^n X_i\\Bigg) = n Var(X_1).\\]"
   },
   {
     "objectID": "weeks/week_04_sched.html#announcements",
@@ -4386,14 +4386,14 @@
     "href": "slides/12_Variance.html#lets-revisit-the-card-example-12",
     "title": "Chapter 12: Variance of Discrete RVs",
     "section": "Let’s revisit the card example (1/2)",
-    "text": "Let’s revisit the card example (1/2)\n\n\n\n\nExample 2\n\n\nSuppose you draw 2 cards from a standard deck of cards with replacement. Let \\(X\\) be the number of hearts you draw.\n\nFind \\(\\mathbb{E}[X^2]\\)."
+    "text": "Let’s revisit the card example (1/2)\n\n\n\n\nExample 2\n\n\nSuppose you draw 2 cards from a standard deck of cards with replacement. Let \\(X\\) be the number of hearts you draw.\n\nFind \\(\\mathbb{E}[X^2]\\).\n\n\n\n\n\nRecall Binomial RV with \\(n=2\\):\n\\[p_X(x) = {2 \\choose x}p^x(1-p)^{2-x} \\text{  for } x = 0, 1, 2\\]"
   },
   {
     "objectID": "slides/12_Variance.html#lets-revisit-the-card-example-22",
     "href": "slides/12_Variance.html#lets-revisit-the-card-example-22",
     "title": "Chapter 12: Variance of Discrete RVs",
     "section": "Let’s revisit the card example (2/2)",
-    "text": "Let’s revisit the card example (2/2)\n\n\n\n\nExample 2\n\n\nSuppose you draw 2 cards from a standard deck of cards with replacement. Let \\(X\\) be the number of hearts you draw.\n\nFind \\(\\mathbb{E}\\big[\\big(X-\\frac{1}{2}\\big)^2\\big]\\)."
+    "text": "Let’s revisit the card example (2/2)\n\n\n\n\nExample 2\n\n\nSuppose you draw 2 cards from a standard deck of cards with replacement. Let \\(X\\) be the number of hearts you draw.\n\nFind \\(\\mathbb{E}\\big[\\big(X-\\frac{1}{2}\\big)^2\\big]\\).\n\n\n\n\n\nRecall Binomial RV with \\(n=2\\):\n\\[p_X(x) = {2 \\choose x}p^x(1-p)^{2-x} \\text{  for } x = 0, 1, 2\\]"
   },
   {
     "objectID": "slides/12_Variance.html#variance-of-a-rv",
@@ -4716,5 +4716,26 @@
     "title": "Chapter 14, 15, 16, 19, 20: Some Important Discrete RVs",
     "section": "What discrete uniform RVs have we seen already?",
     "text": "What discrete uniform RVs have we seen already?\n\n\n\n\nExample 6\n\n\nExamples of discrete uniform RVs\n\n\n\n\n\n\nChapter 14-16, 19-20 Slides"
+  },
+  {
+    "objectID": "slides/12_Variance.html#lets-think-about-our-ghost-problems-again-12",
+    "href": "slides/12_Variance.html#lets-think-about-our-ghost-problems-again-12",
+    "title": "Chapter 12: Variance of Discrete RVs",
+    "section": "Let’s think about our ghost problems again (1/2)",
+    "text": "Let’s think about our ghost problems again (1/2)\n\n\n\n\nExample 3\n\n\nThe ghost is trick-or-treating at a different house now. In this case it is known that the bag of candy has 10 chocolates, 20 lollipops, and 30 laffy taffies. The ghost grabs a handful of five pieces of candy. What is the variance for the number of chocolates the ghost takes? Let’s solve this for the cases without replacement.\n\n\n\n\nRecall probability without replacement:\n\\[p_X(x) = \\dfrac{{K \\choose x}{N-K \\choose n-x}}{{N \\choose n}}\n\\]"
+  },
+  {
+    "objectID": "slides/12_Variance.html#lets-revisit-our-ghost-problems-without-replacement",
+    "href": "slides/12_Variance.html#lets-revisit-our-ghost-problems-without-replacement",
+    "title": "Chapter 12: Variance of Discrete RVs",
+    "section": "Let’s revisit our ghost problems without replacement",
+    "text": "Let’s revisit our ghost problems without replacement\n\n\n\n\nExample 3.1\n\n\nThe ghost is trick-or-treating at a different house now. In this case it is known that the bag of candy has 10 chocolates, 20 lollipops, and 30 laffy taffies. The ghost grabs a handful of five pieces of candy. What is the variance for the number of chocolates the ghost takes? Let’s solve this for the cases without replacement.\n\n\n\n\nRecall probability without replacement:\n\\[p_X(x) = \\dfrac{{K \\choose x}{N-K \\choose n-x}}{{N \\choose n}}\n\\]"
+  },
+  {
+    "objectID": "slides/12_Variance.html#lets-revisit-our-ghost-problems-with-replacement",
+    "href": "slides/12_Variance.html#lets-revisit-our-ghost-problems-with-replacement",
+    "title": "Chapter 12: Variance of Discrete RVs",
+    "section": "Let’s revisit our ghost problems with replacement",
+    "text": "Let’s revisit our ghost problems with replacement\n\n\n\n\nExample 3.2\n\n\nThe ghost is trick-or-treating at a different house now. In this case it is known that the bag of candy has 10 chocolates, 20 lollipops, and 30 laffy taffies. The ghost grabs a handful of five pieces of candy. What is the variance for the number of chocolates the ghost takes? Let’s solve this for the cases with replacement.\n\n\n\n\nRecall probability with replacement:\n\\[\np_X(x) = {n \\choose k}p^k(1-p)^{n-k}\n\\]"
   }
 ]

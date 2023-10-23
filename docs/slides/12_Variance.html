@@ -357,7 +357,8 @@ Meike Niederhausen and Nicky Wakim
 <li><a href="#/important-results-for-independent-rvs" id="/toc-important-results-for-independent-rvs">Important results for <strong><em>independent</em></strong> RVs</a></li>
 <li><a href="#/variance-of-sum-of-independent-discrete-rvs" id="/toc-variance-of-sum-of-independent-discrete-rvs">Variance of sum of independent discrete RVs</a></li>
 <li><a href="#/corollaries" id="/toc-corollaries">Corollaries</a></li>
-<li><a href="#/lets-think-about-our-ghost-problems-again" id="/toc-lets-think-about-our-ghost-problems-again">Let’s think about our ghost problems again</a></li>
+<li><a href="#/lets-revisit-our-ghost-problems-without-replacement" id="/toc-lets-revisit-our-ghost-problems-without-replacement">Let’s revisit our ghost problems <em>without replacement</em></a></li>
+<li><a href="#/lets-revisit-our-ghost-problems-with-replacement" id="/toc-lets-revisit-our-ghost-problems-with-replacement">Let’s revisit our ghost problems <em>with replacement</em></a></li>
 <li><a href="#/back-to-our-hotel-example-from-chapter-11" id="/toc-back-to-our-hotel-example-from-chapter-11">Back to our hotel example from Chapter 11</a></li>
 </ul></li>
 </ul>
@@ -400,7 +401,7 @@ Meike Niederhausen and Nicky Wakim
 <section id="lets-revisit-the-card-example-12" class="slide level2">
 <h2>Let’s revisit the card example (1/2)</h2>
 <div class="columns">
-<div class="column" style="width:40%;">
+<div class="column" style="width:35%;">
 <div class="example">
 <div class="ex-title">
 <p>Example 2</p>
@@ -412,13 +413,20 @@ Meike Niederhausen and Nicky Wakim
 </ol>
 </div>
 </div>
+<div class="example">
+<div class="ex-cont">
+<p><font size="6ex">Recall Binomial RV with <span class="math inline">\(n=2\)</span>:</font></p><font size="6ex">
+<p><span class="math display">\[p_X(x) = {2 \choose x}p^x(1-p)^{2-x} \text{&nbsp; for } x = 0, 1, 2\]</span></p>
+</font><p><font size="6ex"></font></p>
+</div>
+</div>
 </div>
 </div>
 </section>
 <section id="lets-revisit-the-card-example-22" class="slide level2">
 <h2>Let’s revisit the card example (2/2)</h2>
 <div class="columns">
-<div class="column" style="width:40%;">
+<div class="column" style="width:35%;">
 <div class="example">
 <div class="ex-title">
 <p>Example 2</p>
@@ -428,6 +436,13 @@ Meike Niederhausen and Nicky Wakim
 <ol start="2" type="1">
 <li>Find <span class="math inline">\(\mathbb{E}\big[\big(X-\frac{1}{2}\big)^2\big]\)</span>.</li>
 </ol>
+</div>
+</div>
+<div class="example">
+<div class="ex-cont">
+<p><font size="6ex">Recall Binomial RV with <span class="math inline">\(n=2\)</span>:</font></p><font size="6ex">
+<p><span class="math display">\[p_X(x) = {2 \choose x}p^x(1-p)^{2-x} \text{&nbsp; for } x = 0, 1, 2\]</span></p>
+</font><p><font size="6ex"></font></p>
 </div>
 </div>
 </div>
@@ -532,20 +547,52 @@ Meike Niederhausen and Nicky Wakim
 <p>Corollary 3</p>
 </div>
 <div class="prop-cont">
-<p>For independent identically (i.i.d.) discrete r.v.’s <span class="math inline">\(X_i\)</span>, <span class="math inline">\(i=1,2,\dots, n\)</span>, <span class="math display">\[Var\Bigg(\sum_{i=1}^n X_i\Bigg) = n Var(X_1).\]</span></p>
+<p>For independent identically distributed (i.i.d.) discrete r.v.’s <span class="math inline">\(X_i\)</span>, <span class="math inline">\(i=1,2,\dots, n\)</span>, <span class="math display">\[Var\Bigg(\sum_{i=1}^n X_i\Bigg) = n Var(X_1).\]</span></p>
 </div>
 </div>
 </section>
-<section id="lets-think-about-our-ghost-problems-again" class="slide level2">
-<h2>Let’s think about our ghost problems again</h2>
+<section id="lets-revisit-our-ghost-problems-without-replacement" class="slide level2">
+<h2>Let’s revisit our ghost problems <em>without replacement</em></h2>
 <div class="columns">
-<div class="column" style="width:40%;">
+<div class="column" style="width:35%;">
 <div class="example">
 <div class="ex-title">
-<p>Example 3</p>
+<p>Example 3.1</p>
 </div>
 <div class="ex-cont">
-<p>The ghost is trick-or-treating at a different house now. In this case it is known that the bag of candy has 10 chocolates, 20 lollipops, and 30 laffy taffies. The ghost grabs a handful of five pieces of candy. What is the variance for the number of chocolates the ghost takes? Let’s solve this for the cases <em>with</em> and <em>without</em> replacement.</p>
+<p>The ghost is trick-or-treating at a different house now. In this case it is known that the bag of candy has 10 chocolates, 20 lollipops, and 30 laffy taffies. The ghost grabs a handful of five pieces of candy. What is the variance for the number of chocolates the ghost takes? Let’s solve this for the cases <strong><em>without</em></strong> replacement.</p>
+</div>
+</div>
+<div class="example">
+<div class="ex-cont">
+<p><font size="6ex">Recall probability without replacement:</font></p><font size="6ex">
+<p><span class="math display">\[p_X(x) = \dfrac{{K \choose x}{N-K \choose n-x}}{{N \choose n}}
+\]</span></p>
+</font><p><font size="6ex"></font></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="lets-revisit-our-ghost-problems-with-replacement" class="slide level2">
+<h2>Let’s revisit our ghost problems <em>with replacement</em></h2>
+<div class="columns">
+<div class="column" style="width:35%;">
+<div class="example">
+<div class="ex-title">
+<p>Example 3.2</p>
+</div>
+<div class="ex-cont">
+<p>The ghost is trick-or-treating at a different house now. In this case it is known that the bag of candy has 10 chocolates, 20 lollipops, and 30 laffy taffies. The ghost grabs a handful of five pieces of candy. What is the variance for the number of chocolates the ghost takes? Let’s solve this for the cases <strong><em>with</em></strong> replacement.</p>
+</div>
+</div>
+<div class="example">
+<div class="ex-cont">
+<p><font size="6ex">Recall probability with replacement:</font></p><font size="6ex">
+<p><span class="math display">\[
+p_X(x) = {n \choose k}p^k(1-p)^{n-k}
+\]</span></p>
+</font><p><font size="6ex"></font></p>
 </div>
 </div>
 </div>

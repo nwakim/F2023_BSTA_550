@@ -60,7 +60,7 @@ is $$\mathbb{E}[g(X)] = \sum_{\{all\ x\}}\ g(x) p_X(x).$$
 ## Let's revisit the card example (1/2)
 
 ::: columns
-::: {.column width="40%"}
+::: {.column width="35%"}
 ::: example
 ::: ex-title
 Example 2
@@ -73,13 +73,23 @@ replacement. Let $X$ be the number of hearts you draw.
 1.  Find $\mathbb{E}[X^2]$.
 :::
 :::
+
+::: example
+::: ex-cont
+<font size=6ex>Recall Binomial RV with $n=2$:
+
+$$p_X(x) = {2 \choose x}p^x(1-p)^{2-x} \text{  for } x = 0, 1, 2$$
+
+</font>
+:::
+:::
 :::
 :::
 
 ## Let's revisit the card example (2/2)
 
 ::: columns
-::: {.column width="40%"}
+::: {.column width="35%"}
 ::: example
 ::: ex-title
 Example 2
@@ -90,6 +100,16 @@ Suppose you draw 2 cards from a standard deck of cards *with*
 replacement. Let $X$ be the number of hearts you draw.
 
 2.  Find $\mathbb{E}\big[\big(X-\frac{1}{2}\big)^2\big]$.
+:::
+:::
+
+::: example
+::: ex-cont
+<font size=6ex>Recall Binomial RV with $n=2$:
+
+$$p_X(x) = {2 \choose x}p^x(1-p)^{2-x} \text{  for } x = 0, 1, 2$$
+
+</font>
 :::
 :::
 :::
@@ -221,18 +241,18 @@ Corollary 3
 :::
 
 ::: prop-cont
-For independent identically (i.i.d.) discrete r.v.'s $X_i$,
+For independent identically distributed (i.i.d.) discrete r.v.'s $X_i$,
 $i=1,2,\dots, n$, $$Var\Bigg(\sum_{i=1}^n X_i\Bigg) = n Var(X_1).$$
 :::
 :::
 
-## Let's think about our ghost problems again
+## Let's revisit our ghost problems *without replacement*
 
 ::: columns
-::: {.column width="40%"}
+::: {.column width="35%"}
 ::: example
 ::: ex-title
-Example 3
+Example 3.1
 :::
 
 ::: ex-cont
@@ -240,11 +260,55 @@ The ghost is trick-or-treating at a different house now. In this case it
 is known that the bag of candy has 10 chocolates, 20 lollipops, and 30
 laffy taffies. The ghost grabs a handful of five pieces of candy. What
 is the variance for the number of chocolates the ghost takes? Let's
-solve this for the cases *with* and *without* replacement.
+solve this for the cases ***without*** replacement.
+:::
+:::
+
+::: example
+::: ex-cont
+<font size=6ex>Recall probability without replacement:
+
+$$p_X(x) = \dfrac{{K \choose x}{N-K \choose n-x}}{{N \choose n}}
+$$
+
+</font>
 :::
 :::
 :::
 :::
+
+## Let's revisit our ghost problems *with replacement*
+
+::: columns
+::: {.column width="35%"}
+::: example
+::: ex-title
+Example 3.2
+:::
+
+::: ex-cont
+The ghost is trick-or-treating at a different house now. In this case it
+is known that the bag of candy has 10 chocolates, 20 lollipops, and 30
+laffy taffies. The ghost grabs a handful of five pieces of candy. What
+is the variance for the number of chocolates the ghost takes? Let's
+solve this for the cases ***with*** replacement.
+:::
+:::
+
+::: example
+::: ex-cont
+<font size=6ex>Recall probability with replacement:
+
+$$
+p_X(x) = {n \choose k}p^k(1-p)^{n-k}
+$$
+
+</font>
+:::
+:::
+:::
+:::
+
 
 ## Back to our hotel example from Chapter 11
 
