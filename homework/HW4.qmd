@@ -72,7 +72,7 @@ $^\#$ Break up your solution to Chapter 9 #8 into the following 5 parts:
 
     h.  Make a table for the conditional pmf $p_{Y|X}(y|x)$ and briefly describe in words what the values are the probability of.
 
-2.  Each day, Maude has a 1% chance of losing her cell phone (her behavior on different days is independent). Each day, Maude has a 3% chance of forgetting to eat breakfast (again, her behavior on different days is independent). Her breakfast and cell phone habits are independent. Let X be the number of days until she first loses her cell phone. Let Y be the number of days until she first forgets to eat breakfast. (Here, X and Y are independent.) Find the joint mass of X and Y.
+2.  Each day, Maude has a 1% chance of losing her cell phone (her behavior on different days is independent). Each day, Maude has a 3% chance of forgetting to eat breakfast (again, her behavior on different days is independent). Her breakfast and cell phone habits are independent. Let X be the number of days until she first loses her cell phone. Let Y be the number of days until she first forgets to eat breakfast. (Here, X and Y are independent.)
 
     a.  Find the joint probability mass function of X and Y.
 
@@ -82,7 +82,7 @@ $^\#$ Break up your solution to Chapter 9 #8 into the following 5 parts:
 
 3.  Approximately 10% of U.S. Veterans are women. Suppose an investigator plans a study with 4500 participants that are Veterans. How many women can they expect to be included? *Your answer must be calculated by defining a random variable and showing how to calculate the expected value.*
 
-4.  There is a bowl containing 30 cashews, 20 pecans, 25 almonds, and 25 walnuts. I am going to randomly pick and eat 3 nuts (without replacement). Again, find the expected value of the number of cashews, but this time by defining the number of cashews as a sum of random variables.
+4.  There is a bowl containing 30 cashews, 20 pecans, 25 almonds, and 25 walnuts. I am going to randomly pick and eat 3 nuts (without replacement). Find the expected value of the number of cashews by defining the number of cashews as a sum of random variables.
 
 ## Some select answers
 

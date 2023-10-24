@@ -1,8 +1,8 @@
 ---
 title: "Week 6"
-description: "Common families of discrete distributions cont."
+description: "Common families of discrete distributions cont"
 date: "10/30/2023"
-date-modified: "10/18/2023"
+date-modified: "10/24/2023"
 categories: [""]
 format: 
   html:
@@ -31,24 +31,59 @@ editor_options:
 ## Resources
 
 | Chapter | Topic                |                                Slides                                 |                                  Annotated Slides                                  |                           Recording                           |
-|---------|----------------------|:---------------------------------------------------------------------:|:----------------------------------------------------------------------------------:|:-------------------------------------------------------------:|
+|-------------|-------------|:-------------:|:-----------------:|:-----------:|
 | 17      | Negative Binomial RV | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
 | 18      | Poisson RV           | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
 
-For the slides, once they are opened, if you would like to print or save them as a PDF, the best way to do this is:
+### Exam Materials
 
-1.  Click on the icon with three horizontal bars on the bottom left of the browser.
-2.  Click on "Tools" with the gear icon at the top of the sidebar.
-3.  Click on "PDF Export Mode."
-4.  From there, you can print or save the PDF as you would normally from your internet browser.
+-   The exam will cover all materials from Week 1 - Week 4
 
-## On the Horizon
+    -   This translates to Chapter 1-11 and 22
+
+    -   This also translates to HW 1-4
+
+-   Practice materials
+
+    -   You can go back to do the Extra Problems from each homework
+
+    -   [Exam Review](/weeks/week_06/midterm_prep_materials/Exam_1_review_F16-F20.pdf) document (made by Meike in 2021)
+
+        -   [Exam Review Answers](/weeks/week_06/midterm_prep_materials/Exam_1_review_F16-F20_answers.pdf) (made by Meike in 2021)
+
+        -   Questions that are **not** covered on our exam:
+
+            -   Fall 2020: 5
+
+            -   Fall 2019: 5b
+
+            -   Fall 2018: 5b
+
+            -   Fall 2017: 5c, 6
+
+            -   Fall 2016: 5b, 6
+
+        -   Also, don't worry too much about the problems with chairs in a circle - we never covered these in detail in class
+
+            -   If you're curious, the book does have a few trick for these problems
 
 ## Class Exit Tickets
 
 [[{{< iconify healthicons health-worker-form-negative size=30px >}}](https://forms.office.com/Pages/ResponsePage.aspx?id=V3lz4rj6fk2U9pvWr59xWFMopmPUjRtDiHLswhgacNhUQTlMT0RUUUJDUTVTRVBUQjlYNlMzS0FVRC4u)]{style="color:#f8f5f0;"} Monday (10/30)
 
 ## Additional Information
+
+### Announcements 10/30
+
+-   Any questions about the exam on Wednesday?
+
+-   On the Monday and Tuesday before the exam, I will hold virtual office hours
+
+    -   Monday, 10/30, 4-5pm
+
+    -   Tuesday, 10/31, 1:30-2:30pm
+
+    -   If you cannot make those hours and want to ask me questions, we can set up a short meeting for Monday or Tuesday
 
 ## Statistician of the Week: Lester Mackey
 
@@ -94,14 +129,12 @@ From Dr. Mackey's <a href = "http://stanford.edu/~lmackey/" target = "_blank">pe
 -   [Linkedin](https://www.linkedin.com/in/lester-mackey-5902909/)
 -   [personal](http://stanford.edu/~lmackey/)
 
+**Please note the statisticians of the week are taken directly from the [CURV project by Jo Hardin](https://hardin47.github.io/CURV/).**
+
 #### Other
 
 The precursor to <a href = "https://www.kaggle.com/" target = "_blank">kaggle</a> was a <a href = "https://en.wikipedia.org/wiki/Netflix_Prize" target = "_blank">\$1 million prize given by Netflix</a> to the most accurate prediction of ratings that people give to the movies they watch. As undergraduates, Dr. Mackey and two friends led the competition for a few hours in its first year. Later, groups merged and Dr. Mackey's group merged with a few others, forming The Ensemble. Their final analysis came in second with the **exact same** error rates as the winning entry. The winning entry, however, had been submitted 20 minutes prior. Sigh.
 
 ## Muddiest Points
-
-This will be filled in with your Exit Ticket responses.
-
-## Clearest Points
 
 This will be filled in with your Exit Ticket responses.

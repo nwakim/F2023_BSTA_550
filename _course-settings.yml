@@ -61,7 +61,7 @@ schedule:
         calendar-color2: "#FFFFFF" 
       - title: "HW 5 due"
         href: homework/HW5.qmd
-        date: 11/2/23
+        date: 11/9/23
         calendar-color: "#F08897"
         calendar-color2: "#FFFFFF" 
       - href: weeks/week_07_sched.qmd

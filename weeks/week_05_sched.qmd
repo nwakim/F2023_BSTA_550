@@ -100,7 +100,16 @@ For the slides, once they are opened, if you would like to print or save them as
 
     -   I will post the solutions and videos for HW 4 on Friday (10/27)
 
--   Exam info!!
+-   **Exam info!!**
+
+    -   **Covers materials up to Chapter 11 / Homework 4!!**
+    -   See more exam info (including review problems) on the [Week 6 page](/weeks/week_06_sched.qmd)
+
+### Announcements 10/25
+
+-   Homework 5 due date moved to 11/9!!!
+
+    -   Since HW5 material will not be on the test, it seems a little odd to have you turn it in the day after our midterm
 
 ### Exam info
 
@@ -167,6 +176,8 @@ Her computational language of choice is `R`, and much of her work has focused on
 -   [Linkedin](https://www.linkedin.com/in/liz-hare-phd-1a50925/)
 -   [professional](http://www.doggenetics.com/)
 -   [fosstodon](https://fosstodon.org/@lizhare)
+
+**Please note the statisticians of the week are taken directly from the [CURV project by Jo Hardin](https://hardin47.github.io/CURV/).**
 
 ## Muddiest Points
 

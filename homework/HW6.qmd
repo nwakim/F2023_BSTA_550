@@ -2,7 +2,7 @@
 title: "Homework 6"
 subtitle: "BSTA 550"
 description: "Due: Thursday November 16, 2023 at 11pm"
-date-modified: "08/22/2023"
+date-modified: "10/24/2023"
 date: "11/16/2023"
 categories: [""]
 format: 
@@ -25,8 +25,6 @@ The more work you include that shows your thought process, the more I can give y
 ::: center
 |     Chapter     |        Turn In        |       Extra Problems       |
 |:---------------:|:---------------------:|:--------------------------:|
-|       19        |        TB \# 6        |        \# 1, 18, 19        |
-|       18        |       TB \# 24        |        \# 1, 26, 27        |
 | Calculus Review |                       |          NTB \# 1          |
 |       24        |    TB \# 19, 20\*     | \# 2, 3, 7, 17, 18, 22, 23 |
 |       25        |  TB \# 18, NTB \# 2   |   \# 1, 4, 8, 17, 23, 24   |
@@ -77,18 +75,6 @@ Non-textbook problems (NTB):
 ## Some select answers
 
 Selected answers (or hints) not provided at the end the book:
-
--   Chapter 19
-
-    -   \# 6:  (c) 15.625     (d) 0.0486     (f) 0.0488
-
-    -   \# 18:   100
-
--   Chapter 18
-
-    -   \# 24  (c) 0.8571
-
-    -   \# 26  162,754.8
 
 -   Calculus Review
 

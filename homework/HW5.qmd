@@ -1,9 +1,9 @@
 ---
 title: "Homework 5"
 subtitle: "BSTA 550"
-description: "Due: Thursday November 2, 2023 at 11pm"
-date-modified: "09/11/2023"
-date: "11/2/2023"
+description: "Due: Thursday November 9, 2023 at 11pm"
+date-modified: "10/24/2023"
+date: "11/9/2023"
 categories: [""]
 format: 
   html:
@@ -32,6 +32,8 @@ The more work you include that shows your thought process, the more I can give y
 |     15      |      NTB \# 4       |  \# 1, 5, 11, 18, 23, NTB \# 5  |
 |     16      |       TB \# 8       |         \# 3a-g, 11, 21         |
 |     17      |     TB \# 12a-c     |   \# 3a-g, 6, 9, 11, NTB \# 6   |
+|     18      |      TB \# 24       |          \# 1, 26, 27           |
+|     19      |       TB \# 6       |          \# 1, 18, 19           |
 :::
 
 ## Non-textbook problems (NTB)
@@ -105,3 +107,15 @@ Selected answers (or hints) not provided at the end the book:
     -   \# 6   (a) 400, 87.18     (b) No     
 
     -   \# 12   (c) 0.8000
+
+-   Chapter 18
+
+    -   \# 24  (c) 0.8571
+
+    -   \# 26  162,754.8
+
+-   Chapter 19
+
+    -   \# 6:  (c) 15.625     (d) 0.0486     (f) 0.0488
+
+    -   \# 18:   100
