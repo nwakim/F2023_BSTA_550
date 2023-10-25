@@ -302,17 +302,24 @@ $$ P(X > k+j |X > j) = \dfrac{P(X>k+j \text{ and } X>j)}{P(X>j)} = \dfrac{P(X>k+
     -   We randomly select (sample) $n$ items from the population.
 -   Shorthand: $X \sim \text{Hypergeo}(M, N, n)$
 
+::: columns
+::: column
 $$
 X = \text{Number of successes in } n \text{ draws}
 $$
 
 $$
-p_X(x) = P(X=x) = \dfrac{{M \choose x}{N-M \choose n-x}}{{N \choose n}} \text{ for } x \text{ integer-valued } \max(0, n-(N-M)) \leq x \leq \min(n, M)
+p_X(x) = P(X=x) = \dfrac{{M \choose x}{N-M \choose n-x}}{{N \choose n}} 
 $$
+$$\text{ for } x \text{ integer-valued } \\ \max(0, n-(N-M)) \leq x \leq \min(n, M)$$
+:::
 
+::: column
 $$\text{E}(X) =\dfrac{nM}{N}$$
 
 $$\text{Var}(X) = n \dfrac{M}{N} \bigg(1- \dfrac{M}{N} \bigg)\bigg(\dfrac{N-n}{N-1} \bigg)$$
+:::
+:::
 
 ## Wolf population
 

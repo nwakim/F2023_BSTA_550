@@ -643,14 +643,19 @@ p_X(x) = P(X=x) = {n \choose x}p^x(1-p)^{n-x} \text{ for } x=0,1,2,  ..., n
 </ul></li>
 <li>Shorthand: <span class="math inline">\(X \sim \text{Hypergeo}(M, N, n)\)</span></li>
 </ul>
+<div class="columns">
+<div class="column">
 <p><span class="math display">\[
 X = \text{Number of successes in } n \text{ draws}
 \]</span></p>
 <p><span class="math display">\[
-p_X(x) = P(X=x) = \dfrac{{M \choose x}{N-M \choose n-x}}{{N \choose n}} \text{ for } x \text{ integer-valued } \max(0, n-(N-M)) \leq x \leq \min(n, M)
-\]</span></p>
+p_X(x) = P(X=x) = \dfrac{{M \choose x}{N-M \choose n-x}}{{N \choose n}}
+\]</span> <span class="math display">\[\text{ for } x \text{ integer-valued } \\ \max(0, n-(N-M)) \leq x \leq \min(n, M)\]</span></p>
+</div><div class="column">
 <p><span class="math display">\[\text{E}(X) =\dfrac{nM}{N}\]</span></p>
 <p><span class="math display">\[\text{Var}(X) = n \dfrac{M}{N} \bigg(1- \dfrac{M}{N} \bigg)\bigg(\dfrac{N-n}{N-1} \bigg)\]</span></p>
+</div>
+</div>
 </section>
 <section id="wolf-population" class="slide level2">
 <h2>Wolf population</h2>
