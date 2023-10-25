@@ -4434,8 +4434,8 @@
     "objectID": "slides/14_18_Discrete_RVs.html#learning-objectives",
     "href": "slides/14_18_Discrete_RVs.html#learning-objectives",
     "title": "Chapter 14, 15, 16, 19, 20: Some Important Discrete RVs",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\n\nDistinguish between Bernoulli, Binomial, Geometric, Hypergeometric, and Discrete Uniform distributions when reading a story.\nIdentify the variable and the parameters in a story, and state what the variable and parameters mean.\nUse the formulas for the pmf/CDF, expected value, and variance to answer questions and find probabilities."
+    "section": "",
+    "text": "Distinguish between Bernoulli, Binomial, Geometric, Hypergeometric, and Discrete Uniform distributions when reading a story.\nIdentify the variable and the parameters in a story, and state what the variable and parameters mean.\nUse the formulas for the pmf/CDF, expected value, and variance to answer questions and find probabilities."
   },
   {
     "objectID": "slides/14_18_Discrete_RVs.html#bernoulli-rv",
@@ -4477,7 +4477,7 @@
     "href": "slides/14_18_Discrete_RVs.html#geometric-rvs",
     "title": "Chapter 14, 15, 16, 19, 20: Some Important Discrete RVs",
     "section": "Geometric RVs",
-    "text": "Geometric RVs\n\nScenario: There are repeated independent trials, each resulting in a success or failure, with constant probability of success for each trial. We are counting the number of trials until the first success.\nShorthand: \\(X \\sim \\text{Geo}(p)\\) or \\(X \\sim \\text{Geometric}(p)\\) or \\(X \\sim \\text{G}(p)\\)\n\n\n\n\n\n\n\n\n\\(X =\\) Number of trials needed for first success (count \\(x\\) includes the success)\n\\(X =\\) Number of failures before first success (count \\(x\\) does not include the success)\n\n\n\n\n\\(p _ X ( x ) = P(X=x) = (1-p)^{x-1}p\\)\nfor \\(x=1,2, 3,...\\)\n\\(F_ X  ( x ) = P(X\\leq x) = 1-(1-p)^x\\)\nfor \\(x=1,2, 3,...\\)\n\\(p _X (x)= P(X=x) = (1-p)^{x}p\\)\nfor \\(x=0, 1,2,...\\)\n\\(F_X ( x ) =  P(X\\leq x) = 1-(1-p)^{x+1}\\)\nfor \\(x=0, 1,2,...\\)\n\n\n\\(E(X)=\\dfrac{1-p}{p}\\)\n\\(Var(X)= \\dfrac{1-p}{p^2}\\)\n\\(E(X)=\\dfrac{1-p}{p}\\)\n\\(Var(X) = \\dfrac{1-p}{p^2}\\)"
+    "text": "Geometric RVs\n\nScenario: There are repeated independent trials, each resulting in a success or failure, with constant probability of success for each trial. We are counting the number of trials until the first success.\nShorthand: \\(X \\sim \\text{Geo}(p)\\) or \\(X \\sim \\text{Geometric}(p)\\) or \\(X \\sim \\text{G}(p)\\)\n\n\n\n\n\n\n\n\n\\(X =\\) Number of trials needed for first success (count \\(x\\) includes the success)\n\\(X =\\) Number of failures before first success (count \\(x\\) does not include the success)\n\n\n\n\n\\(p _ X ( x ) = P(X=x) = (1-p)^{x-1}p\\)\nfor \\(x=1,2, 3,...\\)\n\\(F_ X  ( x ) = P(X\\leq x) = 1-(1-p)^x\\)\nfor \\(x=1,2, 3,...\\)\n\\(p _X (x)= P(X=x) = (1-p)^{x}p\\)\nfor \\(x=0, 1,2,...\\)\n\\(F_X ( x ) = P(X\\leq x) = 1-(1-p)^{x+1}\\)\nfor \\(x=0, 1,2,...\\)\n\n\n\\(E(X)=\\dfrac{1-p}{p}\\)\n\\(Var(X)= \\dfrac{1-p}{p^2}\\)\n\\(E(X)=\\dfrac{1-p}{p}\\)\n\\(Var(X) = \\dfrac{1-p}{p^2}\\)"
   },
   {
     "objectID": "slides/14_18_Discrete_RVs.html#example",
@@ -4715,7 +4715,7 @@
     "href": "slides/14_18_Discrete_RVs.html#what-discrete-uniform-rvs-have-we-seen-already",
     "title": "Chapter 14, 15, 16, 19, 20: Some Important Discrete RVs",
     "section": "What discrete uniform RVs have we seen already?",
-    "text": "What discrete uniform RVs have we seen already?\n\n\n\n\nExample 6\n\n\nExamples of discrete uniform RVs\n\n\n\n\n\n\nChapter 14-16, 19-20 Slides"
+    "text": "What discrete uniform RVs have we seen already?\n\n\n\n\nExample 6\n\n\nExamples of discrete uniform RVs"
   },
   {
     "objectID": "slides/12_Variance.html#lets-think-about-our-ghost-problems-again-12",
