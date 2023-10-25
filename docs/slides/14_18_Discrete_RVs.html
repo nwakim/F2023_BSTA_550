@@ -357,13 +357,12 @@ Meike Niederhausen and Nicky Wakim
 <li><a href="#/chapter-16-geometric-r.v.s" id="/toc-chapter-16-geometric-r.v.s">Chapter 16: Geometric RVs</a>
 <ul>
 <li><a href="#/geometric-rvs" id="/toc-geometric-rvs">Geometric RVs</a></li>
-<li><a href="#/memoryless-property-for-geometric-rvs" id="/toc-memoryless-property-for-geometric-rvs">Memoryless property for Geometric RVs</a></li>
 <li><a href="#/bullseye-16" id="/toc-bullseye-16">Bullseye (1/6)</a></li>
 <li><a href="#/bullseye-26" id="/toc-bullseye-26">Bullseye (2/6)</a></li>
 <li><a href="#/bullseye-36" id="/toc-bullseye-36">Bullseye (3/6)</a></li>
 <li><a href="#/bullseye-46" id="/toc-bullseye-46">Bullseye (4/6)</a></li>
 <li><a href="#/bullseye-56" id="/toc-bullseye-56">Bullseye (5/6)</a></li>
-<li><a href="#/bullseye-66" id="/toc-bullseye-66">Bullseye (6/6)</a></li>
+<li><a href="#/memoryless-property-for-geometric-rvs" id="/toc-memoryless-property-for-geometric-rvs">Memoryless property for Geometric RVs</a></li>
 </ul></li>
 <li><a href="#/chapter-19-hypergeometric-r.v.s" id="/toc-chapter-19-hypergeometric-r.v.s">Chapter 19: Hypergeometric RVs</a>
 <ul>
@@ -410,18 +409,8 @@ X = \left\{
 <p><span class="math display">\[
 p_X(x) = P(X=x) = p^x(1-p)^{1-x} \text{ for } x=0,1
 \]</span></p>
-<table>
-<tbody>
-<tr class="odd">
-<td style="text-align: right;"><span class="math inline">\(\text{E}(X)\)</span></td>
-<td><span class="math inline">\(p\)</span></td>
-</tr>
-<tr class="even">
-<td style="text-align: right;"><span class="math inline">\(\text{Var}(X)\)</span></td>
-<td><span class="math inline">\(pq = p(1-p)\)</span></td>
-</tr>
-</tbody>
-</table>
+<p><span class="math display">\[\text{E}(X) = p\]</span></p>
+<p><span class="math display">\[\text{Var}(X) = pq = p(1-p)\]</span></p>
 </section>
 <section id="bernoulli-example-1" class="slide level2">
 <h2>Bernoulli Example 1</h2>
@@ -460,18 +449,7 @@ X = \text{Number of successes of } n \text{ independent trials}
 <p><span class="math display">\[
 p_X(x) = P(X=x) = {n \choose x}p^x(1-p)^{n-x} \text{ for } x=0,1,2,  ..., n
 \]</span></p>
-<table>
-<tbody>
-<tr class="odd">
-<td style="text-align: right;"><span class="math inline">\(\text{E}(X)\)</span></td>
-<td><span class="math inline">\(np\)</span></td>
-</tr>
-<tr class="even">
-<td style="text-align: right;"><span class="math inline">\(\text{Var}(X)\)</span></td>
-<td><span class="math inline">\(pq = np(1-p)\)</span></td>
-</tr>
-</tbody>
-</table>
+<p><span class="math display">\[\text{E}(X) = np\]</span> <span class="math display">\[\text{Var}(X) = npq = np(1-p)\]</span></p>
 </section>
 <section id="bernoulli-to-binomial" class="slide level2">
 <h2>Bernoulli to Binomial</h2>
@@ -504,10 +482,10 @@ p_X(x) = P(X=x) = {n \choose x}p^x(1-p)^{n-x} \text{ for } x=0,1,2,  ..., n
 <li><p><strong>Scenario:</strong> There are repeated independent trials, each resulting in a success or failure, with constant probability of success for each trial. We are counting the number of trials until the first success.</p></li>
 <li><p>Shorthand: <span class="math inline">\(X \sim \text{Geo}(p)\)</span> or <span class="math inline">\(X \sim \text{Geometric}(p)\)</span> or <span class="math inline">\(X \sim \text{G}(p)\)</span></p></li>
 </ul>
-<table style="width:81%;">
+<table style="width:94%;">
 <colgroup>
-<col style="width: 38%">
-<col style="width: 41%">
+<col style="width: 50%">
+<col style="width: 44%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -517,30 +495,23 @@ p_X(x) = P(X=x) = {n \choose x}p^x(1-p)^{n-x} \text{ for } x=0,1,2,  ..., n
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;"><p><span class="math inline">\(p_X ( x )  = P(X=x) = (1-p)^{x-1}p\)</span></p>
+<td style="text-align: center;"><p><span class="math inline">\(p _X ( x ) = P(X=x) = (1-p)^{x-1}p\)</span></p>
 <p>for <span class="math inline">\(x=1,2, 3,...\)</span></p>
-<p><span class="math inline">\(E(X)=\dfrac{1}{p}\)</span></p>
-<p><span class="math display">\[
-{
-V
-a
-r
-}(X) = \dfrac{1-p}{p^2}\]</span></p></td>
-<td style="text-align: center;"><p><span class="math inline">\(p_X ( x) = P(X=x) = (1-p)^{x}p\)</span></p>
+<p><span class="math inline">\(F_ X ( x ) = P(X\leq x) = 1-(1-p)^x\)</span></p>
+<p>for <span class="math inline">\(x=1,2, 3,...\)</span></p></td>
+<td style="text-align: center;"><p>$ p_X (x)= P(X=x) = (1-p)^{x}p$</p>
 <p>for <span class="math inline">\(x=0, 1,2,...\)</span></p>
-<p><span class="math inline">\(E(X)=\dfrac{1-p}{p}\)</span></p>
-<p><span class="math display">\[
-{
-V
-a
-r}(X) = \dfrac{1-p}{p^2}\]</span></p></td>
+<p><span class="math inline">\(F_X ( x ) = P(X\leq x) = 1-(1-p)^{x+1}\)</span></p>
+<p>for <span class="math inline">\(x=0, 1,2,...\)</span></p></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><p><span class="math inline">\(E(X)=\dfrac{1-p}{p}\)</span></p>
+<p><span class="math inline">\(Var(X)= \dfrac{1-p}{p^2}\)</span></p></td>
+<td style="text-align: center;"><p><span class="math inline">\(E(X)=\dfrac{1-p}{p}\)</span></p>
+<p><span class="math inline">\(Var(X) = \dfrac{1-p}{p^2}\)</span></p></td>
 </tr>
 </tbody>
 </table>
-</section>
-<section id="memoryless-property-for-geometric-rvs" class="slide level2">
-<h2>Memoryless property for Geometric RVs</h2>
-<p><span class="math inline">\(P(X &gt; k+j |X &gt; j) = P(X &gt; k)\)</span> <span class="math display">\[ P(X &gt; k+j |X &gt; j) = \dfrac{P(X&gt;k+j \text{ and } X&gt;j)}{P(X&gt;j)} = \dfrac{P(X&gt;k+j)}{P(X&gt;j)} = \dfrac{(1-p)^{k+j}}{(1-p)^{j}} = (1-p)^{k} \]</span></p>
 </section>
 <section id="bullseye-16" class="slide level2">
 <h2>Bullseye (1/6)</h2>
@@ -621,7 +592,7 @@ r}(X) = \dfrac{1-p}{p^2}\]</span></p></td>
 <ul>
 <li><p>is on the fourth try</p></li>
 <li><p>is on one of the first four tries</p></li>
-<li><p>is after the fifth try</p></li>
+<li><p>is after the fourth try</p></li>
 </ul></li>
 </ol>
 </div>
@@ -651,23 +622,10 @@ r}(X) = \dfrac{1-p}{p^2}\]</span></p></td>
 </div>
 </div>
 </section>
-<section id="bullseye-66" class="slide level2">
-<h2>Bullseye (6/6)</h2>
-<div class="columns">
-<div class="column" style="width:35%;">
-<div class="example">
-<div class="ex-title">
-<p>Example 3</p>
-</div>
-<div class="ex-cont">
-<p>We throw darts at a dartboard until we hit the bullseye. Assume throws are independent and the probability of hitting the bullseye is 0.01 for each throw.</p>
-<ol start="4" type="1">
-<li>Find the expected number of misses until we hit the bullseye.</li>
-</ol>
-</div>
-</div>
-</div>
-</div>
+<section id="memoryless-property-for-geometric-rvs" class="slide level2">
+<h2>Memoryless property for Geometric RVs</h2>
+<p>If we know <span class="math inline">\(X\)</span> is greater than some number (aka given <span class="math inline">\(X &gt;j\)</span>), then the probability of <span class="math inline">\(X &gt; k+j\)</span> is just the probability that <span class="math inline">\(X&gt;k\)</span>.</p>
+<p><span class="math inline">\(P(X &gt; k+j |X &gt; j) = P(X &gt; k)\)</span> <span class="math display">\[ P(X &gt; k+j |X &gt; j) = \dfrac{P(X&gt;k+j \text{ and } X&gt;j)}{P(X&gt;j)} = \dfrac{P(X&gt;k+j)}{P(X&gt;j)} = \dfrac{(1-p)^{k+j}}{(1-p)^{j}} = (1-p)^{k} \]</span></p>
 </section></section>
 <section>
 <section id="chapter-19-hypergeometric-r.v.s" class="title-slide slide level1 unnumbered center">

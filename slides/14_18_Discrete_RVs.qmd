@@ -49,10 +49,9 @@ $$
 p_X(x) = P(X=x) = p^x(1-p)^{1-x} \text{ for } x=0,1
 $$
 
-|                 |               |
-|----------------:|---------------|
-|   $\text{E}(X)$ | $p$           |
-| $\text{Var}(X)$ | $pq = p(1-p)$ |
+$$\text{E}(X) = p$$
+
+$$\text{Var}(X) = pq = p(1-p)$$
 
 ## Bernoulli Example 1
 
@@ -94,10 +93,7 @@ $$
 p_X(x) = P(X=x) = {n \choose x}p^x(1-p)^{n-x} \text{ for } x=0,1,2,  ..., n
 $$
 
-|                 |                |
-|----------------:|----------------|
-|   $\text{E}(X)$ | $np$           |
-| $\text{Var}(X)$ | $pq = np(1-p)$ |
+$$\text{E}(X) = np$$ $$\text{Var}(X) = npq = np(1-p)$$
 
 ## Bernoulli to Binomial
 
@@ -133,31 +129,26 @@ Example 2
 -   Shorthand: $X \sim \text{Geo}(p)$ or $X \sim \text{Geometric}(p)$ or
     $X \sim \text{G}(p)$
 
-+---------------------------+-----------------------------+
-| $X =$ Number of trials    | $X =$ Number of failures    |
-| needed for first success  | before first success (count |
-| (count $x$ *includes* the | $x$ *does not include* the  |
-| success)                  | success)                    |
-+:=========================:+:===========================:+
-| $p_X ( x )                | $p_X                        |
-|  = P(X=x) = (1-p)^{x-1}p$ | ( x) = P(X=x) = (1-p)^{x}p$ |
-|                           |                             |
-| for $x=1,2, 3,...$        | for $x=0, 1,2,...$          |
-|                           |                             |
-| $E(X)=\dfrac{1}{p}$       | $E(X)=\dfrac{1-p}{p}$       |
-|                           |                             |
-| $$                        | $$                          |
-| {                         | {                           |
-| V                         | V                           |
-| a                         | a                           |
-| r                         | r}(X) = \dfrac{1-p}{p^2}$$  |
-| }(X) = \dfrac{1-p}{p^2}$$ |                             |
-+---------------------------+-----------------------------+
-
-## Memoryless property for Geometric RVs
-
-$P(X > k+j |X > j) = P(X > k)$
-$$ P(X > k+j |X > j) = \dfrac{P(X>k+j \text{ and } X>j)}{P(X>j)} = \dfrac{P(X>k+j)}{P(X>j)} = \dfrac{(1-p)^{k+j}}{(1-p)^{j}} = (1-p)^{k} $$
++-----------------------------------+-------------------------------+
+| $X =$ Number of trials needed for | $X =$ Number of failures      |
+| first success (count $x$          | before first success (count   |
+| *includes* the success)           | $x$ *does not include* the    |
+|                                   | success)                      |
++:=================================:+:=============================:+
+| $p                                | $                             |
+| _X ( x ) = P(X=x) = (1-p)^{x-1}p$ | p_X (x)= P(X=x) = (1-p)^{x}p$ |
+|                                   |                               |
+| for $x=1,2, 3,...$                | for $x=0, 1,2,...$            |
+|                                   |                               |
+| $F_                               | $F_X ( x )                    |
+| X ( x ) = P(X\leq x) = 1-(1-p)^x$ | = P(X\leq x) = 1-(1-p)^{x+1}$ |
+|                                   |                               |
+| for $x=1,2, 3,...$                | for $x=0, 1,2,...$            |
++-----------------------------------+-------------------------------+
+| $E(X)=\dfrac{1-p}{p}$             | $E(X)=\dfrac{1-p}{p}$         |
+|                                   |                               |
+| $Var(X)= \dfrac{1-p}{p^2}$        | $Var(X) = \dfrac{1-p}{p^2}$   |
++-----------------------------------+-------------------------------+
 
 ## Bullseye (1/6)
 
@@ -258,7 +249,7 @@ each throw.
 
     -   is on one of the first four tries
 
-    -   is after the fifth try
+    -   is after the fourth try
 :::
 :::
 :::
@@ -289,25 +280,13 @@ each throw.
 :::
 :::
 
-## Bullseye (6/6)
+## Memoryless property for Geometric RVs
 
-::: columns
-::: {.column width="35%"}
-::: example
-::: ex-title
-Example 3
-:::
+If we know $X$ is greater than some number (aka given $X >j$), then the
+probability of $X > k+j$ is just the probability that $X>k$.
 
-::: ex-cont
-We throw darts at a dartboard until we hit the bullseye. Assume throws
-are independent and the probability of hitting the bullseye is 0.01 for
-each throw.
-
-4.  Find the expected number of misses until we hit the bullseye.
-:::
-:::
-:::
-:::
+$P(X > k+j |X > j) = P(X > k)$
+$$ P(X > k+j |X > j) = \dfrac{P(X>k+j \text{ and } X>j)}{P(X>j)} = \dfrac{P(X>k+j)}{P(X>j)} = \dfrac{(1-p)^{k+j}}{(1-p)^{j}} = (1-p)^{k} $$
 
 # Chapter 19: Hypergeometric RVs {#chapter-19-hypergeometric-r.v.s .unnumbered}
 
@@ -345,11 +324,10 @@ Example 4
 :::
 
 ::: ex-cont
-A wildlife biologist is using mark-recapture to research
-a wolf population. Suppose a specific study region is known to have 24
-wolves, of which 11 have already been tagged. If 5 wolves are randomly
-captured, what is the probability that 3 of them have already been
-tagged?
+A wildlife biologist is using mark-recapture to research a wolf
+population. Suppose a specific study region is known to have 24 wolves,
+of which 11 have already been tagged. If 5 wolves are randomly captured,
+what is the probability that 3 of them have already been tagged?
 :::
 :::
 :::
@@ -381,8 +359,8 @@ Example 5
 :::
 
 ::: ex-cont
-Suppose a specific study region is known to have 2400
-wolves, of which 1100 have already been tagged.
+Suppose a specific study region is known to have 2400 wolves, of which
+1100 have already been tagged.
 
 1.  If 50 wolves are randomly captured, what is the probability that 20
     of them have already been tagged?
@@ -394,13 +372,12 @@ wolves, of which 1100 have already been tagged.
 :::
 :::
 
-
 # Chapter 20: Discrete Uniform RVs {#chapter-20-discrete-uniform-r.v.s .unnumbered}
 
 ## Discrete Uniform RVs
 
 -   **Scenario:** There are $N$ possible outcomes, which are all equally
-likely.
+    likely.
 -   Shorthand: $X \sim \text{Uniform}(N)$
 
 $$
@@ -414,7 +391,6 @@ $$
 $$\text{E}(X) =\dfrac{N+1}{2}$$
 
 $$\text{Var}(X) = \dfrac{N^2 -1}{12}$$
-
 
 ## What discrete uniform RVs have we seen already?
 
@@ -431,4 +407,3 @@ Examples of discrete uniform RVs
 :::
 :::
 :::
-
