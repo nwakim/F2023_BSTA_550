@@ -482,10 +482,10 @@ p_X(x) = P(X=x) = {n \choose x}p^x(1-p)^{n-x} \text{ for } x=0,1,2,  ..., n
 <li><p><strong>Scenario:</strong> There are repeated independent trials, each resulting in a success or failure, with constant probability of success for each trial. We are counting the number of trials until the first success.</p></li>
 <li><p>Shorthand: <span class="math inline">\(X \sim \text{Geo}(p)\)</span> or <span class="math inline">\(X \sim \text{Geometric}(p)\)</span> or <span class="math inline">\(X \sim \text{G}(p)\)</span></p></li>
 </ul>
-<table style="width:94%;">
+<table style="width:92%;">
 <colgroup>
-<col style="width: 50%">
-<col style="width: 44%">
+<col style="width: 48%">
+<col style="width: 43%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -495,13 +495,13 @@ p_X(x) = P(X=x) = {n \choose x}p^x(1-p)^{n-x} \text{ for } x=0,1,2,  ..., n
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;"><p><span class="math inline">\(p _X ( x ) = P(X=x) = (1-p)^{x-1}p\)</span></p>
+<td style="text-align: center;"><p><span class="math inline">\(p _ X ( x ) = P(X=x) = (1-p)^{x-1}p\)</span></p>
 <p>for <span class="math inline">\(x=1,2, 3,...\)</span></p>
-<p><span class="math inline">\(F_ X ( x ) = P(X\leq x) = 1-(1-p)^x\)</span></p>
+<p><span class="math inline">\(F_ X  ( x ) = P(X\leq x) = 1-(1-p)^x\)</span></p>
 <p>for <span class="math inline">\(x=1,2, 3,...\)</span></p></td>
-<td style="text-align: center;"><p>$ p_X (x)= P(X=x) = (1-p)^{x}p$</p>
+<td style="text-align: center;"><p><span class="math inline">\(p _X (x)= P(X=x) = (1-p)^{x}p\)</span></p>
 <p>for <span class="math inline">\(x=0, 1,2,...\)</span></p>
-<p><span class="math inline">\(F_X ( x ) = P(X\leq x) = 1-(1-p)^{x+1}\)</span></p>
+<p><span class="math inline">\(F_X ( x ) =  P(X\leq x) = 1-(1-p)^{x+1}\)</span></p>
 <p>for <span class="math inline">\(x=0, 1,2,...\)</span></p></td>
 </tr>
 <tr class="even">
@@ -625,6 +625,7 @@ p_X(x) = P(X=x) = {n \choose x}p^x(1-p)^{n-x} \text{ for } x=0,1,2,  ..., n
 <section id="memoryless-property-for-geometric-rvs" class="slide level2">
 <h2>Memoryless property for Geometric RVs</h2>
 <p>If we know <span class="math inline">\(X\)</span> is greater than some number (aka given <span class="math inline">\(X &gt;j\)</span>), then the probability of <span class="math inline">\(X &gt; k+j\)</span> is just the probability that <span class="math inline">\(X&gt;k\)</span>.</p>
+<p>&nbsp;</p>
 <p><span class="math inline">\(P(X &gt; k+j |X &gt; j) = P(X &gt; k)\)</span> <span class="math display">\[ P(X &gt; k+j |X &gt; j) = \dfrac{P(X&gt;k+j \text{ and } X&gt;j)}{P(X&gt;j)} = \dfrac{P(X&gt;k+j)}{P(X&gt;j)} = \dfrac{(1-p)^{k+j}}{(1-p)^{j}} = (1-p)^{k} \]</span></p>
 </section></section>
 <section>

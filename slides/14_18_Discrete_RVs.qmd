@@ -129,26 +129,26 @@ Example 2
 -   Shorthand: $X \sim \text{Geo}(p)$ or $X \sim \text{Geometric}(p)$ or
     $X \sim \text{G}(p)$
 
-+-----------------------------------+-------------------------------+
-| $X =$ Number of trials needed for | $X =$ Number of failures      |
-| first success (count $x$          | before first success (count   |
-| *includes* the success)           | $x$ *does not include* the    |
-|                                   | success)                      |
-+:=================================:+:=============================:+
-| $p                                | $                             |
-| _X ( x ) = P(X=x) = (1-p)^{x-1}p$ | p_X (x)= P(X=x) = (1-p)^{x}p$ |
-|                                   |                               |
-| for $x=1,2, 3,...$                | for $x=0, 1,2,...$            |
-|                                   |                               |
-| $F_                               | $F_X ( x )                    |
-| X ( x ) = P(X\leq x) = 1-(1-p)^x$ | = P(X\leq x) = 1-(1-p)^{x+1}$ |
-|                                   |                               |
-| for $x=1,2, 3,...$                | for $x=0, 1,2,...$            |
-+-----------------------------------+-------------------------------+
-| $E(X)=\dfrac{1-p}{p}$             | $E(X)=\dfrac{1-p}{p}$         |
-|                                   |                               |
-| $Var(X)= \dfrac{1-p}{p^2}$        | $Var(X) = \dfrac{1-p}{p^2}$   |
-+-----------------------------------+-------------------------------+
++----------------------------------+------------------------------+
+| $X =$ Number of trials needed    | $X =$ Number of failures     |
+| for first success (count $x$     | before first success (count  |
+| *includes* the success)          | $x$ *does not include* the   |
+|                                  | success)                     |
++:================================:+:============================:+
+| $p _                             | $p                           |
+| X ( x ) = P(X=x) = (1-p)^{x-1}p$ | _X (x)= P(X=x) = (1-p)^{x}p$ |
+|                                  |                              |
+| for $x=1,2, 3,...$               | for $x=0, 1,2,...$           |
+|                                  |                              |
+| $F_ X                            | $F_X ( x ) =                 |
+|  ( x ) = P(X\leq x) = 1-(1-p)^x$ |  P(X\leq x) = 1-(1-p)^{x+1}$ |
+|                                  |                              |
+| for $x=1,2, 3,...$               | for $x=0, 1,2,...$           |
++----------------------------------+------------------------------+
+| $E(X)=\dfrac{1-p}{p}$            | $E(X)=\dfrac{1-p}{p}$        |
+|                                  |                              |
+| $Var(X)= \dfrac{1-p}{p^2}$       | $Var(X) = \dfrac{1-p}{p^2}$  |
++----------------------------------+------------------------------+
 
 ## Bullseye (1/6)
 
@@ -284,6 +284,8 @@ each throw.
 
 If we know $X$ is greater than some number (aka given $X >j$), then the
 probability of $X > k+j$ is just the probability that $X>k$.
+
+ 
 
 $P(X > k+j |X > j) = P(X > k)$
 $$ P(X > k+j |X > j) = \dfrac{P(X>k+j \text{ and } X>j)}{P(X>j)} = \dfrac{P(X>k+j)}{P(X>j)} = \dfrac{(1-p)^{k+j}}{(1-p)^{j}} = (1-p)^{k} $$
