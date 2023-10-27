@@ -2,7 +2,7 @@
 title: "Week 6"
 description: "Common families of discrete distributions cont"
 date: "10/30/2023"
-date-modified: "10/24/2023"
+date-modified: "10/25/2023"
 categories: [""]
 format: 
   html:
@@ -30,10 +30,13 @@ editor_options:
 
 ## Resources
 
-| Chapter | Topic                |                                Slides                                 |                                  Annotated Slides                                  |                           Recording                           |
-|-------------|-------------|:-------------:|:-----------------:|:-----------:|
-| 17      | Negative Binomial RV | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
-| 18      | Poisson RV           | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
++-------------+----------------------+--------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+---------------------------------------------------------------+
+| Chapter     | Topic                | Slides                                                                                                       | Annotated Slides                                                                   | Recording                                                     |
++=============+======================+:============================================================================================================:+:==================================================================================:+:=============================================================:+
+| 17          | Negative Binomial RV | [[{{< iconify ri slideshow-fill size=30px >}}](/slides/17_Negative_Binomial_rv.qmd)]{style="color:#f8f5f0;"} | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
++-------------+----------------------+--------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+---------------------------------------------------------------+
+| 18          | Poisson RV           | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"}                                        | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
++-------------+----------------------+--------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+---------------------------------------------------------------+
 
 ### Exam Materials
 

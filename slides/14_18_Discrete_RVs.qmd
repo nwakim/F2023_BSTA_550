@@ -129,25 +129,25 @@ Example 2
 -   Shorthand: $X \sim \text{Geo}(p)$ or $X \sim \text{Geometric}(p)$ or
     $X \sim \text{G}(p)$
 
-+----------------------------------+----------------------------------+
-| $X =$ Number of trials needed    | $X =$ Number of failures before  |
-| for first success (count $x$     | first success (count $x$ *does   |
-| *includes* the success)          | not include* the success)        |
-+:================================:+:================================:+
-| $p _                             | $p _X (x)= P(X=x) = (1-p)^{x}p$  |
-| X ( x ) = P(X=x) = (1-p)^{x-1}p$ |                                  |
-|                                  | for $x=0, 1,2,...$               |
-| for $x=1,2, 3,...$               |                                  |
-|                                  | $F_X ( x                         |
-| $F_ X                            | ) =  P(X\leq x) = 1-(1-p)^{x+1}$ |
-|  ( x ) = P(X\leq x) = 1-(1-p)^x$ |                                  |
-|                                  | for $x=0, 1,2,...$               |
-| for $x=1,2, 3,...$               |                                  |
-+----------------------------------+----------------------------------+
-| $E(X)=\dfrac{1-p}{p}$            | $E(X)=\dfrac{1-p}{p}$            |
-|                                  |                                  |
-| $Var(X)= \dfrac{1-p}{p^2}$       | $Var(X) = \dfrac{1-p}{p^2}$      |
-+----------------------------------+----------------------------------+
++---------------------------------+---------------------------------+
+| $X =$ Number of trials needed   | $X =$ Number of failures before |
+| for first success (count $x$    | first success (count $x$ *does  |
+| *includes* the success)         | not include* the success)       |
++:===============================:+:===============================:+
+| $p _ X                          | $p _X (x)= P(X=x) = (1-p)^{x}p$ |
+|  ( x ) = P(X=x) = (1-p)^{x-1}p$ |                                 |
+|                                 | for $x=0, 1,2,...$              |
+| for $x=1,2, 3,...$              |                                 |
+|                                 | $F_X ( x                        |
+| $F_ X                           | ) = P(X\leq x) = 1-(1-p)^{x+1}$ |
+| ( x ) = P(X\leq x) = 1-(1-p)^x$ |                                 |
+|                                 | for $x=0, 1,2,...$              |
+| for $x=1,2, 3,...$              |                                 |
++---------------------------------+---------------------------------+
+| $E(X)=\dfrac{1-p}{p}$           | $E(X)=\dfrac{1-p}{p}$           |
+|                                 |                                 |
+| $Var(X)= \dfrac{1-p}{p^2}$      | $Var(X) = \dfrac{1-p}{p^2}$     |
++---------------------------------+---------------------------------+
 
 ## Bullseye (1/6)
 

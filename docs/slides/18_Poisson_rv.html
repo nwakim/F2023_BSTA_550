@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Meike Niederhausen and Nicky Wakim">
+<meta name="dcterms.date" content="2023-10-30">
 
-<title>BSTA 550 – poisson_rv</title>
+<title>Introduction to Probability - Chapter 18: Poisson RVs</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -69,11 +71,14 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-sm navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../images/bsta_550_hex_3.png" alt="" class="navbar-logo">
+    </a>
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">BSTA 550</span>
+    <span class="navbar-title">Introduction to Probability</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -81,7 +86,7 @@ ul.task-list li input[type="checkbox"] {
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link active" href="../syllabus.html" rel="" target="" aria-current="page">
  <span class="menu-text">Syllabus</span></a>
@@ -91,15 +96,15 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Schedule</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../readings.html" rel="" target="">
- <span class="menu-text">Readings</span></a>
+    <a class="nav-link" href="../class_slides.html" rel="" target="">
+ <span class="menu-text">Slides</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../homeworks.html" rel="" target="">
- <span class="menu-text">Homeworks</span></a>
+ <span class="menu-text">Homework</span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools ms-auto">
+            <div class="quarto-navbar-tools">
 </div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
@@ -109,7 +114,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Chapter 18: Poisson RVs</li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -182,9 +187,97 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../homeworks.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Homeworks</span></a>
+ <span class="menu-text">Homework</span></a>
   </div>
 </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../schedule.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Weekly Pages</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Weeks</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth3 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../weeks/week_01_sched.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../weeks/week_02_sched.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../weeks/week_03_sched.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 3</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../weeks/week_04_sched.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 4</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../weeks/week_05_sched.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 5</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../weeks/week_06_sched.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 6</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../weeks/week_07_sched.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 7</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../weeks/week_08_sched.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 8</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../weeks/week_09_sched.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 9</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../weeks/week_10_sched.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 10</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../weeks/week_11_sched.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 11</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
       </ul>
   </li>
     </ul>
@@ -197,19 +290,69 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#chapter-18-poisson-r.v.s" id="toc-chapter-18-poisson-r.v.s" class="nav-link active" data-scroll-target="#chapter-18-poisson-r.v.s">Chapter 18: Poisson r.v.’s</a></li>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
+  <li><a href="#properties-of-poisson-rvs" id="toc-properties-of-poisson-rvs" class="nav-link" data-scroll-target="#properties-of-poisson-rvs">Properties of Poisson RVs</a></li>
+  <li><a href="#something" id="toc-something" class="nav-link" data-scroll-target="#something">Something?</a></li>
+  <li><a href="#example" id="toc-example" class="nav-link" data-scroll-target="#example">Example</a></li>
+  <li><a href="#example-1" id="toc-example-1" class="nav-link" data-scroll-target="#example-1">Example</a></li>
+  <li><a href="#example-2" id="toc-example-2" class="nav-link" data-scroll-target="#example-2">Example</a></li>
+  <li><a href="#theorem" id="toc-theorem" class="nav-link" data-scroll-target="#theorem">Theorem</a></li>
+  <li><a href="#poisson-vs.-binomial-r.v.s" id="toc-poisson-vs.-binomial-r.v.s" class="nav-link" data-scroll-target="#poisson-vs.-binomial-r.v.s">Poisson vs.&nbsp;Binomial r.v.’s</a></li>
+  <li><a href="#example-3" id="toc-example-3" class="nav-link" data-scroll-target="#example-3">Example</a></li>
   </ul>
-</nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="18_Poisson_rv.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Chapter 18: Poisson RVs</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Week 6</div>
+  </div>
+  </div>
 
 
-<section id="chapter-18-poisson-r.v.s" class="level1 unnumbered">
-<h1 class="unnumbered">Chapter 18: Poisson r.v.’s</h1>
-<p><strong>Scenario:</strong> We are counting the number of successes in a fixed time period, which has a constant rate of successes.</p>
-<hr>
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Meike Niederhausen and Nicky Wakim </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 30, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
+<ol type="1">
+<li>Distinguish between Bernoulli, Binomial, Geometric, Hypergeometric, and Discrete Uniform distributions when reading a story.</li>
+<li>Identify the variable and the parameters in a story, and state what the variable and parameters mean.</li>
+<li>Use the formulas for the pmf/CDF, expected value, and variance to answer questions and find probabilities.</li>
+</ol>
+</section>
+<section id="properties-of-poisson-rvs" class="level2">
+<h2 class="anchored" data-anchor-id="properties-of-poisson-rvs">Properties of Poisson RVs</h2>
+<ul>
+<li><strong>Scenario:</strong> We are counting the number of successes in a fixed time period, which has a constant rate of successes</li>
+</ul>
+</section>
+<section id="something" class="level2">
+<h2 class="anchored" data-anchor-id="something">Something?</h2>
 <ul>
 <li><p>Recall that if <span class="math inline">\(X\sim Binomial(n,p)\)</span>, then</p>
 <ul>
@@ -223,37 +366,75 @@ ul.task-list li input[type="checkbox"] {
 <li><p>there is a fixed time period during which the successes happen.</p></li>
 </ul></li>
 </ul>
-<hr>
+</section>
+<section id="example" class="level2">
+<h2 class="anchored" data-anchor-id="example">Example</h2>
+<div class="columns">
+<div class="column" style="width:35%;">
 <div class="example">
-<p><strong>Example 1</strong>. <em>&nbsp; Some examples of Poisson r.v.’s:</em></p>
+<div class="ex-title">
+<p>Example 1</p>
+</div>
+<div class="ex-cont">
+<p>Some examples of Poisson r.v.’s:</p>
 <ul>
-<li><p><em>Number of visitors to an emergency room in an hour during a weekend night</em></p></li>
-<li><p><em>Number of study participants enrolled in a study per week</em></p></li>
-<li><p><em>Number of gun shootings in a square mile</em></p></li>
+<li><p>Number of visitors to an emergency room in an hour during a weekend night</p></li>
+<li><p>Number of study participants enrolled in a study per week</p></li>
+<li><p>Number of gun shootings in a square mile</p></li>
 </ul>
 </div>
-<hr>
-<p><strong>Properties of Poisson r.v.’s</strong></p>
+</div>
+</div>
+</div>
+</section>
+<section id="example-1" class="level2">
+<h2 class="anchored" data-anchor-id="example-1">Example</h2>
+<div class="columns">
+<div class="column" style="width:35%;">
 <div class="example">
-<p><strong>Example 2</strong>. <em>&nbsp; Suppose an emergency room has an average of 50 visitors per day. Find the following probabilities.</em></p>
+<div class="ex-title">
+<p>Example 2</p>
+</div>
+<div class="ex-cont">
+<p>Suppose an emergency room has an average of 50 visitors per day. Find the following probabilities.</p>
 <ol type="1">
-<li><p><em>Probability of 30 visitors in a day.</em></p>
-<p><strong><em>Solution:</em></strong></p></li>
-<li><p><em>Probability of 8 visitors in an hour.</em></p>
-<p><strong><em>Solution:</em></strong></p></li>
-<li><p><em>Probability of at least 8 visitors in an hour.</em></p>
-<p><strong><em>Solution:</em></strong></p></li>
+<li><p>Probability of 30 visitors in a day.</p></li>
+<li><p>Probability of 8 visitors in an hour.</p></li>
+<li><p>Probability of at least 8 visitors in an hour.</p></li>
 </ol>
 </div>
+</div>
+</div>
+</div>
+</section>
+<section id="example-2" class="level2">
+<h2 class="anchored" data-anchor-id="example-2">Example</h2>
+<div class="columns">
+<div class="column" style="width:35%;">
 <div class="example">
-<p><strong>Example 3</strong>. <em>&nbsp; Suppose emergency room 1 has an average of 50 visitors per day, and emergency room 2 has an average of 70 visitors per day, independently of each other. What is the probability distribution to model of the total number of visitors to both?</em></p>
+<div class="ex-title">
+<p>Example 3</p>
 </div>
-<p><strong>Solution:</strong></p>
+<div class="ex-cont">
+<p>Suppose emergency room 1 has an average of 50 visitors per day, and emergency room 2 has an average of 70 visitors per day, independently of each other. What is the probability distribution to model of the total number of visitors to both?</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="theorem" class="level2">
+<h2 class="anchored" data-anchor-id="theorem">Theorem</h2>
 <div class="theorem">
-<p><strong>Theorem 4</strong>. <em>&nbsp; If <span class="math inline">\(X\sim Poiss(\lambda_1)\)</span> and <span class="math inline">\(Y\sim Poiss(\lambda_2)\)</span> are independent of each other, then <span class="math inline">\(Z=X+Y\sim Poiss(\lambda_1 + \lambda_2)\)</span>.</em></p>
+<div class="thm-title">
+<p><strong>Theorem 4</strong>.</p>
 </div>
-<hr>
-<p><strong>Poisson vs.&nbsp;Binomial r.v.’s</strong></p>
+<div class="thm-cont">
+<p><em>If</em> <span class="math inline">\(X\sim Poiss(\lambda_1)\)</span> and <span class="math inline">\(Y\sim Poiss(\lambda_2)\)</span> are independent of each other, then <span class="math inline">\(Z=X+Y\sim Poiss(\lambda_1 + \lambda_2)\)</span>.</p>
+</div>
+</div>
+</section>
+<section id="poisson-vs.-binomial-r.v.s" class="level2">
+<h2 class="anchored" data-anchor-id="poisson-vs.-binomial-r.v.s">Poisson vs.&nbsp;Binomial r.v.’s</h2>
 <p>Both Poisson and Binomial r.v.’s are counting the number of successes</p>
 <ul>
 <li><p>If for a Binomial r.v.</p>
@@ -263,13 +444,24 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 <li><p>then the Poisson distribution can be used to approximate Binomial probabilities.</p></li>
 </ul>
+</section>
+<section id="example-3" class="level2">
+<h2 class="anchored" data-anchor-id="example-3">Example</h2>
+<div class="columns">
+<div class="column" style="width:35%;">
 <div class="example">
-<p><strong>Example 5</strong>. <em>&nbsp; Suppose that in the long run, errors in a medical testing lab are made 0.1% of the time. Find the probability that fewer than 4 mistakes are made in the next 2,000 tests.</em></p>
+<div class="ex-title">
+<p>Example 4</p>
+</div>
+<div class="ex-cont">
+<p>Suppose that in the long run, errors in a medical testing lab are made 0.1% of the time. Find the probability that fewer than 4 mistakes are made in the next 2,000 tests.</p>
 <ol type="1">
-<li><p><em>Find the probability using the Binomial distribution.</em></p></li>
-<li><p><em>Approximate the probability in part (1) using the Poisson distribution.</em></p></li>
+<li><p>Find the probability using the Binomial distribution.</p></li>
+<li><p>Approximate the probability in part (1) using the Poisson distribution.</p></li>
 </ol>
-<p><strong><em>Solution:</em></strong></p>
+</div>
+</div>
+</div>
 </div>
 
 

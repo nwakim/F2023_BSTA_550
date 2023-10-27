@@ -1,9 +1,51 @@
-# Chapter 18: Poisson r.v.'s {#chapter-18-poisson-r.v.s .unnumbered}
+---
+title: "Chapter 18: Poisson RVs"
+author: "Meike Niederhausen and Nicky Wakim"
+date: "10/30/2023"
+categories: ["Week 6"]
+title-slide-attributes:
+    data-background-color: "#006a4e"
+format: 
+  revealjs:
+    theme: [default, simple_NW.scss]
+    toc: true
+    chalkboard: true
+    slide-number: true
+    show-slide-number: all
+    width: 1955
+    height: 1100
+    footer: Chapter 18 Slides
+editor: 
+  markdown: 
+    wrap: 72
+---
 
-**Scenario:** We are counting the number of successes in a fixed time
-period, which has a constant rate of successes.
+## Learning Objectives
 
-------------------------------------------------------------------------
+1.  Distinguish between Bernoulli, Binomial, Geometric, Hypergeometric,
+    and Discrete Uniform distributions when reading a story.
+2.  Identify the variable and the parameters in a story, and state what
+    the variable and parameters mean.
+3.  Use the formulas for the pmf/CDF, expected value, and variance to
+    answer questions and find probabilities.
+
+## Properties of Poisson RVs
+
+-   **Scenario:** We are counting the number of successes in a fixed
+    time period, which has a constant rate of successes
+-   Shorthand: $X \sim \text{Poisson}(\lambda)$ or $X \sim \text{Pois}(\lambda)$
+
+$$
+X = \text{Number of successes in a given "period"} 
+$$
+
+$$ p_X(x) = P(X=x) = \dfrac{e^{-\lambda}\lambda^x}{x!} \text{ for } x = 0, 1, 2,3, ...$$
+
+$$ E(X) = \lambda$$
+
+$$Var(X) = \lambda$$
+
+## Something?
 
 -   Recall that if $X\sim Binomial(n,p)$, then
 
@@ -19,58 +61,82 @@ period, which has a constant rate of successes.
 
     -   there is a fixed time period during which the successes happen.
 
-------------------------------------------------------------------------
+## Example
 
+::: columns
+::: {.column width="35%"}
 ::: example
-**Example 1**. *  Some examples of Poisson r.v.'s:*
+::: ex-title
+Example 1
+:::
+::: ex-cont
+Some examples of Poisson r.v.'s:
 
--   *Number of visitors to an emergency room in an hour during a weekend
-    night*
+-   Number of visitors to an emergency room in an hour during a weekend
+    night
 
--   *Number of study participants enrolled in a study per week*
+-   Number of study participants enrolled in a study per week
 
--   *Number of gun shootings in a square mile*
+-   Number of gun shootings in a square mile
+:::
+:::
+:::
 :::
 
-------------------------------------------------------------------------
+## Example
 
-**Properties of Poisson r.v.'s**
-
+::: columns
+::: {.column width="35%"}
 ::: example
-**Example 2**. *  Suppose an emergency room has an average of 50
-visitors per day. Find the following probabilities.*
+::: ex-title
+Example 2
+:::
+::: ex-cont
+Suppose an emergency room has an average of 50 visitors
+per day. Find the following probabilities.
 
-1.  *Probability of 30 visitors in a day.*
+1.  Probability of 30 visitors in a day.
 
-    ***Solution:***
+2.  Probability of 8 visitors in an hour.
 
-2.  *Probability of 8 visitors in an hour.*
-
-    ***Solution:***
-
-3.  *Probability of at least 8 visitors in an hour.*
-
-    ***Solution:***
+3.  Probability of at least 8 visitors in an hour.
+:::
+:::
+:::
 :::
 
+## Example
+
+::: columns
+::: {.column width="35%"}
 ::: example
-**Example 3**. *  Suppose emergency room 1 has an average of 50 visitors
+::: ex-title
+Example 3
+:::
+::: ex-cont
+Suppose emergency room 1 has an average of 50 visitors
 per day, and emergency room 2 has an average of 70 visitors per day,
 independently of each other. What is the probability distribution to
-model of the total number of visitors to both?*
+model of the total number of visitors to both?
+:::
+:::
+:::
 :::
 
-**Solution:**
+## Theorem
 
 ::: theorem
-**Theorem 4**. *  If $X\sim Poiss(\lambda_1)$ and
+::: thm-title
+**Theorem 4**. 
+:::
+::: thm-cont
+*If* $X\sim Poiss(\lambda_1)$ and
 $Y\sim Poiss(\lambda_2)$ are independent of each other, then
-$Z=X+Y\sim Poiss(\lambda_1 + \lambda_2)$.*
+$Z=X+Y\sim Poiss(\lambda_1 + \lambda_2)$.
+:::
 :::
 
-------------------------------------------------------------------------
-
-**Poisson vs. Binomial r.v.'s**
+## Poisson vs. Binomial r.v.'s
 
 Both Poisson and Binomial r.v.'s are counting the number of successes
 
@@ -83,15 +149,23 @@ Both Poisson and Binomial r.v.'s are counting the number of successes
 -   then the Poisson distribution can be used to approximate Binomial
     probabilities.
 
+## Example
+
+::: columns
+::: {.column width="35%"}
 ::: example
-**Example 5**. *  Suppose that in the long run, errors in a medical
+::: ex-title
+Example 4
+:::
+::: ex-cont
+Suppose that in the long run, errors in a medical
 testing lab are made 0.1% of the time. Find the probability that fewer
-than 4 mistakes are made in the next 2,000 tests.*
+than 4 mistakes are made in the next 2,000 tests.
 
-1.  *Find the probability using the Binomial distribution.*
+1.  Find the probability using the Binomial distribution.
 
-2.  *Approximate the probability in part (1) using the Poisson
-    distribution.*
-
-***Solution:***
+2.  Approximate the probability in part (1) using the Poisson distribution.
+:::
+:::
+:::
 :::
