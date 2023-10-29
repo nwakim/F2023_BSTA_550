@@ -22,11 +22,9 @@ editor:
 
 ## Learning Objectives
 
-1.  Distinguish between Bernoulli, Binomial, Geometric, Hypergeometric,
-    and Discrete Uniform distributions when reading a story.
-2.  Identify the variable and the parameters in a story, and state what
+1.  Identify the variable and the parameters of a Negative Binomial distribution in a word problem, and state what
     the variable and parameters mean.
-3.  Use the formulas for the pmf/CDF, expected value, and variance to
+2.  Use the formulas for the pmf/CDF, expected value, and variance to
     answer questions and find probabilities.
 
 ## Properties of Negative Binomial RVs
@@ -62,9 +60,30 @@ Consider again the bullseye example, where we throw darts at a dartboard
 until we hit the bullseye. Assume throws are independent and the
 probability of hitting the bullseye is 0.01 for each throw.
 
-1.  What is the probability that the $5^{th}$ bullseye is on the
+1.  What is the expected value and variance of the number of throws needed to hit the bullseye?
+:::
+:::
+:::
+:::
+
+## Hitting more than 1 bullseye
+
+::: columns
+::: {.column width="35%"}
+::: example
+::: ex-title
+Example 1
+:::
+
+::: ex-cont
+Consider again the bullseye example, where we throw darts at a dartboard
+until we hit the bullseye. Assume throws are independent and the
+probability of hitting the bullseye is 0.01 for each throw.
+
+2.  What is the probability that the $5^{th}$ bullseye is on the
     $20^{th}$ throw?
 :::
 :::
 :::
 :::
+

@@ -11,7 +11,7 @@
     "href": "schedule.html",
     "title": "Weekly Pages",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nDescription\n\n\n\n\n\n\n9/25/23\n\n\nWeek 1\n\n\nOutcomes, Events, and Sample Space; Probability; and Counting\n\n\n\n\n10/2/23\n\n\nWeek 2\n\n\nIndependent Events; Conditional Probability; and Bayes’ Theorem\n\n\n\n\n10/9/23\n\n\nWeek 3\n\n\nRVs; PMFs and CDFs; and Independence and Conditioning\n\n\n\n\n10/16/23\n\n\nWeek 4\n\n\nExpected values of discrete random variables\n\n\n\n\n10/23/23\n\n\nWeek 5\n\n\nDiscrete random variables: variance and common families\n\n\n\n\n10/30/23\n\n\nWeek 6\n\n\nCommon families of discrete distributions cont\n\n\n\n\n11/6/23\n\n\nWeek 7\n\n\nContinuous RVs; PDFs; and Joint densities\n\n\n\n\n11/13/23\n\n\nWeek 8\n\n\nJoint PDFs, Independent continuous RVs, and Conditional distributions\n\n\n\n\n11/20/23\n\n\nWeek 9\n\n\nExpected values, variance, and continuous distributions\n\n\n\n\n11/27/23\n\n\nWeek 10\n\n\nmgf’s; Sum of Normal RV’s; and Central Limit Theorem\n\n\n\n\n12/4/23\n\n\nWeek 11\n\n\nFinal Exam\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nDescription\n\n\n\n\n\n\n9/25/23\n\n\nWeek 1\n\n\nOutcomes, Events, and Sample Space; Probability; and Counting\n\n\n\n\n10/2/23\n\n\nWeek 2\n\n\nIndependent Events; Conditional Probability; and Bayes’ Theorem\n\n\n\n\n10/9/23\n\n\nWeek 3\n\n\nRVs; PMFs and CDFs; and Independence and Conditioning\n\n\n\n\n10/16/23\n\n\nWeek 4\n\n\nExpected values of discrete random variables\n\n\n\n\n10/23/23\n\n\nWeek 5\n\n\nDiscrete random variables: variance and common families\n\n\n\n\n10/30/23\n\n\nWeek 6\n\n\nCommon families of discrete distributions continued + Midterm Exam\n\n\n\n\n11/6/23\n\n\nWeek 7\n\n\nContinuous RVs; PDFs; and Joint densities\n\n\n\n\n11/13/23\n\n\nWeek 8\n\n\nJoint PDFs, Independent continuous RVs, and Conditional distributions\n\n\n\n\n11/20/23\n\n\nWeek 9\n\n\nExpected values, variance, and continuous distributions\n\n\n\n\n11/27/23\n\n\nWeek 10\n\n\nmgf’s; Sum of Normal RV’s; and Central Limit Theorem\n\n\n\n\n12/4/23\n\n\nWeek 11\n\n\nFinal Exam\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "syllabus.html",
@@ -4749,43 +4749,43 @@
     "objectID": "slides/18_Poisson_rv.html#learning-objectives",
     "href": "slides/18_Poisson_rv.html#learning-objectives",
     "title": "Chapter 18: Poisson RVs",
-    "section": "",
-    "text": "Distinguish between Bernoulli, Binomial, Geometric, Hypergeometric, and Discrete Uniform distributions when reading a story.\nIdentify the variable and the parameters in a story, and state what the variable and parameters mean.\nUse the formulas for the pmf/CDF, expected value, and variance to answer questions and find probabilities."
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\n\nIdentify the variable and the parameters of a Poisson distribution in a word problem, and state what the variable and parameters mean.\nUse the formulas for the pmf/CDF, expected value, and variance to answer questions and find probabilities."
   },
   {
     "objectID": "slides/18_Poisson_rv.html#properties-of-poisson-rvs",
     "href": "slides/18_Poisson_rv.html#properties-of-poisson-rvs",
     "title": "Chapter 18: Poisson RVs",
     "section": "Properties of Poisson RVs",
-    "text": "Properties of Poisson RVs\n\nScenario: We are counting the number of successes in a fixed time period, which has a constant rate of successes"
+    "text": "Properties of Poisson RVs\n\nScenario: We are counting the number of successes in a fixed time period, which has a constant rate of successes\nShorthand: \\(X \\sim \\text{Poisson}(\\lambda)\\) or \\(X \\sim \\text{Pois}(\\lambda)\\)\n\n\\[\nX = \\text{Number of successes in a given period}\n\\]\n\\[ p_X(x) = P(X=x) = \\dfrac{e^{-\\lambda}\\lambda^x}{x!} \\text{ for } x = 0, 1, 2,3, ...\\]\n\\[ E(X) = \\lambda\\]\n\\[Var(X) = \\lambda\\]"
   },
   {
     "objectID": "slides/18_Poisson_rv.html#something",
     "href": "slides/18_Poisson_rv.html#something",
     "title": "Chapter 18: Poisson RVs",
     "section": "Something?",
-    "text": "Something?\n\nRecall that if \\(X\\sim Binomial(n,p)\\), then\n\n\\(X\\) models the number of successes\nin \\(n\\) independent (Bernoulli) trials\nthat each have the same probability of success \\(p\\).\n\nPoisson r.v.’s are similar,\n\nexcept that instead of having \\(n\\) discrete independent trials,\nthere is a fixed time period during which the successes happen."
+    "text": "Something?\n\nRecall that if \\(X\\sim Binomial(n,p)\\), then\n\n\\(X\\) models the number of successes …\nin \\(n\\) independent (Bernoulli) trials …\nthat each have the same probability of success \\(p\\).\n\nPoisson r.v.’s are similar,\n\nexcept that instead of having \\(n\\) discrete independent trials,\nthere is a fixed time period during which the successes happen."
   },
   {
     "objectID": "slides/18_Poisson_rv.html#example",
     "href": "slides/18_Poisson_rv.html#example",
     "title": "Chapter 18: Poisson RVs",
     "section": "Example",
-    "text": "Example\n\n\n\n\nExample 1\n\n\nSome examples of Poisson r.v.’s:\n\nNumber of visitors to an emergency room in an hour during a weekend night\nNumber of study participants enrolled in a study per week\nNumber of gun shootings in a square mile"
+    "text": "Example\n\n\n\n\nExample 4\n\n\nSuppose that in the long run, errors in a medical testing lab are made 0.1% of the time. Find the probability that fewer than 4 mistakes are made in the next 2,000 tests.\n\nFind the probability using the Binomial distribution.\nApproximate the probability in part (1) using the Poisson distribution.\n\n\n\n\n\n\n\nChapter 18 Slides"
   },
   {
     "objectID": "slides/18_Poisson_rv.html#example-1",
     "href": "slides/18_Poisson_rv.html#example-1",
     "title": "Chapter 18: Poisson RVs",
     "section": "Example",
-    "text": "Example\n\n\n\n\nExample 2\n\n\nSuppose an emergency room has an average of 50 visitors per day. Find the following probabilities.\n\nProbability of 30 visitors in a day.\nProbability of 8 visitors in an hour.\nProbability of at least 8 visitors in an hour."
+    "text": "Example\n\n\n\n\nExample 4\n\n\nSuppose that in the long run, errors in a medical testing lab are made 0.1% of the time. Find the probability that fewer than 4 mistakes are made in the next 2,000 tests.\n\nFind the probability using the Binomial distribution.\nApproximate the probability in part (1) using the Poisson distribution.\n\n\n\n\n\n\n\nChapter 18 Slides"
   },
   {
     "objectID": "slides/18_Poisson_rv.html#example-2",
     "href": "slides/18_Poisson_rv.html#example-2",
     "title": "Chapter 18: Poisson RVs",
     "section": "Example",
-    "text": "Example\n\n\n\n\nExample 3\n\n\nSuppose emergency room 1 has an average of 50 visitors per day, and emergency room 2 has an average of 70 visitors per day, independently of each other. What is the probability distribution to model of the total number of visitors to both?"
+    "text": "Example\n\n\n\n\nExample 4\n\n\nSuppose that in the long run, errors in a medical testing lab are made 0.1% of the time. Find the probability that fewer than 4 mistakes are made in the next 2,000 tests.\n\nFind the probability using the Binomial distribution.\nApproximate the probability in part (1) using the Poisson distribution.\n\n\n\n\n\n\n\nChapter 18 Slides"
   },
   {
     "objectID": "slides/18_Poisson_rv.html#theorem",
@@ -4806,14 +4806,14 @@
     "href": "slides/18_Poisson_rv.html#example-3",
     "title": "Chapter 18: Poisson RVs",
     "section": "Example",
-    "text": "Example\n\n\n\n\nExample 4\n\n\nSuppose that in the long run, errors in a medical testing lab are made 0.1% of the time. Find the probability that fewer than 4 mistakes are made in the next 2,000 tests.\n\nFind the probability using the Binomial distribution.\nApproximate the probability in part (1) using the Poisson distribution."
+    "text": "Example\n\n\n\n\nExample 4\n\n\nSuppose that in the long run, errors in a medical testing lab are made 0.1% of the time. Find the probability that fewer than 4 mistakes are made in the next 2,000 tests.\n\nFind the probability using the Binomial distribution.\nApproximate the probability in part (1) using the Poisson distribution.\n\n\n\n\n\n\n\nChapter 18 Slides"
   },
   {
     "objectID": "slides/17_Negative_Binomial_rv.html#learning-objectives",
     "href": "slides/17_Negative_Binomial_rv.html#learning-objectives",
     "title": "Chapter 17: Negative Binomial RVs",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\n\nDistinguish between Bernoulli, Binomial, Geometric, Hypergeometric, and Discrete Uniform distributions when reading a story.\nIdentify the variable and the parameters in a story, and state what the variable and parameters mean.\nUse the formulas for the pmf/CDF, expected value, and variance to answer questions and find probabilities."
+    "text": "Learning Objectives\n\nIdentify the variable and the parameters of a Negative Binomial distribution in a word problem, and state what the variable and parameters mean.\nUse the formulas for the pmf/CDF, expected value, and variance to answer questions and find probabilities."
   },
   {
     "objectID": "slides/17_Negative_Binomial_rv.html#properties-of-negative-binomial-rvs",
@@ -4834,6 +4834,69 @@
     "href": "slides/17_Negative_Binomial_rv.html#hitting-more-than-1-bullseye",
     "title": "Chapter 17: Negative Binomial RVs",
     "section": "Hitting more than 1 bullseye",
+    "text": "Hitting more than 1 bullseye\n\n\n\n\nExample 1\n\n\nConsider again the bullseye example, where we throw darts at a dartboard until we hit the bullseye. Assume throws are independent and the probability of hitting the bullseye is 0.01 for each throw.\n\nWhat is the expected value and variance of the number of throws needed to hit the bullseye?"
+  },
+  {
+    "objectID": "slides/17_Negative_Binomial_rv.html#hitting-more-than-1-bullseye-1",
+    "href": "slides/17_Negative_Binomial_rv.html#hitting-more-than-1-bullseye-1",
+    "title": "Chapter 17: Negative Binomial RVs",
+    "section": "Hitting more than 1 bullseye",
     "text": "Hitting more than 1 bullseye\n\n\n\n\nExample 1\n\n\nConsider again the bullseye example, where we throw darts at a dartboard until we hit the bullseye. Assume throws are independent and the probability of hitting the bullseye is 0.01 for each throw.\n\nWhat is the probability that the \\(5^{th}\\) bullseye is on the \\(20^{th}\\) throw?\n\n\n\n\n\n\n\nChapter 18 Slides"
+  },
+  {
+    "objectID": "slides/18_Poisson_rv.html#distingushing-between-binomial-and-poisson-rvs",
+    "href": "slides/18_Poisson_rv.html#distingushing-between-binomial-and-poisson-rvs",
+    "title": "Chapter 18: Poisson RVs",
+    "section": "Distingushing between Binomial and Poisson RVs",
+    "text": "Distingushing between Binomial and Poisson RVs\n\nRecall that if \\(X\\sim Binomial(n,p)\\), then\n\n\\(X\\) models the number of successes …\nin \\(n\\) independent (Bernoulli) trials …\nthat each have the same probability of success \\(p\\).\n\nPoisson r.v.’s are similar,\n\nexcept that instead of having \\(n\\) discrete independent trials,\nthere is a fixed time period during which the successes happen."
+  },
+  {
+    "objectID": "slides/18_Poisson_rv.html#examples-of-poisson-rvs",
+    "href": "slides/18_Poisson_rv.html#examples-of-poisson-rvs",
+    "title": "Chapter 18: Poisson RVs",
+    "section": "Examples of Poisson RVs",
+    "text": "Examples of Poisson RVs\n\nNumber of visitors to an emergency room in an hour during a weekend night\nNumber of study participants enrolled in a study per week\nNumber of gun shootings in a square mile\nAny more?"
+  },
+  {
+    "objectID": "slides/18_Poisson_rv.html#emergency-room-visitors",
+    "href": "slides/18_Poisson_rv.html#emergency-room-visitors",
+    "title": "Chapter 18: Poisson RVs",
+    "section": "Emergency Room Visitors",
+    "text": "Emergency Room Visitors\n\n\n\n\nExample 1\n\n\nSuppose an emergency room has an average of 50 visitors per day. Find the following probabilities.\n\nProbability of 30 visitors in a day.\nProbability of 8 visitors in an hour.\nProbability of at least 8 visitors in an hour."
+  },
+  {
+    "objectID": "slides/18_Poisson_rv.html#two-emergency-rooms",
+    "href": "slides/18_Poisson_rv.html#two-emergency-rooms",
+    "title": "Chapter 18: Poisson RVs",
+    "section": "Two emergency rooms",
+    "text": "Two emergency rooms\n\n\n\n\nExample 2\n\n\nSuppose emergency room 1 has an average of 50 visitors per day, and emergency room 2 has an average of 70 visitors per day, independently of each other. What is the probability distribution to model of the total number of visitors to both?"
+  },
+  {
+    "objectID": "slides/18_Poisson_rv.html#combining-independent-poisson-distributions",
+    "href": "slides/18_Poisson_rv.html#combining-independent-poisson-distributions",
+    "title": "Chapter 18: Poisson RVs",
+    "section": "Combining independent Poisson distributions",
+    "text": "Combining independent Poisson distributions\n\n\nTheorem 1\n\n\nIf \\(X\\sim Poiss(\\lambda_1)\\) and \\(Y\\sim Poiss(\\lambda_2)\\) are independent of each other, then \\(Z=X+Y\\sim Poiss(\\lambda_1 + \\lambda_2)\\)."
+  },
+  {
+    "objectID": "slides/18_Poisson_rv.html#poisson-vs.-binomial-rvs",
+    "href": "slides/18_Poisson_rv.html#poisson-vs.-binomial-rvs",
+    "title": "Chapter 18: Poisson RVs",
+    "section": "Poisson vs. Binomial RVs",
+    "text": "Poisson vs. Binomial RVs\nBoth Poisson and Binomial r.v.’s are counting the number of successes\n\nIf for a Binomial r.v.\n\nthe number of trials \\(n\\) is very large, and\nthe probability of success \\(p\\) is close to 0 or 1,\n\nthen the Poisson distribution can be used to approximate Binomial probabilities."
+  },
+  {
+    "objectID": "slides/18_Poisson_rv.html#poisson-approximation-of-the-binomial",
+    "href": "slides/18_Poisson_rv.html#poisson-approximation-of-the-binomial",
+    "title": "Chapter 18: Poisson RVs",
+    "section": "Poisson Approximation of the Binomial",
+    "text": "Poisson Approximation of the Binomial\nBoth Poisson and Binomial r.v.’s are counting the number of successes\n\nIf for a Binomial r.v.\n\nthe number of trials \\(n\\) is very large, and\nthe probability of success \\(p\\) is close to 0 or 1,\n\nthen the Poisson distribution can be used to approximate Binomial probabilities."
+  },
+  {
+    "objectID": "slides/18_Poisson_rv.html#medical-lab-errors",
+    "href": "slides/18_Poisson_rv.html#medical-lab-errors",
+    "title": "Chapter 18: Poisson RVs",
+    "section": "Medical lab errors",
+    "text": "Medical lab errors\n\n\n\n\nExample 3\n\n\nSuppose that in the long run, errors in a medical testing lab are made 0.1% of the time. Find the probability that fewer than 4 mistakes are made in the next 2,000 tests.\n\nFind the probability using the Binomial distribution.\nApproximate the probability in part (1) using the Poisson distribution.\n\n\n\n\n\n\n\nChapter 18 Slides"
   }
 ]
