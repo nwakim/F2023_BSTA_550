@@ -30,10 +30,10 @@ editor_options:
 
 ## Resources
 
-| Chapter | Topic                |                                                    Slides                                                    |                                  Annotated Slides                                  |                           Recording                           |
-|---------|----------------------|:------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------:|:-------------------------------------------------------------:|
-| 17      | Negative Binomial RV | [[{{< iconify ri slideshow-fill size=30px >}}](/slides/17_Negative_Binomial_rv.qmd)]{style="color:#f8f5f0;"} | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
-| 18      | Poisson RV           |      [[{{< iconify ri slideshow-fill size=30px >}}](/slides/18_Poisson_rv.qmd)]{style="color:#f8f5f0;"}      | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
+| Chapter | Topic                |                                                    Slides                                                    |                                                           Annotated Slides                                                           |                           Recording                           |
+|------------|------------|:-------------------:|:-------------:|:----------:|
+| 17      | Negative Binomial RV | [[{{< iconify ri slideshow-fill size=30px >}}](/slides/17_Negative_Binomial_rv.qmd)]{style="color:#f8f5f0;"} | [[{{< iconify pepicons-pop pen-circle-filled size=29px >}}](/slides_annotated/17_Negative_Binomial_RVs.pdf)]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
+| 18      | Poisson RV           |      [[{{< iconify ri slideshow-fill size=30px >}}](/slides/18_Poisson_rv.qmd)]{style="color:#f8f5f0;"}      |      [[{{< iconify pepicons-pop pen-circle-filled size=29px >}}](/slides_annotated/18_Poisson_RVs.pdf)]{style="color:#f8f5f0;"}      | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
 
 ### Exam Materials
 
@@ -66,6 +66,8 @@ editor_options:
         -   Also, don't worry too much about the problems with chairs in a circle - we never covered these in detail in class
 
             -   If you're curious, the book does have a few trick for these problems
+
+-   During the exam, I will give you scratch paper!
 
 ## Class Exit Tickets
 
@@ -137,4 +139,6 @@ The precursor to <a href = "https://www.kaggle.com/" target = "_blank">kaggle</a
 
 ## Muddiest Points
 
-This will be filled in with your Exit Ticket responses.
+### 1. Subtracting two independent Poisson RVs
+
+When we subtract two independent Poisson RVs, we get the [Skellam distribution](https://en.wikipedia.org/wiki/Skellam_distribution). We do not get a Poisson distribution with a rate (\$\\lambda\$) that is just the difference between the two Poisson RVs.
