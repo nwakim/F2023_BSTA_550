@@ -4820,7 +4820,7 @@
     "href": "slides/17_Negative_Binomial_rv.html#properties-of-negative-binomial-rvs",
     "title": "Chapter 17: Negative Binomial RVs",
     "section": "Properties of Negative Binomial RVs",
-    "text": "Properties of Negative Binomial RVs\n\nScenario: There are repeated independent trials, each resulting in a success or failure, with constant probability of success for each trial. We are counting the number of trials until the \\(r^{th}\\) success.\nShorthand: \\(X \\sim \\text{NegBin}(p, r)\\) or \\(X \\sim \\text{NB}(p, r)\\)\nNegative binomial is sum of \\(r\\) geometric distributions\n\n\\[\nX = \\text{Number of independent trials until } r^{th} \\text{ success}\n\\]\n\\[ p_X(x) = P(X=x) = {x-1 \\choose r-1}(1-p)^{x-r}p^r \\text{ for } x = r, r+1, r+2, ...\\]\n\\[ E(X) = \\dfrac{r}{p}\\]\n\\[Var(X) = \\dfrac{rq}{p} = \\dfrac{r(1-p)}{p}\\]"
+    "text": "Properties of Negative Binomial RVs\n\nScenario: There are repeated independent trials, each resulting in a success or failure, with constant probability of success for each trial. We are counting the number of trials until the \\(r^{th}\\) success.\nShorthand: \\(X \\sim \\text{NegBin}(p, r)\\) or \\(X \\sim \\text{NB}(p, r)\\)\nNegative binomial is sum of \\(r\\) geometric distributions\n\n\\[\nX = \\text{Number of independent trials until } r^{th} \\text{ success}\n\\]\n\\[ p_X(x) = P(X=x) = {x-1 \\choose r-1}(1-p)^{x-r}p^r \\text{ for } x = r, r+1, r+2, ...\\]\n\\[ E(X) = \\dfrac{r}{p}\\]\n\\[Var(X) = \\dfrac{rq}{p^2} = \\dfrac{r(1-p)}{p^2}\\]"
   },
   {
     "objectID": "slides/17_Negative_Binomial_rv.html#example",
@@ -4834,14 +4834,14 @@
     "href": "slides/17_Negative_Binomial_rv.html#hitting-more-than-1-bullseye",
     "title": "Chapter 17: Negative Binomial RVs",
     "section": "Hitting more than 1 bullseye",
-    "text": "Hitting more than 1 bullseye\n\n\n\n\nExample 1\n\n\nConsider again the bullseye example, where we throw darts at a dartboard until we hit the bullseye. Assume throws are independent and the probability of hitting the bullseye is 0.01 for each throw.\n\nWhat is the expected value and variance of the number of throws needed to hit the bullseye?"
+    "text": "Hitting more than 1 bullseye\n\n\n\n\nExample 1\n\n\nConsider again the bullseye example, where we throw darts at a dartboard until we hit the bullseye. Assume throws are independent and the probability of hitting the bullseye is 0.01 for each throw.\n\nWhat is the expected value and variance of the number of throws needed to hit 5 bullseyes?"
   },
   {
     "objectID": "slides/17_Negative_Binomial_rv.html#hitting-more-than-1-bullseye-1",
     "href": "slides/17_Negative_Binomial_rv.html#hitting-more-than-1-bullseye-1",
     "title": "Chapter 17: Negative Binomial RVs",
     "section": "Hitting more than 1 bullseye",
-    "text": "Hitting more than 1 bullseye\n\n\n\n\nExample 1\n\n\nConsider again the bullseye example, where we throw darts at a dartboard until we hit the bullseye. Assume throws are independent and the probability of hitting the bullseye is 0.01 for each throw.\n\nWhat is the probability that the \\(5^{th}\\) bullseye is on the \\(20^{th}\\) throw?\n\n\n\n\n\n\n\nChapter 18 Slides"
+    "text": "Hitting more than 1 bullseye\n\n\n\n\nExample 1\n\n\nConsider again the bullseye example, where we throw darts at a dartboard until we hit the bullseye. Assume throws are independent and the probability of hitting the bullseye is 0.01 for each throw.\n\nWhat is the probability that the \\(5^{th}\\) bullseye is on the \\(20^{th}\\) throw?\n\n\n\n\n\n\n\nChapter 17 Slides"
   },
   {
     "objectID": "slides/18_Poisson_rv.html#distingushing-between-binomial-and-poisson-rvs",

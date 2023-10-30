@@ -14,7 +14,7 @@ format:
     show-slide-number: all
     width: 1955
     height: 1100
-    footer: Chapter 18 Slides
+    footer: Chapter 17 Slides
 editor: 
   markdown: 
     wrap: 72
@@ -44,7 +44,7 @@ $$ p_X(x) = P(X=x) = {x-1 \choose r-1}(1-p)^{x-r}p^r \text{ for } x = r, r+1, r+
 
 $$ E(X) = \dfrac{r}{p}$$
 
-$$Var(X) = \dfrac{rq}{p} = \dfrac{r(1-p)}{p}$$
+$$Var(X) = \dfrac{rq}{p^2} = \dfrac{r(1-p)}{p^2}$$
 
 ## Hitting more than 1 bullseye
 
@@ -60,7 +60,7 @@ Consider again the bullseye example, where we throw darts at a dartboard
 until we hit the bullseye. Assume throws are independent and the
 probability of hitting the bullseye is 0.01 for each throw.
 
-1.  What is the expected value and variance of the number of throws needed to hit the bullseye?
+1.  What is the expected value and variance of the number of throws needed to hit 5 bullseyes?
 :::
 :::
 :::
