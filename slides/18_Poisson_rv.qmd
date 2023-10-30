@@ -66,7 +66,7 @@ $$Var(X) = \lambda$$
 
 -   Number of study participants enrolled in a study per week
 
--   Number of gun shootings in a square mile
+-   Number of pedestrians walking through a square mile
 
 -   Any more?
 
@@ -134,7 +134,9 @@ Both Poisson and Binomial r.v.'s are counting the number of successes
     -   the probability of success $p$ is close to 0 or 1,
 
 -   then the Poisson distribution can be used to approximate Binomial
-    probabilities.
+    probabilities
+    
+    -   and we use $\lambda = np$
 
 ## Medical lab errors
 
