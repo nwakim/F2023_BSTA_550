@@ -59,13 +59,19 @@ editor_options:
 
             -   Fall 2018: 5b
 
-            -   Fall 2017: 5c, 6
+            -   Fall 2017: 4, 5c, 6
 
             -   Fall 2016: 5b, 6
 
-        -   Also, don't worry too much about the problems with chairs in a circle - we never covered these in detail in class
+-   Types of problems that you **do not** need to worry about:
 
-            -   If you're curious, the book does have a few trick for these problems
+    -   Problems with chairs in a circle - we never covered these in detail in class
+
+        -   If you're curious, the book does have a few trick for these problems
+
+    -   Problems asking about the expected values for RVs that resemble a geometric distribution (or any of the RVs where the number of trials extends to infinity)
+
+        -   I do not expect you to know how to sum over infinite values - I did not cover these series and tricks enough in class!
 
 -   During the exam, I will give you scratch paper!
 
