@@ -14,6 +14,16 @@ editor_options:
   chunk_output_type: console
 ---
 
+::: callout-important
+## Midterm Survey
+
+With this homework, you need to [complete the midterm survey](https://forms.office.com/Pages/ResponsePage.aspx?id=V3lz4rj6fk2U9pvWr59xWFMopmPUjRtDiHLswhgacNhUN1NBV1BQQTE2WElPM0RMVkFKNjRRNkhPTS4u). This will help me evaluate how well I am teaching.
+
+There are 13 total questions. Only one question is required, so if you do not feel strongly or do not have suggestions, don't feel like you need to answer. I want to hear your opinion! I want to make meaningful changes in the classroom that will help you! 
+
+**Don't forget that this is 2% of your grade. This survey is also due November 9th at 11pm.**
+:::
+
 ## Directions
 
 [Please turn in this homework on Sakai.](https://sakai.ohsu.edu/portal/site/BSTA-550-1-12619-F23/tool/085b18e7-8118-4a51-ace5-0255aa46136e) Please submit your homework in pdf format. You can type your work on your computer or submit a photo of your written work or any other method that can be turned into a pdf. Please let me know if you greatly prefer to submit a physical copy. We can work out another way for you to turn in homework.
