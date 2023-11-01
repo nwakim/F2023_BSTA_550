@@ -31,7 +31,7 @@ editor_options:
 ## Resources
 
 | Chapter | Topic                   |                                Slides                                 |                                  Annotated Slides                                  |                           Recording                           |
-|---------|-------------------------|:---------------------------------------------------------------------:|:----------------------------------------------------------------------------------:|:-------------------------------------------------------------:|
+|-------------|-------------|:-------------:|:-----------------:|:-----------:|
 | 24      | Continuous RVs and PDFs | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
 | 25      | Joint Densities         | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
 
@@ -43,6 +43,24 @@ For the slides, once they are opened, if you would like to print or save them as
 4.  From there, you can print or save the PDF as you would normally from your internet browser.
 
 ## On the Horizon
+
+#### Announcements on 11/6
+
+-   SPH Student Leadership Council elections!
+
+    -   Faculty can nominate students
+
+    -   Anyone interested?
+
+-   Student access to Vanport
+
+    -   Floors 5 and 6: M-F 8am - 5pm
+
+    -   Computer lab on 2nd floor: M-F 8am - 8pm
+
+-   Portland Public School teacher strike
+
+    -   If you are affected by this, please let me know! You can let me know ASAP or as you need accommodations.
 
 ## Class Exit Tickets
 

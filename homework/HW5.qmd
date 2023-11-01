@@ -16,12 +16,6 @@ editor_options:
 
 ## Directions
 
-::: callout-note
-## Note for Nicky to edit
-
-Need to include hint for Poisson problem
-:::
-
 [Please turn in this homework on Sakai.](https://sakai.ohsu.edu/portal/site/BSTA-550-1-12619-F23/tool/085b18e7-8118-4a51-ace5-0255aa46136e) Please submit your homework in pdf format. You can type your work on your computer or submit a photo of your written work or any other method that can be turned into a pdf. Please let me know if you greatly prefer to submit a physical copy. We can work out another way for you to turn in homework.
 
 **Try to complete all of the problems listed below at some point this quarter! You may want to save some of them for studying later!** Only turn in the ones listed in the "Turn In" column. Please submit problems in the order they are listed.
@@ -29,22 +23,22 @@ Need to include hint for Poisson problem
 The more work you include that shows your thought process, the more I can give you feedback.
 
 ::: center
-|   Chapter   |       Turn In       |         Extra Problems          |
-|:-----------:|:-------------------:|:-------------------------------:|
-|     12      | TB \# 2, NTB \# 1-3 | \# 1, 7, 11, 12, 15, 19, 25, 27 |
-| 13 (review) |                     | \# 3, 4, 5, 6, 8, 9, 10, 17, 25 |
-|     20      |                     |           \# 2, 3, 4            |
-|     14      |                     |             \# 3, 7             |
-|     15      |      NTB \# 4       |  \# 1, 5, 11, 18, 23, NTB \# 5  |
-|     16      |       TB \# 8       |         \# 3a-g, 11, 21         |
-|     17      |     TB \# 12a-c     |   \# 3a-g, 6, 9, 11, NTB \# 6   |
-|     18      |      TB \# 24       |          \# 1, 26, 27           |
-|     19      |       TB \# 6       |          \# 1, 18, 19           |
+|   Chapter   |  Turn In   |                Extra Problems                |
+|:-----------:|:----------:|:--------------------------------------------:|
+|     12      | NTB \# 1-2 | \# 1, 2, 7, 11, 12, 15, 19, 25, 27, NTB \# 4 |
+| 13 (review) |            |       \# 3, 4, 5, 6, 8, 9, 10, 17, 25        |
+|     14      |            |                   \# 3, 7                    |
+|     15      |  NTB \# 3  |        \# 1, 5, 11, 18, 23, NTB \# 5         |
+|     16      |  TB \# 7   |              \# 3a-g, 8, 11, 21              |
+|     17      |  TB \# 9   |       \# 3a-g, 6, 11, 12a-c, NTB \# 6        |
+|     18      |  TB \# 20  |               \# 1, 24, 26, 27               |
+|     19      |  TB \# 6   |                 \# 1, 18, 19                 |
+|     20      |            |                  \# 2, 3, 4                  |
 :::
 
 ## Non-textbook problems (NTB)
 
-1.  Prove that for a r.v. $X$ and constants $a$ and $b$, that $$\mathrm{Var}[aX+b]=a^2\mathrm{Var}[X].$$ Note: you will not earn credit for citing this as a special case of a more general result.
+1.  Prove that for a r.v. $X$ and constants $a$ and $b$, that $$\mathrm{Var}[aX+b]=a^2\mathrm{Var}[X].$$
 
 2.  Let $\bar{X}$ be the random variable for the sample mean, $\bar{X}=\frac{\sum_{i=1}^nX_i}{n}$, where the $X_i$ are i.i.d. random variables with common mean $\mu$ and variance $\sigma^2$.
 
@@ -52,13 +46,17 @@ The more work you include that shows your thought process, the more I can give y
 
     b.  Find $Var[\bar{X}]$.
 
-3.  Let $\hat{p}$ be the random variable for the sample proportion, $\hat{p}=\frac{X}{n}$, where $X$ is the number of successes in a random sample of size $n$. Assume the probability of success is $p$.
+3.  Let $X_i\sim$ Binomial($n_i,p$) be independent r.v.'s for $i=1,\ldots,m$. What does the r.v. $X=\sum_{i=1}^mX_i$ count, and what is the distribution of $X$? Make sure to specify the parameters of $X$'s distribution.Find $\mathbb{E}[X]$. *Make sure to show your work for (b) and (c). However, you may use without proof what you know about the mean and variance of each* $X_i$.Find $Var[X]$.
+
+    ------------------------------------------------------------------------
+
+    #### Extra Problems
+
+4.  Let $\hat{p}$ be the random variable for the sample proportion, $\hat{p}=\frac{X}{n}$, where $X$ is the number of successes in a random sample of size $n$. Assume the probability of success is $p$.
 
     a.  Find $\mathbb{E}[\hat{p}]$.
 
     b.  Find $Var[\hat{p}]$.
-
-4.  Let $X_i\sim$ Binomial($n_i,p$) be independent r.v.'s for $i=1,\ldots,m$. What does the r.v. $X=\sum_{i=1}^mX_i$ count, and what is the distribution of $X$? Make sure to specify the parameters of $X$'s distribution.Find $\mathbb{E}[X]$. *Make sure to show your work for (b) and (c). However, you may use without proof what you know about the mean and variance of each* $X_i$.Find $Var[X]$.
 
 5.  Read the Washington Post article *The amazing woman who can smell Parkinson's disease - before symptoms appear* (<http://www.washingtonpost.com/news/morning-mix/wp/2015/10/23/scottish-woman-detects-a-musky-smell-that-could-radically-improve-how-parkinsons-disease-is-diagnosed/>)
 
@@ -96,10 +94,6 @@ Selected answers (or hints) not provided at the end the book:
 
     -   \# 10:  (a) T     (b) T    (c) F     (d) T    (e) T     (f) F    (g) T     (h) T (nonnegative instead of positive)     (i) F
 
--   Chapter 20
-
-    -   \# 2:  (a) 0.0001     (b) Discrete since $X$ has a finite number of possible values. Uniform since each outcome is equally likely.     (c) $X$ = randomly selected 4-digit ID#; $X=0000,0001,\ldots,9999$     (d) 5000.5     (e) 8,333,333.25
-
 -   Chapter 15
 
     -   \# 18  (a) Bin(21,0.65)     (b) 4.78     
@@ -125,3 +119,7 @@ Selected answers (or hints) not provided at the end the book:
     -   \# 6:  (c) 15.625     (d) 0.0486     (f) 0.0488
 
     -   \# 18:   100
+
+-   Chapter 20
+
+    -   \# 2:  (a) 0.0001     (b) Discrete since $X$ has a finite number of possible values. Uniform since each outcome is equally likely.     (c) $X$ = randomly selected 4-digit ID#; $X=0000,0001,\ldots,9999$     (d) 5000.5     (e) 8,333,333.25
