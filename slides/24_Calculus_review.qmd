@@ -201,29 +201,13 @@ $\dfrac{d}{dx} f(x)g(x) = f'(x)g(x) + f(x)g'(x)$
 ## Find the *derivative* of the following function
 
 ::: columns
-::: {.column width="30%"}
+::: {.column width="35%"}
 ::: example
 ::: ex-title
 Example 1.9
 :::
 ::: ex-cont
 $f(x) = \frac{x^5}{2x+7}$
-:::
-:::
-
-:::
-:::
-
-## Find the *derivative* of the following function
-
-::: columns
-::: {.column width="35%"}
-::: example
-::: ex-title
-Example 1.10
-:::
-::: ex-cont
-$f(x) = e^{-2x+7}$
 :::
 :::
 
@@ -242,13 +226,13 @@ $\dfrac{d}{dx} \dfrac{f(x)}{g(x)} = \dfrac{g(x)f'(x) - f(x)g'(x)}{\big(g(x)\big)
 ## Find the *derivative* of the following function
 
 ::: columns
-::: {.column width="30%"}
+::: {.column width="33%"}
 ::: example
 ::: ex-title
-Example 1.11
+Example 1.10
 :::
 ::: ex-cont
-$f(x) = \ln(x^2)$
+$f(x) = e^{-2x+7}$
 :::
 :::
 
@@ -258,6 +242,22 @@ Chain Rule
 :::
 ::: thm-cont
 $\dfrac{d}{dx} f\big(g(x)\big)= f'\big(g(x)\big)g'(x)$
+:::
+:::
+
+:::
+:::
+
+## Find the *derivative* of the following function
+
+::: columns
+::: {.column width="30%"}
+::: example
+::: ex-title
+Example 1.11
+:::
+::: ex-cont
+$f(x) = \ln(x^2)$
 :::
 :::
 

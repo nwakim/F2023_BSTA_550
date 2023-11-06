@@ -5331,21 +5331,21 @@
     "href": "slides/24_Calculus_review.html#find-the-derivative-of-the-following-function-8",
     "title": "Calculus Review",
     "section": "Find the derivative of the following function",
-    "text": "Find the derivative of the following function\n\n\n\n\nExample 1.9\n\n\n\\(f(x) = \\frac{x^5}{2x+7}\\)"
+    "text": "Find the derivative of the following function\n\n\n\n\nExample 1.9\n\n\n\\(f(x) = \\frac{x^5}{2x+7}\\)\n\n\n\n\nQuotient Rule\n\n\n\\(\\dfrac{d}{dx} \\dfrac{f(x)}{g(x)} = \\dfrac{g(x)f'(x) - f(x)g'(x)}{\\big(g(x)\\big)^2}\\)"
   },
   {
     "objectID": "slides/24_Calculus_review.html#find-the-derivative-of-the-following-function-9",
     "href": "slides/24_Calculus_review.html#find-the-derivative-of-the-following-function-9",
     "title": "Calculus Review",
     "section": "Find the derivative of the following function",
-    "text": "Find the derivative of the following function\n\n\n\n\nExample 1.10\n\n\n\\(f(x) = e^{-2x+7}\\)\n\n\n\n\nQuotient Rule\n\n\n\\(\\dfrac{d}{dx} \\dfrac{f(x)}{g(x)} = \\dfrac{g(x)f'(x) - f(x)g'(x)}{\\big(g(x)\\big)^2}\\)"
+    "text": "Find the derivative of the following function\n\n\n\n\nExample 1.10\n\n\n\\(f(x) = e^{-2x+7}\\)\n\n\n\n\nChain Rule\n\n\n\\(\\dfrac{d}{dx} f\\big(g(x)\\big)= f'\\big(g(x)\\big)g'(x)\\)"
   },
   {
     "objectID": "slides/24_Calculus_review.html#find-the-derivative-of-the-following-function-10",
     "href": "slides/24_Calculus_review.html#find-the-derivative-of-the-following-function-10",
     "title": "Calculus Review",
     "section": "Find the derivative of the following function",
-    "text": "Find the derivative of the following function\n\n\n\n\nExample 1.11\n\n\n\\(f(x) = \\ln(x^2)\\)\n\n\n\n\nChain Rule\n\n\n\\(\\dfrac{d}{dx} f\\big(g(x)\\big)= f'\\big(g(x)\\big)g'(x)\\)"
+    "text": "Find the derivative of the following function\n\n\n\n\nExample 1.11\n\n\n\\(f(x) = \\ln(x^2)\\)"
   },
   {
     "objectID": "slides/24_Calculus_review.html#find-the-antiderivative-of-the-following-function",
