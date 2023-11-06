@@ -2,7 +2,7 @@
 title: "Week 7"
 description: "Continuous RVs; PDFs; and Joint densities"
 date: "11/06/2023"
-date-modified: "9/15/2023"
+date-modified: "11/02/2023"
 categories: [""]
 format: 
   html:
@@ -31,7 +31,7 @@ editor_options:
 ::: callout-important
 ## Midterm Survey
 
-With this homework, you need to [complete the midterm survey](https://forms.office.com/Pages/ResponsePage.aspx?id=V3lz4rj6fk2U9pvWr59xWFMopmPUjRtDiHLswhgacNhUN1NBV1BQQTE2WElPM0RMVkFKNjRRNkhPTS4u). This will help me evaluate how well I am teaching.
+With homework 5, you need to [complete the midterm survey](https://forms.office.com/Pages/ResponsePage.aspx?id=V3lz4rj6fk2U9pvWr59xWFMopmPUjRtDiHLswhgacNhUN1NBV1BQQTE2WElPM0RMVkFKNjRRNkhPTS4u). This will help me evaluate how well I am teaching.
 
 There are 13 total questions. Only one question is required, so if you do not feel strongly or do not have suggestions, don't feel like you need to answer. I want to hear your opinion! I want to make meaningful changes in the classroom that will help you! 
 
@@ -40,10 +40,11 @@ There are 13 total questions. Only one question is required, so if you do not fe
 
 ## Resources
 
-| Chapter | Topic                   |                                Slides                                 |                                  Annotated Slides                                  |                           Recording                           |
-|-------------|-------------|:-------------:|:-----------------:|:-----------:|
-| 24      | Continuous RVs and PDFs | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
-| 25      | Joint Densities         | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
+| Chapter | Topic                   |                           Meike's video                           |                                                 Slides                                                  |                                  Annotated Slides                                  |                           Recording                           |
+|---------|-------------------------|:-----------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------:|:-------------------------------------------------------------:|
+| pre-24  | Calculus Review         | [{{< iconify ph video-fill size=29px >}}]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](/slides/24_Calculus_review.qmd)]{style="color:#f8f5f0;"} | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
+| 24      | Continuous RVs and PDFs | [{{< iconify ph video-fill size=29px >}}]{style="color:#f8f5f0;"} |  [[{{< iconify ri slideshow-fill size=30px >}}](/slides/24_Continuous_rv.qmd)]{style="color:#f8f5f0;"}  | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
+| 25      | Joint Densities         | [{{< iconify ph video-fill size=29px >}}]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](/slides/25_Joint_densities.qmd)]{style="color:#f8f5f0;"} | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
 
 For the slides, once they are opened, if you would like to print or save them as a PDF, the best way to do this is:
 
@@ -72,11 +73,19 @@ For the slides, once they are opened, if you would like to print or save them as
 
     -   If you are affected by this, please let me know! You can let me know ASAP or as you need accommodations.
 
+-   No Friday coffee hours
+
+-   HW 4 Grading
+
+    -   Feedback will be delayed as I grade the test
+
+    -   Everyone turned it in!
+
 ## Class Exit Tickets
 
-[{{< iconify healthicons health-worker-form-negative size=30px >}}]{style="color:#f8f5f0;"} Monday (11/6)
+[[{{< iconify healthicons health-worker-form-negative size=30px >}}](https://forms.office.com/Pages/ResponsePage.aspx?id=V3lz4rj6fk2U9pvWr59xWFMopmPUjRtDiHLswhgacNhUNDNPVkcyQUNERk5PSktQNTJJTEdQTjNXOS4u)]{style="color:#f8f5f0;"} Monday (11/6)
 
-[{{< iconify healthicons health-worker-form-negative size=30px >}}]{style="color:#f8f5f0;"} Wednesday (11/8)
+[[{{< iconify healthicons health-worker-form-negative size=30px >}}](https://forms.office.com/Pages/ResponsePage.aspx?id=V3lz4rj6fk2U9pvWr59xWFMopmPUjRtDiHLswhgacNhUQUJJTE1WMTAwVVJITzc2RVJZTU9GMTVRRC4u)]{style="color:#f8f5f0;"} Wednesday (11/8)
 
 ## Additional Information
 
@@ -122,10 +131,8 @@ At their core, the data visualizations advocate for African American progress. T
 
 Whitney Battle-Baptiste and Britt Rusert have reproduced and narrated the images from the exhibit in [W.E.B. Du Bois's Data Portraits: Visualizing Black America, the color line at the turn of the twentieth century](https://papress.com/products/w-e-b-du-boiss-data-portraits-visualizing-black-america).
 
+**Please note the statisticians of the week are taken directly from the [CURV project by Jo Hardin](https://hardin47.github.io/CURV/).**
+
 ## Muddiest Points
-
-This will be filled in with your Exit Ticket responses.
-
-## Clearest Points
 
 This will be filled in with your Exit Ticket responses.
