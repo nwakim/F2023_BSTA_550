@@ -61,6 +61,11 @@ Solve the following integral: $\displaystyle\int_{2}^{3}\displaystyle\int_{0}^{1
 
 ## Double Integrals Mini Lesson (3/3)
 
+::: {.callout-important appearance="simple" icon="false"}
+Do this problem at home for extra practice. The solution is available in
+Meike's video!
+:::
+
 ::: columns
 ::: {.column width="30%"}
 ::: example
@@ -179,6 +184,11 @@ $0 \leq x \leq 2, \ 0 \leq y \leq 1$.
 
 ## Example of a *more complicated* joint pdf
 
+::: {.callout-important appearance="simple" icon="false"}
+Do this problem at home for extra practice. The solution is available in
+Meike's video!
+:::
+
 ::: columns
 ::: {.column width="30%"}
 ::: example
@@ -198,6 +208,11 @@ $0 \leq x \leq y$.
 :::
 
 ## Example of a *more complicated* joint pdf
+
+::: {.callout-important appearance="simple" icon="false"}
+Do this problem at home for extra practice. The solution is available in
+Meike's video!
+:::
 
 ::: columns
 ::: {.column width="30%"}
@@ -257,6 +272,11 @@ $0 \leq X \leq 4, 0 \leq Y \leq 4$.
 :::
 
 ## Let's complicate this even more!
+
+::: {.callout-important appearance="simple" icon="false"}
+Do this problem at home for extra practice. The solution is available in
+Meike's video!
+:::
 
 ::: columns
 ::: {.column width="30%"}

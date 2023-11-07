@@ -2,7 +2,7 @@
 title: "Week 7"
 description: "Continuous RVs; PDFs; and Joint densities"
 date: "11/06/2023"
-date-modified: "11/02/2023"
+date-modified: "11/06/2023"
 categories: [""]
 format: 
   html:
@@ -161,14 +161,15 @@ Here is a pretty helpful [StackExchange post](https://math.stackexchange.com/que
 
 I have two approaches to identifying $u$ and $dv$:
 
-1.  Try to find a $u$ that will eventually differentiate into a constant. This usually works unless you're left with a $dv$ that is hard to integrate. 
+1.  Try to find a $u$ that will eventually differentiate into a constant. This usually works unless you're left with a $dv$ that is hard to integrate.
+
     -   For example, $u=x^6$. the first derivative, $u'=6x^5$, which may lead us to do another integration by parts, but eventually, at the 6th derivative, we get 720. This means, in our integration by parts, we eventually get an integral that only has $x$ in the function once.
 
-        -  In this example, $x^6$ would result in many integration by parts. I feel like we don't typically see that many in our work.
-    
+        -   In this example, $x^6$ would result in many integration by parts. I feel like we don't typically see that many in our work.
+
     -   In Example 3.5 in Calculus Review, setting $u=x^2$ is a bad idea because we don't really know how to integrate $dv=ln(x)$ into $v$.
 
-2.  Try to find a $u$ where $du$ is the reciprocal of $v$ or $du$ cancels with $v$. 
+2.  Try to find a $u$ where $du$ is the reciprocal of $v$ or $du$ cancels with $v$.
 
     -   Look again at Example 3.5 in the notes! Hint: What is the derivative of $ln(x)$? And what does $\dfrac{1}{x}x^3$ equal?
 

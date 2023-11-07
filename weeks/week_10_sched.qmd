@@ -1,8 +1,8 @@
 ---
 title: "Week 10"
-description: "mgf's; Sum of Normal RV's; and Central Limit Theorem"
+description: "Common continuous RVs; Sum of Normal RVs; and Central Limit Theorem"
 date: "11/27/2023"
-date-modified: "9/15/2023"
+date-modified: "11/06/2023"
 categories: [""]
 format: 
   html:
@@ -30,11 +30,14 @@ editor_options:
 
 ## Resources
 
-| Chapter | Topic                                       |                                Slides                                 |                                  Annotated Slides                                  |                           Recording                           |
-|---------|---------------------------------------------|:---------------------------------------------------------------------:|:----------------------------------------------------------------------------------:|:-------------------------------------------------------------:|
-| 43      | Moment generating functions                 | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
-| 36      | Sums of independent normal random variables | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
-| 37      | Central limit theorem                       | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
+| Chapter | Topic                          |                           Meike's video                           |                                Slides                                 |                                  Annotated Slides                                  |                           Recording                           |
+|-------------|-------------|:-----------:|:------------:|:----------------:|:-----------:|
+| 31      | Uniform RV                     | [{{< iconify ph video-fill size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
+| 32      | Exponential RV                 | [{{< iconify ph video-fill size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
+| 33      | Gamma RV                       | [{{< iconify ph video-fill size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
+| 35      | Normal RV                      | [{{< iconify ph video-fill size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
+| 36      | Sums of independent normal RVs | [{{< iconify ph video-fill size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
+| 37      | Central limit theorem          | [{{< iconify ph video-fill size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
 
 For the slides, once they are opened, if you would like to print or save them as a PDF, the best way to do this is:
 

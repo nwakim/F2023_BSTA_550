@@ -1,8 +1,8 @@
 ---
 title: "Week 9"
-description: "Expected values, variance, and continuous distributions"
+description: "Conditional distributions, Expected values, and Variance"
 date: "11/20/2023"
-date-modified: "9/15/2023"
+date-modified: "11/06/2023"
 categories: [""]
 format: 
   html:
@@ -30,14 +30,11 @@ editor_options:
 
 ## Resources
 
-| Chapter | Topic                            |                                Slides                                 |                                  Annotated Slides                                  |                           Recording                           |
-|---------------|---------------|:-------------:|:-------------:|:-------------:|
-| 28      | Expected value of continuous RVs | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#49A3D1;"} | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
-| 29      | Variance of continuous RVs       | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
-| 31      | Uniform RV                       | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
-| 32      | Exponential RV                   | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
-| 33      | Gamma RV                         | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
-| 35      | Normal RV                        | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
+| Chapter | Topic                            |                           Meike's video                           |                                Slides                                 |                                  Annotated Slides                                  |                           Recording                           |
+|---------|----------------------------------|:-----------------------------------------------------------------:|:---------------------------------------------------------------------:|:----------------------------------------------------------------------------------:|:-------------------------------------------------------------:|
+| 27      | Conditional distributions        | [{{< iconify ph video-fill size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
+| 28      | Expected value of continuous RVs | [{{< iconify ph video-fill size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
+| 29      | Variance of continuous RVs       | [{{< iconify ph video-fill size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify pepicons-pop pen-circle-filled size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |
 
 For the slides, once they are opened, if you would like to print or save them as a PDF, the best way to do this is:
 

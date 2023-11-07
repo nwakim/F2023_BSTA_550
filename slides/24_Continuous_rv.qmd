@@ -26,7 +26,8 @@ editor:
 
 2.  Calculate probabilities for continuous random variables.
 
-3.  Calculate and graph a density (i.e., probability density function, PDF).
+3.  Calculate and graph a density (i.e., probability density function,
+    PDF).
 
 4.  Calculate and graph a CDF (i.e., a cumulative distribution function)
 
@@ -54,14 +55,14 @@ editor:
 ## What is a probability density function?
 
 ::: definition
-::: def-title 
+::: def-title
 Probability density function
 :::
+
 ::: def-cont
-The probability
-distribution, or **probability density function (pdf)**, of a continuous
-random variable $X$ is a function $f_X(x)$, such that for all real
-values $a,b$ with $a \leq b$,
+The probability distribution, or **probability density function (pdf)**,
+of a continuous random variable $X$ is a function $f_X(x)$, such that
+for all real values $a,b$ with $a \leq b$,
 
 $$\mathbb{P}(a \leq X \leq b) = \int_a^b f_X(x)dx$$
 :::
@@ -86,14 +87,13 @@ $$\mathbb{P}(a \leq X \leq b) = \int_a^b f_X(x)dx$$
 ::: ex-title
 Example 1.1
 :::
+
 ::: ex-cont
 Let $f_X(x)= 2$, for $a \leq x \leq 3$.
 
 1.  Find the value of $a$ so that $f_X(x)$ is a pdf.
-
 :::
 :::
-
 :::
 :::
 
@@ -105,14 +105,13 @@ Let $f_X(x)= 2$, for $a \leq x \leq 3$.
 ::: ex-title
 Example 1.2
 :::
+
 ::: ex-cont
 Let $f_X(x)= 2$, for $a \leq x \leq 3$.
 
 2.  Find $\mathbb{P}(2.7 \leq X \leq 2.9)$.
-
 :::
 :::
-
 :::
 :::
 
@@ -124,14 +123,13 @@ Let $f_X(x)= 2$, for $a \leq x \leq 3$.
 ::: ex-title
 Example 1.3
 :::
+
 ::: ex-cont
 Let $f_X(x)= 2$, for $a \leq x \leq 3$.
 
 3.  Find $\mathbb{P}(2.7 < X \leq 2.9)$.
-
 :::
 :::
-
 :::
 :::
 
@@ -143,14 +141,13 @@ Let $f_X(x)= 2$, for $a \leq x \leq 3$.
 ::: ex-title
 Example 1.4
 :::
+
 ::: ex-cont
 Let $f_X(x)= 2$, for $a \leq x \leq 3$.
 
 4.  Find $\mathbb{P}(X = 2.9)$.
-
 :::
 :::
-
 :::
 :::
 
@@ -162,26 +159,27 @@ Let $f_X(x)= 2$, for $a \leq x \leq 3$.
 ::: ex-title
 Example 1.5
 :::
+
 ::: ex-cont
 Let $f_X(x)= 2$, for $a \leq x \leq 3$.
 
 5.  Find $\mathbb{P}(X \leq 2.8)$.
 :::
 :::
-
 :::
 :::
 
 ## What is a cumulative distribution function?
 
 ::: definition
-::: def-title 
+::: def-title
 Cumulative distribution function
 :::
+
 ::: def-cont
-The **cumulative distribution function (cdf)** of a continuous random variable $X$, is
-the function $F_X(x)$, such that for all real values of $x$,
-$$F_X(x)= \mathbb{P}(X \leq x) = \int_{-\infty}^x f_X(s)ds$$
+The **cumulative distribution function (cdf)** of a continuous random
+variable $X$, is the function $F_X(x)$, such that for all real values of
+$x$, $$F_X(x)= \mathbb{P}(X \leq x) = \int_{-\infty}^x f_X(s)ds$$
 :::
 :::
 
@@ -199,12 +197,11 @@ $$F_X(x)= \mathbb{P}(X \leq x) = \int_{-\infty}^x f_X(s)ds$$
 ::: ex-title
 Example 2
 :::
-::: ex-cont
-Let $f_X(x)= 2$, for $2.5 \leq x \leq 3$. Find
-$F_X(x)$.
-:::
-:::
 
+::: ex-cont
+Let $f_X(x)= 2$, for $2.5 \leq x \leq 3$. Find $F_X(x)$.
+:::
+:::
 :::
 :::
 
@@ -214,10 +211,11 @@ $F_X(x)$.
 ::: thm-title
 Theorem 1
 :::
+
 ::: thm-cont
-If $X$ is a continuous random variable with pdf
-$f_X(x)$ and cdf $F_X(x)$, then for all real values of $x$ at which
-$F'_X(x)$ exists, $$\frac{d}{dx} F_X(x)= F'_X(x) = f_X(x)$$
+If $X$ is a continuous random variable with pdf $f_X(x)$ and cdf
+$F_X(x)$, then for all real values of $x$ at which $F'_X(x)$ exists,
+$$\frac{d}{dx} F_X(x)= F'_X(x) = f_X(x)$$
 :::
 :::
 
@@ -227,8 +225,9 @@ $F'_X(x)$ exists, $$\frac{d}{dx} F_X(x)= F'_X(x) = f_X(x)$$
 ::: {.column width="40%"}
 ::: example
 ::: ex-title
-Example 3 
+Example 3
 :::
+
 ::: ex-cont
 Let $X$ be a RV with cdf $$F_X(x)= \left\{
         \begin{array}{ll}
@@ -239,10 +238,8 @@ Let $X$ be a RV with cdf $$F_X(x)= \left\{
     \right.$$ Find the pdf $f_X(x)$.
 :::
 :::
-
 :::
 :::
-
 
 ## Let's go through another example (1/7)
 
@@ -252,9 +249,9 @@ Let $X$ be a RV with cdf $$F_X(x)= \left\{
 ::: ex-title
 Example 4
 :::
+
 ::: ex-cont
-Let $X$ be a RV with pdf $f_X(x)= 2e^{-2x}$, for
-$x>0$.
+Let $X$ be a RV with pdf $f_X(x)= 2e^{-2x}$, for $x>0$.
 
 1.  Show $f_X(x)$ is a pdf.
 
@@ -269,7 +266,6 @@ $x>0$.
 6.  Find the median of the distribution of $X$.
 :::
 :::
-
 :::
 :::
 
@@ -279,36 +275,38 @@ $x>0$.
 ::: {.column width="30%"}
 ::: example
 ::: ex-title
-Example 4
+Example 4.1
 :::
+
 ::: ex-cont
-Let $X$ be a RV with pdf $f_X(x)= 2e^{-2x}$, for
-$x>0$.
+Let $X$ be a RV with pdf $f_X(x)= 2e^{-2x}$, for $x>0$.
 
 1.  Show $f_X(x)$ is a pdf.
 :::
 :::
-
 :::
 :::
 
 ## Let's go through another example (3/7)
 
+::: {.callout-important appearance="simple" icon="false"}
+Do this problem at home for extra practice. The solution is available in
+Meike's video!
+:::
+
 ::: columns
 ::: {.column width="30%"}
 ::: example
 ::: ex-title
-Example 4
+Example 4.2
 :::
+
 ::: ex-cont
-Let $X$ be a RV with pdf $f_X(x)= 2e^{-2x}$, for
-$x>0$.
+Let $X$ be a RV with pdf $f_X(x)= 2e^{-2x}$, for $x>0$.
 
 2.  Find $\mathbb{P}(1 \leq X \leq 3)$.
-
 :::
 :::
-
 :::
 :::
 
@@ -318,36 +316,38 @@ $x>0$.
 ::: {.column width="30%"}
 ::: example
 ::: ex-title
-Example 4
+Example 4.3
 :::
+
 ::: ex-cont
-Let $X$ be a RV with pdf $f_X(x)= 2e^{-2x}$, for
-$x>0$.
+Let $X$ be a RV with pdf $f_X(x)= 2e^{-2x}$, for $x>0$.
 
 3.  Find $F_X(x)$.
 :::
 :::
-
 :::
 :::
 
 ## Let's go through another example (5/7)
 
+::: {.callout-important appearance="simple" icon="false"}
+Do this problem at home for extra practice. The solution is available in
+Meike's video!
+:::
+
 ::: columns
 ::: {.column width="30%"}
 ::: example
 ::: ex-title
-Example 4
+Example 4.4
 :::
+
 ::: ex-cont
-Let $X$ be a RV with pdf $f_X(x)= 2e^{-2x}$, for
-$x>0$.
+Let $X$ be a RV with pdf $f_X(x)= 2e^{-2x}$, for $x>0$.
 
 4.  Given $F_X(x)$, find $f_X(x)$.
-
 :::
 :::
-
 :::
 :::
 
@@ -357,17 +357,15 @@ $x>0$.
 ::: {.column width="30%"}
 ::: example
 ::: ex-title
-Example 4
+Example 4.5
 :::
+
 ::: ex-cont
-Let $X$ be a RV with pdf $f_X(x)= 2e^{-2x}$, for
-$x>0$.
+Let $X$ be a RV with pdf $f_X(x)= 2e^{-2x}$, for $x>0$.
 
 5.  Find $\mathbb{P}(X \geq 1 | X \leq 3)$.
-
 :::
 :::
-
 :::
 :::
 
@@ -377,17 +375,14 @@ $x>0$.
 ::: {.column width="30%"}
 ::: example
 ::: ex-title
-Example 4
+Example 4.6
 :::
+
 ::: ex-cont
-Let $X$ be a RV with pdf $f_X(x)= 2e^{-2x}$, for
-$x>0$.
+Let $X$ be a RV with pdf $f_X(x)= 2e^{-2x}$, for $x>0$.
 
 6.  Find the median of the distribution of $X$.
 :::
 :::
-
 :::
 :::
-
-
