@@ -1,41 +1,126 @@
-# Chapter 26: Independent Continuous Random Variables {#chapter-26-independent-continuous-random-variables .unnumbered}
+---
+title: "Chapter 26: Independent Continuous RVs"
+author: "Meike Niederhausen and Nicky Wakim"
+date: "11/15/2023"
+title-slide-attributes:
+    data-background-color: "#006a4e"
+categories: ["Week 8"]
+format: 
+  revealjs:
+    theme: [default, simple_NW.scss]
+    toc: true
+    chalkboard: true
+    slide-number: true
+    show-slide-number: all
+    width: 1955
+    height: 1100
+    footer: Chapter 26 Slides
+editor: 
+  markdown: 
+    wrap: 72
+---
 
-**What do we know about independence for events and discrete r.v.'s?**
+## Learning Objectives
 
-------------------------------------------------------------------------
+## How do we represent independent continuous RVs in a joint pdf?
 
+::: columns
+::: {.column width="40%"}
+**What do we know about independence for events and discrete RVs?**
+
+For events: If $A \perp B$
+
+$$P(A \cap B) = P(A)P(B)$$ $$P(A|B) = P(A)$$
+
+For discrete RVs: If $X \perp Y$ $$p_{X,Y}(x,y) = p_{X}(x)p_{Y}(y)$$
+$$F_{X,Y}(x,y) = F_{X}(x)F_{Y}(y)$$ $$p_{X|Y}(x|y) = p_{X}(x)$$
+$$p_{Y|X}(y|x) = p_{Y}(y)$$
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="50%"}
 **What does it mean for continuous r.v.'s to be independent?**
 
+For continuous RVs: If $X \perp Y$
+:::
+
+:::
+
+## Example
+
+::: columns 
+::: {.column width="40%"}
 ::: example
-**Example 1**. *  Let $X$ and $Y$ be independent r.v.'s with
+::: ex-title
+Example 1
+:::
+::: ex-cont
+Let $X$ and $Y$ be independent r.v.'s with
 $f_X(x)= \frac12$, for $0 \leq x \leq 2$ and $f_Y(y)= 3y^2$, for
-$0 \leq y \leq 1$.*
+$0 \leq y \leq 1$.
 
-1.  *Find $f_{X,Y}(x,y)$.*
+1.  Find $f_{X,Y}(x,y)$.
 
-2.  *Find $\mathbb{P}(0 \leq X \leq 1, 0 \leq Y \leq \frac12)$.*
+2.  Find $\mathbb{P}(0 \leq X \leq 1, 0 \leq Y \leq \frac12)$.
+:::
 :::
 
+:::
+:::
+
+## Example
+
+::: columns 
+::: {.column width="40%"}
 ::: example
-**Example 2**. *  Let $f_{X,Y}(x,y)= 18 x^2 y^5$, for
-$0 \leq x \leq 1, \ 0 \leq y \leq 1$.*
+::: ex-title
+Example 2
+:::
+::: ex-cont
+Let $f_{X,Y}(x,y)= 18 x^2 y^5$, for
+$0 \leq x \leq 1, \ 0 \leq y \leq 1$.
 
-1.  *Are $X$ and $Y$ independent?*
+1.  Are $X$ and $Y$ independent?
 
-2.  *Find $F_{X,Y}(x,y)$.*
+2.  Find $F_{X,Y}(x,y)$.
+:::
 :::
 
+:::
+:::
+
+## Example
+
+::: {.callout-important appearance="simple" icon="false"}
+Do this problem at home for extra practice. The solution is available in
+Meike's video!
+:::
+
+::: columns 
+::: {.column width="40%"}
 ::: example
-**Example 3**. *  Let $f_{X,Y}(x,y)= 2 e^{-(x+y)}$, for
-$0 \leq x \leq y$. Are $X$ and $Y$ independent?*
+::: ex-title
+Example 3
+:::
+::: ex-cont
+**Example 3**. *Let* $f_{X,Y}(x,y)= 2 e^{-(x+y)}$, for
+$0 \leq x \leq y$. Are $X$ and $Y$ independent?
+:::
 :::
 
-------------------------------------------------------------------------
+:::
+:::
 
-**Remarks**
+## Final statement on independence
 
 1.  If $f_{X,Y}(x,y)= g(x)h(y)$, where $g(x)$ and $h(y)$ are pdf's, then
     $X$ and $Y$ are independent.
 
+    -   The domain of the joint pdf needs to be independent as well!!
+
 2.  If $F_{X,Y}(x,y)= G(x)H(y)$, where $G(x)$ and $H(y)$ are cdf's, then
     $X$ and $Y$ are independent.
+
+    -   The domain of the joint CDF needs to be independent as well!!

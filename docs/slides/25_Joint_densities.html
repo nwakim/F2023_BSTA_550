@@ -349,7 +349,7 @@ Meike Niederhausen and Nicky Wakim
 <li><a href="#/double-integrals-mini-lesson-33" id="/toc-double-integrals-mini-lesson-33">Double Integrals Mini Lesson (3/3)</a></li>
 <li><a href="#/how-to-define-the-joint-pdf-for-continuous-rvs" id="/toc-how-to-define-the-joint-pdf-for-continuous-rvs">How to define the joint pdf for continuous RVs?</a></li>
 <li><a href="#/important-properties-of-the-joint-pdf" id="/toc-important-properties-of-the-joint-pdf">Important properties of the joint pdf</a></li>
-<li><a href="#/what-is-the-join-cumulative-distribution-function" id="/toc-what-is-the-join-cumulative-distribution-function">What is the join cumulative distribution function?</a></li>
+<li><a href="#/what-is-the-joint-cumulative-distribution-function" id="/toc-what-is-the-joint-cumulative-distribution-function">What is the joint cumulative distribution function?</a></li>
 <li><a href="#/what-are-the-marginal-pdfs" id="/toc-what-are-the-marginal-pdfs">What are the marginal pdf’s?</a></li>
 <li><a href="#/example-of-joint-pdf" id="/toc-example-of-joint-pdf">Example of joint pdf</a></li>
 <li><a href="#/example-of-joint-pdf-1" id="/toc-example-of-joint-pdf-1">Example of joint pdf</a></li>
@@ -365,9 +365,10 @@ Meike Niederhausen and Nicky Wakim
 <section id="learning-objectives" class="slide level2">
 <h2>Learning Objectives</h2>
 <ol type="1">
-<li><p>Calculate probabilities for discrete random variables</p></li>
-<li><p>Calculate and graph a probability mass function (pmf)</p></li>
-<li><p>Calculate and graph a cumulative distribution function (CDF)</p></li>
+<li><p>Solve double integrals in our mini lesson!</p></li>
+<li><p>Calculate probabilities for a pair of continuous random variables</p></li>
+<li><p>Calculate a <em>joint and marginal</em> probability density function (pdf)</p></li>
+<li><p>Calculate a <em>joint and marginal</em> cumulative distribution function (CDF) from a pdf</p></li>
 </ol>
 </section>
 <section id="double-integrals-mini-lesson-13" class="slide level2">
@@ -425,9 +426,10 @@ Meike Niederhausen and Nicky Wakim
 <section id="how-to-define-the-joint-pdf-for-continuous-rvs" class="slide level2">
 <h2>How to define the joint pdf for continuous RVs?</h2>
 <div class="columns">
-<div class="column" style="width:40%;">
-<p>Recall from Chapter 24, that the probability distribution, or <strong>probability density function (pdf)</strong>, of a continuous random variable <span class="math inline">\(X\)</span> is a function <span class="math inline">\(f_X(x)\)</span>, such that for all real values <span class="math inline">\(a,b\)</span> with <span class="math inline">\(a \leq b\)</span>, <span class="math display">\[\mathbb{P}(a \leq X \leq b) = \int_a^b f_X(x)dx.\]</span></p>
-<p><strong>The joint pdf is <span class="math inline">\(f_{X,Y}(x,y)\)</span>!</strong></p>
+<div class="column" style="width:37%;">
+<p>For a single continuous RV <span class="math inline">\(X\)</span> is a function <span class="math inline">\(f_X(x)\)</span>, such that for all real values <span class="math inline">\(a,b\)</span> with <span class="math inline">\(a \leq b\)</span>, <span class="math display">\[\mathbb{P}(a \leq X \leq b) = \int_a^b f_X(x)dx\]</span></p>
+</div><div class="column" style="width:62%;">
+<p>For two continuous RVs (<span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>), we can define the <strong>joint pdf</strong>, <span class="math inline">\(f_{X,Y}(x,y)\)</span>, such that for all real values <span class="math inline">\(a,b, c, d\)</span> with <span class="math inline">\(a \leq b\)</span> and <span class="math inline">\(c \leq d\)</span>, <span class="math display">\[\mathbb{P}(a \leq X \leq b, c \leq Y \leq d) = \int_a^b \int_c^d f_{X,Y}(x,y)dydx\]</span></p>
 </div>
 </div>
 </section>
@@ -442,8 +444,8 @@ Meike Niederhausen and Nicky Wakim
 </ul></li>
 </ol>
 </section>
-<section id="what-is-the-join-cumulative-distribution-function" class="slide level2">
-<h2>What is the join cumulative distribution function?</h2>
+<section id="what-is-the-joint-cumulative-distribution-function" class="slide level2">
+<h2>What is the joint cumulative distribution function?</h2>
 <div class="definition">
 <div class="def-title">
 <p>Definition: Joint cumulative distribution function (Join CDF)</p>

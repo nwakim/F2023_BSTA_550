@@ -1,7 +1,7 @@
 ---
 title: "Chapter 24: Continuous RVs and PDFs"
 author: "Meike Niederhausen and Nicky Wakim"
-date: "11/6/2023"
+date: "11/8/2023"
 title-slide-attributes:
     data-background-color: "#006a4e"
 categories: ["Week 7"]
