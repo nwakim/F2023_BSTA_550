@@ -11,7 +11,7 @@
     "href": "schedule.html",
     "title": "Weekly Pages",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nDescription\n\n\n\n\n\n\n9/25/23\n\n\nWeek 1\n\n\nOutcomes, Events, and Sample Space; Probability; and Counting\n\n\n\n\n10/2/23\n\n\nWeek 2\n\n\nIndependent Events; Conditional Probability; and Bayes’ Theorem\n\n\n\n\n10/9/23\n\n\nWeek 3\n\n\nRVs; PMFs and CDFs; and Independence and Conditioning\n\n\n\n\n10/16/23\n\n\nWeek 4\n\n\nExpected values of discrete random variables\n\n\n\n\n10/23/23\n\n\nWeek 5\n\n\nDiscrete random variables: variance and common families\n\n\n\n\n10/30/23\n\n\nWeek 6\n\n\nCommon families of discrete distributions continued + Midterm Exam\n\n\n\n\n11/6/23\n\n\nWeek 7\n\n\nContinuous RVs; PDFs; and Joint densities\n\n\n\n\n11/13/23\n\n\nWeek 8\n\n\nJoint PDFs and Independent continuous RVs\n\n\n\n\n11/20/23\n\n\nWeek 9\n\n\nConditional distributions, Expected values, and Variance\n\n\n\n\n11/27/23\n\n\nWeek 10\n\n\nCommon continuous RVs; Sum of Normal RVs; and Central Limit Theorem\n\n\n\n\n12/4/23\n\n\nWeek 11\n\n\nFinal Exam\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nDescription\n\n\n\n\n\n\n9/25/23\n\n\nWeek 1\n\n\nOutcomes, Events, and Sample Space; Probability; and Counting\n\n\n\n\n10/2/23\n\n\nWeek 2\n\n\nIndependent Events; Conditional Probability; and Bayes’ Theorem\n\n\n\n\n10/9/23\n\n\nWeek 3\n\n\nRVs; PMFs and CDFs; and Independence and Conditioning\n\n\n\n\n10/16/23\n\n\nWeek 4\n\n\nExpected values of discrete random variables\n\n\n\n\n10/23/23\n\n\nWeek 5\n\n\nDiscrete random variables: variance and common families\n\n\n\n\n10/30/23\n\n\nWeek 6\n\n\nCommon families of discrete distributions continued + Midterm Exam\n\n\n\n\n11/6/23\n\n\nWeek 7\n\n\nContinuous RVs; PDFs; and Joint densities\n\n\n\n\n11/13/23\n\n\nWeek 8\n\n\nJoint PDFs; Independent continuous RVs; and Conditional densities\n\n\n\n\n11/20/23\n\n\nWeek 9\n\n\nConditional distributions, Expected values, and Variance\n\n\n\n\n11/27/23\n\n\nWeek 10\n\n\nCommon continuous RVs; Sum of Normal RVs; and Central Limit Theorem\n\n\n\n\n12/4/23\n\n\nWeek 11\n\n\nFinal Exam\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "syllabus.html",
@@ -3315,7 +3315,7 @@
     "href": "weeks/week_08_sched.html#resources",
     "title": "Week 8",
     "section": "Resources",
-    "text": "Resources\n\n\n\nChapter\nTopic\nMeike’s video\nSlides\nAnnotated Slides\nRecording\n\n\n\n\n25\nJoint Densities\n\n\n\n\n\n\n\n26\nIndependent continuous random variables\n\n\n\n\n\n\n27\nConditional distributions\n\n\n\n\n\n\n\nFor the slides, once they are opened, if you would like to print or save them as a PDF, the best way to do this is:\n\nClick on the icon with three horizontal bars on the bottom left of the browser.\nClick on “Tools” with the gear icon at the top of the sidebar.\nClick on “PDF Export Mode.”\nFrom there, you can print or save the PDF as you would normally from your internet browser."
+    "text": "Resources\n\n\n\nChapter\nTopic\nMeike’s video\nSlides\nAnnotated Slides\nRecording\n\n\n\n\n25\nJoint Densities\n\n\n\n\n\n\n\n26\nIndependent continuous RVs\n\n\n\n\n\n\n27\nConditional distributions\n\n\n\n\n\n\n\nFor the slides, once they are opened, if you would like to print or save them as a PDF, the best way to do this is:\n\nClick on the icon with three horizontal bars on the bottom left of the browser.\nClick on “Tools” with the gear icon at the top of the sidebar.\nClick on “PDF Export Mode.”\nFrom there, you can print or save the PDF as you would normally from your internet browser."
   },
   {
     "objectID": "weeks/week_08_sched.html#on-the-horizon",
@@ -3336,7 +3336,7 @@
     "href": "weeks/week_08_sched.html#additional-information",
     "title": "Week 8",
     "section": "Additional Information",
-    "text": "Additional Information\n\nExtra Practice/Learning"
+    "text": "Additional Information"
   },
   {
     "objectID": "weeks/week_08_sched.html#statistician-of-the-week-desi-small-rodriguez",
@@ -5499,7 +5499,7 @@
     "href": "slides/26_Independent_rv.html#learning-objectives",
     "title": "Chapter 26: Independent Continuous RVs",
     "section": "Learning Objectives",
-    "text": "Learning Objectives"
+    "text": "Learning Objectives\n\nShow that a joint pmf consists of two independent, continuous RVs.\nCombine two independent RVs into one joint pdf or CDF."
   },
   {
     "objectID": "slides/26_Independent_rv.html#how-do-we-represent-independent-continuous-rvs-in-a-joint-pdf",
@@ -5513,14 +5513,14 @@
     "href": "slides/26_Independent_rv.html#example",
     "title": "Chapter 26: Independent Continuous RVs",
     "section": "Example",
-    "text": "Example\n\n\n\n\nExample 1\n\n\nLet \\(X\\) and \\(Y\\) be independent r.v.’s with \\(f_X(x)= \\frac12\\), for \\(0 \\leq x \\leq 2\\) and \\(f_Y(y)= 3y^2\\), for \\(0 \\leq y \\leq 1\\).\n\nFind \\(f_{X,Y}(x,y)\\).\nFind \\(\\mathbb{P}(0 \\leq X \\leq 1, 0 \\leq Y \\leq \\frac12)\\)."
+    "text": "Example\n\n\n\nDo this problem at home for extra practice. The solution is available in Meike’s video!\n\n\n\n\n\n\n\nExample 3\n\n\nLet \\(f_{X,Y}(x,y)= 2 e^{-(x+y)}\\), for \\(0 \\leq x \\leq y\\). Are \\(X\\) and \\(Y\\) independent?"
   },
   {
     "objectID": "slides/26_Independent_rv.html#example-1",
     "href": "slides/26_Independent_rv.html#example-1",
     "title": "Chapter 26: Independent Continuous RVs",
     "section": "Example",
-    "text": "Example\n\n\n\n\nExample 2\n\n\nLet \\(f_{X,Y}(x,y)= 18 x^2 y^5\\), for \\(0 \\leq x \\leq 1, \\ 0 \\leq y \\leq 1\\).\n\nAre \\(X\\) and \\(Y\\) independent?\nFind \\(F_{X,Y}(x,y)\\)."
+    "text": "Example\n\n\n\nDo this problem at home for extra practice. The solution is available in Meike’s video!\n\n\n\n\n\n\n\nExample 3\n\n\nExample 3. Let \\(f_{X,Y}(x,y)= 2 e^{-(x+y)}\\), for \\(0 \\leq x \\leq y\\). Are \\(X\\) and \\(Y\\) independent?"
   },
   {
     "objectID": "slides/26_Independent_rv.html#example-2",
@@ -5534,55 +5534,125 @@
     "href": "slides/26_Independent_rv.html#final-statement-on-independence",
     "title": "Chapter 26: Independent Continuous RVs",
     "section": "Final statement on independence",
-    "text": "Final statement on independence\n\nIf \\(f_{X,Y}(x,y)= g(x)h(y)\\), where \\(g(x)\\) and \\(h(y)\\) are pdf’s, then \\(X\\) and \\(Y\\) are independent.\n\nThe domain of the joint pdf needs to be independent as well!!\n\nIf \\(F_{X,Y}(x,y)= G(x)H(y)\\), where \\(G(x)\\) and \\(H(y)\\) are cdf’s, then \\(X\\) and \\(Y\\) are independent.\n\nThe domain of the joint CDF needs to be independent as well!!\n\n\n\n\nChapter 26 Slides"
+    "text": "Final statement on independence\n\nIf \\(f_{X,Y}(x,y)= g(x)h(y)\\), where \\(g(x)\\) and \\(h(y)\\) are pdf’s, then \\(X\\) and \\(Y\\) are independent.\n\nThe domain of the joint pdf needs to be independent as well!!\n\n\n       \n\nIf \\(F_{X,Y}(x,y)= G(x)H(y)\\), where \\(G(x)\\) and \\(H(y)\\) are cdf’s, then \\(X\\) and \\(Y\\) are independent.\n\nThe domain of the joint CDF needs to be independent as well!!\n\n\n\n\nChapter 26 Slides"
   },
   {
     "objectID": "slides/27_Conditional_distributions.html#example",
     "href": "slides/27_Conditional_distributions.html#example",
     "title": "Chapter 27: Conditional Distributions",
     "section": "Example",
-    "text": "Example\n\n\n\n\nExample 1\n\n\nLet \\(f_{X,Y}(x,y)= 5 e^{-x-3y}\\), for \\(0 &lt; y &lt; \\frac{x}{2}\\).\n\nFind \\(\\mathbb{P}(2&lt;X&lt;10|Y=4)\\)."
+    "text": "Example\n\n\n\n\nExample 1.3\n\n\nLet \\(f_{X,Y}(x,y)= 5 e^{-x-3y}\\), for \\(0 &lt; y &lt; \\frac{x}{2}\\).\n\nFind \\(\\mathbb{P}(X&gt;20 |Y=5)\\)"
   },
   {
     "objectID": "slides/27_Conditional_distributions.html#what-is-a-conditional-density",
     "href": "slides/27_Conditional_distributions.html#what-is-a-conditional-density",
     "title": "Chapter 27: Conditional Distributions",
     "section": "What is a conditional density?",
-    "text": "What is a conditional density?\n\nDefinition 2 (Conditional density). The conditional density of a r.v. \\(X\\) given \\(Y=y\\), is \\[f_{X|Y}(x|y)= \\frac{f_{X,Y}(x,y)}{f_Y(y)},\\] for \\(f_Y(y)&gt; 0\\).\n\nRemarks\n\nIt follows from the definition for the conditional density \\(f_{X|Y}(x|y)\\), that \\[f_{X,Y}(x,y)= f_{X|Y}(x|y)f_Y(y).\\]\nFor a fixed value of \\(Y=y\\), the conditional density \\(f_{X|Y}(x|y)\\) is an actual pdf, meaning\n\n\\(f_{X|Y}(x|y)\\geq 0\\) for all \\(x\\) and \\(y\\), and\n\\(\\displaystyle\\int_{-\\infty}^{\\infty} f_{X|Y}(x|y)dx =1\\)."
+    "text": "What is a conditional density?\n\n\n\n\nDefinition: Conditional density\n\n\nThe conditional density of a r.v. \\(X\\) given \\(Y=y\\), is \\[f_{X|Y}(x|y)= \\frac{f_{X,Y}(x,y)}{f_Y(y)},\\] for \\(f_Y(y)&gt; 0\\)\n\n\n\n\n\nRemarks\n\nIt follows from the definition for the conditional density \\(f_{X|Y}(x|y)\\), that \\[f_{X,Y}(x,y)= f_{X|Y}(x|y)f_Y(y).\\]\n\n     \n\nFor a fixed value of \\(Y=y\\), the conditional density \\(f_{X|Y}(x|y)\\) is an actual pdf, meaning\n\n\\(f_{X|Y}(x|y)\\geq 0\\) for all \\(x\\) and \\(y\\), and\n\\(\\displaystyle\\int_{-\\infty}^{\\infty} f_{X|Y}(x|y)dx =1\\)."
   },
   {
     "objectID": "slides/27_Conditional_distributions.html#example-1",
     "href": "slides/27_Conditional_distributions.html#example-1",
     "title": "Chapter 27: Conditional Distributions",
     "section": "Example",
-    "text": "Example\n\n\n\n\nExample 2\n\n\nLet \\(f_{X,Y}(x,y)= 5 e^{-x-3y}\\), for \\(0 &lt; y &lt; \\frac{x}{2}\\).\n\nFind \\(\\mathbb{P}(2&lt;X&lt;10|Y=4)\\).\nFind \\(\\mathbb{P}(X&gt;20 |Y=5)\\)."
+    "text": "Example\n\n\n\n\nExample 1.3\n\n\nLet \\(f_{X,Y}(x,y)= 5 e^{-x-3y}\\), for \\(0 &lt; y &lt; \\frac{x}{2}\\).\n\nFind \\(\\mathbb{P}(X&gt;20 |Y=5)\\)"
   },
   {
     "objectID": "slides/27_Conditional_distributions.html#example-2",
     "href": "slides/27_Conditional_distributions.html#example-2",
     "title": "Chapter 27: Conditional Distributions",
     "section": "Example",
-    "text": "Example\n\n\n\n\nExample 3\n\n\nRandomly choose a point \\(X\\) from the interval \\([0,1]\\), and given \\(X=x\\), randomly choose a point \\(Y\\) from \\([0,x]\\). Find \\(\\mathbb{P}(0 &lt; Y &lt; \\frac14)\\)."
+    "text": "Example\n\n\n\n\nExample 1.3\n\n\nLet \\(f_{X,Y}(x,y)= 5 e^{-x-3y}\\), for \\(0 &lt; y &lt; \\frac{x}{2}\\).\n\nFind \\(\\mathbb{P}(X&gt;20 |Y=5)\\)"
   },
   {
     "objectID": "slides/27_Conditional_distributions.html#stop-for-thought",
     "href": "slides/27_Conditional_distributions.html#stop-for-thought",
     "title": "Chapter 27: Conditional Distributions",
     "section": "Stop for thought",
-    "text": "Stop for thought\nQuestion What is \\(f_{X|Y}(x|y)\\) if \\(X\\) and \\(Y\\) are independent?\nRemark If \\(f_{X|Y}(x|y)\\) does not depend on \\(y\\), then \\(X\\) and \\(Y\\) are independent.\n\n\nChapter 27 Slides"
+    "text": "Stop for thought\nQuestion What is \\(f_{X|Y}(x|y)\\) if \\(X\\) and \\(Y\\) are independent?\n\\[f_{X|Y}(x|y) = \\dfrac{f_{X,Y}(x,y)}{f_y(y)} = \\dfrac{f_{X}(x)f_y(y)}{f_y(y)} = f_{X}(x)\\]\n       \n\nIf \\(f_{X|Y}(x|y)\\) (including the bounds/domain) does not depend on \\(y\\), then \\(X\\) and \\(Y\\) are independent.\n\n\n\nChapter 27 Slides"
   },
   {
     "objectID": "slides/27_Conditional_distributions.html#learning-objectives",
     "href": "slides/27_Conditional_distributions.html#learning-objectives",
     "title": "Chapter 27: Conditional Distributions",
     "section": "Learning Objectives",
-    "text": "Learning Objectives"
+    "text": "Learning Objectives\n\nCalculate the conditional probability density from a joint pdf"
   },
   {
     "objectID": "slides/27_Conditional_distributions.html#conditional-probabilities-weve-seen-before",
     "href": "slides/27_Conditional_distributions.html#conditional-probabilities-weve-seen-before",
     "title": "Chapter 27: Conditional Distributions",
     "section": "Conditional probabilities we’ve seen before",
-    "text": "Conditional probabilities we’ve seen before\nWhat do we know about conditional probabilities and distributions for events and discrete r.v.’s?"
+    "text": "Conditional probabilities we’ve seen before\n\n\nWhat do we know about conditional probabilities for events and discrete RVs?    \nFor events:\n\\[P(A | B) = \\dfrac{P(A \\cap B)}{P(B)}\\]    \nFor discrete RVs: \\[p_{X|Y}(x|y) = P(X=x|Y=y) = \\dfrac{p_{X,Y}(x,y)}{p_Y(y)}\\]\n\n\n\nWhat does it mean for conditional densities of continuous RVs?\nFor continuous RVs:"
+  },
+  {
+    "objectID": "slides/26_Independent_rv.html#constructing-a-joint-pmf-from-two-independent-continuous-rvs",
+    "href": "slides/26_Independent_rv.html#constructing-a-joint-pmf-from-two-independent-continuous-rvs",
+    "title": "Chapter 26: Independent Continuous RVs",
+    "section": "Constructing a joint pmf from two independent, continuous RVs",
+    "text": "Constructing a joint pmf from two independent, continuous RVs\n\n\n\n\nExample 1.1\n\n\nLet \\(X\\) and \\(Y\\) be independent r.v.’s with \\(f_X(x)= \\frac12\\), for \\(0 \\leq x \\leq 2\\) and \\(f_Y(y)= 3y^2\\), for \\(0 \\leq y \\leq 1\\).\n\nFind \\(f_{X,Y}(x,y)\\)."
+  },
+  {
+    "objectID": "slides/26_Independent_rv.html#constructing-a-joint-pmf-from-two-independent-continuous-rvs-1",
+    "href": "slides/26_Independent_rv.html#constructing-a-joint-pmf-from-two-independent-continuous-rvs-1",
+    "title": "Chapter 26: Independent Continuous RVs",
+    "section": "Constructing a joint pmf from two independent, continuous RVs",
+    "text": "Constructing a joint pmf from two independent, continuous RVs\n\n\n\n\nExample 1.2\n\n\nLet \\(X\\) and \\(Y\\) be independent r.v.’s with \\(f_X(x)= \\frac12\\), for \\(0 \\leq x \\leq 2\\) and \\(f_Y(y)= 3y^2\\), for \\(0 \\leq y \\leq 1\\).\n\nFind \\(\\mathbb{P}(0 \\leq X \\leq 1, 0 \\leq Y \\leq \\frac12)\\)."
+  },
+  {
+    "objectID": "slides/26_Independent_rv.html#showing-independence-from-joint-pmf",
+    "href": "slides/26_Independent_rv.html#showing-independence-from-joint-pmf",
+    "title": "Chapter 26: Independent Continuous RVs",
+    "section": "Showing independence from joint pmf",
+    "text": "Showing independence from joint pmf\n\n\n\n\nExample 2.1\n\n\nLet \\(f_{X,Y}(x,y)= 18 x^2 y^5\\), for \\(0 \\leq x \\leq 1, \\ 0 \\leq y \\leq 1\\).\n\nAre \\(X\\) and \\(Y\\) independent?"
+  },
+  {
+    "objectID": "slides/26_Independent_rv.html#showing-independence-from-joint-pmf-1",
+    "href": "slides/26_Independent_rv.html#showing-independence-from-joint-pmf-1",
+    "title": "Chapter 26: Independent Continuous RVs",
+    "section": "Showing independence from joint pmf",
+    "text": "Showing independence from joint pmf\n\n\n\n\nExample 2.2\n\n\nLet \\(f_{X,Y}(x,y)= 18 x^2 y^5\\), for \\(0 \\leq x \\leq 1, \\ 0 \\leq y \\leq 1\\).\n\nFind \\(F_{X,Y}(x,y)\\)."
+  },
+  {
+    "objectID": "slides/27_Conditional_distributions.html#example-3",
+    "href": "slides/27_Conditional_distributions.html#example-3",
+    "title": "Chapter 27: Conditional Distributions",
+    "section": "Example",
+    "text": "Example\n\n\n\n\nExample 2\n\n\nRandomly choose a point \\(X\\) from the interval \\([0,1]\\), and given \\(X=x\\), randomly choose a point \\(Y\\) from \\([0,x]\\). Find \\(\\mathbb{P}(0 &lt; Y &lt; \\frac14)\\)."
+  },
+  {
+    "objectID": "slides/27_Conditional_distributions.html#finding-probability-with-conditional-domain-and-pmf",
+    "href": "slides/27_Conditional_distributions.html#finding-probability-with-conditional-domain-and-pmf",
+    "title": "Chapter 27: Conditional Distributions",
+    "section": "Finding probability with conditional domain and pmf",
+    "text": "Finding probability with conditional domain and pmf\n\n\n\n\nExample 2\n\n\nRandomly choose a point \\(X\\) from the interval \\([0,1]\\), and given \\(X=x\\), randomly choose a point \\(Y\\) from \\([0,x]\\). Find \\(\\mathbb{P}(0 &lt; Y &lt; \\frac14)\\)."
+  },
+  {
+    "objectID": "slides/27_Conditional_distributions.html#example-starting-from-a-joint-pmf",
+    "href": "slides/27_Conditional_distributions.html#example-starting-from-a-joint-pmf",
+    "title": "Chapter 27: Conditional Distributions",
+    "section": "Example starting from a joint pmf",
+    "text": "Example starting from a joint pmf\n\n\n\n\nExample 1.2\n\n\nLet \\(f_{X,Y}(x,y)= 5 e^{-x-3y}\\), for \\(0 &lt; y &lt; \\frac{x}{2}\\).\n\nFind \\(\\mathbb{P}(X&gt;20 |Y=5)\\)"
+  },
+  {
+    "objectID": "slides/27_Conditional_distributions.html#example-starting-from-a-joint-pmf-first-try",
+    "href": "slides/27_Conditional_distributions.html#example-starting-from-a-joint-pmf-first-try",
+    "title": "Chapter 27: Conditional Distributions",
+    "section": "Example starting from a joint pmf: first try!",
+    "text": "Example starting from a joint pmf: first try!\n\n\n\n\nExample 1.1\n\n\nLet \\(f_{X,Y}(x,y)= 5 e^{-x-3y}\\), for \\(0 &lt; y &lt; \\frac{x}{2}\\).\n\nFind \\(\\mathbb{P}(2&lt;X&lt;10|Y=4)\\)"
+  },
+  {
+    "objectID": "slides/27_Conditional_distributions.html#example-starting-from-a-joint-pmf-second-try",
+    "href": "slides/27_Conditional_distributions.html#example-starting-from-a-joint-pmf-second-try",
+    "title": "Chapter 27: Conditional Distributions",
+    "section": "Example starting from a joint pmf: second try!",
+    "text": "Example starting from a joint pmf: second try!\n\n\n\n\nExample 1.1\n\n\nLet \\(f_{X,Y}(x,y)= 5 e^{-x-3y}\\), for \\(0 &lt; y &lt; \\frac{x}{2}\\).\n\nFind \\(\\mathbb{P}(2&lt;X&lt;10|Y=4)\\)"
+  },
+  {
+    "objectID": "slides/27_Conditional_distributions.html#independence-and-conditional-distributions",
+    "href": "slides/27_Conditional_distributions.html#independence-and-conditional-distributions",
+    "title": "Chapter 27: Conditional Distributions",
+    "section": "Independence and conditional distributions",
+    "text": "Independence and conditional distributions\n    Question What is \\(f_{X|Y}(x|y)\\) if \\(X\\) and \\(Y\\) are independent?\n\\[f_{X|Y}(x|y) = \\dfrac{f_{X,Y}(x,y)}{f_y(y)} = \\dfrac{f_{X}(x)f_y(y)}{f_y(y)} = f_{X}(x)\\]\n       \n\nIf \\(f_{X|Y}(x|y)\\) does not depend on \\(y\\) (including the bounds/domain), then \\(X\\) and \\(Y\\) are independent.\n\n\n\nChapter 27 Slides"
   }
 ]

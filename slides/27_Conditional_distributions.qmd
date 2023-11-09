@@ -19,24 +19,52 @@ format:
 
 ## Learning Objectives
 
+1. Calculate the conditional probability density from a joint pdf
+
+
 ## Conditional probabilities we've seen before
 
-**What do we know about conditional probabilities and distributions for
-events and discrete r.v.'s?**
+::: columns
+::: {.column width="40%"}
+**What do we know about conditional probabilities for events and discrete RVs?**
+ 
+ 
 
-## Example
+For events:
+
+$$P(A | B) = \dfrac{P(A \cap B)}{P(B)}$$ 
+ 
+ 
+
+For discrete RVs: 
+$$p_{X|Y}(x|y) = P(X=x|Y=y) = \dfrac{p_{X,Y}(x,y)}{p_Y(y)}$$
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="50%"}
+**What does it mean for conditional densities of continuous RVs?**
+
+For continuous RVs:
+:::
+
+:::
+
+
+## Example starting from a joint pmf: first try!
 
 ::: columns 
-::: {.column width="40%"}
+::: {.column width="30%"}
 ::: example
 ::: ex-title
-Example 1
+Example 1.1
 :::
 ::: ex-cont
 Let $f_{X,Y}(x,y)= 5 e^{-x-3y}$, for
 $0 < y < \frac{x}{2}$.
 
-1.  Find $\mathbb{P}(2<X<10|Y=4)$.
+1.  Find $\mathbb{P}(2<X<10|Y=4)$
 
 :::
 :::
@@ -46,39 +74,57 @@ $0 < y < \frac{x}{2}$.
 
 ## What is a conditional density?
 
+::: columns
+::: {.column width="45%"}
 ::: definition
-**Definition 2** (Conditional density). *The conditional density of a
-r.v. $X$ given $Y=y$, is $$f_{X|Y}(x|y)= \frac{f_{X,Y}(x,y)}{f_Y(y)},$$
-for $f_Y(y)> 0$.*
+::: def-title
+Definition: Conditional density
 :::
+::: def-cont
+The conditional density of a
+r.v. $X$ given $Y=y$, is $$f_{X|Y}(x|y)= \frac{f_{X,Y}(x,y)}{f_Y(y)},$$
+for $f_Y(y)> 0$
+:::
+:::
+:::
+
+::: {.column width="3%"}
+:::
+
+::: {.column width="52%"}
 
 **Remarks**
 
 1.  It follows from the definition for the conditional density
     $f_{X|Y}(x|y)$, that $$f_{X,Y}(x,y)= f_{X|Y}(x|y)f_Y(y).$$
+    
+ 
+ 
+ 
 
 2.  For a fixed value of $Y=y$, the conditional density $f_{X|Y}(x|y)$
     is an actual pdf, meaning
 
-    1.  $f_{X|Y}(x|y)\geq 0$ for all $x$ and $y$, and
+    -  $f_{X|Y}(x|y)\geq 0$ for all $x$ and $y$, and
 
-    2.  $\displaystyle\int_{-\infty}^{\infty} f_{X|Y}(x|y)dx =1$.
+    -  $\displaystyle\int_{-\infty}^{\infty} f_{X|Y}(x|y)dx =1$.
+    
+:::
+:::
 
-## Example
+## Example starting from a joint pmf: second try!
 
 ::: columns 
-::: {.column width="40%"}
+::: {.column width="30%"}
 ::: example
 ::: ex-title
-Example 2
+Example 1.1
 :::
 ::: ex-cont
 Let $f_{X,Y}(x,y)= 5 e^{-x-3y}$, for
 $0 < y < \frac{x}{2}$.
 
-1.  Find $\mathbb{P}(2<X<10|Y=4)$.
-
-2.  Find $\mathbb{P}(X>20 |Y=5)$.
+1.  Find $\mathbb{P}(2<X<10|Y=4)$
 
 :::
 :::
@@ -86,13 +132,33 @@ $0 < y < \frac{x}{2}$.
 :::
 :::
 
-## Example 
+## Example starting from a joint pmf
 
 ::: columns 
-::: {.column width="40%"}
+::: {.column width="30%"}
 ::: example
 ::: ex-title
-Example 3
+Example 1.2
+:::
+::: ex-cont
+Let $f_{X,Y}(x,y)= 5 e^{-x-3y}$, for
+$0 < y < \frac{x}{2}$.
+
+2.  Find $\mathbb{P}(X>20 |Y=5)$
+
+:::
+:::
+
+:::
+:::
+
+## Finding probability with conditional domain and pmf
+
+::: columns 
+::: {.column width="30%"}
+::: example
+::: ex-title
+Example 2
 :::
 ::: ex-cont
 Randomly choose a point $X$ from the interval $[0,1]$,
@@ -105,9 +171,18 @@ $\mathbb{P}(0 < Y < \frac14)$.
 :::
 :::
 
-## Stop for thought
+## Independence and conditional distributions
 
+ 
+ 
 **Question** What is $f_{X|Y}(x|y)$ if $X$ and $Y$ are independent?
 
-**Remark** If $f_{X|Y}(x|y)$ does not depend on $y$, then $X$ and $Y$
+$$f_{X|Y}(x|y) = \dfrac{f_{X,Y}(x,y)}{f_y(y)} = \dfrac{f_{X}(x)f_y(y)}{f_y(y)} = f_{X}(x)$$
+
+ 
+ 
+ 
+ 
+
+-   If $f_{X|Y}(x|y)$ does not depend on $y$ (including the bounds/domain), then $X$ and $Y$
 are independent.

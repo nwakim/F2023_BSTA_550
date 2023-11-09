@@ -22,6 +22,10 @@ editor:
 
 ## Learning Objectives
 
+1. Show that a joint pmf consists of two independent, continuous RVs.
+
+2. Combine two independent RVs into one joint pdf or CDF.
+
 ## How do we represent independent continuous RVs in a joint pdf?
 
 ::: columns
@@ -48,13 +52,13 @@ For continuous RVs: If $X \perp Y$
 
 :::
 
-## Example
+## Constructing a joint pmf from two independent, continuous RVs
 
 ::: columns 
-::: {.column width="40%"}
+::: {.column width="30%"}
 ::: example
 ::: ex-title
-Example 1
+Example 1.1
 :::
 ::: ex-cont
 Let $X$ and $Y$ be independent r.v.'s with
@@ -62,6 +66,24 @@ $f_X(x)= \frac12$, for $0 \leq x \leq 2$ and $f_Y(y)= 3y^2$, for
 $0 \leq y \leq 1$.
 
 1.  Find $f_{X,Y}(x,y)$.
+:::
+:::
+
+:::
+:::
+
+## Constructing a joint pmf from two independent, continuous RVs
+
+::: columns 
+::: {.column width="30%"}
+::: example
+::: ex-title
+Example 1.2
+:::
+::: ex-cont
+Let $X$ and $Y$ be independent r.v.'s with
+$f_X(x)= \frac12$, for $0 \leq x \leq 2$ and $f_Y(y)= 3y^2$, for
+$0 \leq y \leq 1$.
 
 2.  Find $\mathbb{P}(0 \leq X \leq 1, 0 \leq Y \leq \frac12)$.
 :::
@@ -70,19 +92,36 @@ $0 \leq y \leq 1$.
 :::
 :::
 
-## Example
+## Showing independence from joint pmf
 
 ::: columns 
-::: {.column width="40%"}
+::: {.column width="30%"}
 ::: example
 ::: ex-title
-Example 2
+Example 2.1
 :::
 ::: ex-cont
 Let $f_{X,Y}(x,y)= 18 x^2 y^5$, for
 $0 \leq x \leq 1, \ 0 \leq y \leq 1$.
 
 1.  Are $X$ and $Y$ independent?
+:::
+:::
+
+:::
+:::
+
+## Showing independence from joint pmf
+
+::: columns 
+::: {.column width="30%"}
+::: example
+::: ex-title
+Example 2.2
+:::
+::: ex-cont
+Let $f_{X,Y}(x,y)= 18 x^2 y^5$, for
+$0 \leq x \leq 1, \ 0 \leq y \leq 1$.
 
 2.  Find $F_{X,Y}(x,y)$.
 :::
@@ -99,13 +138,13 @@ Meike's video!
 :::
 
 ::: columns 
-::: {.column width="40%"}
+::: {.column width="30%"}
 ::: example
 ::: ex-title
 Example 3
 :::
 ::: ex-cont
-**Example 3**. *Let* $f_{X,Y}(x,y)= 2 e^{-(x+y)}$, for
+Let $f_{X,Y}(x,y)= 2 e^{-(x+y)}$, for
 $0 \leq x \leq y$. Are $X$ and $Y$ independent?
 :::
 :::
@@ -119,6 +158,11 @@ $0 \leq x \leq y$. Are $X$ and $Y$ independent?
     $X$ and $Y$ are independent.
 
     -   The domain of the joint pdf needs to be independent as well!!
+    
+ 
+ 
+ 
+ 
 
 2.  If $F_{X,Y}(x,y)= G(x)H(y)$, where $G(x)$ and $H(y)$ are cdf's, then
     $X$ and $Y$ are independent.

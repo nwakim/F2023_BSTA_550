@@ -345,33 +345,49 @@ Meike Niederhausen and Nicky Wakim
 <ul>
 <li><a href="#/learning-objectives" id="/toc-learning-objectives">Learning Objectives</a></li>
 <li><a href="#/conditional-probabilities-weve-seen-before" id="/toc-conditional-probabilities-weve-seen-before">Conditional probabilities we’ve seen before</a></li>
-<li><a href="#/example" id="/toc-example">Example</a></li>
+<li><a href="#/example-starting-from-a-joint-pmf-first-try" id="/toc-example-starting-from-a-joint-pmf-first-try">Example starting from a joint pmf: first try!</a></li>
 <li><a href="#/what-is-a-conditional-density" id="/toc-what-is-a-conditional-density">What is a conditional density?</a></li>
-<li><a href="#/example-1" id="/toc-example-1">Example</a></li>
-<li><a href="#/example-2" id="/toc-example-2">Example</a></li>
-<li><a href="#/stop-for-thought" id="/toc-stop-for-thought">Stop for thought</a></li>
+<li><a href="#/example-starting-from-a-joint-pmf-second-try" id="/toc-example-starting-from-a-joint-pmf-second-try">Example starting from a joint pmf: second try!</a></li>
+<li><a href="#/example-starting-from-a-joint-pmf" id="/toc-example-starting-from-a-joint-pmf">Example starting from a joint pmf</a></li>
+<li><a href="#/finding-probability-with-conditional-domain-and-pmf" id="/toc-finding-probability-with-conditional-domain-and-pmf">Finding probability with conditional domain and pmf</a></li>
+<li><a href="#/independence-and-conditional-distributions" id="/toc-independence-and-conditional-distributions">Independence and conditional distributions</a></li>
 </ul>
 </nav>
 </section>
 <section id="learning-objectives" class="slide level2">
 <h2>Learning Objectives</h2>
+<ol type="1">
+<li>Calculate the conditional probability density from a joint pdf</li>
+</ol>
 </section>
 <section id="conditional-probabilities-weve-seen-before" class="slide level2">
 <h2>Conditional probabilities we’ve seen before</h2>
-<p><strong>What do we know about conditional probabilities and distributions for events and discrete r.v.’s?</strong></p>
-</section>
-<section id="example" class="slide level2">
-<h2>Example</h2>
 <div class="columns">
 <div class="column" style="width:40%;">
+<p><strong>What do we know about conditional probabilities for events and discrete RVs?</strong> &nbsp; &nbsp;</p>
+<p>For events:</p>
+<p><span class="math display">\[P(A | B) = \dfrac{P(A \cap B)}{P(B)}\]</span> &nbsp; &nbsp;</p>
+<p>For discrete RVs: <span class="math display">\[p_{X|Y}(x|y) = P(X=x|Y=y) = \dfrac{p_{X,Y}(x,y)}{p_Y(y)}\]</span></p>
+</div><div class="column" style="width:10%;">
+
+</div><div class="column" style="width:50%;">
+<p><strong>What does it mean for conditional densities of continuous RVs?</strong></p>
+<p>For continuous RVs:</p>
+</div>
+</div>
+</section>
+<section id="example-starting-from-a-joint-pmf-first-try" class="slide level2">
+<h2>Example starting from a joint pmf: first try!</h2>
+<div class="columns">
+<div class="column" style="width:30%;">
 <div class="example">
 <div class="ex-title">
-<p>Example 1</p>
+<p>Example 1.1</p>
 </div>
 <div class="ex-cont">
 <p>Let <span class="math inline">\(f_{X,Y}(x,y)= 5 e^{-x-3y}\)</span>, for <span class="math inline">\(0 &lt; y &lt; \frac{x}{2}\)</span>.</p>
 <ol type="1">
-<li>Find <span class="math inline">\(\mathbb{P}(2&lt;X&lt;10|Y=4)\)</span>.</li>
+<li>Find <span class="math inline">\(\mathbb{P}(2&lt;X&lt;10|Y=4)\)</span></li>
 </ol>
 </div>
 </div>
@@ -380,45 +396,77 @@ Meike Niederhausen and Nicky Wakim
 </section>
 <section id="what-is-a-conditional-density" class="slide level2">
 <h2>What is a conditional density?</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
 <div class="definition">
-<p><strong>Definition 2</strong> (Conditional density). <em>The conditional density of a r.v. <span class="math inline">\(X\)</span> given <span class="math inline">\(Y=y\)</span>, is <span class="math display">\[f_{X|Y}(x|y)= \frac{f_{X,Y}(x,y)}{f_Y(y)},\]</span> for <span class="math inline">\(f_Y(y)&gt; 0\)</span>.</em></p>
+<div class="def-title">
+<p>Definition: Conditional density</p>
 </div>
+<div class="def-cont">
+<p>The conditional density of a r.v. <span class="math inline">\(X\)</span> given <span class="math inline">\(Y=y\)</span>, is <span class="math display">\[f_{X|Y}(x|y)= \frac{f_{X,Y}(x,y)}{f_Y(y)},\]</span> for <span class="math inline">\(f_Y(y)&gt; 0\)</span></p>
+</div>
+</div>
+</div><div class="column" style="width:3%;">
+
+</div><div class="column" style="width:52%;">
 <p><strong>Remarks</strong></p>
 <ol type="1">
-<li><p>It follows from the definition for the conditional density <span class="math inline">\(f_{X|Y}(x|y)\)</span>, that <span class="math display">\[f_{X,Y}(x,y)= f_{X|Y}(x|y)f_Y(y).\]</span></p></li>
+<li>It follows from the definition for the conditional density <span class="math inline">\(f_{X|Y}(x|y)\)</span>, that <span class="math display">\[f_{X,Y}(x,y)= f_{X|Y}(x|y)f_Y(y).\]</span></li>
+</ol>
+<p>&nbsp; &nbsp; &nbsp;</p>
+<ol start="2" type="1">
 <li><p>For a fixed value of <span class="math inline">\(Y=y\)</span>, the conditional density <span class="math inline">\(f_{X|Y}(x|y)\)</span> is an actual pdf, meaning</p>
-<ol type="1">
+<ul>
 <li><p><span class="math inline">\(f_{X|Y}(x|y)\geq 0\)</span> for all <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>, and</p></li>
 <li><p><span class="math inline">\(\displaystyle\int_{-\infty}^{\infty} f_{X|Y}(x|y)dx =1\)</span>.</p></li>
-</ol></li>
+</ul></li>
 </ol>
+</div>
+</div>
 </section>
-<section id="example-1" class="slide level2">
-<h2>Example</h2>
+<section id="example-starting-from-a-joint-pmf-second-try" class="slide level2">
+<h2>Example starting from a joint pmf: second try!</h2>
 <div class="columns">
-<div class="column" style="width:40%;">
+<div class="column" style="width:30%;">
 <div class="example">
 <div class="ex-title">
-<p>Example 2</p>
+<p>Example 1.1</p>
 </div>
 <div class="ex-cont">
 <p>Let <span class="math inline">\(f_{X,Y}(x,y)= 5 e^{-x-3y}\)</span>, for <span class="math inline">\(0 &lt; y &lt; \frac{x}{2}\)</span>.</p>
 <ol type="1">
-<li><p>Find <span class="math inline">\(\mathbb{P}(2&lt;X&lt;10|Y=4)\)</span>.</p></li>
-<li><p>Find <span class="math inline">\(\mathbb{P}(X&gt;20 |Y=5)\)</span>.</p></li>
+<li>Find <span class="math inline">\(\mathbb{P}(2&lt;X&lt;10|Y=4)\)</span></li>
 </ol>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section id="example-2" class="slide level2">
-<h2>Example</h2>
+<section id="example-starting-from-a-joint-pmf" class="slide level2">
+<h2>Example starting from a joint pmf</h2>
 <div class="columns">
-<div class="column" style="width:40%;">
+<div class="column" style="width:30%;">
 <div class="example">
 <div class="ex-title">
-<p>Example 3</p>
+<p>Example 1.2</p>
+</div>
+<div class="ex-cont">
+<p>Let <span class="math inline">\(f_{X,Y}(x,y)= 5 e^{-x-3y}\)</span>, for <span class="math inline">\(0 &lt; y &lt; \frac{x}{2}\)</span>.</p>
+<ol start="2" type="1">
+<li>Find <span class="math inline">\(\mathbb{P}(X&gt;20 |Y=5)\)</span></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="finding-probability-with-conditional-domain-and-pmf" class="slide level2">
+<h2>Finding probability with conditional domain and pmf</h2>
+<div class="columns">
+<div class="column" style="width:30%;">
+<div class="example">
+<div class="ex-title">
+<p>Example 2</p>
 </div>
 <div class="ex-cont">
 <p>Randomly choose a point <span class="math inline">\(X\)</span> from the interval <span class="math inline">\([0,1]\)</span>, and given <span class="math inline">\(X=x\)</span>, randomly choose a point <span class="math inline">\(Y\)</span> from <span class="math inline">\([0,x]\)</span>. Find <span class="math inline">\(\mathbb{P}(0 &lt; Y &lt; \frac14)\)</span>.</p>
@@ -427,10 +475,14 @@ Meike Niederhausen and Nicky Wakim
 </div>
 </div>
 </section>
-<section id="stop-for-thought" class="slide level2">
-<h2>Stop for thought</h2>
-<p><strong>Question</strong> What is <span class="math inline">\(f_{X|Y}(x|y)\)</span> if <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are independent?</p>
-<p><strong>Remark</strong> If <span class="math inline">\(f_{X|Y}(x|y)\)</span> does not depend on <span class="math inline">\(y\)</span>, then <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are independent.</p>
+<section id="independence-and-conditional-distributions" class="slide level2">
+<h2>Independence and conditional distributions</h2>
+<p>&nbsp; &nbsp; <strong>Question</strong> What is <span class="math inline">\(f_{X|Y}(x|y)\)</span> if <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are independent?</p>
+<p><span class="math display">\[f_{X|Y}(x|y) = \dfrac{f_{X,Y}(x,y)}{f_y(y)} = \dfrac{f_{X}(x)f_y(y)}{f_y(y)} = f_{X}(x)\]</span></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;</p>
+<ul>
+<li>If <span class="math inline">\(f_{X|Y}(x|y)\)</span> does not depend on <span class="math inline">\(y\)</span> (including the bounds/domain), then <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are independent.</li>
+</ul>
 
 <div class="footer footer-default">
 <p>Chapter 27 Slides</p>
