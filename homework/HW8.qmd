@@ -1,9 +1,9 @@
 ---
-title: "Homework 7"
+title: "Homework 8"
 subtitle: "BSTA 550"
-description: "Due: Thursday November 30, 2023 at 11pm"
+description: "Due: Thursday December 7, 2023 at 11pm"
 date-modified: "11/06/2023"
-date: "11/30/2023"
+date: "12/07/2023"
 categories: [""]
 format: 
   html:
@@ -15,9 +15,9 @@ editor_options:
 ---
 
 ::: callout-caution
-## Split up this homework over the 2 weeks!
+## This homework is optional!!
 
-This homework is extra long! While I don't want you to worry about turning something in over your break, I do not recommend saving it all for after the break. I recommend having Chapter 25-29 problems completed when you get back from your break.
+This homework is completely optional!! These chapters will be on the test! I cannot stress enough how important these distributions and the CLT are!!
 :::
 
 ## Directions
@@ -29,17 +29,19 @@ This homework is extra long! While I don't want you to worry about turning somet
 The more work you include that shows your thought process, the more I can give you feedback.
 
 ::: center
-| Chapter |        Turn In        |          Extra Problems          |
-|:-------:|:---------------------:|:--------------------------------:|
-|   25    |  TB \# 18, NTB \# 1   |      \# 1, 4, 8, 17, 23, 24      |
-|  26\*   | TB \# 12, NTB \# 2, 3 |         \# 7, 9, 19, 20          |
-|   27    |     TB \# 12\*\*      |         \# 6, 8, 13, 17          |
-|   28    |       TB \# 18        |           TB \# 1, 10            |
-| 29[^1]  |      NTB \# 4-6       | TB \# 10, 14, 23, 26, 11, 13, 32 |
-|   30    |                       |          TB \# 4, 7-12           |
+| Chapter |      Turn In       |     Extra Problems      |
+|:-------:|:------------------:|:-----------------------:|
+|   31    |      TB \# 18      |    TB \# 13, 14, 17     |
+|   32    |      TB \# 8       | TB \# 3, 5, 10[^1], 15  |
+|   33    |      NTB \# 1      |     TB \# 3, 9, 10      |
+|   35    | TB \# 10, NTB \# 2 |     TB \# 6, 9, 24      |
+|   36    |  TB \# 12[^2], 14  | TB \# 4, 11, 13, 15, 16 |
+|   37    |    TB \# 24, 30    | TB \# 2, 4, 13, 20, 29  |
 :::
 
-[^1]: I recommend doing the Chapter 29 Extra Problems in the order listed.
+[^1]: Assume $X$ and $Y$ are independent.
+
+[^2]: Assume the distances between the cars are independent.
 
 \* Although within Chapter 26, these exercises are primarily practicing the material from Chapter 25.
 
@@ -47,38 +49,15 @@ The more work you include that shows your thought process, the more I can give y
 
 ## Non-textbook problems (NTB)
 
-1.  Let $X_1, X_2, \ldots, X_n$ be i.i.d. random variables with common pdf $f_X(x)$ and cdf $F_X(x)$. Find the pdf for the random variable $Z$, where $Z = max(X_1, X_2, \ldots, X_n)$.
+1.  Suppose that voters arrive at a polling station at the rate of 120 per hour.For each of the following parts, [give the name and parameter(s) of the distribution]{.underline} to be used to model the event and [set up the expression]{.underline} to find the specified probability.*You do not need to compute the probability.*
 
-2.  Let $X$ and $Y$ be independent random variables with respective pdf's $f_X(x)=\frac{1}{5}$, for $0\leq x\leq 5$, and $f_Y(y)=2e^{-2y}$, for $y>0$.
+    a.  The probability that the next voter will arrive in less than 30 seconds.
 
-    a.  Find the joint distribution $f_{X,Y}(x,y)$.
-    b.  Find the probability that $X$ is less than $Y$.
-    c.  Let $Z$ be the random variable that is the smaller of $X$ and $Y$. Find the cumulative distribution function for $Z$.
-    d.  Find the pdf for Z.
+    b.  The probability that 200 voters will arrive within two hours of each other.
 
-3.  Suppose that the random variables $X$ and $Y$ have joint density $f_{X,Y}(x,y)$, for $0<x<1$, and $\frac{1}{2}<y<1$. Set up the equation for the cdf of $Z$, where $Z=X/Y$.
+    c.  The probability that the $50^{th}$ voter will arrive in between 15 and 30 minutes.
 
-    *Hint: First determine what the possible values for* $Z$ are. Then make a sketch of the domain of the joint pdf and shade in the region representing the cdf of Z for different values of $z$. Make sure to pay close attention to how the region we need to integrate over changes as $z$ changes. The cdf has two different cases depending on the value of $z$. Plug in specific values of $z$ and shade in the region representing the cdf to see why two different cases are needed.
-
-4.  Let $f_X(x)=\lambda e^{-\lambda x}$ for $x>0$, where $\lambda>0$.
-
-    a.  Show $Var[X]=\frac{1}{\lambda^2}$. You may use the result from class for $\mathbb{E}[X]$ without first proving it.
-
-5.  A shipping company handles containers in three different sizes: (1) 27 $ft^3$ (3 x 3 x 3), (2) 125 $ft^3$, and (3) 512 $ft^3$. Let $X_i$ ($i = 1, 2, 3$) denote the number of type $i$ containers shipped during a given week. Suppose that $\mu_1 =200,\sigma_1=10,\mu_2 =250,\sigma_2=12,\mu_3 =100,\sigma_3=8$.
-
-    a.  Assuming that $X_1,X_2,X_3$ are independent, calculate the expected value and variance of the total volume shipped.
-
-    b.  Would your calculations necessarily be correct if the $X_i$'s were not independent? Explain.
-
-6.  Suppose your waiting time for a bus in the morning is uniformly distributed on \[0, 8\] (minutes), whereas waiting time in the evening is uniformly distributed on \[0, 10\] (minutes) independent of morning waiting time. *Make sure to FIRST set up an equation for calculating the total waiting time in each question before calculating the mean and variance of the total waiting time.* *You may use results from class for the expected value and variance of uniform r.v.'s without proving them.*
-
-    a.  If you take the bus each morning and evening for a week (7 days), what is your total expected waiting time?
-
-    b.  What is the variance of your total waiting time?
-
-    c.  What are the expected value and variance of the difference between morning and evening waiting times on a given day?
-
-    d.  What are the expected value and variance of the difference between total morning waiting time and total evening waiting time for a particular week?
+2.  The automatic opening device of a military cargo parachute has been designed to open when the parachute is 200 m above the ground. Suppose opening altitude actually has a normal distribution with mean value 200 m and standard deviation 30 m. Equipment damage will occur if the parachute opens at an altitude of less than 100 m. What is the probability that there is equipment damage to the payload of at least one of the five independently dropped parachutes?
 
 ## Some select answers
 
