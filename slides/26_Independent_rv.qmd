@@ -52,7 +52,7 @@ For continuous RVs: If $X \perp Y$
 
 :::
 
-## Constructing a joint pmf from two independent, continuous RVs
+## Constructing a joint pdf from two independent, continuous RVs
 
 ::: columns 
 ::: {.column width="30%"}
@@ -72,7 +72,7 @@ $0 \leq y \leq 1$.
 :::
 :::
 
-## Constructing a joint pmf from two independent, continuous RVs
+## Constructing a joint pdf from two independent, continuous RVs
 
 ::: columns 
 ::: {.column width="30%"}
@@ -92,7 +92,7 @@ $0 \leq y \leq 1$.
 :::
 :::
 
-## Showing independence from joint pmf
+## Showing independence from joint pdf
 
 ::: columns 
 ::: {.column width="30%"}
@@ -111,7 +111,7 @@ $0 \leq x \leq 1, \ 0 \leq y \leq 1$.
 :::
 :::
 
-## Showing independence from joint pmf
+## Showing independence from joint pdf
 
 ::: columns 
 ::: {.column width="30%"}

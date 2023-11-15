@@ -52,7 +52,7 @@ For continuous RVs:
 :::
 
 
-## Example starting from a joint pmf: first try!
+## Example starting from a joint pdf: first try!
 
 ::: columns 
 ::: {.column width="30%"}
@@ -112,7 +112,7 @@ for $f_Y(y)> 0$
 :::
 :::
 
-## Example starting from a joint pmf: second try!
+## Example starting from a joint pdf: second try!
 
 ::: columns 
 ::: {.column width="30%"}
@@ -132,7 +132,7 @@ $0 < y < \frac{x}{2}$.
 :::
 :::
 
-## Example starting from a joint pmf
+## Example starting from a joint pdf
 
 ::: columns 
 ::: {.column width="30%"}
@@ -152,7 +152,7 @@ $0 < y < \frac{x}{2}$.
 :::
 :::
 
-## Finding probability with conditional domain and pmf
+## Finding probability with conditional domain and pdf
 
 ::: columns 
 ::: {.column width="30%"}
