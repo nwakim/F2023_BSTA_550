@@ -3336,7 +3336,7 @@
     "href": "weeks/week_08_sched.html#additional-information",
     "title": "Week 8",
     "section": "Additional Information",
-    "text": "Additional Information"
+    "text": "Additional Information\n\nAnnouncements 11/15\n\nHW 5 feedback returned!\n\nPlease look at the solutions for helpful R code!\n\nHW 4 feedback\n\nIn NTB 1\n\nDid not check all your numbers\nTry to use variable name (like highest education level) when describing what the probabilities mean\n\n\nFinal exam will not be cumulative\n\nWill only cover Chapter 24 and on"
   },
   {
     "objectID": "weeks/week_08_sched.html#statistician-of-the-week-desi-small-rodriguez",
@@ -5499,7 +5499,7 @@
     "href": "slides/26_Independent_rv.html#learning-objectives",
     "title": "Chapter 26: Independent Continuous RVs",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\n\nShow that a joint pmf consists of two independent, continuous RVs.\nCombine two independent RVs into one joint pdf or CDF."
+    "text": "Learning Objectives\n\nShow that a joint pdf consists of two independent, continuous RVs.\nCombine two independent RVs into one joint pdf or CDF."
   },
   {
     "objectID": "slides/26_Independent_rv.html#how-do-we-represent-independent-continuous-rvs-in-a-joint-pdf",

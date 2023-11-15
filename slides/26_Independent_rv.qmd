@@ -22,7 +22,7 @@ editor:
 
 ## Learning Objectives
 
-1. Show that a joint pmf consists of two independent, continuous RVs.
+1. Show that a joint pdf consists of two independent, continuous RVs.
 
 2. Combine two independent RVs into one joint pdf or CDF.
 
