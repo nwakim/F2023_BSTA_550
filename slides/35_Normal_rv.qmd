@@ -1,4 +1,27 @@
-# Chapter 35: Normal Variables {#chapter-35-normal-variables .unnumbered}
+---
+title: "Chapter 35: Normal Variables"
+author: "Meike Niederhausen and Nicky Wakim"
+date: "11/27/2023"
+title-slide-attributes:
+    data-background-color: "#006a4e"
+categories: ["Week 10"]
+format: 
+  revealjs:
+    theme: [default, simple_NW.scss]
+    toc: true
+    chalkboard: true
+    slide-number: true
+    show-slide-number: all
+    width: 1955
+    height: 1100
+    footer: Chapter 35 Slides
+---
+
+## Learning Objectives
+
+1. 
+
+## Chapter 35: Normal Variables
 
 -   I will not cover normal rv's in detail here since I expect you have
     already learned about normal random variables and $z$-scores in
@@ -8,6 +31,4 @@
     will be taking the MS Biostatistics comprehensive exam, since that
     is what will be provided during the exam.
 
-------------------------------------------------------------------------
-
-**Some remarks on normal rv's**
+## Some remarks on normal RVs

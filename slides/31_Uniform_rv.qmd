@@ -1,8 +1,30 @@
-# Chapter 31: Continuous Uniform Random Variables {#chapter-31-continuous-uniform-random-variables .unnumbered}
+---
+title: "Chapter 31: Continuous Uniform Random Variables"
+author: "Meike Niederhausen and Nicky Wakim"
+date: "11/27/2023"
+title-slide-attributes:
+    data-background-color: "#006a4e"
+categories: ["Week 10"]
+format: 
+  revealjs:
+    theme: [default, simple_NW.scss]
+    toc: true
+    chalkboard: true
+    slide-number: true
+    show-slide-number: all
+    width: 1955
+    height: 1100
+    footer: Chapter 31 Slides
+---
+
+## Learning Objectives
+
+1. 
+
+## Scenario 
 
 **Scenario:** Events are equally likely to happen anywhere or anytime in
 an interval of values.
 
-------------------------------------------------------------------------
 
-**Properties of continuous uniform r.v.'s**
+## Properties of continuous uniform RVs

@@ -1,15 +1,50 @@
-# Chapter 32: Exponential Random Variables {#chapter-32-exponential-random-variables .unnumbered}
+---
+title: "Chapter 32: Exponential Random Variables"
+author: "Meike Niederhausen and Nicky Wakim"
+date: "11/27/2023"
+title-slide-attributes:
+    data-background-color: "#006a4e"
+categories: ["Week 10"]
+format: 
+  revealjs:
+    theme: [default, simple_NW.scss]
+    toc: true
+    chalkboard: true
+    slide-number: true
+    show-slide-number: all
+    width: 1955
+    height: 1100
+    footer: Chapter 32 Slides
+---
 
-**Scenario:** Modeling the time until the next (first) event.
+## Learning Objectives
 
-------------------------------------------------------------------------
+1. 
 
-**Properties of exponential r.v.'s**
+## Scenario:
 
-**Memoryless Property**
+Modeling the time until the next (first) event.
 
-::: {#31_Exp_min .example}
-**Example 1**. *  Let $X_i \sim \textrm{Exp}(\lambda_i)$ be independent
+
+
+## Properties of exponential RVs
+
+## Memoryless Property
+
+## Example
+
+::: columns
+::: {.column width="30%"}
+::: example
+::: ex-title
+Example 1
+:::
+::: ex-cont
+Let $X_i \sim \textrm{Exp}(\lambda_i)$ be independent
 r.v.'s, for $i=1 \ldots n$. Find the pdf for the first of the arrival
-times.*
+times.
+:::
+:::
+
+:::
 :::

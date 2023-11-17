@@ -1,24 +1,105 @@
-# Chapter 28: Expected Values of Continuous Random Variables {#chapter-28-expected-values-of-continuous-random-variables .unnumbered}
+---
+title: "Chapter 28: Expected Values of Continuous Random Variables"
+author: "Meike Niederhausen and Nicky Wakim"
+date: "11/20/2023"
+title-slide-attributes:
+    data-background-color: "#006a4e"
+categories: ["Week 9"]
+format: 
+  revealjs:
+    theme: [default, simple_NW.scss]
+    toc: true
+    chalkboard: true
+    slide-number: true
+    show-slide-number: all
+    width: 1955
+    height: 1100
+    footer: Chapter 28 Slides
+---
 
-**How do we calculate expected values of discrete r.v.'s?**
+## Learning Objectives
 
-------------------------------------------------------------------------
+1. Calculated mean (expected value) of a continuous RV
 
-**How do we calculate expected values of continuous r.v.'s?**
+## Expected value of a function of a continuous RV
 
-------------------------------------------------------------------------
+::: columns
+::: {.column width="40%"}
+**How do we calculate expected values of discrete RVs?**
 
-::: {#28_E_Uab .example}
-**Example 1**. *  Let $f_X(x)= \frac{1}{b-a}$, for $a \leq x \leq b$.
-Find $\mathbb{E}[X]$.*
+ 
+ 
+ 
+ 
+
+For discrete RVs: weight average
+$$\mathbb{E}[X] = \sum_{i=1}^n x_ip_X(x_i).$$
 :::
 
-::: {#28_E_Exp .example}
-**Example 2**. *  Let $f_X(x)= \lambda e^{-\lambda x}$, for $x > 0$ and
-$\lambda> 0$. Find $\mathbb{E}[X]$.*
+::: {.column width="10%"}
 :::
 
-::: {#28_E_joint .example}
-**Example 3**. *  Let $f_{X,Y}(x,y)= 2e^{-(x+y)}$, for
-$0 \leq x \leq y$. Find $\mathbb{E}[X]$.*
+::: {.column width="50%"}
+**How do we calculate expected values of continuous RVs?**
+
+ 
+ 
+ 
+ 
+
+For continuous RVs:
 :::
+
+:::
+
+## Expected Value of the Uniform Distribution
+
+::: columns
+::: {.column width="30%"}
+::: example
+::: ex-title
+Example 1
+:::
+::: ex-cont
+Let $f_X(x)= \frac{1}{b-a}$, for $a \leq x \leq b$.
+Find $\mathbb{E}[X]$.
+:::
+:::
+
+:::
+:::
+
+## Expected Value of the Exponential Distribution
+
+::: columns
+::: {.column width="30%"}
+::: example
+::: ex-title
+Example 2
+:::
+::: ex-cont
+Let $f_X(x)= \lambda e^{-\lambda x}$, for $x > 0$ and
+$\lambda> 0$. Find $\mathbb{E}[X]$.
+:::
+:::
+
+:::
+:::
+
+## Expected value from a joint distribution
+
+::: columns
+::: {.column width="30%"}
+::: example
+::: ex-title
+Example 3
+:::
+::: ex-cont
+Let $f_{X,Y}(x,y)= 2e^{-(x+y)}$, for
+$0 \leq x \leq y$. Find $\mathbb{E}[X]$.
+:::
+:::
+
+:::
+:::
+

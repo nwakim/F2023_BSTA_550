@@ -1,12 +1,35 @@
-# Chapter 33: Gamma Random Variables {#chapter-33-gamma-random-variables .unnumbered}
+---
+title: "Chapter 33: Gamma Random Variables"
+author: "Meike Niederhausen and Nicky Wakim"
+date: "11/27/2023"
+title-slide-attributes:
+    data-background-color: "#006a4e"
+categories: ["Week 10"]
+format: 
+  revealjs:
+    theme: [default, simple_NW.scss]
+    toc: true
+    chalkboard: true
+    slide-number: true
+    show-slide-number: all
+    width: 1955
+    height: 1100
+    footer: Chapter 33 Slides
+---
+
+## Learning Objectives
+
+1. 
+
+## Scenario
 
 **Scenario:** Modeling the time until the $r^{th}$ event.
 
 ------------------------------------------------------------------------
 
-**Properties of gamma r.v.'s**
+## Properties of gamma RVs
 
-**Remarks**
+## Remarks
 
 1.  The parameter $r$ in a Gamma($r$,$\lambda$) distribution doesn't
     have to be a positive integer ($\mathbb{Z}^{+}$).
