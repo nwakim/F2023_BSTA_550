@@ -1,0 +1,20 @@
+{
+  "hash": "77b65eed1a1608c05220b5f20a498b00",
+  "result": {
+    "markdown": "---\ntitle: \"Visualizing probabilities\"\nauthor: \"Nicky Wakim\"\ndate: \"11/15/2023\"\ntitle-slide-attributes:\n    data-background-color: \"#006a4e\"\ncategories: [\"Week 8\"]\nformat: \n  revealjs:\n    theme: [default, simple_NW.scss]\n    toc: true\n    chalkboard: true\n    slide-number: true\n    show-slide-number: all\n    width: 1955\n    height: 1100\n    footer: Chapter 25-27 Slides\n---\n\n\n# 1 random variable\n\n## pdf\n\nLet's say we have a pdf, $f_X(x) = \\dfrac{1}{9}x^2$ for $0 \\leq x \\leq 3$\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](25_26_27_continuous_pdfs_files/figure-revealjs/unnamed-chunk-1-1.png){width=960}\n:::\n:::\n\n\n## Side quest\n\n::: columns\n::: {.column width=\"50%\"}\n\nIf we only got information that $f_X(x)$ is defined for $0 \\leq x \\leq b$. What is $b$ to make the pdf $f_X(x) = \\dfrac{1}{9}x^2$ valid?\n\n$$\\int_0^bf_X(x) =1$$\n\n$$\\int_0^b\\dfrac{1}{9}x^2 = 1$$ $$\\dfrac{1}{27} x^3 \\Big|_{x=0}^{x=b}= 1$$ $$\\dfrac{1}{27}b^3 - \\dfrac{1}{27}0^3 = 1$$ \n:::\n\n::: {.column width=\"50%\"}\nThen $b$ must be...\n\n$$\\dfrac{1}{27}b^3= 1$$ $$b^3 = 27$$ $$b = 3$$\n:::\n:::\n\n## Area under total pdf is 1\n\n::: columns\n::: {.column width=\"30%\"}\n:::\n\n::: {.column width=\"70%\"}\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](25_26_27_continuous_pdfs_files/figure-revealjs/unnamed-chunk-2-1.png){width=960}\n:::\n:::\n\n:::\n:::\n\n## Area under partial pdf is probability\n\n::: columns\n::: {.column width=\"30%\"}\n:::\n\n::: {.column width=\"70%\"}\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](25_26_27_continuous_pdfs_files/figure-revealjs/unnamed-chunk-3-1.png){width=960}\n:::\n:::\n\n:::\n:::\n\n",
+    "supporting": [
+      "25_26_27_continuous_pdfs_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-after-body": [
+        "\n<script>\n  // htmlwidgets need to know to resize themselves when slides are shown/hidden.\n  // Fire the \"slideenter\" event (handled by htmlwidgets.js) when the current\n  // slide changes (different for each slide format).\n  (function () {\n    // dispatch for htmlwidgets\n    function fireSlideEnter() {\n      const event = window.document.createEvent(\"Event\");\n      event.initEvent(\"slideenter\", true, true);\n      window.document.dispatchEvent(event);\n    }\n\n    function fireSlideChanged(previousSlide, currentSlide) {\n      fireSlideEnter();\n\n      // dispatch for shiny\n      if (window.jQuery) {\n        if (previousSlide) {\n          window.jQuery(previousSlide).trigger(\"hidden\");\n        }\n        if (currentSlide) {\n          window.jQuery(currentSlide).trigger(\"shown\");\n        }\n      }\n    }\n\n    // hookup for slidy\n    if (window.w3c_slidy) {\n      window.w3c_slidy.add_observer(function (slide_num) {\n        // slide_num starts at position 1\n        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);\n      });\n    }\n\n  })();\n</script>\n\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

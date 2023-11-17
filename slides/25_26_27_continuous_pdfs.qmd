@@ -1,0 +1,104 @@
+---
+title: "Visualizing probabilities"
+author: "Nicky Wakim"
+date: "11/15/2023"
+title-slide-attributes:
+    data-background-color: "#006a4e"
+categories: ["Week 8"]
+format: 
+  revealjs:
+    theme: [default, simple_NW.scss]
+    toc: true
+    chalkboard: true
+    slide-number: true
+    show-slide-number: all
+    width: 1955
+    height: 1100
+    footer: Chapter 25-27 Slides
+---
+
+# 1 random variable
+
+## pdf
+
+Let's say we have a pdf, $f_X(x) = \dfrac{1}{9}x^2$ for $0 \leq x \leq 3$
+
+```{r}
+library("ggplot2")
+eq = function(x){(1/9)*x^2}
+ggplot(data.frame(x=c(1, 50)), aes(x=x)) + 
+  stat_function(fun=eq) +
+  xlab("x") + ylab("pdf") +
+  xlim(0,3)
+```
+
+## Side quest
+
+::: columns
+::: {.column width="50%"}
+
+If we only got information that $f_X(x)$ is defined for $0 \leq x \leq b$. What is $b$ to make the pdf $f_X(x) = \dfrac{1}{9}x^2$ valid?
+
+$$\int_0^bf_X(x) =1$$
+
+$$\int_0^b\dfrac{1}{9}x^2 = 1$$ $$\dfrac{1}{27} x^3 \Big|_{x=0}^{x=b}= 1$$ $$\dfrac{1}{27}b^3 - \dfrac{1}{27}0^3 = 1$$ 
+:::
+
+::: {.column width="50%"}
+Then $b$ must be...
+
+$$\dfrac{1}{27}b^3= 1$$ $$b^3 = 27$$ $$b = 3$$
+:::
+:::
+
+## Area under total pdf is 1
+
+::: columns
+::: {.column width="30%"}
+:::
+
+::: {.column width="70%"}
+
+```{r}
+library("ggplot2")
+eq = function(x){(1/9)*x^2}
+ggplot(data.frame(x=c(1, 50)), aes(x=x)) + 
+  stat_function(fun=eq) +
+  xlab("x") + ylab("pdf") +
+  xlim(0,3) +
+  stat_function(fun=eq, 
+                xlim = c(0, 3),
+                geom = "area", 
+                aes(fill = "grey")) +
+  theme(legend.position = "none") +
+  annotate("text", x = 0.5, y = 0.7, label = "AUC = 1", color = "grey")
+```
+:::
+:::
+
+## Area under partial pdf is probability
+
+::: columns
+::: {.column width="30%"}
+:::
+
+::: {.column width="70%"}
+
+```{r}
+library("ggplot2")
+eq = function(x){(1/9)*x^2}
+ggplot(data.frame(x=c(1, 50)), aes(x=x)) + 
+  stat_function(fun=eq) +
+  xlab("x") + ylab("pdf") +
+  xlim(0,3) +
+  stat_function(fun=eq, 
+                xlim = c(0, 1.5),
+                geom = "area", 
+                aes(fill = "blue")) +
+  theme(legend.position = "none") +
+  annotate("text", x = 0.5, y = 0.7, label = "AUC = __", color = "grey") +
+  annotate("text", x = 0.5, y = 0.7, label = "AUC = __", color = "blue")
+```
+:::
+:::
+
