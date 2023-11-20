@@ -19,19 +19,48 @@ format:
 
 ## Learning Objectives
 
-1. 
+1. Identify the variable and the parameters in a story, and state in English
+what the variable and its parameters mean.
 
-## Scenario:
-
-Modeling the time until the next (first) event.
-
-
+2. Use the formulas for the density, CDF, expected value, and variance to
+answer questions and find probabilities.
 
 ## Properties of exponential RVs
 
+-   **Scenario:** Modeling the time until the next (first) event
+
+-   Continuous analog to the geometric distribution!
+
+-   Shorthand: $X \sim \text{Exp}(\lambda)$
+
+$$
+f_X(x) = \lambda e^{-\lambda x}\text{ for } x>0, \lambda>0
+$$
+
+$$
+F_X(x) = \left\{
+        \begin{array}{ll}
+            0 & \quad x<0 \quad \\
+            1 - e^{-\lambda x} & \quad x>0 \\
+        \end{array}
+    \right.
+$$
+
+$$\text{E}(X) = \dfrac{1}{\lambda}$$ $$\text{Var}(X) = \dfrac{1}{\lambda^2}$$
+
 ## Memoryless Property
 
-## Example
+If $b>0$, 
+
+$$P(X > a +b | X> a) = P(X > b)$$
+
+This can be interpreted as: if you have waited $a$ seconds (or any other measure of time) without a success, then the probability that you have to wait $b$ more seconds is the same as as the probability of waiting $b$ seconds initially.
+
+## Identifying exponential RV from word problems
+
+## Helpful R code
+
+## Tranformation of independent exponential RVs
 
 ::: columns
 ::: {.column width="30%"}
@@ -41,7 +70,7 @@ Example 1
 :::
 ::: ex-cont
 Let $X_i \sim \textrm{Exp}(\lambda_i)$ be independent
-r.v.'s, for $i=1 \ldots n$. Find the pdf for the first of the arrival
+RVs, for $i=1 \ldots n$. Find the pdf for the first of the arrival
 times.
 :::
 :::

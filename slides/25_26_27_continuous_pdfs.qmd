@@ -102,3 +102,20 @@ ggplot(data.frame(x=c(1, 50)), aes(x=x)) +
 :::
 :::
 
+## 3d plot
+
+```{r}
+library(plotly)
+
+x = seq(0, 5, 0.1)
+y = seq(0, max(x)/2, 0.1/2)
+fn = expand.grid(x=x,y=y)
+fn$z = ifelse(fn$y<fn$x/2, 5*exp( (-1)*fn$x - 3*fn$y), NA)
+
+z = matrix(fn$z, ncol = 51, nrow = 51)
+
+fig <- plot_ly(x = x, y=y, z=z) %>% add_surface()
+
+fig
+```
+

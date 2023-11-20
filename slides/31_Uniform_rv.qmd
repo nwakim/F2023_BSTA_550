@@ -19,12 +19,33 @@ format:
 
 ## Learning Objectives
 
-1. 
-
-## Scenario 
-
-**Scenario:** Events are equally likely to happen anywhere or anytime in
-an interval of values.
-
+1. Identify the variable and the parameters in a story, and state in English
+what the variable and its parameters mean.
 
 ## Properties of continuous uniform RVs
+
+-   **Scenario:** Events are equally likely to happen anywhere or anytime in
+an interval of values
+
+-   Shorthand: $X \sim \text{U}[a,b]$
+
+$$
+f_X(x) = \dfrac{1}{b-a}, \text{ for }a \leq x \leq b
+$$
+
+$$
+F_X(x) = \left\{
+        \begin{array}{ll}
+            0 & \quad x<a \quad \\
+            \dfrac{x-a}{b-a} & \quad a \leq x \leq b\quad \\
+            1 & \quad x>b \quad
+        \end{array}
+    \right.
+$$
+
+$$\text{E}(X) = \dfrac{a+b}{2}$$ $$\text{Var}(X) = \dfrac{(b-a)^2}{12}$$
+
+## Identifying continuous uniform RV from word problems
+
+## Helpful R code
+

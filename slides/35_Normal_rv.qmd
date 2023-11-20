@@ -19,7 +19,8 @@ format:
 
 ## Learning Objectives
 
-1. 
+1. Identify the variable and the parameters in a story, and state in English
+what the variable and its parameters mean.
 
 ## Chapter 35: Normal Variables
 

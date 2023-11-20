@@ -1,29 +1,48 @@
-# Chapter 36: Sums of Independent Normal Random Variables {#chapter-36-sums-of-independent-normal-random-variables .unnumbered}
+---
+title: "Chapter 36: Sums of Independent Normal RVs"
+author: "Meike Niederhausen and Nicky Wakim"
+date: "11/29/2023"
+title-slide-attributes:
+    data-background-color: "#006a4e"
+categories: ["Week 10"]
+format: 
+  revealjs:
+    theme: [default, simple_NW.scss]
+    toc: true
+    chalkboard: true
+    slide-number: true
+    show-slide-number: all
+    width: 1955
+    height: 1100
+    footer: Chapter 36 Slides
+---
+
+## Learning Objectives
+
+## Sum of Normal RVs
 
 ::: theorem
-**Theorem 1**. *  Let $X\sim N(\mu, \sigma^2)$, and let $Y=aX+b$, where
-$a$ and $b$ are constants. Then $$\hspace{-12cm} Y \sim$$*
+::: thm-title
+Theorem 1
 :::
-
-::: proof
-*Proof.* ◻
+::: thm-cont
+Let $X\sim N(\mu, \sigma^2)$, and let $Y=aX+b$, where
+$a$ and $b$ are constants. Then $$\hspace{-12cm} Y \sim N(a\mu+b, a^2\sigma^2)$$
 :::
-
-------------------------------------------------------------------------
+:::
 
 ::: theorem
-**Theorem 2**. *  Let $X_i \sim N(\mu_i, \sigma_i^2)$ be independent
+::: thm-title
+Theorem 2
+:::
+::: thm-cont
+Let $X_i \sim N(\mu_i, \sigma_i^2)$ be independent
 normal rv's, for $i=1,2,\ldots,n$. Then
-$$\hspace{-12cm} \sum_{i=1}^n X_i \sim$$*
+$$\hspace{-12cm} \sum_{i=1}^n X_i \sim N\Bigg(\sum_{i=1}^n \mu_i, \sum_{i=1}^n \sigma^2_i\Bigg)$$
+:::
 :::
 
-::: proof
-*Proof.* ◻
-:::
-
-------------------------------------------------------------------------
-
-**Special Cases**
+## Special Cases
 
 1.  Let $X_i \sim N(\mu, \sigma^2)$ be iid normal rv's, for
     $i=1,2,\ldots,n$. Then $$\hspace{-12cm} \sum_{i=1}^n X_i \sim$$
@@ -35,19 +54,22 @@ $$\hspace{-12cm} \sum_{i=1}^n X_i \sim$$*
 3.  Let $X\sim N(\mu_X,\sigma_X^2)$, and $Y\sim N(\mu_Y,\sigma_Y^2)$.
     Then $$\hspace{-12cm} X-Y \sim$$
 
-    ::: proof
-    *Proof.* ◻
-    :::
+## Detecting and solving sums of Normal RVs from a world problem
 
 ::: example
-**Example 3**. *  Glaucoma is an eye disease that is manifested by high
+::: ex-title
+Example 1
+:::
+::: ex-cont
+Glaucoma is an eye disease that is manifested by high
 intraocular pressure (IOP). The distribution of IOP in the general
 population is approximately normal with mean 16 mmHg and standard
-deviation 3 mmHg.*
+deviation 3 mmHg.
 
-1.  *Suppose a patient has 40 IOP readings. What is the probability that
+1.  Suppose a patient has 40 IOP readings. What is the probability that
     their average reading is greater than 20.32 mmHg, assuming their
-    eyes are healthy?*
+    eyes are healthy?
 
-2.  *Repeat the previous question for a patient with 10 IOP readings.*
+2.  Repeat the previous question for a patient with 10 IOP readings.
+:::
 :::

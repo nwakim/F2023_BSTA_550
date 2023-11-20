@@ -19,15 +19,17 @@ format:
 
 ## Learning Objectives
 
-1. 
-
-## Scenario
-
-**Scenario:** Modeling the time until the $r^{th}$ event.
-
-------------------------------------------------------------------------
+1. Identify the variable and the parameters in a story, and state in English
+what the variable and its parameters mean.
 
 ## Properties of gamma RVs
+
+-   **Scenario:** Modeling the time until the $r^{th}$ event.
+
+
+## Identifying gamma RV from word problems
+
+## Helpful R code
 
 ## Remarks
 
