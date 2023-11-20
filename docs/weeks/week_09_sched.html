@@ -63,6 +63,8 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -299,7 +301,9 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#statistician-of-the-week-mike-dairyko" id="toc-statistician-of-the-week-mike-dairyko" class="nav-link" data-scroll-target="#statistician-of-the-week-mike-dairyko">Statistician of the Week: Mike Dairyko</a></li>
   <li><a href="#muddiest-points" id="toc-muddiest-points" class="nav-link" data-scroll-target="#muddiest-points">Muddiest Points</a>
   <ul class="collapse">
-  <li><a href="#what-is-the-expected-value-for-continuous-rvs-what-does-it-mean" id="toc-what-is-the-expected-value-for-continuous-rvs-what-does-it-mean" class="nav-link" data-scroll-target="#what-is-the-expected-value-for-continuous-rvs-what-does-it-mean">1. What is the expected value for continuous RVs? What does it mean??</a></li>
+  <li><a href="#what-does-the-expected-value-and-variance-of-continuous-rvs-mean" id="toc-what-does-the-expected-value-and-variance-of-continuous-rvs-mean" class="nav-link" data-scroll-target="#what-does-the-expected-value-and-variance-of-continuous-rvs-mean">1. What does the expected value and variance of continuous RVs mean?</a></li>
+  <li><a href="#how-do-we-set-the-bounds-on-a-double-integral" id="toc-how-do-we-set-the-bounds-on-a-double-integral" class="nav-link" data-scroll-target="#how-do-we-set-the-bounds-on-a-double-integral">2. How do we set the bounds on a double integral?</a></li>
+  <li><a href="#for-the-example-with-the-integration-by-parts-where-the-first-part-of-the-integral-was-evaluated-at-two-points-i-learned-integration-by-parts-in-calculus-but-it-was-always-integral-u-dv-uv--integralv-du-and-im-still-confused-about-why-it-was-solved-as-uv---integral-v-du." id="toc-for-the-example-with-the-integration-by-parts-where-the-first-part-of-the-integral-was-evaluated-at-two-points-i-learned-integration-by-parts-in-calculus-but-it-was-always-integral-u-dv-uv--integralv-du-and-im-still-confused-about-why-it-was-solved-as-uv---integral-v-du." class="nav-link" data-scroll-target="#for-the-example-with-the-integration-by-parts-where-the-first-part-of-the-integral-was-evaluated-at-two-points-i-learned-integration-by-parts-in-calculus-but-it-was-always-integral-u-dv-uv--integralv-du-and-im-still-confused-about-why-it-was-solved-as-uv---integral-v-du.">3. For the example with the integration by parts where the first part of the integral was evaluated at two points: I learned integration by parts in calculus, but it was always “integral (u dv) = uv- integral(v du)” and I’m still confused about why it was solved as “uv | - integral (v du).”</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -490,8 +494,54 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="muddiest-points" class="level2">
 <h2 class="anchored" data-anchor-id="muddiest-points">Muddiest Points</h2>
-<section id="what-is-the-expected-value-for-continuous-rvs-what-does-it-mean" class="level3">
-<h3 class="anchored" data-anchor-id="what-is-the-expected-value-for-continuous-rvs-what-does-it-mean">1. What is the expected value for continuous RVs? What does it mean??</h3>
+<section id="what-does-the-expected-value-and-variance-of-continuous-rvs-mean" class="level3">
+<h3 class="anchored" data-anchor-id="what-does-the-expected-value-and-variance-of-continuous-rvs-mean">1. What does the expected value and variance of continuous RVs mean?</h3>
+</section>
+<section id="how-do-we-set-the-bounds-on-a-double-integral" class="level3">
+<h3 class="anchored" data-anchor-id="how-do-we-set-the-bounds-on-a-double-integral">2. How do we set the bounds on a double integral?</h3>
+<p>When the domain of the RVs are not dependent on each other, then we use the bounds as is. In example 2 of Chapter 26 notes, we have the joint pdf <span class="math inline">\(f_{X,Y}(x,y)= 18 x^2 y^5\)</span>, for<span class="math inline">\(0 \leq x \leq 1, \ 0 \leq y \leq 1\)</span>. If we wanted to calculate something like <span class="math inline">\(E(X)\)</span>, then we could use the bounds as they are. Below is the domain for <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="week_09/Muddy_point_w5_02_01.png" class="img-fluid figure-img" width="412"></p>
+</figure>
+</div>
+<p>Here is the integral for the expected value where we integrate over the whole domain of <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>:</p>
+<p><span class="math display">\[ E(X) = \displaystyle\int_0^1 \displaystyle\int_0^1 x (18 x^2 y^5 )dy dx \]</span>If we want to find the probability <span class="math inline">\(P(0.25 \leq X \leq 0.5, 0.5 \leq Y \leq 0.75)\)</span>, then we can look at the specific values of the probability:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="week_09/Muddy_point_w5_02_02.png" class="img-fluid figure-img" width="400"></p>
+</figure>
+</div>
+<p>Note the blue lines above indicate how we integrate over <span class="math inline">\(y\)</span> first from 0.5 to 0.75 and the green lines indicate how integrate over <span class="math inline">\(x\)</span> first from 0.25 to 0.5. It seems like we’ve integrated over an area that isn’t within our specified probability. However, the integrated area is ONLY the overlap of the <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> bounds for the probability.</p>
+<p><span class="math display">\[P(0.25 \leq X \leq 0.5, 0.5 \leq Y \leq 0.75) = \displaystyle\int_{0.25}^{0.5} \displaystyle\int_{0.5}^{0.75} 18 x^2 y^5 dy dx\]</span></p>
+<p>Let’s use the same pdf, but now the domain of the two RVs is dependent on one another. We have the joint pdf <span class="math inline">\(f_{X,Y}(x,y)= 18 x^2 y^5\)</span>, for<span class="math inline">\(0 \leq x \leq y\leq1\)</span></p>
+<p>If we wanted to calculate something like <span class="math inline">\(E(X)\)</span>, then we need to account for fact that <span class="math inline">\(x\)</span> must be less than of equal to <span class="math inline">\(y\)</span>. We can look back at the domain for this:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="week_09/Muddy_point_w5_02_03.png" class="img-fluid figure-img" width="400"></p>
+</figure>
+</div>
+<p>Note the blue lines above still indicate how we integrate over <span class="math inline">\(y\)</span> first from <span class="math inline">\(x\)</span> to 1, and the green lines indicate how integrate over <span class="math inline">\(x\)</span> first from 0 to 1. Once again, it seems like we’ve integrated over an area that isn’t within the domain. However, the integrated area is ONLY the overlap of the <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> bounds. Thus, once we’ve restricted <span class="math inline">\(y\)</span> to the area between <span class="math inline">\(x\)</span> and 1, we no longer need to restrict <span class="math inline">\(x\)</span> to the are of 0 to <span class="math inline">\(y\)</span>.</p>
+<p><span class="math display">\[ E(X) = \displaystyle\int_0^1 \displaystyle\int_x^1 x (18 x^2 y^5 )dy dx \]</span> If we want to find the probability <span class="math inline">\(P(0.25 \leq X \leq 0.5, 0.5 \leq Y \leq 0.75)\)</span>, then we should look back at our domain. For now, we are focusing on the orange area:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="week_09/Muddy_point_w5_02_04.png" class="img-fluid figure-img" width="400"></p>
+</figure>
+</div>
+<p>Because the orange area is totally within our domain, we can leave our integral our bounds as the exact values we specified:</p>
+<p><span class="math display">\[P(0.25 \leq X \leq 0.5, 0.5 \leq Y \leq 0.75) = \displaystyle\int_{0.25}^{0.5} \displaystyle\int_{0.5}^{0.75} 18 x^2 y^5 dy dx\]</span></p>
+<p>However, if we want the probability <span class="math inline">\(P(0.5 \leq X \leq 0.75, 0.5 \leq Y \leq 0.75)\)</span>, we would focus on the pink area above. We would limit one of our integrals to the <span class="math inline">\(y=x\)</span> equation:</p>
+<p><span class="math display">\[P(0.5 \leq X \leq 0.75, 0.5 \leq Y \leq 0.75) = \displaystyle\int_{0.5}^{0.75} \displaystyle\int_{x}^{0.75} 18 x^2 y^5 dy dx\]</span></p>
+<p>OR</p>
+<p><span class="math display">\[P(0.5 \leq X \leq 0.75, 0.5 \leq Y \leq 0.75) = \displaystyle\int_{0.5}^{0.75} \displaystyle\int_{0.5}^{y} 18 x^2 y^5 dx dy\]</span></p>
+<p>The key to these probabilities is that the bounds with the other variable is on the inside integral! Otherwise we end up with a answer that includes a RV.</p>
+</section>
+<section id="for-the-example-with-the-integration-by-parts-where-the-first-part-of-the-integral-was-evaluated-at-two-points-i-learned-integration-by-parts-in-calculus-but-it-was-always-integral-u-dv-uv--integralv-du-and-im-still-confused-about-why-it-was-solved-as-uv---integral-v-du." class="level3">
+<h3 class="anchored" data-anchor-id="for-the-example-with-the-integration-by-parts-where-the-first-part-of-the-integral-was-evaluated-at-two-points-i-learned-integration-by-parts-in-calculus-but-it-was-always-integral-u-dv-uv--integralv-du-and-im-still-confused-about-why-it-was-solved-as-uv---integral-v-du.">3. For the example with the integration by parts where the first part of the integral was evaluated at two points: I learned integration by parts in calculus, but it was always “integral (u dv) = uv- integral(v du)” and I’m still confused about why it was solved as “uv | - integral (v du).”</h3>
+<p>When we have an integral with bounds, we need to calculate everything within those bounds. When we have an integral like this:<span class="math display">\[\displaystyle\int_a^b u dv = uv\bigg|^b_a - \displaystyle\int_a^b vdu\]</span> Then <span class="math inline">\(uv\)</span> must be calculated over the interval <span class="math inline">\(a\)</span> to <span class="math inline">\(b\)</span>.</p>
+<p>Based on a rudimentary search of Integration by Parts, it is likely that the calculus class presented the integral without bounds. In that case, the integral looked like this: <span class="math display">\[\displaystyle\int u dv = uv - \displaystyle\int vdu + c\]</span></p>
+<p>For reference, this corresponds to the antiderivative section mentioned in the <a href="../slides/24_Calculus_review.html">Chapter 24: Calculus Review notes</a>. In probability, we are more often working with bounds than not.</p>
+<p>I’m honestly not sure about the theory behind Integration by Parts, but if we have a bounded integral, then <span class="math inline">\(uv\)</span> must also be bounded!</p>
 
 
 </section>

@@ -30,11 +30,11 @@ editor_options:
 
 ## Resources
 
-| Chapter | Topic                                                         |                                                                                                                                                                                      Meike's video                                                                                                                                                                                      |                                                     Slides                                                      |                                                            Annotated Slides                                                            |                                                                                                                                                                                  Recording                                                                                                                                                                                  |
+| Chapter | Topic                                                        |                                                                                                                                                                                      Meike's video                                                                                                                                                                                      |                                                     Slides                                                      |                                                            Annotated Slides                                                            |                                                                                                                                                                                  Recording                                                                                                                                                                                  |
 |------------|------------|:----------:|:----------:|:----------:|:----------:|
-|         | Extra visualization of joint, conditional,and marginal pdf's  |                                                                                                                                                            [{{< iconify ph video-fill size=29px >}}]{style="color:#f8f5f0;"}                                                                                                                                                            |                      [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"}                      |     [[{{< iconify pepicons-pop pen-circle-filled size=29px >}}](/slides_annotated/25_26_27_Extra_viz.pdf)]{style="color:#f8f5f0;"}     | [[{{< iconify mdi video size=34px >}}](https://ohsuitg-my.sharepoint.com/personal/wakim_ohsu_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fwakim%5Fohsu%5Fedu%2FDocuments%2FTeaching%2FClasses%2FF2023%5FBSTA%5F550%2FRecordings%2F25%5F26%5F27%5FExtra%5Fvisualization%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview)]{style="color:#f8f5f0;"} |
-| 28      | Expected value of continuous RVs                              |        [[{{< iconify ph video-fill size=29px >}}](https://ohsuitg-my.sharepoint.com/personal/wakim_ohsu_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fwakim%5Fohsu%5Fedu%2FDocuments%2FTeaching%2FClasses%2FF2023%5FBSTA%5F550%2FMeike%5Frecordings%2F28%20Expected%20Values%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview)]{style="color:#f8f5f0;"}        |     [[{{< iconify ri slideshow-fill size=30px >}}](/slides/28_Expected_Values.qmd)]{style="color:#f8f5f0;"}     |     [[{{< iconify pepicons-pop pen-circle-filled size=29px >}}](/slides_annotated/28_Expected_Values.pdf)]{style="color:#f8f5f0;"}     |   [[{{< iconify mdi video size=34px >}}](https://ohsuitg-my.sharepoint.com/personal/wakim_ohsu_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fwakim%5Fohsu%5Fedu%2FDocuments%2FTeaching%2FClasses%2FF2023%5FBSTA%5F550%2FRecordings%2F28%5FExpected%5FVal%5FCont%5FRV%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview)]{style="color:#f8f5f0;"}    |
-| 29      | Variance of continuous RVs                                    | [[{{< iconify ph video-fill size=29px >}}](https://ohsuitg-my.sharepoint.com/personal/wakim_ohsu_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fwakim%5Fohsu%5Fedu%2FDocuments%2FTeaching%2FClasses%2FF2023%5FBSTA%5F550%2FMeike%5Frecordings%2F29%20Variance%20and%20Sums%20of%20rv%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview)]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](/slides/29_Variance_and_Sums_of_rv.qmd)]{style="color:#f8f5f0;"} | [[{{< iconify pepicons-pop pen-circle-filled size=29px >}}](/slides_annotated/29_Variance_and_Sums_of_rv.pdf)]{style="color:#f8f5f0;"} |      [[{{< iconify mdi video size=34px >}}](https://ohsuitg-my.sharepoint.com/personal/wakim_ohsu_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fwakim%5Fohsu%5Fedu%2FDocuments%2FTeaching%2FClasses%2FF2023%5FBSTA%5F550%2FRecordings%2F29%5FVariance%5FCont%5FRV%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview)]{style="color:#f8f5f0;"}       |
+|         | Extra visualization of joint, conditional,and marginal pdf's |                                                                                                                                                            [{{< iconify ph video-fill size=29px >}}]{style="color:#f8f5f0;"}                                                                                                                                                            |                      [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"}                      |     [[{{< iconify pepicons-pop pen-circle-filled size=29px >}}](/slides_annotated/25_26_27_Extra_viz.pdf)]{style="color:#f8f5f0;"}     | [[{{< iconify mdi video size=34px >}}](https://ohsuitg-my.sharepoint.com/personal/wakim_ohsu_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fwakim%5Fohsu%5Fedu%2FDocuments%2FTeaching%2FClasses%2FF2023%5FBSTA%5F550%2FRecordings%2F25%5F26%5F27%5FExtra%5Fvisualization%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview)]{style="color:#f8f5f0;"} |
+| 28      | Expected value of continuous RVs                             |        [[{{< iconify ph video-fill size=29px >}}](https://ohsuitg-my.sharepoint.com/personal/wakim_ohsu_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fwakim%5Fohsu%5Fedu%2FDocuments%2FTeaching%2FClasses%2FF2023%5FBSTA%5F550%2FMeike%5Frecordings%2F28%20Expected%20Values%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview)]{style="color:#f8f5f0;"}        |     [[{{< iconify ri slideshow-fill size=30px >}}](/slides/28_Expected_Values.qmd)]{style="color:#f8f5f0;"}     |     [[{{< iconify pepicons-pop pen-circle-filled size=29px >}}](/slides_annotated/28_Expected_Values.pdf)]{style="color:#f8f5f0;"}     |   [[{{< iconify mdi video size=34px >}}](https://ohsuitg-my.sharepoint.com/personal/wakim_ohsu_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fwakim%5Fohsu%5Fedu%2FDocuments%2FTeaching%2FClasses%2FF2023%5FBSTA%5F550%2FRecordings%2F28%5FExpected%5FVal%5FCont%5FRV%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview)]{style="color:#f8f5f0;"}    |
+| 29      | Variance of continuous RVs                                   | [[{{< iconify ph video-fill size=29px >}}](https://ohsuitg-my.sharepoint.com/personal/wakim_ohsu_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fwakim%5Fohsu%5Fedu%2FDocuments%2FTeaching%2FClasses%2FF2023%5FBSTA%5F550%2FMeike%5Frecordings%2F29%20Variance%20and%20Sums%20of%20rv%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview)]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](/slides/29_Variance_and_Sums_of_rv.qmd)]{style="color:#f8f5f0;"} | [[{{< iconify pepicons-pop pen-circle-filled size=29px >}}](/slides_annotated/29_Variance_and_Sums_of_rv.pdf)]{style="color:#f8f5f0;"} |      [[{{< iconify mdi video size=34px >}}](https://ohsuitg-my.sharepoint.com/personal/wakim_ohsu_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fwakim%5Fohsu%5Fedu%2FDocuments%2FTeaching%2FClasses%2FF2023%5FBSTA%5F550%2FRecordings%2F29%5FVariance%5FCont%5FRV%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview)]{style="color:#f8f5f0;"}       |
 
 For the slides, once they are opened, if you would like to print or save them as a PDF, the best way to do this is:
 
@@ -111,4 +111,56 @@ Dr. Dairyko's path from mathematics to data science has been written about in <a
 
 ## Muddiest Points
 
-### 1. What is the expected value for continuous RVs? What does it mean??
+### 1. What does the expected value and variance of continuous RVs mean?
+
+### 2. How do we set the bounds on a double integral?
+
+When the domain of the RVs are not dependent on each other, then we use the bounds as is. In example 2 of Chapter 26 notes, we have the joint pdf $f_{X,Y}(x,y)= 18 x^2 y^5$, for$0 \leq x \leq 1, \ 0 \leq y \leq 1$. If we wanted to calculate something like $E(X)$, then we could use the bounds as they are. Below is the domain for $x$ and $y$:
+
+![](week_09/Muddy_point_w5_02_01.png){fig-align="center" width="412"}
+
+Here is the integral for the expected value where we integrate over the whole domain of $x$ and $y$:
+
+$$ E(X) = \displaystyle\int_0^1 \displaystyle\int_0^1 x (18 x^2 y^5 )dy dx $$If we want to find the probability $P(0.25 \leq X \leq 0.5, 0.5 \leq Y \leq 0.75)$, then we can look at the specific values of the probability:
+
+![](week_09/Muddy_point_w5_02_02.png){fig-align="center" width="400"}
+
+Note the blue lines above indicate how we integrate over $y$ first from 0.5 to 0.75 and the green lines indicate how integrate over $x$ first from 0.25 to 0.5. It seems like we've integrated over an area that isn't within our specified probability. However, the integrated area is ONLY the overlap of the $x$ and $y$ bounds for the probability.
+
+$$P(0.25 \leq X \leq 0.5, 0.5 \leq Y \leq 0.75) = \displaystyle\int_{0.25}^{0.5} \displaystyle\int_{0.5}^{0.75} 18 x^2 y^5 dy dx$$
+
+Let's use the same pdf, but now the domain of the two RVs is dependent on one another. We have the joint pdf $f_{X,Y}(x,y)= 18 x^2 y^5$, for$0 \leq x \leq y\leq1$
+
+If we wanted to calculate something like $E(X)$, then we need to account for fact that $x$ must be less than of equal to $y$. We can look back at the domain for this:
+
+![](week_09/Muddy_point_w5_02_03.png){fig-align="center" width="400"}
+
+Note the blue lines above still indicate how we integrate over $y$ first from $x$ to 1, and the green lines indicate how integrate over $x$ first from 0 to 1. Once again, it seems like we've integrated over an area that isn't within the domain. However, the integrated area is ONLY the overlap of the $x$ and $y$ bounds. Thus, once we've restricted $y$ to the area between $x$ and 1, we no longer need to restrict $x$ to the are of 0 to $y$.
+
+$$ E(X) = \displaystyle\int_0^1 \displaystyle\int_x^1 x (18 x^2 y^5 )dy dx $$ If we want to find the probability $P(0.25 \leq X \leq 0.5, 0.5 \leq Y \leq 0.75)$, then we should look back at our domain. For now, we are focusing on the orange area:
+
+![](week_09/Muddy_point_w5_02_04.png){fig-align="center" width="400"}
+
+Because the orange area is totally within our domain, we can leave our integral our bounds as the exact values we specified:
+
+$$P(0.25 \leq X \leq 0.5, 0.5 \leq Y \leq 0.75) = \displaystyle\int_{0.25}^{0.5} \displaystyle\int_{0.5}^{0.75} 18 x^2 y^5 dy dx$$
+
+However, if we want the probability $P(0.5 \leq X \leq 0.75, 0.5 \leq Y \leq 0.75)$, we would focus on the pink area above. We would limit one of our integrals to the $y=x$ equation:
+
+$$P(0.5 \leq X \leq 0.75, 0.5 \leq Y \leq 0.75) = \displaystyle\int_{0.5}^{0.75} \displaystyle\int_{x}^{0.75} 18 x^2 y^5 dy dx$$
+
+OR
+
+$$P(0.5 \leq X \leq 0.75, 0.5 \leq Y \leq 0.75) = \displaystyle\int_{0.5}^{0.75} \displaystyle\int_{0.5}^{y} 18 x^2 y^5 dx dy$$
+
+The key to these probabilities is that the bounds with the other variable is on the inside integral! Otherwise we end up with a answer that includes a RV.
+
+### 3. For the example with the integration by parts where the first part of the integral was evaluated at two points: I learned integration by parts in calculus, but it was always "integral (u dv) = uv- integral(v du)" and I'm still confused about why it was solved as "uv \| - integral (v du)."
+
+When we have an integral with bounds, we need to calculate everything within those bounds. When we have an integral like this:$$\displaystyle\int_a^b u dv = uv\bigg|^b_a - \displaystyle\int_a^b vdu$$ Then $uv$ must be calculated over the interval $a$ to $b$.
+
+Based on a rudimentary search of Integration by Parts, it is likely that the calculus class presented the integral without bounds. In that case, the integral looked like this: $$\displaystyle\int u dv = uv - \displaystyle\int vdu + c$$
+
+For reference, this corresponds to the antiderivative section mentioned in the [Chapter 24: Calculus Review notes](/slides/24_Calculus_review.qmd). In probability, we are more often working with bounds than not.
+
+I'm honestly not sure about the theory behind Integration by Parts, but if we have a bounded integral, then $uv$ must also be bounded!
