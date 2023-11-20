@@ -5842,7 +5842,7 @@
     "href": "slides/29_Variance_and_Sums_of_rv.html#important-properties-of-expected-values-of-functions-of-continuous-rvs",
     "title": "Chapter 29: Variance of Continuous Random Variables",
     "section": "Important properties of expected values of functions of continuous RVs",
-    "text": "Important properties of expected values of functions of continuous RVs\n\n\n\n\nfunction of RV with two constants\n\n\n\\[\\mathbb{E}[X+Y] =\\mathbb{E}[X]+\\mathbb{E}[Y]\\]\n\n\n\n\nExpected value of sum of independent RVs pt 1\n\n\nIf \\(X_1, X_2, \\ldots X_n\\) are continuous RVs and \\(a_1, a_2, \\ldots a_n\\) are constants, then \\[\\mathbb{E}\\Bigg[\\sum_{i=1}^{n} a_i X_i\\Bigg] = \\sum_{i=1}^{n}a_i\\mathbb{E}[X_i]\\]\n\n\n\n\n\nExpected value of multiplication of function of independent RVs\n\n\nIf \\(X\\) and \\(Y\\) are independent continuous RVs, and \\(g\\) and \\(h\\) are functions, then \\[\\mathbb{E}[g(X)h(Y)] =\\mathbb{E}[g(X)]\\mathbb{E}[h(Y)]\\]\n\n\n\n\nExpected value of multiplication of independent RVs\n\n\nIf \\(X\\) and \\(Y\\) are independent continuous RVs, then \\[\\mathbb{E}[XY] = \\mathbb{E}[X] \\mathbb{E}[Y] \\]"
+    "text": "Important properties of expected values of functions of continuous RVs\n\n\n\n\nFunction of RV with two constants\n\n\n\\(\\mathbb{E}[aX+b] =a\\mathbb{E}[X]+b\\)\n\n\n\n\nFunction of two RVs added\n\n\n\\(\\mathbb{E}[X+Y] =\\mathbb{E}[X]+\\mathbb{E}[Y]\\)\n\n\n\n\nExpected value of sum of independent RVs pt 1\n\n\nIf \\(X_1, X_2, \\ldots X_n\\) are continuous RVs and \\(a_1, a_2, \\ldots a_n\\) are constants, then \\[\\mathbb{E}\\Bigg[\\sum_{i=1}^{n} a_i X_i\\Bigg] = \\sum_{i=1}^{n}a_i\\mathbb{E}[X_i]\\]\n\n\n\n\n\nExpected value of multiplication of function of independent RVs\n\n\nIf \\(X\\) and \\(Y\\) are independent continuous RVs, and \\(g\\) and \\(h\\) are functions, then \\[\\mathbb{E}[g(X)h(Y)] =\\mathbb{E}[g(X)]\\mathbb{E}[h(Y)]\\]\n\n\n\n\nExpected value of multiplication of independent RVs\n\n\nIf \\(X\\) and \\(Y\\) are independent continuous RVs, then \\[\\mathbb{E}[XY] = \\mathbb{E}[X] \\mathbb{E}[Y] \\]"
   },
   {
     "objectID": "slides/29_Variance_and_Sums_of_rv.html#variance-of-continuous-rvs",
@@ -6024,7 +6024,7 @@
     "href": "slides/29_Variance_and_Sums_of_rv.html#find-the-mean-and-sd-from-word-problem",
     "title": "Chapter 29: Variance of Continuous Random Variables",
     "section": "Find the mean and sd from word problem",
-    "text": "Find the mean and sd from word problem\n\n\n\n\nExample 4\n\n\nA machine manufactures cubes with a side length that varies uniformly from 1 to 2 inches. Assume the sides of the base and height are equal. The cost to make a cube is 10per cubic inch, and 5for the general cost per cube. Find the mean and standard deviation of the cost to make 10 cubes.\n\n\n\n\n\n\nChapter 29 Slides"
+    "text": "Find the mean and sd from word problem\n\n\n\n\nExample 4\n\n\nA machine manufactures cubes with a side length that varies uniformly from 1 to 2 inches. Assume the sides of the base and height are equal. The cost to make a cube is 10 ¢ per cubic inch, and 5 ¢ cents for the general cost per cube. Find the mean and standard deviation of the cost to make 10 cubes.\n\n\n\n\n\n\nChapter 29 Slides"
   },
   {
     "objectID": "slides/29_Variance_and_Sums_of_rv.html#expected-value-from-a-joint-pdf",

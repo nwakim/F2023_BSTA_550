@@ -62,12 +62,12 @@ For continuous RVs:
 ::: ex-title
 Example 1
 :::
-::: ex-cont
-Let $f_{X,Y}(x,y)= 2e^{-(x+y)}$, for $0 \leq x \leq y$.
-Find $\mathbb{E}[X]$.
-:::
-:::
 
+::: ex-cont
+Let $f_{X,Y}(x,y)= 2e^{-(x+y)}$, for $0 \leq x \leq y$. Find
+$\mathbb{E}[X]$.
+:::
+:::
 :::
 :::
 
@@ -85,13 +85,23 @@ you have two options:
 
 ::: columns
 ::: {.column width="50%"}
+::: proposition
+::: prop-title
+Function of RV with two constants
+:::
+
+::: prop-cont
+$\mathbb{E}[aX+b] =a\mathbb{E}[X]+b$
+:::
+:::
 
 ::: proposition
 ::: prop-title
-function of RV with two constants
+Function of two RVs added
 :::
+
 ::: prop-cont
-$$\mathbb{E}[X+Y] =\mathbb{E}[X]+\mathbb{E}[Y]$$
+$\mathbb{E}[X+Y] =\mathbb{E}[X]+\mathbb{E}[Y]$
 :::
 :::
 
@@ -99,24 +109,25 @@ $$\mathbb{E}[X+Y] =\mathbb{E}[X]+\mathbb{E}[Y]$$
 ::: prop-title
 Expected value of sum of independent RVs pt 1
 :::
-::: prop-cont
-If $X_1, X_2, \ldots X_n$ are continuous RVs and
-    $a_1, a_2, \ldots a_n$ are constants, then
-    $$\mathbb{E}\Bigg[\sum_{i=1}^{n} a_i X_i\Bigg] = \sum_{i=1}^{n}a_i\mathbb{E}[X_i]$$
-:::
-:::
 
+::: prop-cont
+If $X_1, X_2, \ldots X_n$ are continuous RVs and $a_1, a_2, \ldots a_n$
+are constants, then
+$$\mathbb{E}\Bigg[\sum_{i=1}^{n} a_i X_i\Bigg] = \sum_{i=1}^{n}a_i\mathbb{E}[X_i]$$
+:::
+:::
 :::
 
 ::: {.column width="50%"}
-
 ::: proposition
 ::: prop-title
 Expected value of multiplication of function of independent RVs
 :::
+
 ::: prop-cont
-If $X$ and $Y$ are independent continuous RVs, and $g$ and $h$
-    are functions, then $$\mathbb{E}[g(X)h(Y)] =\mathbb{E}[g(X)]\mathbb{E}[h(Y)]$$
+If $X$ and $Y$ are independent continuous RVs, and $g$ and $h$ are
+functions, then
+$$\mathbb{E}[g(X)h(Y)] =\mathbb{E}[g(X)]\mathbb{E}[h(Y)]$$
 :::
 :::
 
@@ -124,12 +135,12 @@ If $X$ and $Y$ are independent continuous RVs, and $g$ and $h$
 ::: prop-title
 Expected value of multiplication of independent RVs
 :::
+
 ::: prop-cont
 If $X$ and $Y$ are independent continuous RVs, then
-    $$\mathbb{E}[XY] = \mathbb{E}[X] \mathbb{E}[Y] $$
+$$\mathbb{E}[XY] = \mathbb{E}[X] \mathbb{E}[Y] $$
 :::
 :::
-
 :::
 :::
 
@@ -137,10 +148,9 @@ If $X$ and $Y$ are independent continuous RVs, then
 
 ::: columns
 ::: {.column width="40%"}
-**How do we calculate the variance of a discrete RV?** 
+**How do we calculate the variance of a discrete RV?**
 
- 
- 
+   
 
 For discrete RVs:
 
@@ -158,8 +168,7 @@ $$
 ::: {.column width="45%"}
 **How do we calculate the variance of a continuous RV?**
 
- 
-  
+    
 
 For continuous RVs:
 :::
@@ -173,12 +182,11 @@ For continuous RVs:
 ::: ex-title
 Example 2
 :::
-::: ex-cont
-Let $f_X(x)= \frac{1}{b-a}$, for $a \leq x \leq b$.
-Find $Var[X]$.
-:::
-:::
 
+::: ex-cont
+Let $f_X(x)= \frac{1}{b-a}$, for $a \leq x \leq b$. Find $Var[X]$.
+:::
+:::
 :::
 :::
 
@@ -190,12 +198,12 @@ Find $Var[X]$.
 ::: ex-title
 Example 3
 :::
-::: ex-cont
-Let $f_X(x)= \lambda e^{-\lambda x}$, for $x > 0$ and
-$\lambda> 0$. Find $Var[X]$.
-:::
-:::
 
+::: ex-cont
+Let $f_X(x)= \lambda e^{-\lambda x}$, for $x > 0$ and $\lambda> 0$. Find
+$Var[X]$.
+:::
+:::
 :::
 :::
 
@@ -203,28 +211,27 @@ $\lambda> 0$. Find $Var[X]$.
 
 ::: columns
 ::: {.column width="50%"}
-
 ::: proposition
 ::: prop-title
 function of RV with two constants
 :::
+
 ::: prop-cont
 $$Var[aX+b] = a^2Var[X]$$
 :::
 :::
-
 :::
 
 ::: {.column width="50%"}
-
 ::: proposition
 ::: prop-title
 Variance of sum of independent RVs pt 1
 :::
+
 ::: prop-cont
 If $X_1, X_2, \ldots X_n$ are independent continuous RVs and
-    $a_1, a_2, \ldots a_n$ are constants, then
-    $$Var\Bigg(\sum_{i=1}^{n} a_i X_i\Bigg) =\sum_{i=1}^{n} a^2_i Var(X_i)$$
+$a_1, a_2, \ldots a_n$ are constants, then
+$$Var\Bigg(\sum_{i=1}^{n} a_i X_i\Bigg) =\sum_{i=1}^{n} a^2_i Var(X_i)$$
 :::
 :::
 
@@ -232,12 +239,12 @@ If $X_1, X_2, \ldots X_n$ are independent continuous RVs and
 ::: prop-title
 Variance of sum of independent RVs pt 2
 :::
+
 ::: prop-cont
 If $X_1, X_2, \ldots X_n$ are independent continuous RVs, then
-    $$Var\Bigg(\sum_{i=1}^{n} X_i\Bigg) = \sum_{i=1}^{n} Var(X_i)$$
+$$Var\Bigg(\sum_{i=1}^{n} X_i\Bigg) = \sum_{i=1}^{n} Var(X_i)$$
 :::
 :::
-
 :::
 :::
 
@@ -249,14 +256,14 @@ If $X_1, X_2, \ldots X_n$ are independent continuous RVs, then
 ::: ex-title
 Example 4
 :::
-::: ex-cont
-A machine manufactures cubes with a side length that
-varies uniformly from 1 to 2 inches. Assume the sides of the base and
-height are equal. The cost to make a cube is 10per cubic inch, and 5for
-the general cost per cube. Find the mean and standard deviation of the
-cost to make 10 cubes.
-:::
-:::
 
+::: ex-cont
+A machine manufactures cubes with a side length that varies uniformly
+from 1 to 2 inches. Assume the sides of the base and height are equal.
+The cost to make a cube is 10 ¢ per cubic inch, and 5 ¢ cents for the
+general cost per cube. Find the mean and standard deviation of the cost
+to make 10 cubes.
+:::
+:::
 :::
 :::
