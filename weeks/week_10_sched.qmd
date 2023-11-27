@@ -48,13 +48,25 @@ For the slides, once they are opened, if you would like to print or save them as
 
 ## On the Horizon
 
+### Announcements 11/27
+
+-   Final Exam on 12/4 (one week from today)
+
+    -   Will post materials this afternoon
+
+    -   Will NOT be cumulative: Chapter 24 - Chapter 35
+
+-   Be on the lookout for the official course evaluation from SPH
+
+    -   Helps me identify the most important areas for improvement
+
+    -   Way to directly voice any concerns or appreciation to my supervisors
+
 ## Class Exit Tickets
 
-[{{< iconify healthicons health-worker-form-negative size=30px >}}]{style="color:#f8f5f0;"} Monday (11/27)
+[[{{< iconify healthicons health-worker-form-negative size=30px >}}](https://forms.office.com/Pages/ResponsePage.aspx?id=V3lz4rj6fk2U9pvWr59xWFMopmPUjRtDiHLswhgacNhUQk5FVjNGQ0xBUktWTTM2QldEUzU4WFZDQS4u)]{style="color:#f8f5f0;"} Monday (11/27)
 
-[{{< iconify healthicons health-worker-form-negative size=30px >}}]{style="color:#f8f5f0;"} Wednesday (11/29)
-
-## Additional Information
+[[{{< iconify healthicons health-worker-form-negative size=30px >}}](https://forms.office.com/Pages/ResponsePage.aspx?id=V3lz4rj6fk2U9pvWr59xWFMopmPUjRtDiHLswhgacNhUQ0xaRlZLNEtYMVBITzVLUTlHQUFZNjM1My4u)]{style="color:#f8f5f0;"} Wednesday (11/29)
 
 ## Statistician of the Week: Florence Nightingale
 
