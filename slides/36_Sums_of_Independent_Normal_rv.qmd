@@ -27,7 +27,7 @@ Theorem 1
 :::
 ::: thm-cont
 Let $X\sim N(\mu, \sigma^2)$, and let $Y=aX+b$, where
-$a$ and $b$ are constants. Then $$\hspace{-12cm} Y \sim N(a\mu+b, a^2\sigma^2)$$
+$a$ and $b$ are constants. Then $$Y \sim N(a\mu+b, a^2\sigma^2)$$
 :::
 :::
 
@@ -38,23 +38,23 @@ Theorem 2
 ::: thm-cont
 Let $X_i \sim N(\mu_i, \sigma_i^2)$ be independent
 normal rv's, for $i=1,2,\ldots,n$. Then
-$$\hspace{-12cm} \sum_{i=1}^n X_i \sim N\Bigg(\sum_{i=1}^n \mu_i, \sum_{i=1}^n \sigma^2_i\Bigg)$$
+$$\sum_{i=1}^n X_i \sim N\Bigg(\sum_{i=1}^n \mu_i, \sum_{i=1}^n \sigma^2_i\Bigg)$$
 :::
 :::
 
 ## Special Cases
 
 1.  Let $X_i \sim N(\mu, \sigma^2)$ be iid normal rv's, for
-    $i=1,2,\ldots,n$. Then $$\hspace{-12cm} \sum_{i=1}^n X_i \sim$$
+    $i=1,2,\ldots,n$. Then $$\sum_{i=1}^n X_i \sim$$
 
 2.  Let $X_i \sim N(\mu, \sigma^2)$ be iid normal rv's, for
     $i=1,2,\ldots,n$. Then
-    $$\hspace{-12cm} \bar{X}=\frac{\sum_{i=1}^n X_i}{n} \sim$$
+    $$\bar{X}=\frac{\sum_{i=1}^n X_i}{n} \sim$$
 
 3.  Let $X\sim N(\mu_X,\sigma_X^2)$, and $Y\sim N(\mu_Y,\sigma_Y^2)$.
-    Then $$\hspace{-12cm} X-Y \sim$$
+    Then $$X-Y \sim$$
 
-## Detecting and solving sums of Normal RVs from a world problem
+## Detecting and solving sums of Normal RVs from a word problem
 
 ::: example
 ::: ex-title

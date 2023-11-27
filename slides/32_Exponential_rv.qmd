@@ -19,11 +19,16 @@ format:
 
 ## Learning Objectives
 
-1. Identify the variable and the parameters in a story, and state in English
-what the variable and its parameters mean.
+1.  Identify the variable and the parameters in a story, and state in English what the variable and its parameters mean.
 
-2. Use the formulas for the density, CDF, expected value, and variance to
-answer questions and find probabilities.
+2.  Use the formulas for the density, CDF, expected value, and variance to answer questions and find probabilities.
+
+```{css}
+code.sourceCode {
+  font-size: 1.5em;
+  /* or try font-size: xx-large; */
+}
+```
 
 ## Properties of exponential RVs
 
@@ -41,7 +46,7 @@ $$
 F_X(x) = \left\{
         \begin{array}{ll}
             0 & \quad x<0 \quad \\
-            1 - e^{-\lambda x} & \quad x>0 \\
+            1 - e^{-\lambda x} & \quad x\geq0 \\
         \end{array}
     \right.
 $$
@@ -50,17 +55,69 @@ $$\text{E}(X) = \dfrac{1}{\lambda}$$ $$\text{Var}(X) = \dfrac{1}{\lambda^2}$$
 
 ## Memoryless Property
 
-If $b>0$, 
+   
+
+If $b>0$,
 
 $$P(X > a +b | X> a) = P(X > b)$$
 
-This can be interpreted as: if you have waited $a$ seconds (or any other measure of time) without a success, then the probability that you have to wait $b$ more seconds is the same as as the probability of waiting $b$ seconds initially.
+     
+
+-   **This can be interpreted as:**
+
+    -   If you have waited $a$ seconds (or any other measure of time) without a success
+
+    -   Then the probability that you have to wait $b$ more seconds is the same as as the probability of waiting $b$ seconds initially.
 
 ## Identifying exponential RV from word problems
 
+-   Look for time between events/successes
+
+-   Look for a rate of the events over time period
+
+-   How does it differ from the geometric distribution?
+
+    -   Geometric is *number of trials* until first success
+
+    -   Exponential is *time* until first success
+
+-   Relation to the Poisson distribution?
+
+    -   When the time between arrivals is exponential, the number of arrivals in a fixed time interval is Poisson with the mean $\lambda$
+
 ## Helpful R code
 
-## Tranformation of independent exponential RVs
+Let's say we're sitting at the bus stop, measuring the time until our bus arrives. We know the bus comes every 10 minutes on average.
+
+-   If we want to know the probability that the bus arrives in the next 5 minutes:
+
+    ```{r}
+    #| echo: true
+    pexp(q = 5, rate = 1/10)
+    ```
+
+-   If we want to know the time, say $t$, where the probability of the bus arriving at $t$ or earlier is 0.35:
+
+    ```{r}
+    #| echo: true
+    qexp(p = 0.35, rate = 1/10)
+    ```
+
+-   If we want to know the probability that the bus arrives between 3 and 5 minutes:
+
+    ```{r}
+    #| echo: true
+    pexp(q = 5, rate = 1/10) - pexp(q = 3, rate = 1/10)
+    ```
+
+-   If we want to sample 20 bus arrival times from the distribution:
+
+    ```{r}
+    #| echo: true
+    rexp(n = 20, rate = 1/10)
+    ```
+
+## Transformation of independent exponential RVs
 
 ::: columns
 ::: {.column width="30%"}
@@ -68,12 +125,10 @@ This can be interpreted as: if you have waited $a$ seconds (or any other measure
 ::: ex-title
 Example 1
 :::
-::: ex-cont
-Let $X_i \sim \textrm{Exp}(\lambda_i)$ be independent
-RVs, for $i=1 \ldots n$. Find the pdf for the first of the arrival
-times.
-:::
-:::
 
+::: ex-cont
+Let $X_i \sim \textrm{Exp}(\lambda_i)$ be independent RVs, for $i=1 \ldots n$. Find the pdf for the first of the arrival times.
+:::
+:::
 :::
 :::

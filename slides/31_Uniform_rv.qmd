@@ -19,13 +19,18 @@ format:
 
 ## Learning Objectives
 
-1. Identify the variable and the parameters in a story, and state in English
-what the variable and its parameters mean.
+1.  Identify the variable and the parameters in a story, and state in English what the variable and its parameters mean.
+
+```{css}
+code.sourceCode {
+  font-size: 1.5em;
+  /* or try font-size: xx-large; */
+}
+```
 
 ## Properties of continuous uniform RVs
 
--   **Scenario:** Events are equally likely to happen anywhere or anytime in
-an interval of values
+-   **Scenario:** Events are equally likely to happen anywhere or anytime in an interval of values
 
 -   Shorthand: $X \sim \text{U}[a,b]$
 
@@ -43,9 +48,74 @@ F_X(x) = \left\{
     \right.
 $$
 
-$$\text{E}(X) = \dfrac{a+b}{2}$$ $$\text{Var}(X) = \dfrac{(b-a)^2}{12}$$
+$$\text{E}(X) = \dfrac{a+b}{2} \text{, } \text{ Var}(X) = \dfrac{(b-a)^2}{12}$$
 
 ## Identifying continuous uniform RV from word problems
 
+-   Look for some indication that all events are **equally likely**
+
+    -   Could also say "uniformly distributed"
+
+-   Look for an interval
+
+    -   **Time example:** Costumer in your store will approach the cash register in next 30 minutes. Approaching the register throughout the 30 minutes is equally likely.
+
+    -   **Length example:** You have a 12 inch string that you need to cut. You are equally likely to cut anywhere on the string.
+
+-   Different than the discrete uniform
+
+    -   Discrete usually includes a *countable* number of events that are equally likely
+
+    -   Continuous is not countable
+
+        -   Exact time and length can be measured with infinite decimal places
+
 ## Helpful R code
+
+Let's say we're looking at equally likely arrival times between 10 am and 11 am.
+
+-   If we want to know the probability that someone arrives at 10:30am or earlier:
+
+    ```{r}
+    #| echo: true
+    punif(q = 30, min = 0, max = 60)
+    ```
+
+-   If we want to know the time, say $t$, where the probability of arriving at $t$ or earlier is 0.35:
+
+    ```{r}
+    #| echo: true
+    qunif(p = 0.35, min = 0, max = 60)
+    ```
+
+-   If we want to know the probability that someone arrives between 10:14 and 10:16 am:
+
+    ```{r}
+    #| echo: true
+    punif(q = 16, min = 0, max = 60) - punif(q = 14, min = 0, max = 60)
+    ```
+
+-   If we want to sample 20 arrival times from the distribution:
+
+    ```{r}
+    #| echo: true
+    runif(n = 20, min = 0, max = 60)
+    ```
+
+## Bird on a wire (TB 31.5)
+
+::: columns
+::: {.column width="30%"}
+::: example
+::: ex-title
+Example 1
+:::
+
+::: ex-cont
+A bird lands at a location that is Uniformly distributed along an electrical wire of length 150 feet. The wire is stretched tightly between two poles. What is the probability that the bird is 20 feet or
+less from one or the other of the poles?
+:::
+:::
+:::
+:::
 

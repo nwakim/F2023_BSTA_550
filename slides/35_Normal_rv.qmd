@@ -1,5 +1,5 @@
 ---
-title: "Chapter 35: Normal Variables"
+title: "Chapter 35: Normal Random Variables"
 author: "Meike Niederhausen and Nicky Wakim"
 date: "11/27/2023"
 title-slide-attributes:
@@ -19,17 +19,96 @@ format:
 
 ## Learning Objectives
 
-1. Identify the variable and the parameters in a story, and state in English
-what the variable and its parameters mean.
+1.  Translate a word problem into probability within Normal RV
 
-## Chapter 35: Normal Variables
+2.  Calculate probabilities within Normal RV using R
 
--   I will not cover normal rv's in detail here since I expect you have
-    already learned about normal random variables and $z$-scores in
-    statistics classes you have taken.
+```{css}
+code.sourceCode {
+  font-size: 1.5em;
+  /* or try font-size: xx-large; */
+}
+```
 
--   Make sure you know how to use a normal distribution $z$-table if you
-    will be taking the MS Biostatistics comprehensive exam, since that
-    is what will be provided during the exam.
+## Properties of Normal RVs
 
-## Some remarks on normal RVs
+-   No scenario description here because the Normal distribution is so universal
+
+      -   Central Limit Theorem (next class) makes it applicable to many types of events
+
+-   Shorthand: $X \sim \text{Normal}(\mu, \sigma^2)$
+
+$$
+f_X(x) = \dfrac{1}{\sqrt{2\pi \sigma^2}}e^{-(x-\mu)^2/(2\sigma^2)} \text{, for} -inf < x < inf
+$$
+
+$$\text{E}(X) = \mu $$ $$\text{Var}(X) = \sigma^2$$
+
+## Helpful R code
+
+Let's say we're measuring the high temperature today. The average high temperature on this day across many, many years is 50 degrees with a standard deviation of 4 degrees.
+
+-   If we want to know the probability that the high temperature is below 45 degrees:
+
+    ```{r}
+    #| echo: true
+    pnorm(q = 45, mean = 50, sd = 4)
+    ```
+
+-   If we want to know the temoerature, say $t$, where the probability of that the temperature is at $t$ or lower is 0.35:
+
+    ```{r}
+    #| echo: true
+    qnorm(p = 0.35, mean = 50, sd = 4)
+    ```
+
+-   If we want to know the probability that the temperature is between 45 and 50 degrees:
+
+    ```{r}
+    #| echo: true
+    pnorm(q = 50, mean = 50, sd = 4) - pnorm(q = 45, mean = 50, sd = 4)
+
+    ```
+
+-   If we want to sample 20 days' temperature (over the years) from the distribution:
+
+    ```{r}
+    #| echo: true
+    rnorm(n = 20, mean = 50, sd = 4)
+    ```
+
+## Movie night while studying
+
+::: columns
+::: {.column width="37%"}
+::: example
+::: ex-title
+Example 1
+:::
+
+::: ex-cont
+Children's movies run an average of 98 minutes with a standard deviation of 10 minutes. You check out a random movie from the library to entertain your kids so you can study for your test. Assume that your kids will be occupied for the entire length of the movie.
+
+a.  What is the probability that your kids will be occupied for at least the 2 hours you would like to study?
+
+b.  What is range for the bottom quartile (lowest 25%) of time they will be occupied?
+:::
+:::
+:::
+:::
+
+## Standard Normal Distribution
+
+$$ Z \sim \text{Normal}(\mu = 0, \sigma^2 = 1)$$
+
+-   Used to be more helpful when computing was not as advanced
+
+    -   Use tables of the standard normal
+
+    -   You can convert any normal distribution to a standard normal through transformation
+
+-   $Z = \dfrac{X - \mu_X}{\sigma_X}$
+
+    -   Comes from $X = \sigma_X Z + \mu_X$
+
+    -   Since $\sigma_X$ and $\mu_X$ are constants, then $E(X) = \mu_X$ and $SD(X) = \sigma_X SD(Z) = \sigma_X$

@@ -43,7 +43,7 @@ $$\bar{X}=\frac{\sum_{i=1}^n X_i}{n}  \rightarrow \text{N}\Bigg(\mu, \dfrac{\sig
 :::
 :::
 
-## Example 
+## Example of 
 
 ::: example
 ::: ex-title
