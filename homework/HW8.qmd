@@ -18,6 +18,8 @@ editor_options:
 ## This homework is optional!!
 
 This homework is completely optional!! These chapters will be on the test! I cannot stress enough how important these distributions and the CLT are!!
+
+Some questions that test material covered by exam: 32.10, 32.11
 :::
 
 ## Directions
