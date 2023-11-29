@@ -19,6 +19,8 @@ format:
 
 ## Learning Objectives
 
+1.  Calculate probability of a sample mean using a Normally distributed population
+
 ## Sum of Normal RVs
 
 ::: theorem
@@ -38,24 +40,26 @@ Theorem 2
 ::: thm-cont
 Let $X_i \sim N(\mu_i, \sigma_i^2)$ be independent
 normal rv's, for $i=1,2,\ldots,n$. Then
-$$\sum_{i=1}^n X_i \sim N\Bigg(\sum_{i=1}^n \mu_i, \sum_{i=1}^n \sigma^2_i\Bigg)$$
+$$\sum_{i=1}^n X_i \sim N\Bigg(\sum_{i=1}^n \mu_i , \sum_{i=1}^n \sigma^2_i\Bigg)$$
 :::
 :::
 
 ## Special Cases
 
 1.  Let $X_i \sim N(\mu, \sigma^2)$ be iid normal rv's, for
-    $i=1,2,\ldots,n$. Then $$\sum_{i=1}^n X_i \sim$$
+    $i=1,2,\ldots,n$. Then $$\sum_{i=1}^n X_i \sim N\big(n\mu, n \sigma^2\big)$$
 
 2.  Let $X_i \sim N(\mu, \sigma^2)$ be iid normal rv's, for
     $i=1,2,\ldots,n$. Then
-    $$\bar{X}=\frac{\sum_{i=1}^n X_i}{n} \sim$$
+    $$\bar{X}=\frac{\sum_{i=1}^n X_i}{n} \sim N\big(\mu, \sigma^2 / n\big)$$
 
 3.  Let $X\sim N(\mu_X,\sigma_X^2)$, and $Y\sim N(\mu_Y,\sigma_Y^2)$.
-    Then $$X-Y \sim$$
+    Then $$X-Y \sim N\big(\mu_X - \mu_Y, \sigma^2_X + \sigma^2_Y \big)$$
 
 ## Detecting and solving sums of Normal RVs from a word problem
 
+::: columns
+::: {.column width="40%"}
 ::: example
 ::: ex-title
 Example 1
@@ -71,5 +75,8 @@ deviation 3 mmHg.
     eyes are healthy?
 
 2.  Repeat the previous question for a patient with 10 IOP readings.
+:::
+:::
+
 :::
 :::

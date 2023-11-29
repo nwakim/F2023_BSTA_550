@@ -15,7 +15,17 @@ format:
     width: 1955
     height: 1100
     footer: Chapter 37 Slides
+editor: 
+  markdown: 
+    wrap: 72
 ---
+
+## Learning Objectives
+
+1.  Calculate probability of a sample mean using a population mean and
+    variance with unknown distribution
+2.  Use the Central Limit Theorem to construct the Normal approximation
+    of the Binomial and Poisson distributions
 
 ## The Central Limit Theorem
 
@@ -23,10 +33,11 @@ format:
 ::: thm-title
 Theorem 1: Central Limit Theorem (CLT)
 :::
+
 ::: thm-cont
-Let $X_i$ be iid rv's
-with common mean $\mu$ and variance $\sigma^2$, for $i=1,2,\ldots,n$.
-Then $$\sum_{i=1}^n X_i \rightarrow \text{N}(n\mu, n\sigma^2)$$
+Let $X_i$ be iid rv's with common mean $\mu$ and variance $\sigma^2$,
+for $i=1,2,\ldots,n$. Then
+$$\sum_{i=1}^n X_i \rightarrow \text{N}(n\mu, n\sigma^2)$$
 :::
 :::
 
@@ -36,23 +47,27 @@ Then $$\sum_{i=1}^n X_i \rightarrow \text{N}(n\mu, n\sigma^2)$$
 ::: prop-title
 Corollary 1
 :::
+
 ::: prop-cont
-Let $X_i$ be iid rv's with common mean $\mu$ and
-variance $\sigma^2$, for $i=1,2,\ldots,n$. Then
+Let $X_i$ be iid rv's with common mean $\mu$ and variance $\sigma^2$,
+for $i=1,2,\ldots,n$. Then
 $$\bar{X}=\frac{\sum_{i=1}^n X_i}{n}  \rightarrow \text{N}\Bigg(\mu, \dfrac{\sigma^2}{n}\Bigg)$$
 :::
 :::
 
-## Example of 
+## Example of Corollary in use
 
+::: columns
+::: {.column width="40%"}
 ::: example
 ::: ex-title
 Example 1
 :::
+
 ::: ex-cont
-According to a large US study, the mean resting heart
-rate of adult women is about 74 beats per minutes (bpm), with standard
-deviation 13 bpm (NHANES 2003-2004).
+According to a large US study, the mean resting heart rate of adult
+women is about 74 beats per minutes (bpm), with standard deviation 13
+bpm (NHANES 2003-2004).
 
 1.  Find the probability that the average resting heart rate for a
     random sample of 36 adult women is more than 3 bpm away from the
@@ -61,8 +76,10 @@ deviation 13 bpm (NHANES 2003-2004).
 2.  Repeat the previous question for a single adult woman.
 :::
 :::
+:::
+:::
 
-## Example
+## Example of CLT for exponential distribution
 
 ::: columns
 ::: {.column width="40%"}
@@ -70,45 +87,60 @@ deviation 13 bpm (NHANES 2003-2004).
 ::: ex-title
 Example 2
 :::
-::: ex-cont
-Let $X_i \sim Exp(\lambda)$ be iid RVs for
-$i=1,2,\ldots,n$. Then $$\sum_{i=1}^n X_i \rightarrow$$
-:::
-:::
 
+::: ex-cont
+Let $X_i \sim Exp(\lambda)$ be iid RVs for $i=1,2,\ldots,n$. Then
+$$\sum_{i=1}^n X_i \rightarrow$$
+:::
+:::
 :::
 :::
 
 ## CLT for Discrete RVs
 
-1.  **Binomial rv's**: Let $X \sim Bin(n,p)$.
+::: columns
+::: {.column width="50%"}
+1.  **Binomial rv's**: Let $X \sim Bin(n,p)$
 
-2.  **Poisson rv's**: Let $X \sim Poisson(\lambda)$.
+    -   $X = \displaystyle\sum_{i=1}^n X_i$, where $X_i$ are iid
+        $\text{Bernoulli}(p)$
+:::
 
-## Example {.smaller}
+::: {.column width="50%"}
+2.  **Poisson rv's**: Let $X \sim Poisson(\lambda)$
+
+    -   $X = \displaystyle\sum_{i=1}^n X_i$, where $X_i$ are iid
+        $\text{Poiss}(1)$
+    -   Recall from [Chapter 18](/slides/18_Poisson_rv.qmd) that if
+        $X_i \sim Poiss(\lambda_i)$ and $X_i$ independent, then
+        $\sum_{i=1}^n X_i \sim Poiss(\sum_{i=1}^n \lambda_i)$
+:::
+:::
+
+## At home example {.smaller}
 
 ::: example
 ::: ex-title
 Example 3
 :::
+
 ::: ex-cont
-Suppose that the probability of developing a specific
-type of breast cancer in women aged 40-49 is 0.001. Assume the
-occurrences of cancer are independent. Suppose you have data from a
-random sample of 20,000 women aged 40-49.
+Suppose that the probability of developing a specific type of breast
+cancer in women aged 40-49 is 0.001. Assume the occurrences of cancer
+are independent. Suppose you have data from a random sample of 20,000
+women aged 40-49.
 
 1.  How many of the 20,000 women would you expect to develop this type
     of breast cancer, and what is the standard deviation?
 
-2.  Find the **exact** probability that more than 15 of the 20,000
-    women will develop this type of breast cancer.
+2.  Find the **exact** probability that more than 15 of the 20,000 women
+    will develop this type of breast cancer.
 
 3.  Use the CLT to find the **approximate** probability that more than
     15 of the 20,000 women will develop this type of breast cancer.
 
-4.  Use the CLT to approximate the following probabilities, where $X$
-    is the number of women that will develop this type of breast
-    cancer.
+4.  Use the CLT to approximate the following probabilities, where $X$ is
+    the number of women that will develop this type of breast cancer.
 
     a.  $\mathbb{P}(15 \leq X \leq 22)$
 
@@ -116,9 +148,8 @@ random sample of 20,000 women aged 40-49.
 
     c.  $\mathbb{P}(X < 20)$
 
-5.  Find the **approximate** probability that more than 15 of the
-    20,000 women will develop this type of breast cancer - not using the
-    CLT!
+5.  Find the **approximate** probability that more than 15 of the 20,000
+    women will develop this type of breast cancer - not using the CLT!
 
 6.  Use the CLT to approximate the approximate probability in the
     previous question!

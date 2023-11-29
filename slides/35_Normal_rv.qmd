@@ -1,7 +1,7 @@
 ---
 title: "Chapter 35: Normal Random Variables"
 author: "Meike Niederhausen and Nicky Wakim"
-date: "11/27/2023"
+date: "11/29/2023"
 title-slide-attributes:
     data-background-color: "#006a4e"
 categories: ["Week 10"]
