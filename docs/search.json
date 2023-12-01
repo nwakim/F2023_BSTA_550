@@ -4434,8 +4434,8 @@
     "objectID": "slides/14_18_Discrete_RVs.html#learning-objectives",
     "href": "slides/14_18_Discrete_RVs.html#learning-objectives",
     "title": "Chapter 14, 15, 16, 19, 20: Some Important Discrete RVs",
-    "section": "",
-    "text": "Distinguish between Bernoulli, Binomial, Geometric, Hypergeometric, and Discrete Uniform distributions when reading a story.\nIdentify the variable and the parameters in a story, and state what the variable and parameters mean.\nUse the formulas for the pmf/CDF, expected value, and variance to answer questions and find probabilities."
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\n\nDistinguish between Bernoulli, Binomial, Geometric, Hypergeometric, and Discrete Uniform distributions when reading a story.\nIdentify the variable and the parameters in a story, and state what the variable and parameters mean.\nUse the formulas for the pmf/CDF, expected value, and variance to answer questions and find probabilities."
   },
   {
     "objectID": "slides/14_18_Discrete_RVs.html#bernoulli-rv",
@@ -4715,7 +4715,7 @@
     "href": "slides/14_18_Discrete_RVs.html#what-discrete-uniform-rvs-have-we-seen-already",
     "title": "Chapter 14, 15, 16, 19, 20: Some Important Discrete RVs",
     "section": "What discrete uniform RVs have we seen already?",
-    "text": "What discrete uniform RVs have we seen already?\n\n\n\n\nExample 6\n\n\nExamples of discrete uniform RVs"
+    "text": "What discrete uniform RVs have we seen already?\n\n\n\n\nExample 6\n\n\nExamples of discrete uniform RVs\n\n\n\n\n\n\nChapter 14-16, 19-20 Slides"
   },
   {
     "objectID": "slides/12_Variance.html#lets-think-about-our-ghost-problems-again-12",
