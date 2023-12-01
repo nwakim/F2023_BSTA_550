@@ -35,7 +35,7 @@ code.sourceCode {
 -   Shorthand: $X \sim \text{Gamma}(r, \lambda)$
 
 $$
-f_X(x) = \dfrac{\lambda^r}{\Gamma(r)}x^{r-1}\lambda e^{-\lambda x}\text{ for } x>0, \lambda>0, \Gamma(r) = (r-1)!
+f_X(x) = \dfrac{\lambda^r}{\Gamma(r)}x^{r-1} e^{-\lambda x}\text{ for } x>0, \lambda>0, \Gamma(r) = (r-1)!
 $$
 
 $$
@@ -133,7 +133,6 @@ On average, someone sends a money order once per 15 minutes. What is the probabi
 :::
 :::
 :::
-
 
 ## Additional Resource
 

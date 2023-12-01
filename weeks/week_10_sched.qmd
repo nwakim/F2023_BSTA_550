@@ -63,7 +63,7 @@ editor_options:
 
     -   Unfinished examples from class notes
 
-    -   [Review notes from class](/slides_annotated/Final review.pdf)
+    -   [Review notes from class](/slides_annotated/Final%20review.pdf)
 
         -   There is an extra practice problem (32.10) in there that is *very helpful*
 

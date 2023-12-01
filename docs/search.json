@@ -1635,7 +1635,7 @@
     "href": "homeworks.html#solutions",
     "title": "Homework Assignments and Solutions",
     "section": "Solutions",
-    "text": "Solutions\n\n\n\nHomework\nWritten Solutions\nVideos\n\n\n\n\n0\n\n\n\n\n1\n\n NTB 1a\n NTB 1b\n TB 2.30\n\n\n2\n\n NTB 1\n TB 22.1\n TB 3.10\n TB 4.5\n\n\n3\n\n NTB 1\n TB 5.17\n TB 8.8\n TB 8.18\n\n\n4\n\n NTB 1\n NTB 2\n TB 10.6\n NTB 3\n NTB 4\n\n\n5\n\n NTB 1\n NTB 2\n NTB 3\n TB 16.7\n TB 17.9\n TB 18.20\n TB 19.6\n\n\n6\n\n TB 24.19\n TB 24.20\n\n\n7\n\n TB 25.18\n NTB 1\n TB 26.12\n NTB 2\n NTB 3\n TB 27.12\n TB 28.18\n NTB 4\n NTB 5\n NTB 6"
+    "text": "Solutions\n\n\n\nHomework\nWritten Solutions\nVideos\n\n\n\n\n0\n\n\n\n\n1\n\n NTB 1a\n NTB 1b\n TB 2.30\n\n\n2\n\n NTB 1\n TB 22.1\n TB 3.10\n TB 4.5\n\n\n3\n\n NTB 1\n TB 5.17\n TB 8.8\n TB 8.18\n\n\n4\n\n NTB 1\n NTB 2\n TB 10.6\n NTB 3\n NTB 4\n\n\n5\n\n NTB 1\n NTB 2\n NTB 3\n TB 16.7\n TB 17.9\n TB 18.20\n TB 19.6\n\n\n6\n\n TB 24.19\n TB 24.20\n\n\n7\n\n TB 25.18\n NTB 1\n  TB 26.12\n NTB 2\n  NTB 3\n TB 27.12\n TB 28.18\n NTB 4\n NTB 5\n NTB 6"
   },
   {
     "objectID": "schedule/week_02_sched.html#homework",
@@ -5898,7 +5898,7 @@
     "href": "slides/33_Gamma_rv.html#properties-of-gamma-rvs",
     "title": "Chapter 33: Gamma Random Variables",
     "section": "Properties of gamma RVs",
-    "text": "Properties of gamma RVs\n\nScenario: Modeling the time until the \\(r^{th}\\) event.\nContinuous analog to the Negative Binomial distribution\nShorthand: \\(X \\sim \\text{Gamma}(r, \\lambda)\\)\n\n\\[\nf_X(x) = \\dfrac{\\lambda^r}{\\Gamma(r)}x^{r-1}\\lambda e^{-\\lambda x}\\text{ for } x&gt;0, \\lambda&gt;0, \\Gamma(r) = (r-1)!\n\\]\n\\[\nF_X(x) = \\left\\{\n        \\begin{array}{ll}\n            0 & \\quad x&lt;0 \\quad \\\\\n            1 - e^{-\\lambda x}\\displaystyle\\sum_{j=0}^{r-1}\\dfrac{(\\lambda x)^j}{j!}  & \\quad x\\geq0 \\\\\n        \\end{array}\n    \\right.\n\\]\n\\[\\text{E}(X) = \\dfrac{r}{\\lambda}\\text{, }\\text{ Var}(X) = \\dfrac{r}{\\lambda^2}\\]\nCommon to see \\(\\alpha = r\\) and \\(\\beta = \\lambda\\)"
+    "text": "Properties of gamma RVs\n\nScenario: Modeling the time until the \\(r^{th}\\) event.\nContinuous analog to the Negative Binomial distribution\nShorthand: \\(X \\sim \\text{Gamma}(r, \\lambda)\\)\n\n\\[\nf_X(x) = \\dfrac{\\lambda^r}{\\Gamma(r)}x^{r-1} e^{-\\lambda x}\\text{ for } x&gt;0, \\lambda&gt;0, \\Gamma(r) = (r-1)!\n\\]\n\\[\nF_X(x) = \\left\\{\n        \\begin{array}{ll}\n            0 & \\quad x&lt;0 \\quad \\\\\n            1 - e^{-\\lambda x}\\displaystyle\\sum_{j=0}^{r-1}\\dfrac{(\\lambda x)^j}{j!}  & \\quad x\\geq0 \\\\\n        \\end{array}\n    \\right.\n\\]\n\\[\\text{E}(X) = \\dfrac{r}{\\lambda}\\text{, }\\text{ Var}(X) = \\dfrac{r}{\\lambda^2}\\]\nCommon to see \\(\\alpha = r\\) and \\(\\beta = \\lambda\\)"
   },
   {
     "objectID": "slides/32_Exponential_rv.html#learning-objectives",
@@ -6143,7 +6143,7 @@
     "href": "slides/33_Gamma_rv.html#helpful-r-code",
     "title": "Chapter 33: Gamma Random Variables",
     "section": "Helpful R code",
-    "text": "Helpful R code\nLet’s say we’re sitting at the bus stop, measuring the time until 4 buses arrive. We know the bus comes every 10 minutes on average.\n\nIf we want to know the probability that the 4 buses arrive in the next 50 minutes:\n\npgamma(q = 50, rate = 1/10, shape = 4)\n\n[1] 0.7349741\n\npgamma(q = 50, scale = 10, shape = 4)\n\n[1] 0.7349741\n\n\nIf we want to know the time, say \\(t\\), where the probability of the 4 buses arriving at \\(t\\) or earlier is 0.35:\n\nqgamma(p = 0.35, rate = 1/10, shape = 4)\n\n[1] 29.87645\n\n\nIf we want to know the probability that the 4 buses arrives between 30 and 50 minutes:\n\npgamma(q = 50, scale = 10, shape = 4) - pgamma(q = 30, scale = 10, shape = 4)\n\n[1] 0.382206\n\n\nIf we want to sample 20 arrival times for the 4 buses:\n\nrgamma(n = 20, scale = 10, shape = 4)\n\n [1] 36.47667 85.56683 50.86419 33.13984 58.62027 35.04330 40.27325 11.65319\n [9] 46.38354 21.06178 40.67839 30.34521 21.35769 22.42351 43.40550 12.14114\n[17] 80.70003 18.35708 17.94627 31.93890"
+    "text": "Helpful R code\nLet’s say we’re sitting at the bus stop, measuring the time until 4 buses arrive. We know the bus comes every 10 minutes on average.\n\nIf we want to know the probability that the 4 buses arrive in the next 50 minutes:\n\npgamma(q = 50, rate = 1/10, shape = 4)\n\n[1] 0.7349741\n\npgamma(q = 50, scale = 10, shape = 4)\n\n[1] 0.7349741\n\n\nIf we want to know the time, say \\(t\\), where the probability of the 4 buses arriving at \\(t\\) or earlier is 0.35:\n\nqgamma(p = 0.35, rate = 1/10, shape = 4)\n\n[1] 29.87645\n\n\nIf we want to know the probability that the 4 buses arrives between 30 and 50 minutes:\n\npgamma(q = 50, scale = 10, shape = 4) - pgamma(q = 30, scale = 10, shape = 4)\n\n[1] 0.382206\n\n\nIf we want to sample 20 arrival times for the 4 buses:\n\nrgamma(n = 20, scale = 10, shape = 4)\n\n [1] 23.62559 67.87353 66.09070 37.22996 26.01786 69.19651 33.56302 41.93588\n [9] 18.28835 76.26211 74.34490 51.98992 15.32024 50.57118 73.52642 36.96576\n[17] 66.41893 17.71069 30.96120 21.86717"
   },
   {
     "objectID": "slides/32_Exponential_rv.html#helpful-r-code",

@@ -440,7 +440,7 @@ code.sourceCode {
 <li>Shorthand: <span class="math inline">\(X \sim \text{Gamma}(r, \lambda)\)</span></li>
 </ul>
 <p><span class="math display">\[
-f_X(x) = \dfrac{\lambda^r}{\Gamma(r)}x^{r-1}\lambda e^{-\lambda x}\text{ for } x&gt;0, \lambda&gt;0, \Gamma(r) = (r-1)!
+f_X(x) = \dfrac{\lambda^r}{\Gamma(r)}x^{r-1} e^{-\lambda x}\text{ for } x&gt;0, \lambda&gt;0, \Gamma(r) = (r-1)!
 \]</span></p>
 <p><span class="math display">\[
 F_X(x) = \left\{
@@ -503,9 +503,9 @@ F_X(x) = \left\{
 <div class="cell">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="fu">rgamma</span>(<span class="at">n =</span> <span class="dv">20</span>, <span class="at">scale =</span> <span class="dv">10</span>, <span class="at">shape =</span> <span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] 36.47667 85.56683 50.86419 33.13984 58.62027 35.04330 40.27325 11.65319
- [9] 46.38354 21.06178 40.67839 30.34521 21.35769 22.42351 43.40550 12.14114
-[17] 80.70003 18.35708 17.94627 31.93890</code></pre>
+<pre><code> [1] 23.62559 67.87353 66.09070 37.22996 26.01786 69.19651 33.56302 41.93588
+ [9] 18.28835 76.26211 74.34490 51.98992 15.32024 50.57118 73.52642 36.96576
+[17] 66.41893 17.71069 30.96120 21.86717</code></pre>
 </div>
 </div></li>
 </ul>
