@@ -73,8 +73,6 @@ editor_options:
 
         -   pdf, CDF (if given previously), $E(X)$, $Var(X)$
 
-    -   
-
 ## On the Horizon
 
 ## End of quarter feedback!
