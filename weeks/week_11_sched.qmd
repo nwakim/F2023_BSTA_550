@@ -30,7 +30,50 @@ editor_options:
 
 ## Resources
 
-Final exam week!
+[[{{< iconify pepicons-pop pen-circle-filled size=29px >}}](/slides/Continuous_distributions.qmd)]{style="color:#f8f5f0;"} Reference for distributions of continuous RVS
+
+### Exam Materials
+
+-   Practice material
+
+    -   [Review questions](/weeks/week_10/Final_review_questions.pdf)
+
+        -   Questions highlighted are what I deem helpful review for our test
+        -   [Review answers](/weeks/week_10/Final_review_answers.pdf)
+
+    -   Practice problems in HW 6-7
+
+    -   Unfinished examples from class notes
+
+    -   [Review notes from class](/slides_annotated/Final%20review.pdf)
+
+        -   There is an extra practice problem (32.10) in there that is *very helpful*
+
+        -   [With video](https://ohsuitg-my.sharepoint.com/personal/wakim_ohsu_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fwakim%5Fohsu%5Fedu%2FDocuments%2FTeaching%2FClasses%2FF2023%5FBSTA%5F550%2FRecordings%2F38%5FFinal%5Freview%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview)
+
+-   Will NOT be cumulative: Chapter 24 - Chapter 35
+
+    -   Chapter 31 - 35: Test will use distributions that we learn but will not be asking word problems
+
+        -   Think Example 1 from Chapter 32 notes: Tests more on joint pdf than exponential distribution
+
+    -   Weeks 7 - 9, with some from Week 10
+
+    -   HW 6-7
+
+    -   There will NOT be a question using a transformation of X and Y. For example, a question like HW 7, NTB #3 will NOT be on the test.
+
+        -   However, a question like 32.10 will be on the test. In that question we are asked about $P(X<Y)$
+
+-   Will be formatted the same as the midterm!!
+
+    -   45 minute test with full class time to finish
+
+    -   I will give you the distribution information that we learned
+
+        -   pdf, CDF (if given previously), $E(X)$, $Var(X)$
+
+    -   
 
 ## On the Horizon
 

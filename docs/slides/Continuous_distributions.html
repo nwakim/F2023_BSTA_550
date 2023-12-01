@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2023-12-04">
-<meta name="description" content="Final Exam">
+<meta name="author" content="Nicky Wakim">
+<meta name="dcterms.date" content="2023-12-01">
 
-<title>Introduction to Probability - Week 11</title>
+<title>Introduction to Probability - Continuous Random Variables</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -41,7 +41,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script src="../site_libs/quarto-contrib/iconify-1.0.0-beta.2/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -115,7 +114,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../class_slides.html">Course Materials</a></li><li class="breadcrumb-item"><a href="../schedule.html">Weekly Pages</a></li><li class="breadcrumb-item"><a href="../weeks/week_01_sched.html">Weeks</a></li><li class="breadcrumb-item"><a href="../weeks/week_11_sched.html">Week 11</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Continuous Random Variables</li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -271,7 +270,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../weeks/week_11_sched.html" class="sidebar-item-text sidebar-link active">
+  <a href="../weeks/week_11_sched.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 11</span></a>
   </div>
 </li>
@@ -291,16 +290,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#resources" id="toc-resources" class="nav-link active" data-scroll-target="#resources">Resources</a>
-  <ul class="collapse">
-  <li><a href="#exam-materials" id="toc-exam-materials" class="nav-link" data-scroll-target="#exam-materials">Exam Materials</a></li>
-  </ul></li>
-  <li><a href="#on-the-horizon" id="toc-on-the-horizon" class="nav-link" data-scroll-target="#on-the-horizon">On the Horizon</a></li>
-  <li><a href="#end-of-quarter-feedback" id="toc-end-of-quarter-feedback" class="nav-link" data-scroll-target="#end-of-quarter-feedback">End of quarter feedback!</a></li>
-  <li><a href="#additional-information" id="toc-additional-information" class="nav-link" data-scroll-target="#additional-information">Additional Information</a></li>
-  <li><a href="#statistician-of-the-week-maricela-cruz" id="toc-statistician-of-the-week-maricela-cruz" class="nav-link" data-scroll-target="#statistician-of-the-week-maricela-cruz">Statistician of the Week: Maricela Cruz</a></li>
-  <li><a href="#muddiest-points" id="toc-muddiest-points" class="nav-link" data-scroll-target="#muddiest-points">Muddiest Points</a></li>
-  <li><a href="#clearest-points" id="toc-clearest-points" class="nav-link" data-scroll-target="#clearest-points">Clearest Points</a></li>
+  <li><a href="#properties-of-continuous-uniform-rvs" id="toc-properties-of-continuous-uniform-rvs" class="nav-link active" data-scroll-target="#properties-of-continuous-uniform-rvs">Properties of continuous uniform RVs</a></li>
+  <li><a href="#properties-of-exponential-rvs" id="toc-properties-of-exponential-rvs" class="nav-link" data-scroll-target="#properties-of-exponential-rvs">Properties of exponential RVs</a></li>
+  <li><a href="#properties-of-gamma-rvs" id="toc-properties-of-gamma-rvs" class="nav-link" data-scroll-target="#properties-of-gamma-rvs">Properties of gamma RVs</a></li>
+  <li><a href="#properties-of-normal-rvs" id="toc-properties-of-normal-rvs" class="nav-link" data-scroll-target="#properties-of-normal-rvs">Properties of Normal RVs</a></li>
   </ul>
 </nav>
     </div>
@@ -309,160 +302,110 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Week 11</h1>
-</div>
-
-<div>
-  <div class="description">
-    Final Exam
+<h1 class="title">Continuous Random Variables</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Week 11</div>
   </div>
-</div>
+  </div>
+
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Nicky Wakim </p>
+          </div>
+  </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">December 4, 2023</p>
+      <p class="date">December 1, 2023</p>
     </div>
   </div>
   
-    <div>
-    <div class="quarto-title-meta-heading">Modified</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date-modified">September 15, 2023</p>
-    </div>
-  </div>
     
   </div>
   
 
 </header>
 
-<div class="cell">
-<style type="text/css">
-.title{
-  font-size: 40px;
-  color: #006a4e;
-  background-color: #fff;
-  padding: 10px;
-}
-
-.description{
-  font-size: 20px;
-  color: #fff;
-  background-color: #006a4e;
-  padding: 10px;
-}
-</style>
-</div>
-<section id="resources" class="level2">
-<h2 class="anchored" data-anchor-id="resources">Resources</h2>
-<p><span style="color:#f8f5f0;"><a href="../slides/Continuous_distributions.html"><iconify-icon inline="" icon="pepicons-pop:pen-circle-filled" style="font-size: 29px;"></iconify-icon></a></span> Reference for distributions of continuous RVS</p>
-<section id="exam-materials" class="level3">
-<h3 class="anchored" data-anchor-id="exam-materials">Exam Materials</h3>
+<section id="properties-of-continuous-uniform-rvs" class="level2">
+<h2 class="anchored" data-anchor-id="properties-of-continuous-uniform-rvs">Properties of continuous uniform RVs</h2>
 <ul>
-<li><p>Practice material</p>
-<ul>
-<li><p><a href="../weeks/week_10/Final_review_questions.pdf">Review questions</a></p>
-<ul>
-<li>Questions highlighted are what I deem helpful review for our test</li>
-<li><a href="../weeks/week_10/Final_review_answers.pdf">Review answers</a></li>
-</ul></li>
-<li><p>Practice problems in HW 6-7</p></li>
-<li><p>Unfinished examples from class notes</p></li>
-<li><p><a href="../slides_annotated/Final review.pdf">Review notes from class</a></p>
-<ul>
-<li><p>There is an extra practice problem (32.10) in there that is <em>very helpful</em></p></li>
-<li><p><a href="https://ohsuitg-my.sharepoint.com/personal/wakim_ohsu_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fwakim%5Fohsu%5Fedu%2FDocuments%2FTeaching%2FClasses%2FF2023%5FBSTA%5F550%2FRecordings%2F38%5FFinal%5Freview%2Emp4&amp;referrer=StreamWebApp%2EWeb&amp;referrerScenario=AddressBarCopied%2Eview">With video</a></p></li>
-</ul></li>
-</ul></li>
-<li><p>Will NOT be cumulative: Chapter 24 - Chapter 35</p>
-<ul>
-<li><p>Chapter 31 - 35: Test will use distributions that we learn but will not be asking word problems</p>
-<ul>
-<li>Think Example 1 from Chapter 32 notes: Tests more on joint pdf than exponential distribution</li>
-</ul></li>
-<li><p>Weeks 7 - 9, with some from Week 10</p></li>
-<li><p>HW 6-7</p></li>
-<li><p>There will NOT be a question using a transformation of X and Y. For example, a question like HW 7, NTB #3 will NOT be on the test.</p>
-<ul>
-<li>However, a question like 32.10 will be on the test. In that question we are asked about <span class="math inline">\(P(X&lt;Y)\)</span></li>
-</ul></li>
-</ul></li>
-<li><p>Will be formatted the same as the midterm!!</p>
-<ul>
-<li><p>45 minute test with full class time to finish</p></li>
-<li><p>I will give you the distribution information that we learned</p>
-<ul>
-<li>pdf, CDF (if given previously), <span class="math inline">\(E(X)\)</span>, <span class="math inline">\(Var(X)\)</span></li>
-</ul></li>
-<li></li>
-</ul></li>
+<li><p><strong>Scenario:</strong> Events are equally likely to happen anywhere or anytime in an interval of values</p></li>
+<li><p>Shorthand: <span class="math inline">\(X \sim \text{U}[a,b]\)</span></p></li>
 </ul>
+<p><span class="math display">\[
+f_X(x) = \dfrac{1}{b-a}, \text{ for }a \leq x \leq b
+\]</span></p>
+<p><span class="math display">\[
+F_X(x) = \left\{
+        \begin{array}{ll}
+            0 &amp; \quad x&lt;a \quad \\
+            \dfrac{x-a}{b-a} &amp; \quad a \leq x \leq b\quad \\
+            1 &amp; \quad x&gt;b \quad
+        \end{array}
+    \right.
+\]</span></p>
+<p><span class="math display">\[\text{E}(X) = \dfrac{a+b}{2} \text{, } \text{ Var}(X) = \dfrac{(b-a)^2}{12}\]</span></p>
 </section>
-</section>
-<section id="on-the-horizon" class="level2">
-<h2 class="anchored" data-anchor-id="on-the-horizon">On the Horizon</h2>
-</section>
-<section id="end-of-quarter-feedback" class="level2">
-<h2 class="anchored" data-anchor-id="end-of-quarter-feedback">End of quarter feedback!</h2>
-</section>
-<section id="additional-information" class="level2">
-<h2 class="anchored" data-anchor-id="additional-information">Additional Information</h2>
-</section>
-<section id="statistician-of-the-week-maricela-cruz" class="level2">
-<h2 class="anchored" data-anchor-id="statistician-of-the-week-maricela-cruz">Statistician of the Week: Maricela Cruz</h2>
-<div class="grid">
-<div class="g-col-4">
-<div class="cell" data-preview="true">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../images/stat_of_week/cruz.jpg" class="img-fluid figure-img" alt="Image credit: Maricela Cruz"></p>
-<figcaption class="figure-caption">Maricela Cruz</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
-<div class="g-col-8">
-<p>Dr.&nbsp;Cruz did her undergraduate work at Pomona College, majoring in mathematics. Her PhD in Statistics is from University of California, Irvine. She is now Assistant Biostatistics Investigator, Kaiser Permanente Washington Health Research Institute (KPWHRI) and Affiliate Assistant Investigator, Department of Biostatistics, University of Washington.</p>
-<p>In an <a href="https://www.lathisms.org/calendar-2022s/maricela-cruz" target="_blank">interview done by Lathisms</a>, Dr.&nbsp;Cruz reminds us:</p>
-<blockquote class="blockquote">
-<p>Navigating institutions that have systematically excluded groups of people can be taxing, especially for people from one or more of these groups. Surround yourself with those who believe in you, give you the space to ask ‘silly’ questions, value your input, and/or understand your struggles. Do activities that will help you blow off steam. No one person or activity will meet all your support needs, so find the right group and balance for you.</p>
-</blockquote>
-</div>
-</div>
-<section id="topics-covered" class="level4">
-<h4 class="anchored" data-anchor-id="topics-covered">Topics covered</h4>
-<p>Dr.&nbsp;Cruz’s dissertation work was on interrupted time series models used to determine intervention timing. Indeed, her primary research questions are to understand complex health interventions. At KPWHRI she has continued to work on epidemiological methods, particularly those appropriate for longitudinal and multilevel data.</p>
-</section>
-<section id="relevant-work" class="level4">
-<h4 class="anchored" data-anchor-id="relevant-work">Relevant work</h4>
+<section id="properties-of-exponential-rvs" class="level2">
+<h2 class="anchored" data-anchor-id="properties-of-exponential-rvs">Properties of exponential RVs</h2>
 <ul>
-<li><p>Cruz M, Ombao H, Gillen DL, <a href="https://link.springer.com/article/10.1007/s12561-022-09346-6" target="_blank">A Generalized Interrupted Time Series Model for Assessing Complex Health Care Interventions.</a> <strong>Statistics in Biosciences</strong>, 2022.</p></li>
-<li><p>Cruz M, Gillen DL, Bender M, &amp; Ombao H, <a href="https://onlinelibrary.wiley.com/doi/10.1002/sim.8067" target="_blank">Assessing health care interventions via an interrupted time series model: study power and design considerations</a>. <strong>Statistics in Medicine</strong>, 2019.</p></li>
+<li><p><strong>Scenario:</strong> Modeling the time until the next (first) event</p></li>
+<li><p>Continuous analog to the geometric distribution!</p></li>
+<li><p>Shorthand: <span class="math inline">\(X \sim \text{Exp}(\lambda)\)</span></p></li>
 </ul>
+<p><span class="math display">\[
+f_X(x) = \lambda e^{-\lambda x}\text{ for } x&gt;0, \lambda&gt;0
+\]</span></p>
+<p><span class="math display">\[
+F_X(x) = \left\{
+        \begin{array}{ll}
+            0 &amp; \quad x&lt;0 \quad \\
+            1 - e^{-\lambda x} &amp; \quad x\geq0 \\
+        \end{array}
+    \right.
+\]</span></p>
+<p><span class="math display">\[\text{E}(X) = \dfrac{1}{\lambda}\]</span> <span class="math display">\[\text{Var}(X) = \dfrac{1}{\lambda^2}\]</span></p>
 </section>
-<section id="outside-links" class="level4">
-<h4 class="anchored" data-anchor-id="outside-links">Outside links</h4>
+<section id="properties-of-gamma-rvs" class="level2">
+<h2 class="anchored" data-anchor-id="properties-of-gamma-rvs">Properties of gamma RVs</h2>
 <ul>
-<li><a href="https://www.lathisms.org/calendar-2022s/maricela-cruz">Lathisms</a></li>
-<li><a href="https://www.linkedin.com/in/maricela-cruz-3285907a/">Linkedin</a></li>
-<li><a href="https://www.kpwashingtonresearch.org/our-research/our-scientists/cruz-maricela">Kaiser Permanente</a></li>
+<li><strong>Scenario:</strong> Modeling the time until the <span class="math inline">\(r^{th}\)</span> event.</li>
+<li>Continuous analog to the Negative Binomial distribution</li>
+<li>Shorthand: <span class="math inline">\(X \sim \text{Gamma}(r, \lambda)\)</span></li>
 </ul>
+<p><span class="math display">\[
+f_X(x) = \dfrac{\lambda^r}{\Gamma(r)}x^{r-1} e^{-\lambda x}\text{ for } x&gt;0, \lambda&gt;0, \Gamma(r) = (r-1)!
+\]</span></p>
+<p><span class="math display">\[
+F_X(x) = \left\{
+        \begin{array}{ll}
+            0 &amp; \quad x&lt;0 \quad \\
+            1 - e^{-\lambda x}\displaystyle\sum_{j=0}^{r-1}\dfrac{(\lambda x)^j}{j!}  &amp; \quad x\geq0 \\
+        \end{array}
+    \right.
+\]</span></p>
+<p><span class="math display">\[\text{E}(X) = \dfrac{r}{\lambda}\text{, }\text{ Var}(X) = \dfrac{r}{\lambda^2}\]</span></p>
+<p>Common to see <span class="math inline">\(\alpha = r\)</span> and <span class="math inline">\(\beta = \lambda\)</span></p>
 </section>
-</section>
-<section id="muddiest-points" class="level2">
-<h2 class="anchored" data-anchor-id="muddiest-points">Muddiest Points</h2>
-<p>This will be filled in with your Exit Ticket responses.</p>
-</section>
-<section id="clearest-points" class="level2">
-<h2 class="anchored" data-anchor-id="clearest-points">Clearest Points</h2>
-<p>This will be filled in with your Exit Ticket responses.</p>
+<section id="properties-of-normal-rvs" class="level2">
+<h2 class="anchored" data-anchor-id="properties-of-normal-rvs">Properties of Normal RVs</h2>
+<ul>
+<li><p>No scenario description here because the Normal distribution is so universal</p>
+<ul>
+<li>Central Limit Theorem (next class) makes it applicable to many types of events</li>
+</ul></li>
+<li><p>Shorthand: <span class="math inline">\(X \sim \text{Normal}(\mu, \sigma^2)\)</span></p></li>
+</ul>
+<p><span class="math display">\[
+f_X(x) = \dfrac{1}{\sqrt{2\pi \sigma^2}}e^{-(x-\mu)^2/(2\sigma^2)} \text{, for} -inf &lt; x &lt; inf
+\]</span></p>
+<p><span class="math display">\[\text{E}(X) = \mu \]</span> <span class="math display">\[\text{Var}(X) = \sigma^2\]</span></p>
 
 
 </section>
@@ -699,20 +642,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-          // target, if specified
-          link.setAttribute("target", "_blank");
-      }
-    }
 });
 </script>
 </div> <!-- /content -->
